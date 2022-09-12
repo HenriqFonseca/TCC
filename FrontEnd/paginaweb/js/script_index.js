@@ -2,9 +2,9 @@
 // --------expandir a nav-bar através de um botão-------//
 const btnMenu = document.getElementById('btn-menu');
 
-function toggleMenu(){
+function toggleMenu() {
     const nav = document.getElementById('nav-item-box');
     nav.classList.toggle('menu-expanded')
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+btnMenu.addEventListener('click', toggleMenu);
