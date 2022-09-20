@@ -36,4 +36,5 @@ WHO Declares COVID-19 a Pandemic - https://pubmed.ncbi.nlm.nih.gov/32191675/
 
 PHP PROGRAMANDO COM ORIENTAÇÃO A OBJETOS - https://books.google.com.br/books?hl=pt-BR&lr=&id=yEP0CgAAQBAJ&oi=fnd&pg=PT4&dq=php&ots=n3Akgw4wQ0&sig=UIqWbvQcF9ra9n4TQ6cFFqO6nf8#v=onepage&q=php&f=false
 
+HTML - https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover
 
