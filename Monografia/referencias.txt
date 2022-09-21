@@ -38,3 +38,5 @@ PHP PROGRAMANDO COM ORIENTAÇÃO A OBJETOS - https://books.google.com.br/books?h
 
 HTML - https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover
 
+Laravel - https://books.google.com.br/books?hl=pt-BR&lr=&id=EyY0DwAAQBAJ&oi=fnd&pg=PT3&dq=laravel&ots=t84vscBlG7&sig=twGCFvs5Pu24KkinvYto6lgDsno#v=onepage&q=laravel&f=false
+
