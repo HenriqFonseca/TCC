@@ -7,29 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <script defer src="./js/script_index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="./css/style.css" rel="stylesheet">
     <title>IronWorks</title>
 </head>
 
 <body>
-    <script>
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('/sw.js')
-                .then(serviceWorker => {
-                    console.log('Service Worker registered: ' + serviceWorker);
-                })
-                .catch(error => {
-                    console.log('Error registering the Service Worker: ' + error);
-                });
-        }
-    </script>
     <header>
         <!----------NAV-BAR------------->
         <nav>
             <div class="nav-logo-box">
-                <svg width="200" height="25.877456789880426" viewBox="0 0 350.00000000000006 52.00029776817928" class="css-1j8o68f">
+                <svg width="200" height="25.877456789880426" viewBox="0 0 350.00000000000006 52.00029776817928" c>
                     <defs id="SvgjsDefs3341">
                         <linearGradient id="SvgjsLinearGradient3346">
                             <stop id="SvgjsStop3347" stop-color="#8f5e25" offset="0"></stop>
@@ -78,15 +66,22 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item-box">
+
+
+
+                    <!-- <li class="item-box">
                         <a class="nav-link" href="">item
                         </a>
                     </li>
                     <li class="item-box">
                         <a class="nav-link" href="">item
                         </a>
-                    </li>
-                </ul>
+                    </li> -->
+
+
+
+                </ul><button class="button"> Fazer Login
+                    </button>
             </div>
         </nav>
     </header>
