@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,10 +19,12 @@ body {
     align-items: center;
     color: whitesmoke;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 
 /* ----HEADER STYLE---- */
 
@@ -106,7 +107,7 @@ nav {
 /* -------- LOGIN BUTTON STYLE -------- */
 
 .button {
-    background-color: var(--gold-tranparent);
+    background-color: var(--gold);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -117,13 +118,15 @@ nav {
     font-size: 1rem;
     font-family: 'Fjalla One', sans-serif;
     transition: 0.15s ease-in-out;
-  }
-  .button:hover{
-    background-color: var(--gold);
-    color: var(--black);
-  }
-/* ----NAV ITEMS HOVER EFFECT---- */
+}
 
+.button:hover {
+    background-color: rgba(255, 219, 142, 0.788);
+    color: var(--black);
+}
+
+
+/* ----NAV ITEMS HOVER EFFECT---- */
 
 .nav-link::after {
     content: " ";
@@ -221,8 +224,6 @@ nav {
     display: flex;
 }
 
-
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -231,23 +232,19 @@ footer {
 
 /* AREA DE TESTES */
 
-
-
-
-
 .nav-scroll-effect {
     background-color: rgba(151, 151, 151, 0.158);
     transition: 0.3s ease-in;
+    backdrop-filter: blur(10px);
 }
-nav{
+
+nav {
     transition: 0.3s ease-out;
 }
-.link-scroll-effect{
+
+.link-scroll-effect {
     color: var(--black);
 }
-
-
-
 
 
 /* AREA DE TESTES */
