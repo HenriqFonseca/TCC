@@ -283,7 +283,7 @@ main {
 }
 
 .btn-small:hover {
-    background: rgb(255, 218, 161);
+    background: var(--btn-color);
     background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 70%, rgba(227, 255, 242, 1) 100%);
     transform: scale(102%);
 }
@@ -302,7 +302,7 @@ main {
 }
 
 .btn-medium:hover {
-    background: rgb(255, 218, 161);
+    background: var(--btn-color);
     background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
     transform: scale(102%)
 }
@@ -321,7 +321,7 @@ main {
 }
 
 .btn-large:hover {
-    background: rgb(255, 195, 151);
+    background: var(--btn-large);
     background: linear-gradient(152deg, rgba(255, 195, 151, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
     transform: scale(102%)
 }
