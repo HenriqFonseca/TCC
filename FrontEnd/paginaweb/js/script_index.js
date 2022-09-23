@@ -10,22 +10,17 @@ function toggleMenu() {
 btnMenu.addEventListener('click', toggleMenu);
 
 //-------Trecho que complementa a funcionalidade de PWA--------//
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('/sw.js')
-        .then(serviceWorker => {
-            console.log('Service Worker registered: ' + serviceWorker);
-        })
-        .catch(error => {
-            console.log('Error registering the Service Worker: ' + error);
-        });
-}
+
 $(function() {
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 100) {
-            $("nav").addClass("teste");
+            $("nav").addClass("nav-scroll-effect");
+            $(".nav-link").addClass("link-scroll-effect");
+            $(".login-button").addClass("login-button-scroll-effect");
         } else {
-            $("nav").removeClass("teste");
+            $("nav").removeClass("nav-scroll-effect");
+            $(".nav-link").removeClass("link-scroll-effect");
+            $(".login-button").removeClass("login-button-scroll-effect");
         }
     });
 });

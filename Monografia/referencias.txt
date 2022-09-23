@@ -40,3 +40,5 @@ HTML - https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYC
 
 Laravel - https://books.google.com.br/books?hl=pt-BR&lr=&id=EyY0DwAAQBAJ&oi=fnd&pg=PT3&dq=laravel&ots=t84vscBlG7&sig=twGCFvs5Pu24KkinvYto6lgDsno#v=onepage&q=laravel&f=false
 
+Laravel Livro - https://www.google.com.br/books/edition/Laravel_Escolhendo_Um_Framework_Php/zartDwAAQBAJ?hl=pt-BR&gbpv=1&kptab=overview
+

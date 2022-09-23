@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- scripts -->
     <script defer src="./js/script_index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link href="./css/style.css" rel="stylesheet">
+    <!-- pwa -->
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./pwa.dev.min.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+    </script>
     <title>IronWorks</title>
 </head>
 
@@ -37,7 +48,7 @@
                             d="M1.36 20 l0 -13.22 l3.36 0 l0 13.22 l-3.36 0 z M7.44 20 l0 -13.22 l5.08 0 c3.66 0 4.96 1.58 4.96 3.7 c0 1.98 -1.12 3.1 -2.34 3.68 c0.52 0.28 0.9 0.8 1.24 1.74 c0.28 0.8 0.42 1.56 1.86 1.5 l-0.58 2.72 c-3.16 0.4 -3.9 -1.64 -4.44 -3.1 c-0.56 -1.52 -0.78 -1.68 -1.9 -1.68 l-0.52 0 l0 4.66 l-3.36 0 z M12.440000000000001 9.6 l-1.64 0 l0 2.92 l1.64 0 c1.22 0 1.68 -0.76 1.68 -1.54 c0 -0.98 -0.56 -1.38 -1.68 -1.38 z M25.799999999999997 20.28 c-4.3 0 -6.52 -2.92 -6.52 -6.92 c0 -4.1 2.32 -6.86 6.64 -6.86 c4.08 0 6.54 2.46 6.54 6.7 c0 4.1 -2.32 7.08 -6.66 7.08 z M25.86 17.5 c1.88 0 3.06 -1.24 3.06 -4.16 c0 -2.88 -1.14 -4.06 -3.02 -4.06 c-1.94 0 -3.08 1.26 -3.08 4.1 c0 2.88 1.16 4.12 3.04 4.12 z M34.519999999999996 20 l0 -13.22 l3.26 0 l3.66 5.38 c0.54 0.8 1.24 1.9 1.88 2.96 c-0.06 -1.18 -0.1 -2.46 -0.1 -3.42 l0 -4.92 l3.2 0 l0 13.22 l-3.28 0 l-4.08 -5.96 c-0.4 -0.58 -0.94 -1.48 -1.44 -2.38 c0.06 1.08 0.1 2.18 0.1 2.94 l0 5.4 l-3.2 0 z M56.38 20 l-4.78 -13.22 l3.54 0 l2.28 6.4 c0.18 0.46 0.36 1.26 0.5 2.1 c0.18 -0.82 0.36 -1.64 0.54 -2.1 l1.36 -3.74 l-1.02 -2.66 l3.4 0 l2.32 6.4 c0.16 0.4 0.34 1.1 0.5 1.84 c0.14 -0.74 0.3 -1.42 0.46 -1.84 l2.16 -6.4 l3.26 0 l-4.52 13.22 l-2.68 0 l-2.38 -6.54 c-0.14 0.48 -0.28 0.94 -0.42 1.34 l-1.84 5.2 l-2.68 0 z M78.12 20.28 c-4.3 0 -6.52 -2.92 -6.52 -6.92 c0 -4.1 2.32 -6.86 6.64 -6.86 c4.08 0 6.54 2.46 6.54 6.7 c0 4.1 -2.32 7.08 -6.66 7.08 z M78.18 17.5 c1.88 0 3.06 -1.24 3.06 -4.16 c0 -2.88 -1.14 -4.06 -3.02 -4.06 c-1.94 0 -3.08 1.26 -3.08 4.1 c0 2.88 1.16 4.12 3.04 4.12 z M86.84 20 l0 -13.22 l5.08 0 c3.66 0 4.96 1.58 4.96 3.7 c0 1.98 -1.12 3.1 -2.34 3.68 c0.52 0.28 0.9 0.8 1.24 1.74 c0.28 0.8 0.42 1.56 1.86 1.5 l-0.58 2.72 c-3.16 0.4 -3.9 -1.64 -4.44 -3.1 c-0.56 -1.52 -0.78 -1.68 -1.9 -1.68 l-0.52 0 l0 4.66 l-3.36 0 z M91.84 9.6 l-1.64 0 l0 2.92 l1.64 0 c1.22 0 1.68 -0.76 1.68 -1.54 c0 -0.98 -0.56 -1.38 -1.68 -1.38 z M99.34 20 l0 -13.22 l3.36 0 l0 4.94 l0.6 0 l3.42 -4.94 l3.92 0 l-4.5 6.34 l4.68 6.88 l-4.04 0 l-3.5 -5.26 l-0.58 0 l0 5.26 l-3.36 0 z M111.28000000000002 16.34 l3.3 -0.68 c0.02 1.4 1.1 1.84 2.2 1.84 c1.04 0 1.64 -0.38 1.64 -1 c0 -2.1 -6.78 -1.14 -6.78 -5.94 c0 -2.64 2.04 -4.06 5.1 -4.06 c3.08 0 5.02 1.46 4.92 3.58 l-3.3 0.68 c-0.02 -0.54 -0.14 -1.48 -1.7 -1.48 c-1.08 0 -1.62 0.44 -1.62 1.04 c0 2.18 6.78 1.04 6.78 5.82 c0 2.4 -1.7 4.14 -5.08 4.14 c-3.6 0 -5.58 -1.96 -5.46 -3.94 z">
                         </path>
                     </g>
-                  
+
                 </svg>
             </div>
             <button id="btn-menu">
@@ -46,15 +57,15 @@
             <div id="nav-item-box">
                 <ul class="nav-list">
                     <li class="item-box">
-                        <a class="nav-link active-item" href="">item 
+                        <a class="nav-link active-item" href="">item
                         </a>
                     </li>
                     <li class="item-box sub-menu-box">
-                        <a class="nav-link" href="">item 
+                        <a class="nav-link" href="">item
 
                         </a>
                         <!----------SUB-MENU------------->
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                             <li class="sub-menu-item">
                                 <a href="" class="sub-menu-link">sub-item </a>
                             </li>
@@ -64,32 +75,52 @@
                             <li class="sub-menu-item">
                                 <a href="" class="sub-menu-link">sub-item </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
+                </ul>
+                <button class="login-button">
+                    Fazer Login
+                </button>
 
-
-
-                    <!-- <li class="item-box">
-                        <a class="nav-link" href="">item
-                        </a>
-                    </li>
-                    <li class="item-box">
-                        <a class="nav-link" href="">item
-                        </a>
-                    </li> -->
-
-
-
-                </ul><button class="button"> Fazer Login
-                    </button>
             </div>
         </nav>
     </header>
-    <!-- apenas para dar espaçamento e vizualizar como fica o footer -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- apenas para dar espaçamento e vizualizar como fica o footer -->
+    <main>
+        <img src="/img/8225.jpg" style="width: 100%;" alt="">
+        <div class="btn-container">
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="/img/haltere.png" alt="">
+                </button>
+                <button class="btn-small">
+                    <img src="/img/homem.png" alt="">
+                </button>
+                <button class="btn-small">
+                    <img src="/img/localizacao.png" alt="">
+                </button>
+            </div>
+            <div class="btn-box">
+                <button class="btn-medium">
+                    <img src="/img/bate-papo.png" alt="">
+                </button>
+                <button class="btn-medium">
+                    <img src="img/fatura.png" alt="">
+                </button>
+            </div>
+            <div class="btn-box">
+                <button class="btn-large">
+                    <img src="/img/calendario.png" alt="">
+                </button>
+                <button class="btn-large">
+                    <img src="" alt="">
+                </button>
+            </div>
+        </div>
+
+
+    </main>
+
+
     <footer>
         <nav>
             <h2>Navegue no site</h2>
@@ -112,6 +143,28 @@
         <small>Copyright © 2010 </small>
     </footer>
 </body>
+<!-- ATRIBUIÇÕES DE IMAGEM -->
+<!--                       -->
+<!-- <a href="https://br.freepik.com/vetores-gratis/pagina-de-destino-isometrica-de-ginasio-equipamento-de-fitness_7062176.htm#query=gym&position=42&from_view=search">Imagem de upklyak</a> no Freepik  
+
+
+<a href="https://br.freepik.com/vetores-gratis/atletas-fazendo-exercicios-de-fitness-no-ginasio-com-janelas-panoramicas-isolaram-ilustracao-vetorial-plana-desenhos-animados-cardio-treinamento-e-levantamento-de-peso_10172354.htm#query=gym&position=16&from_view=search">Imagem de pch.vector</a> no Freepik
+
+<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Icongeek26 - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/conversacao" title="conversação ícones">Conversação ícones criados por Icongeek26 - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Icongeek26 - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/esportes-e-competicao" title="esportes e competição ícones">Esportes e competição ícones criados por Icongeek26 - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/calendario" title="calendario ícones">Calendario ícones criados por Icongeek26 - Flaticon</a>
+
+
+
+-->
 
 
 </html>

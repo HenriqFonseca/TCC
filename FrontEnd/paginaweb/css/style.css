@@ -1,12 +1,3 @@
-/* AREA DE TESTES */
-
-.teste {
-    background-color: transparent;
-}
-
-
-/* AREA DE TESTES */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,9 +5,12 @@
 }
 
 :root {
+    --btn-color: #FFDAA1;
+    --btn-large: #FFC397;
     --black: #000000;
-    --gold: #DDCB7F;
-    --gold-tranparent: #ddcc7f5b;
+    --gold: #C1A45F;
+    --gold-semitransparent: #c1a45fd7;
+    --gold-transparent: #fdf5d33a;
     --black-hover: #2c2c2c;
 }
 
@@ -27,6 +21,11 @@ body {
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -78,7 +77,8 @@ nav {
 
 .item-box {
     height: 100%;
-    width: 5rem
+    width: 5rem;
+    transition: 0.15s ease-in-out;
 }
 
 .nav-link {
@@ -89,6 +89,7 @@ nav {
     color: white;
     position: relative;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .active-item {
@@ -108,60 +109,23 @@ nav {
 
 /* -------- LOGIN BUTTON STYLE -------- */
 
-.button {
-    padding: 1em 2em;
-    font-size: 17px;
-    font-family: 'Fjalla One', sans-serif;
-    background: transparent;
+.login-button {
+    background-color: #ffe19a77;
     border: none;
-    position: relative;
-    color: var(--gold);
-    z-index: 1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: 'Fjalla One', sans-serif;
+    transition: 0.15s ease-in-out;
 }
 
-.button::after,
-.button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -99999;
-    transition: all .4s;
-}
-
-.button::before {
-    transform: translate(0%, 0%);
-    width: 100%;
-    height: 100%;
-    background: darkslategray;
-    border-radius: 10px;
-}
-
-.button::after {
-    transform: translate(0px, 0px);
-    width: 10px;
-    height: 10px;
-    background: var(--gold-tranparent);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}
-
-.button:hover::before {
-    transform: translate(5%, 20%);
-    width: 10px;
-    height: 10px;
-}
-
-.button:hover::after {
-    border-radius: 10px;
-    transform: translate(0, 0);
-    width: 100%;
-    height: 100%;
-}
-
-.button:active::after {
-    transition: 0s;
-    transform: translate(0, 5%);
+.login-button:hover {
+    background-color: var(--gold-semitransparent);
+    color: var(--black);
 }
 
 
@@ -185,7 +149,7 @@ nav {
 }
 
 .item-box:hover {
-    background-color: var(--black-hover);
+    background-color: var(--gold-transparent);
 }
 
 
@@ -263,12 +227,104 @@ nav {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* AREA DE TESTES */
+
+.nav-scroll-effect {
+    background-color: rgba(151, 151, 151, 0.158);
+    transition: 0.3s ease-in;
+    backdrop-filter: blur(10px);
+}
+
+.link-scroll-effect {
+    color: var(--black);
+}
+
+.login-button-scroll-effect {
+    color: var(--black);
+}
+
+nav {
+    transition: 0.3s ease-out;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.btn-small {
+    background-color: var(--btn-color);
+    width: 16rem;
+    height: 10rem;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-small>img {
+    width: 50%;
+}
+
+.btn-small:hover {
+    background: rgb(255, 218, 161);
+    background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 70%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%);
+}
+
+.btn-medium {
+    background-color: var(--btn-color);
+    width: 25rem;
+    height: 10rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-medium>img {
+    width: 30%;
+}
+
+.btn-medium:hover {
+    background: rgb(255, 218, 161);
+    background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%)
+}
+
+.btn-large {
+    background-color: var(--btn-large);
+    width: 25rem;
+    height: 20rem;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-large>img {
+    width: 50%;
+}
+
+.btn-large:hover {
+    background: rgb(255, 195, 151);
+    background: linear-gradient(152deg, rgba(255, 195, 151, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%)
+}
+
+
+/* AREA DE TESTES */
