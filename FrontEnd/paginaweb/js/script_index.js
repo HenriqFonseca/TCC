@@ -20,12 +20,15 @@ if ('serviceWorker' in navigator) {
             console.log('Error registering the Service Worker: ' + error);
         });
 }
+
 $(function() {
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 100) {
-            $("nav").addClass("teste");
+            $(".nav-link").addClass("link-scroll-effect");
+            $("nav").addClass("nav-scroll-effect");
         } else {
-            $("nav").removeClass("teste");
+            $(".nav-link").removeClass("link-scroll-effect");
+            $("nav").removeClass("nav-scroll-effect");
         }
     });
 });
