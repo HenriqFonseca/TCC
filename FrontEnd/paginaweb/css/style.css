@@ -5,14 +5,17 @@
 }
 
 :root {
+    --btn-color: #FFDAA1;
+    --btn-large: #FFC397;
     --black: #000000;
-    --gold: #DDCB7F;
-    --gold-tranparent: #ddcc7f5b;
+    --gold: #C1A45F;
+    --gold-semitransparent: #c1a45fd7;
+    --gold-transparent: #fdf5d33a;
     --black-hover: #2c2c2c;
 }
 
 body {
-    background-color: #c0c0c0;
+    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,8 +109,8 @@ nav {
 
 /* -------- LOGIN BUTTON STYLE -------- */
 
-.button {
-    background-color: var(--gold);
+.login-button {
+    background-color: #ffe19a77;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -115,13 +118,13 @@ nav {
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Fjalla One', sans-serif;
     transition: 0.15s ease-in-out;
 }
 
-.button:hover {
-    background-color: rgba(255, 219, 142, 0.788);
+.login-button:hover {
+    background-color: var(--gold-semitransparent);
     color: var(--black);
 }
 
@@ -146,7 +149,7 @@ nav {
 }
 
 .item-box:hover {
-    background-color: var(--black-hover);
+    background-color: var(--gold-transparent);
 }
 
 
@@ -238,12 +241,89 @@ footer {
     backdrop-filter: blur(10px);
 }
 
+.link-scroll-effect {
+    color: var(--black);
+}
+
+.login-button-scroll-effect {
+    color: var(--black);
+}
+
 nav {
     transition: 0.3s ease-out;
 }
 
-.link-scroll-effect {
-    color: var(--black);
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.btn-small {
+    background-color: var(--btn-color);
+    width: 16rem;
+    height: 10rem;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-small>img {
+    width: 50%;
+}
+
+.btn-small:hover {
+    background: rgb(255, 218, 161);
+    background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 70%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%);
+}
+
+.btn-medium {
+    background-color: var(--btn-color);
+    width: 25rem;
+    height: 10rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-medium>img {
+    width: 30%;
+}
+
+.btn-medium:hover {
+    background: rgb(255, 218, 161);
+    background: linear-gradient(150deg, rgba(255, 218, 161, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%)
+}
+
+.btn-large {
+    background-color: var(--btn-large);
+    width: 25rem;
+    height: 20rem;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-large>img {
+    width: 50%;
+}
+
+.btn-large:hover {
+    background: rgb(255, 195, 151);
+    background: linear-gradient(152deg, rgba(255, 195, 151, 1) 0%, 80%, rgba(227, 255, 242, 1) 100%);
+    transform: scale(102%)
 }
 
 
