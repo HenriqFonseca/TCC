@@ -85,34 +85,79 @@
             </div>
         </nav>
     </header>
-    <main>
-        <img src="/img/8225.jpg" style="width: 100%;" alt="">
+
+        <!-- <img src="./img/8225.jpg" style="width: 100%;" alt=""> -->
+
+
+        <!--AQUI EU VOU TESTAR ALGUMAS FORMAS DE CRIAR UM CARROSSEL-->
+        <div class="slider">
+            <!--radio botoes-->
+            <div class="slides">
+                <input type="radio" name="raido=btn" id="radio1">
+                <input type="radio" name="raido=btn" id="radio2">
+                <input type="radio" name="raido=btn" id="radio3">
+                <!--aq acabam os botoes-->
+
+                <!--imagens dos slides-->
+                <div class="slide first">
+                    <img src="./img/8225.jpg" alt="imagem 1" />
+                </div>
+                <div class="slide">
+                    <img src="./img/897.jpg" alt="imagem 2" />
+                </div>
+                <div class="slide">
+                    <img src="./img/homem_bombado.jpeg" alt="imagem 3" />
+                </div>
+                <!--fim das imagens dos slides-->
+
+
+                <!--navegação automatica-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--fim da navegação-->
+
+
+                <!--navegação manual-->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio1" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+<!--AQ TERMINA O SCRIPT DO HTML DO CARROSSEL-->
+
+        <main>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="btn-container">
             <div class="btn-box">
                 <button class="btn-small">
-                    <img src="/img/dumbbell.png" alt="">
+                    <img src="./img/dumbbell.png" alt="">
                 </button>
                 <button class="btn-small">
-                    <img src="/img/sportsman.png" alt="">
+                    <img src="./img/sportsman.png" alt="">
                 </button>
                 <button class="btn-small">
-                    <img src="/img/location.png" alt="">
+                    <img src="./img/location.png" alt="">
                 </button>
             </div>
             <div class="btn-box">
                 <button class="btn-medium">
-                    <img src="/img/chat.png" alt="">
+                    <img src="./img/chat.png" alt="">
                 </button>
                 <button class="btn-medium">
-                    <img src="/img/invoice.png" alt="">
+                    <img src="./img/invoice.png" alt="">
                 </button>
             </div>
             <div class="btn-box">
                 <button class="btn-large">
-                    <img src="/img/calendar.png" alt="">
+                    <img src="./img/calendar.png" alt="">
                 </button>
                 <button class="btn-large">
-                    <img src="/img/notepad.png" alt="">
+                    <img src="./img/notepad.png" alt="">
                 </button>
             </div>
         </div>
