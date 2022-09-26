@@ -1,19 +1,36 @@
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding-bottom: 1px;
     padding-top: -1px;
     padding-top: 1px;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 		
 }
 
 .wrapper {	
 	margin-top: 130px;
   margin-bottom: 80px;
+  display: flex;
+  height: 280px;
+  width: 270px;
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  /* padding-left: 400px; */
+  padding-right: 0px;
+  margin: auto;
+  background-color: #d1d1d1;
+  border-radius: 20px; 
+  font-family: 'Fjalla One', sans-serif; 
+box-shadow: 0 8px 32px 0 rgba(5, 8, 49, 0.37);
+-webkit-backdrop-filter: blur( 9.5px );
+
 }
 
 .form-signin {
-  height: 280px;
+  /* height: 280px;
   width: 270px;
   max-width: 380px;
   padding: 15px 35px 45px;
@@ -24,7 +41,7 @@ body {
   border-radius: 20px; 
   font-family: 'Fjalla One', sans-serif; 
 box-shadow: 0 8px 32px 0 rgba(5, 8, 49, 0.37);
--webkit-backdrop-filter: blur( 9.5px );
+-webkit-backdrop-filter: blur( 9.5px ); */
 
 }
   .form-signin-heading,
@@ -83,4 +100,5 @@ box-shadow: 0 8px 32px 0 rgba(5, 8, 49, 0.37);
       }
 
       .img {
-      }
+        display: flex;
+   }
