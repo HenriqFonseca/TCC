@@ -1,28 +1,36 @@
 
 body {
-    background-color: #242424;
+    background-color: #ffffff;
+    padding-bottom: 1px;
+    padding-top: -1px;
+    padding-top: 1px;
 		
 }
 
 .wrapper {	
-	margin-top: 80px;
+	margin-top: 130px;
   margin-bottom: 80px;
 }
 
 .form-signin {
+  height: 280px;
+  width: 270px;
   max-width: 380px;
   padding: 15px 35px 45px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
+  padding-left: 400px;
+  padding-right: 0px;
+  margin: auto;
+  background-color: #d1d1d1;
   border-radius: 20px; 
-  font-family: 'Fjalla One', sans-serif;
- 
+  font-family: 'Fjalla One', sans-serif; 
+box-shadow: 0 8px 32px 0 rgba(5, 8, 49, 0.37);
+-webkit-backdrop-filter: blur( 9.5px );
+
 }
   .form-signin-heading,
 	.checkbox {
 	  margin-bottom: 30px;
-      
+
 	}
 
 	.checkbox {
@@ -60,9 +68,9 @@ body {
 	}
 
     .button {
-        background-color: #808380;
-        border: none;
-        color: white;
+        background-color: whitesmoke;
+        border: 2px;
+        color: rgb(0, 0, 0);
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -72,4 +80,7 @@ body {
         border-bottom-right-radius: 8px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+      }
+
+      .img {
       }
