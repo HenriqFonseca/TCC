@@ -9,9 +9,10 @@
     --btn-large: #ffc297a1;
     --black: #000000;
     --gold: #C1A45F;
+    --scroll-effect-color: rgba(151, 151, 151, 0.158);
+    --footer-color: rgba(102, 102, 102, 0.541);
     --gold-semitransparent: #c1a45fd7;
     --gold-transparent: #fdf5d33a;
-    --black-hover: #2c2c2c;
 }
 
 body {
@@ -35,18 +36,17 @@ a {
 /* ----HEADER STYLE---- */
 
 header {
+    z-index: 100;
+    position: fixed;
     width: 100%;
-    height: 6vh;
+    height: 5rem;
 }
 
 
 /* ----NAV BAR STYLE---- */
 
-nav {
-    z-index: 100;
-    position: fixed;
-    height: 4rem;
-    width: 100%;
+.nav-bar {
+    height: 100%;
     font-size: 1.8rem;
     font-family: 'Fjalla One', sans-serif;
     background-color: var(--black);
@@ -60,7 +60,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    width: 25%;
+    gap: 3rem;
 }
 
 .nav-logo-box {
@@ -75,6 +75,8 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -130,6 +132,10 @@ nav {
 
 .login-button:hover {
     background-color: var(--gold-semitransparent);
+    color: var(--black);
+}
+
+.login-button-scroll-effect {
     color: var(--black);
 }
 
@@ -241,46 +247,46 @@ footer {
 /* AREA DE TESTES */
 
 .nav-scroll-effect {
-    background-color: rgba(151, 151, 151, 0.158);
+    background-color: var(--scroll-effect-color);
     transition: 0.3s ease-in;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(10px);
 }
 
 .link-scroll-effect {
     color: var(--black);
 }
 
-.login-button-scroll-effect {
-    color: var(--black);
-}
-
-nav {
+.nav-bar {
     transition: 0.3s ease-out;
 }
 
 main {
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.btn-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    gap: 3rem;
 }
 
 .btn-box {
+    gap: 2.5rem;
     display: flex;
+}
+
+.btn-row-container {
+    gap: 2.5rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .btn-small {
     background-color: var(--btn-color);
     width: 16rem;
     height: 10rem;
-    margin: 1.5rem;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 0.8rem 0.8rem 0 0;
     backdrop-filter: blur(4px);
 }
 
@@ -288,19 +294,12 @@ main {
     width: 50%;
 }
 
-.btn-small:hover {
-    background: var(--btn-color);
-    background: linear-gradient(150deg, rgba(255, 218, 161, 0.7) 0%, 70%, rgba(227, 255, 242, 0.7) 100%);
-    transform: scale(102%);
-}
-
 .btn-medium {
     background-color: var(--btn-color);
     width: 25rem;
     height: 10rem;
-    margin: 2rem;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 0.8rem 0.8rem 0 0;
     backdrop-filter: blur(4px);
 }
 
@@ -308,19 +307,12 @@ main {
     width: 30%;
 }
 
-.btn-medium:hover {
-    background: var(--btn-color);
-    background: linear-gradient(150deg, rgba(255, 218, 161, 0.7) 0%, 80%, rgba(227, 255, 242, 0.7) 100%);
-    transform: scale(102%)
-}
-
 .btn-large {
     background-color: var(--btn-large);
     width: 25rem;
     height: 20rem;
-    margin: 1.5rem;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 0.8rem 0.8rem 0 0;
     backdrop-filter: blur(4px);
 }
 
@@ -328,8 +320,44 @@ main {
     width: 50%;
 }
 
-.btn-large:hover {
-    background: var(--btn-large);
-    background: linear-gradient(152deg, rgba(255, 195, 151, 0.7) 0%, 80%, rgba(227, 255, 242, 0.7) 100%);
-    transform: scale(102%)
+.btn-subtitle {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.219);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0.8rem 0.8rem;
 }
+
+.teste {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+}
+
+.teste:hover {
+    background: var(--btn-color);
+    background: linear-gradient(130deg, rgba(255, 218, 161, 0)0%, 80%, rgba(213, 255, 235, 0.7) 100%);
+    transform: scale(102%);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    flex-direction: column;
+    background-color: var(--footer-color);
+    backdrop-filter: blur(10px);
+}
+
+.nav-footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* AREA DE TESTES */
