@@ -14,11 +14,11 @@ btnMenu.addEventListener('click', toggleMenu);
 $(function() {
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 100) {
-            $("nav").addClass("nav-scroll-effect");
+            $(".nav-bar").addClass("nav-scroll-effect");
             $(".nav-link").addClass("link-scroll-effect");
             $(".login-button").addClass("login-button-scroll-effect");
         } else {
-            $("nav").removeClass("nav-scroll-effect");
+            $(".nav-bar").removeClass("nav-scroll-effect");
             $(".nav-link").removeClass("link-scroll-effect");
             $(".login-button").removeClass("login-button-scroll-effect");
         }
