@@ -268,12 +268,9 @@ main {
     gap: 3rem;
 }
 
-.btn-box {
-    gap: 2.5rem;
-    display: flex;
-}
-
-.btn-row-container {
+.btn-container {
+    width: 50%;
+    min-width: 420px;
     gap: 2.5rem;
     color: var(--black);
     display: flex;
@@ -281,46 +278,27 @@ main {
     flex-direction: column;
 }
 
-.btn-small {
-    background-color: var(--btn-color);
-    width: 16rem;
-    height: 10rem;
-    border: none;
-    border-radius: 0.8rem 0.8rem 0 0;
-    backdrop-filter: blur(4px);
+.btn-row {
+    width: 100%;
+    gap: 2.5rem;
+    display: flex;
 }
 
-.btn-small>img {
-    width: 50%;
+.btn-box {
+    width: 100%;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
 }
 
-.btn-medium {
-    background-color: var(--btn-color);
-    width: 25rem;
-    height: 10rem;
-    border: none;
-    border-radius: 0.8rem 0.8rem 0 0;
-    backdrop-filter: blur(4px);
+.btn-box:hover {
+    background: linear-gradient(130deg, rgba(255, 218, 161, 0)0%, 80%, rgba(213, 255, 235, 0.7) 100%);
+    transform: scale(102%);
 }
 
-.btn-medium>img {
-    width: 30%;
-}
-
-.btn-large {
-    background-color: var(--btn-large);
-    width: 25rem;
-    height: 20rem;
-    border: none;
-    border-radius: 0.8rem 0.8rem 0 0;
-    backdrop-filter: blur(4px);
-}
-
-.btn-large>img {
-    width: 50%;
-}
-
-.btn-subtitle {
+.btn-caption {
     backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.219);
     width: 100%;
@@ -329,18 +307,43 @@ main {
     border-radius: 0 0 0.8rem 0.8rem;
 }
 
-.teste {
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 0.8rem;
+.btn-small {
+    width: 100%;
+    max-height: 10rem;
+    padding: 1rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 0.8rem 0.8rem 0 0;
+    backdrop-filter: blur(4px);
 }
 
-.teste:hover {
-    background: var(--btn-color);
-    background: linear-gradient(130deg, rgba(255, 218, 161, 0)0%, 80%, rgba(213, 255, 235, 0.7) 100%);
-    transform: scale(102%);
+.btn-medium {
+    width: 100%;
+    max-height: 10rem;
+    padding: 1rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 0.8rem 0.8rem 0 0;
+    backdrop-filter: blur(4px);
+}
+
+.btn-large {
+    width: 100%;
+    min-height: 15rem;
+    max-height: 20rem;
+    padding: 3rem;
+    background-color: var(--btn-large);
+    border: none;
+    border-radius: 0.8rem 0.8rem 0 0;
+    backdrop-filter: blur(4px);
+}
+
+.btn-small>img,
+.btn-medium>img,
+.btn-large>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 footer {
