@@ -42,3 +42,10 @@ Laravel - https://books.google.com.br/books?hl=pt-BR&lr=&id=EyY0DwAAQBAJ&oi=fnd&
 
 Laravel Livro - https://www.google.com.br/books/edition/Laravel_Escolhendo_Um_Framework_Php/zartDwAAQBAJ?hl=pt-BR&gbpv=1&kptab=overview
 
+COSTA, Carlos J. Desenvolvimento para web . ITML press/Lusocredito, 2007.
+
+FLATSCHART, Fábio. HTML 5-Embarque Imediato. Brasport, 2011.
+
+LEWIS, Joseph R.; MOSCOVITZ, Meitar. Css avançado. Tradução de Edgard B, p. 16, 2010
+
+FLANAGAN, David. JavaScript: o guia definitivo. Bookman Editora, 2004.
