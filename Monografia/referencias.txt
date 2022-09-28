@@ -46,6 +46,11 @@ COSTA, Carlos J. Desenvolvimento para web . ITML press/Lusocredito, 2007.
 
 FLATSCHART, Fábio. HTML 5-Embarque Imediato. Brasport, 2011.
 
-LEWIS, Joseph R.; MOSCOVITZ, Meitar. Css avançado. Tradução de Edgard B, p. 16, 2010
+JR LEWIS, Joseph R.; MOSCOVITZ, Meitar. Css avançado. Tradução de Edgard B, p. 16, 2010
 
 FLANAGAN, David. JavaScript: o guia definitivo. Bookman Editora, 2004.
+
+GRILLO, Filipe Del Nero; FORTES, Renata Pontin de Mattos. Aprendendo JavaScript. São Carlos: USP, 2008.
+
+TECHIO, Gabriel Bressan; CHICON, Patricia Mariotto Mozzaquatro. Implementação dos frameworks bootstrap e Foundation aplicados na construção de um objeto de aprendizagem para o ensino da Engenharia de Software.
+
