@@ -54,3 +54,5 @@ GRILLO, Filipe Del Nero; FORTES, Renata Pontin de Mattos. Aprendendo JavaScript.
 
 TECHIO, Gabriel Bressan; CHICON, Patricia Mariotto Mozzaquatro. Implementação dos frameworks bootstrap e Foundation aplicados na construção de um objeto de aprendizagem para o ensino da Engenharia de Software.
 
+DATE, Christopher J. Introdução a sistemas de bancos de dados. Elsevier Brasil, 2004.
+
