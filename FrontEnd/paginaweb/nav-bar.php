@@ -37,23 +37,11 @@
                         <a class="nav-link" href="">item
 
                         </a>
-                        <!----------SUB-MENU------------->
-                        <!-- <ul class="sub-menu">
-                            <li class="sub-menu-item">
-                                <a href="" class="sub-menu-link">sub-item </a>
-                            </li>
-                            <li class="sub-menu-item">
-                                <a href="" class="sub-menu-link">sub-item </a>
-                            </li>
-                            <li class="sub-menu-item">
-                                <a href="" class="sub-menu-link">sub-item </a>
-                            </li>
-                        </ul> -->
                     </li>
                 </ul>
-                <button class="login-button">
-                    <a href="/telaLogin/login.html">Fazer Login</a>
-                </button>
+                <a href="/telaLogin/login.php"><button class="login-button">
+                    Fazer Login
+                </button></a>
 
             </div>
         </nav>

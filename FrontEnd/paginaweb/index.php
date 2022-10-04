@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- fonts -->
-   
+
     <!-- styles -->
     <link href="/paginaweb/css/style.css" rel="stylesheet">
     <!-- scripts -->
@@ -32,10 +32,9 @@
 <body>
     <header>
         <!----------NAV-BAR------------->
- <?php include'' ?>
+        <?php include 'C:\Users\Admin\Desktop\TCC\FrontEnd\paginaweb\nav-bar.php' ?>
     </header>
     <main>
-        <!--AQUI EU VOU TESTAR ALGUMAS FORMAS DE CRIAR UM CARROSSEL-->
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -67,7 +66,7 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-        <!--AQ TERMINA O SCRIPT DO HTML DO CARROSSEL-->
+        <!--Carousrel end-->
 
 
         <div class="btn-container">
