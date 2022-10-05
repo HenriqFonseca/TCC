@@ -1,0 +1,34 @@
+qual o problema a ser resolvido ?
+R: A forma desatualizada do gerenciamento e a ultilizaçao de papeis.
+
+como o apk vai resolver o problema? mais o menos 6 a 7 linhas falando do problema para ter o pensamento completo.
+ 
+qual o objetivo ? 
+
+
+justificativa : oque justifica  a gnt fazer o sistema ?
+
+metodologia : q vamos fazer pesquisas, pesquisas de campo, e etc.. 
+ 
+
+tudo precisa ter uma ordem cronológica e uma linha de raciocinio.
+
+todo titulo tem q haver um texto
+EX:
+
+REFERENCIAL TEORICO
+
+neste capitulo contem o referemcial teorico que vai dar embasamento ao desenvolvimento......
+
+APLICAR AS TECNOLOGIAS com teroms mais tecnicos colocar o codigo e a saida e tirar os codigos de autoria propria do codigo
+ 
+pode usar documentaçao do w3c e fire base se for site 
+revisar o texto php porque se tiver 25% de uma pagina de um so autor é plagio 
+nao é cobrado codigo de sql no exemplo, defnicao e aplicaçao 
+usar mer e der. 
+
+o primeiro topico do desenvolvimeto 
+analise de requisito 
+primeiro diagrama é o caso de uso 
+
+diagram de classe, diagrama d classe de uso e diagrama de atividade sao os 3 obrigatorios.
