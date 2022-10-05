@@ -32,7 +32,7 @@
 <body>
     <header>
         <!----------NAV-BAR------------->
-        <?php include 'C:\Users\Admin\Desktop\TCC\FrontEnd\paginaweb\nav-bar.php' ?>
+        <?php include 'C:\Users\Aluno\Desktop\TCC\FrontEnd\paginaweb\nav-bar.php' ?>
     </header>
     <main>
         <!-- Carousel -->
