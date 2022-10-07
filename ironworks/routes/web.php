@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +16,8 @@ use App\Http\Controllers\LoginController;
 
 //Route::get('oq vai aparecer na URL' [Controller definido] , 'nome da função que está dentro do controller'])->name('nome que posso usar nos redirecionamentos')
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('/login', [HomeController::class, 'show'])->name('profile.login');
 
-
-Route::get('login', [LoginController::class, 'login'])->name('profile.login');
+                // rota para a view login
+Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 
 

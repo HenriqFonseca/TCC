@@ -40,7 +40,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="{{ route('teste') }} "><button class="login-button">
+            <a href="{{ route('profile.login') }} "><button class="login-button">
                     Fazer Login
                 </button></a>
 
