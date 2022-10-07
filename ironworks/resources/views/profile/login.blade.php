@@ -28,7 +28,7 @@
           <a class="forgot-password" href="">Esqueci minha senha
           </a>
       </div>
-      <a href="/paginaweb/index.php"class="logo-box">
+      <a href="{{ route('home.index') }}"class="logo-box">
         <img class="img" src="img/logo-vertical.png" alt="">
       <a>
         </div><div class="drops">
