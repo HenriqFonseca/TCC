@@ -5,34 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
+
+    <!-- CSS DO BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Latest compiled JavaScript -->
+    <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- fonts -->
+    <!-- FONTS -->
 
-    <!-- styles -->
-    <link href="homecss/style.css" rel="stylesheet">
-    <!-- scripts -->
-    <script defer src="js/script_index.js"></script>
+    <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- pwa -->
-    <link rel="manifest" href="./manifest.json" />
-    <script src="./pwa.dev.min.js"></script>
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-    </script>
+    
+    <!-- STYLES -->
+    <link href="homecss/style.css" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script defer src="js/script_index.js"></script>
+
+    <!-- PWA -->
+    essa porra não funciona, vai tomar no cu pwa do caralho, pistolei
     <title>IronWorks</title>
 </head>
 
 <body>
-
-        <!----------NAV-BAR------------->
-        @extends('navbar-pronta.nav-bar');
+    <!----------NAV-BAR------------->
+    @extends('navbar-pronta.nav-bar');
 
     @section('conteudo')
     <main>
@@ -134,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 
     </main>
 
@@ -160,7 +158,7 @@
                 </ul>
             </nav>
         </div>
-        <small>IronWorks Copyright © 2010 </small>
+        <small>IronWorks Copyright © 2077 </small>
     </footer>
 </body>
 @endsection
@@ -181,11 +179,7 @@
 
 <a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Freepik - Flaticon</a>
 
-<a href="https://www.flaticon.com/br/icones-gratis/calendario" title="calendario ícones">Calendario ícones criados por Icongeek26 - Flaticon</a>
-
-
-
--->
+<a href="https://www.flaticon.com/br/icones-gratis/calendario" title="calendario ícones">Calendario ícones criados por Icongeek26 - Flaticon</a>-->
 
 
 </html>

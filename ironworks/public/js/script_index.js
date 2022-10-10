@@ -6,11 +6,10 @@ function toggleMenu() {
     const nav = document.getElementById('nav-item-box');
     nav.classList.toggle('menu-expanded')
 }
-
 btnMenu.addEventListener('click', toggleMenu);
 
-//-------Trecho que complementa a funcionalidade de PWA--------//
 
+//-------Trecho que faz a transição da nav-bar --------//
 $(function() {
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 100) {
