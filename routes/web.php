@@ -15,12 +15,9 @@ use App\Http\Controllers\ProfileController;
 */
 
 //Route::get('oq vai aparecer na URL' [Controller definido] , 'nome da função que está dentro do controller'])->name('nome que posso usar nos redirecionamentos')
-Route::get('/hft', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
                 // rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 
 
-route::get('/' , function(){
-    return view('telaUsuario.Usuario');
-});
