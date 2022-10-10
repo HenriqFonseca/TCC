@@ -24,13 +24,12 @@
     <script defer src="js/script_index.js"></script>
 
     <!-- PWA -->
-    essa porra não funciona, vai tomar no cu pwa do caralho, pistolei
     <title>IronWorks</title>
 </head>
 
 <body>
     <!----------NAV-BAR------------->
-    @extends('navbar-pronta.nav-bar');
+    @extends('navbar-pronta.nav-bar')
 
     @section('conteudo')
     <main>
