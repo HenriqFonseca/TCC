@@ -29,7 +29,7 @@
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
     <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
-    <link rel="manifest" href="{{ asset('/manifest.json') }}">
+    <link rel="manifest" href="/manifest.json">
 
     <title>IronWorks</title>
 </head>
