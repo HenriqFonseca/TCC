@@ -1,3 +1,5 @@
+<script defer src="js/nav-bar-js.js"></script>
+<link href="homecss/nav-bar-css.css" rel="stylesheet">
 <header>
     <!----------NAV-BAR------------->
     <nav class="nav-bar">

@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --btn-color: #ffd9a1a1;
+    --btn-large: #ffc297a1;
+    --black: #000000;
+    --gold: #C1A45F;
+    --scroll-effect-color: rgba(151, 151, 151, 0.158);
+    --footer-color: rgba(102, 102, 102, 0.541);
+    --gold-semitransparent: #c1a45fd7;
+    --gold-transparent: #fdf5d33a;
+}
