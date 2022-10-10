@@ -31,11 +31,11 @@
         <div id="nav-item-box">
             <ul class="nav-list">
                 <li class="item-box">
-                    <a class="nav-link active-item" href="">item
+                    <a class="nav-link active-item" href="">Item
                     </a>
                 </li>
-                <li class="item-box sub-menu-box">
-                    <a class="nav-link" href="">item
+                <li class="item-box">
+                    <a class="nav-link" href="">Item
 
                     </a>
                 </li>

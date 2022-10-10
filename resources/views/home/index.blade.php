@@ -13,17 +13,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet">
 
     <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+
     <!-- STYLES -->
     <link href="homecss/style.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
     <script defer src="js/script_index.js"></script>
-
-    <!-- PWA -->
     <title>IronWorks</title>
 </head>
 
@@ -72,14 +73,6 @@
                 <div class="btn-box">
                     <button class="btn-small">
                         <img src="img/dumbbell.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
-                </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/sportsman.png" alt="">
                     </button>
                     <div class="btn-caption">
                         <h3>Algum Texto</h3>
