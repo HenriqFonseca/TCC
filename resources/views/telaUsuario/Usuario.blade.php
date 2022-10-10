@@ -91,7 +91,8 @@
                     </ul>
                 </nav>
             </div>
-            <small>IronWorks Copyright © 2010 </small>
+            <small>IronWorks Copyright &copy; 2010 </small>
         </footer>
 </body>
+@endsection
 </html>
