@@ -14,3 +14,190 @@
     --gold-semitransparent: #c1a45fd7;
     --gold-transparent: #fdf5d33a;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ----HEADER STYLE---- */
+
+header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+}
+
+
+/* ----NAV BAR STYLE---- */
+
+.nav-bar {
+    height: 100%;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease-out;
+}
+
+#nav-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 3rem;
+}
+
+.nav-logo-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----NAV ITEMS STYLE---- */
+
+.item-box {
+    height: 100%;
+    width: 5rem;
+    transition: 0.15s ease-in-out;
+}
+
+.nav-link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.active-item::after {
+    content: " ";
+    height: 3px;
+    background-color: var(--gold);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* -------- LOGIN BUTTON STYLE -------- */
+
+.login-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #ffe19a77;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.15s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: var(--gold-semitransparent);
+    color: var(--black);
+}
+
+.login-button-scroll-effect {
+    color: var(--black);
+}
+
+
+/* ----NAV ITEMS HOVER EFFECT---- */
+
+.nav-link::after {
+    content: " ";
+    height: 3px;
+    background-color: var(--gold);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.item-box:hover {
+    background-color: var(--gold-transparent);
+}
+
+
+/*---- NAV SCROLL EFFECT ----*/
+
+.nav-scroll-effect {
+    background-color: var(--scroll-effect-color);
+    transition: 0.3s ease-in;
+    backdrop-filter: blur(10px);
+}
+
+.link-scroll-effect,
+.link-scroll-effect:hover {
+    color: var(--black);
+}
+
+
+/*--------BTN-MENU--------*/
+
+#btn-menu {
+    cursor: pointer;
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+#btn-menu>img {
+    width: 4rem;
+}
+
+
+/*--------HIDE/SHOW-NAV-ITEMS--------*/
+
+@media(max-width:860px) {
+    #nav-item-box {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 4rem;
+    }
+    .nav-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--black);
+    }
+    .item-box {
+        width: 100%;
+    }
+    #btn-menu {
+        display: block;
+    }
+}
+
+#nav-item-box.menu-expanded {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    height: max-content;
+}
