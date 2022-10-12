@@ -95,7 +95,7 @@
             </div>
             <div class="btn-row">
                 <div class="btn-box">
-                    <button class="btn-medium">
+                    <button class="btn-small">
                         <img src="img/chat.png" alt="">
                     </button>
                     <div class="btn-caption">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="btn-box">
-                    <button class="btn-medium">
+                    <button class="btn-small">
                         <img src="img/invoice.png" alt="">
                     </button>
                     <div class="btn-caption">
@@ -113,7 +113,7 @@
             </div>
             <div class="btn-row">
                 <div class="btn-box">
-                    <button class="btn-large">
+                    <button class="btn-small">
                         <img src="img/calendar.png" alt="">
                     </button>
                     <div class="btn-caption">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="btn-box">
-                    <button class="btn-large">
+                    <button class="btn-small">
                         <img src="img/note.png" alt="">
                     </button>
                     <div class="btn-caption">

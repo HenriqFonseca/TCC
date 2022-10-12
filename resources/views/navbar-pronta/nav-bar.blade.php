@@ -28,9 +28,9 @@
             </svg>
         </div>
         <button id="btn-menu">
-            <img src="img/outline_menu_white_48dp.png" alt="">
+            <img class="btn-img" src="img/btn-menu-white.png" alt="">
         </button>
-        <div id="nav-item-box">
+        <div class="nav-item-box">
             <ul class="nav-list">
                 <li class="item-box">
                     <a class="nav-link active-item" href="">Item
@@ -48,5 +48,17 @@
 
         </div>
     </nav>
+    <div id="nav-menu">
+        <div class="profile-box"><img  src="img/sportsman.png" alt="">
+    Perfil</div>
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
 </header>
 @yield('conteudo')

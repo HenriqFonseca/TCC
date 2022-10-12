@@ -6,7 +6,6 @@
 
 :root {
     --btn-color: #ffd9a1a1;
-    --btn-large: #ffc297a1;
     --black: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
@@ -39,10 +38,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in-out;
 }
 
-#nav-item-box {
+.nav-item-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,7 +147,6 @@ header {
 
 .nav-scroll-effect {
     background-color: var(--scroll-effect-color);
-    transition: 0.3s ease-in;
     backdrop-filter: blur(10px);
 }
 
@@ -175,29 +173,69 @@ header {
 /*--------HIDE/SHOW-NAV-ITEMS--------*/
 
 @media(max-width:860px) {
-    #nav-item-box {
-        width: 100%;
+    .nav-item-box {
         display: none;
-        position: absolute;
-        top: 4rem;
-    }
-    .nav-list {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--black);
-    }
-    .item-box {
-        width: 100%;
+        /* oculta os itens da nav-bar */
     }
     #btn-menu {
         display: block;
+        /* exibe o botão do menu */
     }
 }
 
-#nav-item-box.menu-expanded {
+#nav-menu {
+    display: none;
+    position: absolute;
+    gap: 4rem;
+    right: 0;
+    background-color: #000000;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 0 0 0 1.5rem;
+    transition: ease-in-out 0.3s;
+}
+
+#nav-menu.menu-expanded {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nav-menu.nav-scroll-effect {
+    background-color: /* --footer-color: rgba(102, 102, 102, 0.541);
+    --gold-semitransparent: #c1a45fd7;
+    --gold-transparent: #fdf5d33a; */
+    var(--footer-color);
+    transition: 0.3s ease-in;
+    backdrop-filter: blur(10px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 20px 30px;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--gold-transparent);
+    border-radius: 1rem;
+}
+
+.profile-box {
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
-    height: max-content;
+    align-items: center;
+    margin-top: 2rem;
+    width: 150px;
+    background-color: #00000085;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.profile-box>img {
+    width: 100%;
 }
