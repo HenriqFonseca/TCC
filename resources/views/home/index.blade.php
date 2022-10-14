@@ -159,7 +159,7 @@
         <small>IronWorks Copyright © 2077 </small>
     </footer>
 
-    {{-- Script Service Woeker --}}
+    {{-- Script Service Worker --}}
     <script src="{{ asset('/sw.js') }}"></script>
     <script>
         if (!navigator.serviceWorker.controller) {
