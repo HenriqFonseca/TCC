@@ -186,7 +186,6 @@ header {
 #nav-menu {
     display: none;
     position: absolute;
-    gap: 4rem;
     right: 0;
     background-color: #000000;
     width: 80vw;
@@ -210,17 +209,16 @@ header {
     backdrop-filter: blur(10px);
 }
 
-.grid-container {
+.menu-grid-container {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    width: 100%;
-    gap: 20px 30px;
-    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .grid-item {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
     background-color: var(--gold-transparent);
     border-radius: 1rem;
 }
@@ -229,7 +227,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 150px;
     background-color: #00000085;
     padding: 1rem;

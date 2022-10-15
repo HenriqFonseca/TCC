@@ -19,6 +19,7 @@ body {
     background-image: url('/img/background2.png'), url('/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -21,7 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- STYLES -->
-    <link href="homecss/style.css" rel="stylesheet">
+    <link href="homecss/index.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
     <script defer src="js/script_index.js"></script>
@@ -53,13 +53,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/8225.jpg" alt="Los Angeles" class="d-block w-100">
+                    <img src="img/8225.jpg" alt="" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/897.jpg" alt="Chicago" class="d-block w-100">
+                    <img src="img/897.jpg" alt="" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/lulaxbolso.jpg" alt="New York" class="d-block w-100">
+                    <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
                 </div>
             </div>
 
@@ -74,8 +74,7 @@
         <!--Carousrel end-->
 
 
-        <div class="btn-container">
-            <div class="btn-row">
+        <div class="btn-grid-container">
                 <div class="btn-box">
                     <button class="btn-small">
                         <img src="img/dumbbell.png" alt="">
@@ -92,8 +91,6 @@
                         <h3>Algum Texto</h3>
                     </div>
                 </div>
-            </div>
-            <div class="btn-row">
                 <div class="btn-box">
                     <button class="btn-small">
                         <img src="img/chat.png" alt="">
@@ -110,8 +107,6 @@
                         <h3>Algum Texto</h3>
                     </div>
                 </div>
-            </div>
-            <div class="btn-row">
                 <div class="btn-box">
                     <button class="btn-small">
                         <img src="img/calendar.png" alt="">
@@ -128,7 +123,6 @@
                         <h3>Algum Texto</h3>
                     </div>
                 </div>
-            </div>
         </div>
         <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 

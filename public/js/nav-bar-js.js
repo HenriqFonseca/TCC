@@ -13,19 +13,19 @@ btnMenu.addEventListener('click', toggleMenu);
 $(function() {
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 150) {
-            $(".nav-bar").addClass("nav-scroll-effect");
-            $("#nav-menu").addClass("nav-scroll-effect");
-            $(".nav-link").addClass("link-scroll-effect");
-            $(".login-button").addClass("login-button-scroll-effect");
-            var btnImg = document.querySelector(".btn-img");
-            btnImg.setAttribute('src', 'img/btn-menu-black.png');
+            $(".nav-bar").addClass("nav-scroll-effect"); // 1 Deixa a nav-bar transparente ao rolar a tela //
+            $("#nav-menu").addClass("nav-scroll-effect"); // 2 Muda a cor do menu expandido * visivel apenas em telas pequenas * //
+            $(".nav-link").addClass("link-scroll-effect"); // 3 Muda a cor do texto dos links de navegação //
+            $(".login-button").addClass("login-button-scroll-effect"); // 4 muda a cor do texto do botão de login //
+            var btnMenuImg = document.querySelector(".btn-menu-img"); // 5 Muda o icone que expande o menu da cor branca para preta //
+            btnMenuImg.setAttribute('src', 'img/btn-menu-black.png');
         } else {
-            $("#nav-menu").removeClass("nav-scroll-effect");
-            $(".nav-bar").removeClass("nav-scroll-effect");
-            $(".nav-link").removeClass("link-scroll-effect");
-            $(".login-button").removeClass("login-button-scroll-effect");
-            var btnImg = document.querySelector(".btn-img");
-            btnImg.setAttribute('src', 'img/btn-menu-white.png');
+            $("#nav-menu").removeClass("nav-scroll-effect"); // 1 //
+            $(".nav-bar").removeClass("nav-scroll-effect"); // 2 //
+            $(".nav-link").removeClass("link-scroll-effect"); // 3 //
+            $(".login-button").removeClass("login-button-scroll-effect"); // 4 //
+            var btnMenuImg = document.querySelector(".btn-menu-img"); // 5 Muda o icone que expande o menu da cor branca para preta //
+            btnMenuImg.setAttribute('src', 'img/btn-menu-white.png');
         }
     });
 });

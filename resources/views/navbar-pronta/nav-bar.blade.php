@@ -28,7 +28,7 @@
             </svg>
         </div>
         <button id="btn-menu">
-            <img class="btn-img" src="img/btn-menu-white.png" alt="">
+            <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
         </button>
         <div class="nav-item-box">
             <ul class="nav-list">
@@ -51,13 +51,13 @@
     <div id="nav-menu">
         <div class="profile-box"><img  src="img/sportsman.png" alt="">
     Perfil</div>
-        <div class="grid-container">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+        <div class="menu-grid-container">
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
         </div>
     </div>
 </header>

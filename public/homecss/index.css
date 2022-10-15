@@ -30,6 +30,11 @@
         align-items: center;
         color: rgb(255, 255, 255);
     }
+    /* RESET BOOTSTRAP CSS */
+    
+    .w-100 {
+        min-height: 180px !important;
+    }
     /* AREA DE TESTES */
     
     main {
@@ -41,25 +46,17 @@
         gap: 3rem;
     }
     
-    .btn-container {
-        width: 50%;
-        min-width: 420px;
-        gap: 2.5rem;
+    .btn-grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1rem;
+        gap: 1rem;
         color: var(--black);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .btn-row {
-        width: 100%;
-        gap: 2rem;
-        display: flex;
     }
     
     .btn-box {
         width: 100%;
-        color: var(--black);
+        max-width: 400px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -113,6 +110,4 @@
         display: flex;
         justify-content: space-around;
     }
-    
-    @media(max-width:320px) {}
     /* AREA DE TESTES */
