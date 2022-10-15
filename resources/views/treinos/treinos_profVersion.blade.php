@@ -78,7 +78,7 @@
     </div>
     <div class="perfil">
         <img src="#" alt="#">
-        <h2>usuario</h2>
+        <h2>usuariohigfiheqwf</h2>
     </div>
 </div>
         
