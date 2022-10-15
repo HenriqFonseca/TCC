@@ -52,12 +52,12 @@
         <div class="profile-box"><img  src="img/sportsman.png" alt="">
     Perfil</div>
         <div class="menu-grid-container">
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
-            <div class="grid-item"><img style="width: 100%;" src="img/sportsman.png" alt=""></div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
         </div>
     </div>
 </header>
