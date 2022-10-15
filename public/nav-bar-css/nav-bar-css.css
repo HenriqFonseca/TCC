@@ -201,16 +201,14 @@ header {
 }
 
 #nav-menu.nav-scroll-effect {
-    background-color: /* --footer-color: rgba(102, 102, 102, 0.541);
-    --gold-semitransparent: #c1a45fd7;
-    --gold-transparent: #fdf5d33a; */
-    var(--footer-color);
+    background-color: var(--footer-color);
     transition: 0.3s ease-in;
     backdrop-filter: blur(10px);
 }
 
 .menu-grid-container {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: auto auto;
     gap: 1rem;
@@ -218,9 +216,16 @@ header {
 }
 
 .grid-item {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--gold-transparent);
     border-radius: 1rem;
+}
+
+.grid-item>img {
+    width: 70px;
 }
 
 .profile-box {
@@ -230,7 +235,7 @@ header {
     margin-top: 1rem;
     width: 150px;
     background-color: #00000085;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
 }
 
