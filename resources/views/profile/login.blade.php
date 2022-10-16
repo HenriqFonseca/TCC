@@ -15,7 +15,7 @@
             <div class="cadastro">
                 <form class="form-signin">
                     <h2 class="form-signin-heading">Insira seu cadastro</h2>
-                    <input type="text" class="input" name="username" placeholder="CPF" required="" autofocus="" />
+                    <input type="text" class="input" name="username" placeholder="CPF" required="" />
                     <br>
                     <input type="password" class="input" name="password" placeholder="Senha" required="" />
                     <label class="checkbox">
@@ -30,7 +30,7 @@
       </div>
       <a href="{{ route('home.index') }}"class="logo-box">
         <img class="img" src="img/logo-vertical.png" alt="">
-      <a>
+</a>
         </div><div class="drops">
         <div class="drop drop-1"></div>
         <div class="drop drop-2"></div>

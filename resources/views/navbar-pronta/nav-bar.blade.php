@@ -49,15 +49,15 @@
         </div>
     </nav>
     <div id="nav-menu">
-        <div class="profile-box"><img  src="img/sportsman.png" alt="">
-    Perfil</div>
+    <a class="profile-link" href="{{ route('profile.login') }} "><div class="profile-box"><img  src="img/sportsman.png" alt="">
+    Perfil</div></a>
         <div class="menu-grid-container">
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
-            <div class="grid-item"><img src="img/sportsman.png" alt="">Texto</div>
+            <div class="grid-item">Treinos</div>
+            <div class="grid-item">Texto</div>
+            <div class="grid-item">Texto</div>
+            <div class="grid-item">Texto</div>
+            <div class="grid-item">Texto</div>
+            <div class="grid-item">Texto</div>
         </div>
     </div>
 </header>
