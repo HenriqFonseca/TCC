@@ -40,16 +40,11 @@ body {
     display: inline-block;
     border-radius: 8px;
     font-size: 1.1rem;
-    font-family: 'Fjalla One', sans-serif;
     transition: 0.15s ease-in-out;
 }
 
 .login-button:hover {
     background-color: var(--gold-semitransparent);
-    color: var(--black);
-}
-
-.login-button-scroll-effect {
     color: var(--black);
 }
 
@@ -72,7 +67,10 @@ a:visited {
     backdrop-filter: blur(8px);
     width: 3rem;
 }
+
+
 /* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
+
 @media(max-width:1024px) {
     body {
         background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
@@ -107,28 +105,28 @@ a:visited {
 
 .drop-1 {
     top: 30px;
-    left: -60px;
+    left: -50px;
 }
 
 .drop-2 {
     height: 8rem;
     width: 8rem;
     top: -50px;
-    left: 410px;
+    left: 400px;
 }
 
 .drop-3 {
     z-index: -1;
     height: 7rem;
     width: 7rem;
-    top: 310px;
-    left: 350px;
+    top: 300px;
+    left: 340px;
 }
 
 .drop-4 {
     height: 6rem;
     width: 6rem;
-    top: 350px;
+    top: 340px;
     left: 70px;
 }
 
@@ -169,11 +167,11 @@ a:visited {
 }
 
 .form-signin-heading,
-.checkbox {
+.login {
     margin-bottom: 30px;
 }
 
-.checkbox {
+.login {
     display: flex;
     flex-direction: column;
     align-items: center;
