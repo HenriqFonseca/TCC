@@ -182,9 +182,9 @@ class BinaryFileResponse extends Response
      */
     public function prepare(Request $request): static
     {
-        parent::prepare($request);
-
         if ($this->isInformational() || $this->isEmpty()) {
+            parent::prepare($request);
+
             $this->maxlen = 0;
 
             return $this;
@@ -193,6 +193,8 @@ class BinaryFileResponse extends Response
         if (!$this->headers->has('Content-Type')) {
             $this->headers->set('Content-Type', $this->file->getMimeType() ?: 'application/octet-stream');
         }
+
+        parent::prepare($request);
 
         $this->offset = 0;
         $this->maxlen = -1;
@@ -222,7 +224,7 @@ class BinaryFileResponse extends Response
                 $parts = HeaderUtils::split($request->headers->get('X-Accel-Mapping', ''), ',=');
                 foreach ($parts as $part) {
                     [$pathPrefix, $location] = $part;
-                    if (substr($path, 0, \strlen($pathPrefix)) === $pathPrefix) {
+                    if (str_starts_with($path, $pathPrefix)) {
                         $path = $location.substr($path, \strlen($pathPrefix));
                         // Only set X-Accel-Redirect header if a valid URI can be produced
                         // as nginx does not serve arbitrary file paths.
