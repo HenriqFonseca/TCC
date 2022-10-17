@@ -69,21 +69,6 @@ a:visited {
 }
 
 
-/* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
-
-@media(max-width:1024px) {
-    body {
-        background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
-    }
-}
-
-@media(max-width:860px) {
-    body {
-        background-image: url('/img/background2phone.png'), url('/img/background.jpg');
-    }
-}
-
-
 /* CAIXAS ANIMADAS */
 
 .drops {
@@ -98,12 +83,12 @@ a:visited {
     background-color: var(--drop-color);
     filter: blur(1px);
     backdrop-filter: blur(5px);
-    height: 6rem;
-    width: 6rem;
     transition: ease-in-out 0.5s;
 }
 
 .drop-1 {
+    height: 6rem;
+    width: 6rem;
     top: 30px;
     left: -50px;
 }
@@ -168,6 +153,7 @@ a:visited {
 
 .form-signin-heading,
 .login {
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -198,7 +184,80 @@ a:visited {
     transition: ease-in-out 0.5s;
 }
 
-.container:hover .drop {
+
+/* .container:hover .drop {
     transition: ease-in-out 0.5s;
+    margin-top: 1rem;
+} */
+
+
+/* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
+
+@media(max-width:1024px) {
+    body {
+        background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
+    }
+}
+
+@media(max-width:670px) {
+    body {
+        background-image: url('/img/background2phone.png'), url('/img/background.jpg');
+    }
+    .wrapper {
+        width: 17rem;
+    }
+    .cadastro {
+        padding: 0.5rem;
+    }
+    .login-button {
+        padding: 10px 20px;
+    }
+    .logo-box {
+        width: 1rem;
+    }
+    .img {
+        width: 100%;
+    }
+    .drop-1 {
+        height: 3rem;
+        width: 3rem;
+        top: 10px;
+        left: -40px;
+    }
+    .drop-2 {
+        height: 4rem;
+        width: 4rem;
+        top: -30px;
+        left: 250px;
+    }
+    .drop-3 {
+        z-index: -1;
+        height: 4rem;
+        width: 4rem;
+        top: 250px;
+        left: 220px;
+    }
+    .drop-4 {
+        height: 3.5rem;
+        width: 3.5rem;
+        top: 260px;
+        left: 50px;
+    }
+    .drop-5 {
+        z-index: -1;
+        height: 4rem;
+        width: 4rem;
+        top: 160px;
+        left: -30px;
+    }
+}
+
+@media(max-width:520px) {
+    body {
+        background-image: url('/img/background.jpg');
+    }
+}
+
+.container:focus-within .drop {
     margin-top: 1rem;
 }
