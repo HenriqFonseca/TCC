@@ -1,0 +1,17 @@
+{
+    "name": "testezin Laravel",
+    "short_name": "LPT",
+    "start_url": "/index.php",
+    "background_color": "#6777ef",
+    "description": "Teste PWA LARAVEL",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "/img/favicon.png",
+            "sizes": "500x500",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
