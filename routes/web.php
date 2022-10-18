@@ -14,7 +14,7 @@ use App\Http\Controllers\ProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+    //Rota para Home
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
                 // rota para a view login

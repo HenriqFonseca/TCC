@@ -1,15 +1,15 @@
 {
-    "name": "testezin Laravel",
+    "name": "Laravel Package Tutorial",
     "short_name": "LPT",
     "start_url": "/index.php",
     "background_color": "#6777ef",
-    "description": "Teste PWA LARAVEL",
+    "description": "Tutorial of Laravel Package",
     "display": "fullscreen",
     "theme_color": "#6777ef",
     "icons": [
         {
-            "src": "/img/favicon.png",
-            "sizes": "500x500",
+            "src": "/img/logo.png",
+            "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
         }
