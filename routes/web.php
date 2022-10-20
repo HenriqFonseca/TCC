@@ -15,10 +15,13 @@ use App\Http\Controllers\ProfileController;
 |
 */
     //Rota para Home
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/ew3', [HomeController::class, 'index'])->name('home.index');
 
                 // rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 
 
 
+Route::get('/', function () {
+    return view('treinos.treinos');
+});
