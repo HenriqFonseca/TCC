@@ -14,8 +14,14 @@ class AlunoAccess
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
+
+    //===================== VEFICAÇÃO DE ALUNO =====================//
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if(auth()->check() AND auth()->user()->aluno){
+            return $next($request);
+        }
+
+        dd('vc é professor corno');
     }
 }
