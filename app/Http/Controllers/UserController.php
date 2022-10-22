@@ -32,4 +32,12 @@ class UserController extends Controller
             dd('não logou');
         }
     }
+
+    //===================== LOGOUT USUARIO =====================//
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('home.index');
+    }
 }
