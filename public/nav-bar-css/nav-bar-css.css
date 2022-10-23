@@ -161,7 +161,6 @@ header {
 
 #btn-menu {
     cursor: pointer;
-    display: none;
     border: none;
     background-color: transparent;
     margin-right: 1rem;
@@ -201,6 +200,7 @@ header {
     background-color: #000000;
     width: 80vw;
     height: 0vh;
+    max-width: 1000px;
     overflow: hidden;
     border-radius: 0 0 0 1.5rem;
     transition: ease-in-out 0.3s;

@@ -27,9 +27,7 @@
 
             </svg>
         </div>
-        <button id="btn-menu">
-            <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
-        </button>
+       
         <div class="nav-item-box">
             <ul class="nav-list">
                 <li class="item-box">
@@ -42,15 +40,17 @@
                     </a>
                 </li>
             </ul>
-            <a href="{{ route('profile.login') }} "><button class="login-button">
-                    Fazer Login
-                </button></a>
 
+ <button id="btn-menu">
+            <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
+        </button>
         </div>
     </nav>
     <div id="nav-menu">
     <a class="profile-link" href="{{ route('profile.login') }} "><div class="profile-box"><img  src="img/sportsman.png" alt="">
-    Perfil</div></a>
+    Perfil</div></a>            <a href="{{ route('profile.login') }} "><button class="login-button">
+                    Fazer Login
+                </button></a>
         <div class="menu-grid-container">
             <div class="grid-item">Treinos</div>
             <div class="grid-item">Texto</div>
