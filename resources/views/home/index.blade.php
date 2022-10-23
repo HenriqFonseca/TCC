@@ -28,8 +28,8 @@
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
-    <link rel="apple-touch-icon" href="{{ asset('/img/logo.png') }}">
-    <link rel="manifest" href="{{ url('manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 
     <title>IronWorks</title>
 </head>
