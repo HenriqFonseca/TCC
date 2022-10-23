@@ -25,7 +25,6 @@
 
     <!-- SCRIPTS -->
     <script defer src="js/script_index.js"></script>
-    <script src="{{ secure_asset('sw.js')  }}"></script>
     
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
@@ -155,7 +154,7 @@
     </footer>
 
     {{-- Script Service Worker --}}
-    <script src="{{ secure_asset('/sw.js') }}"></script>
+    <script src="{{ secure_asset('sw.js') }}"></script>
     <script>
         if (!navigator.serviceWorker.controller) {
             navigator.serviceWorker.register("sw.js").then(function (reg) {
