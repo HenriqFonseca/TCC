@@ -25,7 +25,7 @@
 
     <!-- SCRIPTS -->
     <script defer src="js/script_index.js"></script>
-    <script src="sw.js"></script>
+    <script src="{{ secure_asset('sw.js')  }}"></script>
     
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
