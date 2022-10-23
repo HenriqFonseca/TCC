@@ -1,7 +1,8 @@
 {
     "name": "Laravel Package Tutorial",
     "short_name": "LPT",
-    "start_url": "/index.php",
+    "start_url": "https://ironworkstcc.herokuapp.com/",
+    "scope": "/",
     "background_color": "#6777ef",
     "description": "Tutorial of Laravel Package",
     "display": "fullscreen",
