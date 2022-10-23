@@ -62,6 +62,7 @@
                     <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
                 </div>
             </div>
+            
 
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
