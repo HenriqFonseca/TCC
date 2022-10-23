@@ -154,7 +154,7 @@
     </footer>
 
     {{-- Script Service Worker --}}
-    <script src="{{ asset('/sw.js') }}"></script>
+    <script src="{{ secure_asset('/sw.js') }}"></script>
     <script>
         if('serviceWorker' in navigator){
           // Register service worker
