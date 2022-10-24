@@ -49,6 +49,10 @@ header {
     gap: 3rem;
 }
 
+.nav-logo-link {
+    height: 100%;
+}
+
 .nav-logo-box {
     height: 100%;
     display: flex;
@@ -174,13 +178,9 @@ header {
 /*--------HIDE/SHOW-NAV-ITEMS--------*/
 
 @media(max-width:1024px) {
-    .nav-item-box {
+    .nav-list {
         /* oculta os itens da nav-bar */
         display: none;
-    }
-    #btn-menu {
-        /* exibe o botão do menu */
-        display: block;
     }
     .nav-bar {
         /* muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores */
@@ -226,7 +226,7 @@ header {
     padding: 1rem;
 }
 
-.grid-item {
+.grid-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,25 +239,16 @@ header {
     width: 70px;
 }
 
-.profile-link {
-    display: flex;
-    justify-content: center;
-}
-
-.profile-link:hover {
-    cursor: pointer;
-    color: #ffff;
-}
-
 .profile-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
     width: 100%;
+    gap: 1rem;
     max-width: 140px;
     background-color: #00000085;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
 }
 

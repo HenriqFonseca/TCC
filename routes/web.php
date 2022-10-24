@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TreinosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,5 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 
 
+Route::get('/treinos', [TreinosController::class, 'treinos'])->name('treinos.treinos');
 
-Route::get('/home', function () {
-    return view('treinos.treinos');
-});
