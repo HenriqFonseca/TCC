@@ -233,6 +233,12 @@ header {
     flex-direction: column;
     background-color: var(--gold-transparent);
     border-radius: 1rem;
+    transition: 0.5s ease-in-out
+}
+
+.grid-link:hover {
+    color: white;
+    border-radius: 0rem 2rem 0rem 2rem;
 }
 
 .grid-item>img {

@@ -20,16 +20,18 @@
     <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+
     <!-- STYLES -->
     <link href="homecss/index.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
     <script defer src="js/script_index.js"></script>
-    
-    <!-- PWA  -->
-    <meta name="theme-color" content="#6777ef"/>
-    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+
+
 
     <title>IronWorks</title>
 </head>
@@ -62,7 +64,7 @@
                     <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
                 </div>
             </div>
-            
+
 
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -76,54 +78,54 @@
 
 
         <div class="btn-grid-container">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/dumbbell.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/dumbbell.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/location.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/location.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/chat.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/chat.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/invoice.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/invoice.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/calendar.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/calendar.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/note.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-small">
+                    <img src="img/note.png" alt="">
+                </button>
+                <div class="btn-caption">
+                    <h3>Algum Texto</h3>
                 </div>
+            </div>
         </div>
         <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 
@@ -158,7 +160,7 @@
     <script src="{{ secure_asset('sw.js') }}"></script>
     <script>
         if (!navigator.serviceWorker.controller) {
-            navigator.serviceWorker.register("sw.js").then(function (reg) {
+            navigator.serviceWorker.register("sw.js").then(function(reg) {
                 console.log("Service worker has been registered for scope: " + reg.scope);
             });
         }

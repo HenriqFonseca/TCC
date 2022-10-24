@@ -15,6 +15,7 @@
     --gold-transparent: #fdf5d33a;
 }
 
+<<<<<<< HEAD
 body{
     /* background-image: url('/img/background.jpg'); */
 
@@ -28,20 +29,29 @@ main-container{
 
 nav-bar2{
 
+=======
+body {
+    background-image: url('/img/background.jpg');
+>>>>>>> 6d9214fe21599f6f8b0a970a583a7e54a1336f3a
 }
 
-usuario{
+main-container {}
+
+nav-bar2 {}
+
+usuario {}
+
+container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    transition: ease-in-out 0.2s;
 }
-container{
-        width: 100%;
-        max-width: 400px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 0.8rem;
-        transition: ease-in-out 0.2s;
-}
-container:hover{
+
+container:hover {
     background: linear-gradient(130deg, rgba(255, 218, 161, 0)0%, 80%, rgba(213, 255, 235, 0.7) 100%);
     transform: scale(102%);
 }
