@@ -13,23 +13,32 @@
   <div class="container">
     <div class="wrapper">
       <div class="cadastro">
-        <form class="form-signin">
+        <form class="form-signin" method="POST" action="login">
+          @csrf
           <h2 class="form-signin-heading">Insira seu cadastro</h2>
-          <input type="text" class="input" name="username" placeholder="CPF" required="" />
+          <input type="text" class="input" name="cpf" autocomplete="off" maxlength="14"  placeholder="CPF"/>
           <br>
-          <input type="password" class="input" name="password" placeholder="Senha" required="" />
+          <input type="password" class="input" name="password" placeholder="Senha"/>
           <div class="login">
             <br>
             <button class="login-button">
               Fazer Login
             </button>
             <br>
-            <ul class="nav-item-box">
-              <a class="forgot-password" href="">Esqueci minha senha
-              </a>
           </div>
-
+          
         </form>
+        <ul class="nav-item-box">
+          <a class="forgot-password" href="">Esqueci minha senha
+          </a>
+        </ul>
+        @if ($errors->any())
+                  <div class="alert alert-danger">
+                          @foreach ($errors->all() as $error)
+                              <p>{{ $error }}</p>
+                          @endforeach
+                  </div>
+              @endif
 
       </div>
       <a href="{{ route('home.index') }}" class="logo-box">
