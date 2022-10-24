@@ -44,13 +44,13 @@
         <div class="nav-bar2">
             <ul>
                 <div class="segunda">
-                    <li></li>
+                    <li>segunda</li>
                 </div>
                 <div class="terca">
-                    <li></li>
+                    <li>terça</li>
                 </div>
                 <div class="quarta">
-                    <li></li>
+                    <li>quarta</li>
                 </div>
                 <div class="quinta">
                     <li></li>
