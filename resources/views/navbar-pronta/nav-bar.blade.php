@@ -55,7 +55,7 @@
             <a href="{{ route('treinos.treinos') }}" class="grid-link">
                 Treinos
             </a>
-            <a href="" class="grid-link">
+            <a href="https://www.smartfit.com.br/academias" class="grid-link">
                 Planos
             </a>
             <a href="" class="grid-link">

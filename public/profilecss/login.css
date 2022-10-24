@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 95vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -201,7 +201,8 @@ a:visited {
     transition: ease-in-out 0.5s;
 }
 
-+/* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
++
+/* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
 
 @media(max-width:1024px) {
     body {
@@ -270,4 +271,3 @@ a:visited {
 
 .container:focus-within .drop {
     margin-top: 1rem;
-
