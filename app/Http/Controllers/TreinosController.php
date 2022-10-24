@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TreinosController extends Controller
 {
     public function treinos(){
-        return view('treinos.treinos');
+        return view('treinos.treinoprofessor');
                 
     }
 }
