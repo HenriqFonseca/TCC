@@ -99,21 +99,6 @@ main {
     object-fit: contain;
 }
 
-footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 1rem 1rem 0 0;
-    flex-direction: column;
-    background-color: var(--footer-color);
-    backdrop-filter: blur(10px);
-}
-
-.nav-footer {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
 
 
 /* AREA DE TESTES */
