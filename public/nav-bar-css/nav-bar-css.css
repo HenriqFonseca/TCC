@@ -160,11 +160,19 @@ header {
     color: var(--black);
 }
 
+/*--------NAV-DROP--------*/
+.nav-drop{
+    color: white;
+    list-style-type:none;
+}
+
+
 
 /*--------BTN-MENU--------*/
 
 #btn-menu {
     cursor: pointer;
+    display: none;
     border: none;
     background-color: transparent;
     margin-right: 1rem;
@@ -181,6 +189,9 @@ header {
     .nav-list {
         /* oculta os itens da nav-bar */
         display: none;
+    }
+    #btn-menu{
+display: block;
     }
     .nav-bar {
         /* muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores */
