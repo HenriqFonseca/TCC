@@ -1,4 +1,4 @@
-<script defer src="js/nav-bar-js.js"></script>
+<script defer src="js/nav-bar.js"></script>
 <link href="nav-bar-css/nav-bar-css.css" rel="stylesheet">
 <header>
     <!----------NAV-BAR------------->
@@ -29,25 +29,18 @@
         <div class="nav-item-box">
             <ul class="nav-list">
                 <li class="item-box">
-                    <a class="nav-link active-item" href="">Item
+                    <a class="nav-link" href="">Login
                     </a>
                     <ul class="drop-down">
-                        <li> <a class="nav-link" href="#">teste</a></li>
-                        <li> <a class="nav-link" href="#">teste</a></li>
-                        <li> <a class="nav-link" href="#">teste</a></li>
-                        <li> <a class="nav-link" href="#">teste</a></li>
-                        <li> <a class="nav-link" href="#">teste</a></li>
-                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="{{ route('treinos.treinos') }}">Treinos</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="#">Academias</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="#">Sair</a></li>
                     </ul>
                 </li>
             </ul>
-            <!-- <li class="item-box">
-                    <a class="nav-link" href="">Item
-
-                    </a>
-                </li> -->
-
-
             <button id="btn-menu">
                 <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
             </button>
@@ -60,7 +53,6 @@
                 </button></a>
         </div>
         <div class="menu-grid-container">
-            <!--{{ route('treinos.treinos') }} -->
             <a href="{{ route('treinos.treinos') }}" class="grid-link">
                 Treinos
             </a>

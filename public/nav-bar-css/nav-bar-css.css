@@ -29,6 +29,9 @@ li {
     --gold-transparent: #fdf5d33a;
 }
 
+
+/* ---IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE */
+
 img {
     -webkit-user-drag: none;
 }
@@ -98,23 +101,13 @@ header {
 .nav-link {
     height: 100%;
     display: flex;
+    padding: 5px;
     justify-content: center;
     align-items: center;
-    color: red;
-    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
     position: relative;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-}
-
-.active-item::after {
-    content: " ";
-    height: 3px;
-    background-color: var(--gold);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 
@@ -149,11 +142,13 @@ header {
 
 .nav-link::after {
     content: " ";
+    width: 0;
     height: 3px;
     background-color: var(--gold);
     position: absolute;
     left: 0;
     bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -164,8 +159,27 @@ header {
     background-color: var(--gold-transparent);
 }
 
+
+/*--------NAV-DROP--------*/
+
+.drop-down {
+    height: 0;
+    width: 10rem;
+    overflow: hidden;
+    background-color: var(--black);
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 .item-box:hover>.drop-down {
+    height: 14rem;
     display: flex;
+}
+
+.drop-li {
+    width: 100%;
 }
 
 
@@ -179,17 +193,6 @@ header {
 .link-scroll-effect,
 .link-scroll-effect:hover {
     color: var(--black);
-}
-
-
-/*--------NAV-DROP--------*/
-
-.nav-drop {
-    color: white;
-}
-
-.drop-down {
-    display: none;
 }
 
 
