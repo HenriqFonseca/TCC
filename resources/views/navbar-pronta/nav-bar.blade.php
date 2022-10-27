@@ -31,27 +31,22 @@
                 <li class="item-box">
                     <a class="nav-link active-item" href="">Item
                     </a>
-                </li>
-                <li class="item-box">
-                    <a class="nav-link" href="">Item
-
-                    </a>
-                </li>
-                <li  class="item-box">
-                    <ul class="nav-drop" >
-                        <li>teste
-                            <ul class="drop-down" >
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                                <li> <a class="nav-link" href="#">teste</a></li>
-                            </ul>
-                        </li>
+                    <ul class="drop-down">
+                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li> <a class="nav-link" href="#">teste</a></li>
+                        <li> <a class="nav-link" href="#">teste</a></li>
                     </ul>
                 </li>
             </ul>
+            <!-- <li class="item-box">
+                    <a class="nav-link" href="">Item
+
+                    </a>
+                </li> -->
+
 
             <button id="btn-menu">
                 <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
@@ -90,17 +85,23 @@
 </header>
 @yield('conteudo')
 <footer>
-        <div class="nav-footer">
-            <nav>
-                <h2>Entre em contato conosco!porra
-                </h2>
-                <ul class="footer-list">
+    <div class="nav-footer">
+        <nav>
+            <h2>Entre em contato conosco!porra
+            </h2>
+            <ul class="footer-list">
 
-                    <li><a class="footer-link" href="#"> <div class="icon"></div> Instagram</a></li>
-                    <li><a class="footer-link" href="#"> <div class="icon"></div> Facebook</a></li>
-                    <li><a class="footer-link" href="#"> <div class="icon"></div> Whatsapp</a></li>
-</ul>
-            </nav>
-        </div>
-        <small>IronWorks Copyright © 2077 </small>
-    </footer>
+                <li><a class="footer-link" href="#">
+                        <div class="icon"></div> Instagram
+                    </a></li>
+                <li><a class="footer-link" href="#">
+                        <div class="icon"></div> Facebook
+                    </a></li>
+                <li><a class="footer-link" href="#">
+                        <div class="icon"></div> Whatsapp
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+    <small>IronWorks Copyright © 2077 </small>
+</footer>

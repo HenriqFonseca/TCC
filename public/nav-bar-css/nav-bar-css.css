@@ -1,8 +1,23 @@
+/* ---RESET DE ESTILO GLOBAL--- */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
+/* ---RESET DE ESTILO DAS LISTAS--- */
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* ---VARIAVEIS--- */
 
 :root {
     --btn-color: #ffd9a1a1;
@@ -12,6 +27,10 @@
     --footer-color: rgba(102, 102, 102, 0.541);
     --gold-semitransparent: #c1a45fd7;
     --gold-transparent: #fdf5d33a;
+}
+
+img {
+    -webkit-user-drag: none;
 }
 
 a {
@@ -62,12 +81,9 @@ header {
 }
 
 .nav-list {
-    list-style: none;
     display: flex;
     align-items: center;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -84,7 +100,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: red;
+    /* color: rgb(255, 255, 255); */
     position: relative;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -147,6 +164,10 @@ header {
     background-color: var(--gold-transparent);
 }
 
+.item-box:hover>.drop-down {
+    display: flex;
+}
+
 
 /*---- NAV SCROLL EFFECT ----*/
 
@@ -160,16 +181,16 @@ header {
     color: var(--black);
 }
 
+
 /*--------NAV-DROP--------*/
-.nav-drop{
+
+.nav-drop {
     color: white;
-    list-style-type:none;
-}
-.drop-down{
-    list-style-type:none;
-    display: none;
 }
 
+.drop-down {
+    display: none;
+}
 
 
 /*--------BTN-MENU--------*/
@@ -194,8 +215,8 @@ header {
         /* oculta os itens da nav-bar */
         display: none;
     }
-    #btn-menu{
-display: block;
+    #btn-menu {
+        display: block;
     }
     .nav-bar {
         /* muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores */
@@ -276,7 +297,19 @@ display: block;
 .profile-box>img {
     width: 100%;
 }
+
+
+/* CORRIGE O BUG DO MENU EXPANDIDO */
+
+@media(min-width:1024px) {
+    #nav-menu {
+        display: none;
+    }
+}
+
+
 /*--------FOOTER STYLE--------*/
+
 footer {
     width: 100%;
     display: flex;
@@ -294,24 +327,25 @@ footer {
     text-align: center;
 }
 
-.footer-list{
+.footer-list {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
-        box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
 
+.icon {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
 }
-.icon{
-background-color: #000000;
-border-radius: 50%;
-width: 3rem;
-height: 3rem;
-}
-.footer-link{
-display: flex;
-align-items: center;
-gap: 0.5rem;
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
