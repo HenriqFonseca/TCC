@@ -28,32 +28,7 @@
     @section('conteudo')
     <main>
         <div class="main-container">
-
-<<<<<<< HEAD
-       
-        <!--nav bar dia da semana-->
-        <div class="nav-bar2">
-            <ul>
-                <div class="segunda">
-                    <li>segunda</li>
-                </div>
-                <div class="terca">
-                    <li>terça</li>
-                </div>
-                <div class="quarta">
-                    <li>quarta</li>
-                </div>
-                <div class="quinta">
-                    <li></li>
-                </div>
-                <div class="sexta">
-                    <li></li>
-                </div>
-            </ul>
-        </div>
-=======
->>>>>>> 6d9214fe21599f6f8b0a970a583a7e54a1336f3a
-
+            
             <!--nav bar dia da semana-->
             <div class="week-bar2">
                 <ul>
