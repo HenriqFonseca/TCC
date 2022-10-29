@@ -79,18 +79,17 @@
 <footer>
     <div class="nav-footer">
         <nav>
-            <h2>Entre em contato conosco!porra
-            </h2>
+<h3>Entre em contato conosco!</h3>
             <ul class="footer-list">
 
                 <li><a class="footer-link" href="#">
-                        <div class="icon"></div> Instagram
+                        <div class="icon"><img src="img/insta.png" alt=""></div> Instagram
                     </a></li>
                 <li><a class="footer-link" href="#">
-                        <div class="icon"></div> Facebook
+                        <div class="icon"><img src="img/face.png" alt=""></div> Facebook
                     </a></li>
                 <li><a class="footer-link" href="#">
-                        <div class="icon"></div> Whatsapp
+                        <div class="icon"><img src="img/whats.png" alt=""></div> Whatsapp
                     </a></li>
             </ul>
         </nav>
