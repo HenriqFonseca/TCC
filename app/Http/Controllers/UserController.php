@@ -29,7 +29,6 @@ class UserController extends Controller
     public function login(LoginRequest $request){
 
         //Validar os dados de login
-        $request->validate();
 
         //Login do usuário
         if (Auth::attempt(['password' => $request->password, 'cpf'=>$request->cpf])){
