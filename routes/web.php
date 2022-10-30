@@ -21,7 +21,12 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
                 // rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
-Route::post('/login', [UserController::class, 'login'])->name('profile.login');
+Route::post('/login', [UserController::class, 'login'])->name('user.login');
+
+// =========================== ROTA PARA PAGINA DE REGISTRO =======================
+Route::get('/register', [ProfileController::class, 'register'])->name('profile.register');
+Route::post('/register', [UserController::class, 'auth'])->name('user.register');
+
 
 
 Route::get('/treinos', [TreinosController::class, 'treinos'])->name('treinos.treinos');

@@ -16,6 +16,8 @@ class UserController extends Controller
         $user = new User();
 
         // capturar os dados enviados pelo usuário do formulário de registro
+        $user ->nome = $request->nome;
+        $user ->sobrenome = $request->sobrenome;
         $user ->email = $request->email;
         $user ->cpf = $request->cpf;
         $user ->password = bcrypt($request->password);
