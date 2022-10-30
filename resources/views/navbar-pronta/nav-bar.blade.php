@@ -29,15 +29,21 @@
         <div class="nav-item-box">
             <ul class="nav-list">
                 <li class="item-box">
-                    <a class="nav-link" href="">Login
+                    @guest
+                    <a class="nav-link" href="{{ route('profile.login') }}">Login
                     </a>
+                    @endguest
+                    @auth
+                    <a class="nav-link" href="{{ route('user.login') }}">Olá, {{ auth()->user()->nome  }}⇩
+                    </a>
+                    @endauth
                     <ul class="drop-down">
                         <li class="drop-li" > <a class="nav-link" href="{{ route('treinos.treinos') }}">Treinos</a></li>
                         <li class="drop-li" > <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
                         <li class="drop-li" > <a class="nav-link" href="#">Academias</a></li>
                         <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
                         <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
-                        <li class="drop-li" > <a class="nav-link" href="#">Sair</a></li>
+                        <li class="drop-li" > <a class="nav-link" href="{{ route('user.logout') }}">Sair</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,10 +54,19 @@
     </nav>
     <div id="nav-menu">
         <div class="profile-box"><img src="img/sportsman.png" alt="">
+            @guest
             <a href="{{ route('profile.login') }} "><button class="login-button">
                     Login
                 </button></a>
+            @endguest
+            @auth
+            <a href="{{ route('profile.login') }} "><button class="login-button">
+                Olá, {{ auth()->user()->name }}
+            </button></a>
+            @endauth
         </div>
+        @auth
+            
         <div class="menu-grid-container">
             <a href="{{ route('treinos.treinos') }}" class="grid-link">
                 Treinos
@@ -73,6 +88,7 @@
             </a>
 
         </div>
+        @endauth
     </div>
 </header>
 @yield('conteudo')
