@@ -26,7 +26,7 @@ Route::post('/login', [UserController::class, 'login'])->name('user.login');
 // =========================== ROTA PARA PAGINA DE REGISTRO =======================
 Route::get('/register', [ProfileController::class, 'register'])->name('profile.register');
 Route::post('/register', [UserController::class, 'auth'])->name('user.register');
-
+Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
 
 
 Route::get('/treinos', [TreinosController::class, 'treinos'])->name('treinos.treinos');
