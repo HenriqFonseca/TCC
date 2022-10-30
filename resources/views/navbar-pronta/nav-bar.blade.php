@@ -37,6 +37,8 @@
                     <a class="nav-link" href="{{ route('user.login') }}">Olá, {{ auth()->user()->nome  }}⇩
                     </a>
                     @endauth
+                    @auth
+                        
                     <ul class="drop-down">
                         <li class="drop-li" > <a class="nav-link" href="{{ route('treinos.treinos') }}">Treinos</a></li>
                         <li class="drop-li" > <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
@@ -45,6 +47,7 @@
                         <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
                         <li class="drop-li" > <a class="nav-link" href="{{ route('user.logout') }}">Sair</a></li>
                     </ul>
+                    @endauth
                 </li>
             </ul>
             <button id="btn-menu">
