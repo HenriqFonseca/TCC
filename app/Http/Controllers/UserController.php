@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
+use App\Http\Requests\RegisterRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +12,7 @@ class UserController extends Controller
 {
 
     //===================== REGISTRAR NOVO USUARIO =====================//
-    public function auth(Request $request){
+    public function auth(RegisterRequest $request){
 
         $user = new User();
 

@@ -16,7 +16,7 @@
         <form class="form-signin" method="POST" action="{{ route('user.register') }}">
           @csrf
           <h2 class="form-signin-heading">Insira seu cadastro</h2>
-          <input type="email" class="input" name="email" autocomplete="off" placeholder="Email"/>
+          <input type="text" class="input" name="email" autocomplete="off" placeholder="Email"/>
           <br>
           <input type="text" class="input" name="cpf" autocomplete="off" maxlength="14"  placeholder="CPF"/>
           <br>

@@ -25,7 +25,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'cpf' => ['required', 'min:14', 'max:14'],
-            'password' => ['required', 'min:8', 'max:20'],
+            'password' => ['required', 'min:6', 'max:20'],
         ];
     }
 
@@ -33,6 +33,7 @@ class LoginRequest extends FormRequest
     {
         return[
             'cpf.required' => 'Preencha o campo CPF',
+            'cpf.integer' => 'CPF só numeros',
             'cpf.min' => 'CPF Inválido',
             'cpf.max' => 'CPF Inválido',
             'password.required' => 'Preencha o campo Senha',
