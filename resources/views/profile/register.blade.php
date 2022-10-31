@@ -16,9 +16,9 @@
         <form class="form-signin" method="POST" action="{{ route('user.register') }}">
           @csrf
           <h2 class="form-signin-heading">Insira seu cadastro</h2>
-          <input type="text" class="input" name="email" autocomplete="off" placeholder="Email"/>
+          <input type="text" class="input" name="email" id="email" autocomplete="off" placeholder="Email"/>
           <br>
-          <input type="text" class="input" name="cpf" autocomplete="off" maxlength="14"  placeholder="CPF"/>
+          <input type="text" class="input" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14"  placeholder="CPF"/>
           <br>
           <input type="text" class="input" name="nome" placeholder="Nome"/>
           <br>
@@ -60,5 +60,6 @@
     </div>
   </div>
 
-  <script src="" ></script>
+  <script src="js/jquery-3.6.1.min.js" ></script>
+  <script src="js/jQuery-Mask/dist/jquery.mask.js" ></script>
 </body>
