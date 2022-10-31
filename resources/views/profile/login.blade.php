@@ -16,7 +16,7 @@
         <form class="form-signin" method="POST" action="login">
           @csrf
           <h2 class="form-signin-heading">Insira seu cadastro</h2>
-          <input type="text" class="input" name="cpf" autocomplete="off" maxlength="14"  placeholder="CPF"/>
+          <input type="text" class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14"  placeholder="CPF"/>
           <br>
           <input type="password" class="input" name="password" placeholder="Senha"/>
           <div class="login">
@@ -53,4 +53,7 @@
       <div class="drop drop-5"></div>
     </div>
   </div>
+
+  <script src="js/jquery-3.6.1.min.js" ></script>
+  <script src="js/jQuery-Mask/dist/jquery.mask.js" ></script>
 </body>

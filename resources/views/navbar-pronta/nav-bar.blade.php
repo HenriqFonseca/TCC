@@ -34,7 +34,7 @@
                     </a>
                     @endguest
                     @auth
-                    <a class="nav-link" href="{{ route('user.login') }}">Olá, {{ auth()->user()->nome  }}⇩
+                    <a class="nav-link" href="#">Olá, {{ auth()->user()->nome  }}⇩
                     </a>
                     @endauth
                     @auth
