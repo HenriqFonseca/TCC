@@ -1,6 +1,40 @@
 <script defer src="js/nav-bar.js"></script>
 <link href="nav-bar-css/nav-bar-css.css" rel="stylesheet">
 <header>
+<!-- <svg width="170" height="177.13782911683566" viewBox="0 0 170 177.13782911683566" class="css-1j8o68f">
+        <defs id="SvgjsDefs9415">
+            <linearGradient id="SvgjsLinearGradient9420">
+                <stop id="SvgjsStop9421" stop-color="#b88746" offset="0"></stop>
+                <stop id="SvgjsStop9422" stop-color="#fdf5a6" offset="1"></stop>
+            </linearGradient>
+        </defs>
+        <g id="SvgjsG9416" featurekey="aMgJeN-0"
+            transform="matrix(1.428511174466322,0,0,1.428511174466322,13.576547445693805,45.71480379060288)"
+            fill="url(#SvgjsLinearGradient9420)">
+            <rect xmlns="http://www.w3.org/2000/svg" x="25.249" y="20.252"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 46.463 -22.1737)" fill="none"
+                stroke="url(#SvgjsLinearGradient9420)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                stroke-miterlimit="10" width="49.499" height="49.497"></rect>
+            <path xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient9420)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                d="M49.999,69.395  l24.394-24.392L50,20.608L25.608,45.002L49.999,69.395z M63.785,45.002L49.999,58.787L36.214,45.002L50,31.215L63.785,45.002z">
+            </path>
+            <rect xmlns="http://www.w3.org/2000/svg" x="47.754" y="42.754"
+                transform="matrix(-0.707 0.7072 -0.7072 -0.707 117.1804 41.4576)" stroke="url(#SvgjsLinearGradient9420)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="4.496"
+                height="4.497"></rect>
+            <polygon xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient9420)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                points="  49.999,80 20,50.004 15.002,55 49.999,90 85,55 80,50 "></polygon>
+        </g>
+        <g id="SvgjsG9417" featurekey="8L6ael-0"
+            transform="matrix(1.9125192788398526,0,0,1.9125192788398526,-3.0982823807904865,124.43740360580074)"
+            fill="#ffffff">
+            <path
+                d="M10.56 5.52 q1.22 0.46 2.2 1.48 q2.1 2.12 2.1 5.41 t-2.1 5.43 q-0.98 1.02 -2.2 1.48 q-1.26 0.52 -2.58 0.52 l-5.66 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.49 l0 -1.44 q0 -0.3 0.21 -0.51 t0.49 -0.21 l5.6 0 q1.78 0 2.89 -1.3 t1.11 -3.26 t-1.11 -3.26 t-2.89 -1.3 l-5.6 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.51 l0 -1.44 q0 -0.28 0.21 -0.49 t0.49 -0.21 l5.66 0 q1.32 0 2.58 0.52 z M29.628 16.96 q0.3 0 0.5 0.21 t0.2 0.51 l0 1.46 q0 0.28 -0.2 0.49 t-0.5 0.21 l-9.88 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.49 l0 -1.46 q0 -0.3 0.21 -0.51 t0.49 -0.21 l9.88 0 z M19.748 13.86 q-0.28 0 -0.49 -0.21 t-0.21 -0.49 l0 -1.5 q0 -0.28 0.21 -0.49 t0.49 -0.21 l8.98 0 q0.3 0 0.51 0.21 t0.21 0.49 l0 1.5 q0 0.28 -0.21 0.49 t-0.51 0.21 l-8.98 0 z M29.628 5 q0.3 0 0.5 0.21 t0.2 0.49 l0 1.46 q0 0.3 -0.2 0.51 t-0.5 0.21 l-9.88 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.51 l0 -1.46 q0 -0.28 0.21 -0.49 t0.49 -0.21 l9.88 0 z M46.996 5.32 q0.22 0.3 0.08 0.66 l-5.48 13.54 q-0.08 0.2 -0.26 0.32 t-0.4 0.12 l-1.76 0 q-0.22 0 -0.4 -0.12 t-0.26 -0.32 l-5.48 -13.54 q-0.16 -0.34 0.06 -0.66 t0.58 -0.32 l6.68 0 q0.28 0 0.49 0.21 t0.21 0.51 l0 1.46 q0 0.3 -0.21 0.51 t-0.49 0.21 l-3.36 0 l3.06 7.7 l4.02 -10.16 q0.08 -0.2 0.26 -0.32 t0.4 -0.12 l1.68 0 q0.18 0 0.34 0.09 t0.24 0.23 z M66.052 11.12 q0.3 0 0.51 0.21 t0.21 0.51 l0 1.48 q0 0.28 -0.21 0.49 t-0.51 0.21 l-6.58 0 l0 5.12 q0 0.28 -0.2 0.49 t-0.5 0.21 l-1.52 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.49 l0 -7.3 q0 -0.3 0.21 -0.51 t0.49 -0.21 l8.8 0 z M66.952 5 q0.28 0 0.49 0.21 t0.21 0.49 l0 1.46 q0 0.3 -0.21 0.51 t-0.49 0.21 l-9.7 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.51 l0 -1.46 q0 -0.28 0.21 -0.49 t0.49 -0.21 l9.7 0 z M73.74000000000001 10.94 q0.3 0 0.5 0.21 t0.2 0.51 l0 7.48 q0 0.28 -0.2 0.49 t-0.5 0.21 l-1.52 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.49 l0 -7.48 q0 -0.3 0.21 -0.51 t0.49 -0.21 l1.52 0 z M73.74000000000001 5 q0.3 0 0.5 0.21 t0.2 0.49 l0 3.7 q0 0.3 -0.2 0.51 t-0.5 0.21 l-1.52 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.51 l0 -3.7 q0 -0.28 0.21 -0.49 t0.49 -0.21 l1.52 0 z M80.86800000000001 5 q0.3 0 0.51 0.21 t0.21 0.51 l0 1.46 q0 0.3 -0.21 0.51 t-0.51 0.21 l-2.06 0 q-0.28 0 -0.49 -0.21 t-0.21 -0.51 l0 -1.46 q0 -0.3 0.21 -0.51 t0.49 -0.21 l2.06 0 z M89.808 5 q0.28 0 0.49 0.21 t0.21 0.51 l0 1.46 q0 0.3 -0.21 0.51 t-0.49 0.21 l-4.02 0 l0 11.36 q0 0.28 -0.21 0.49 t-0.49 0.21 l-1.54 0 q-0.3 0 -0.51 -0.21 t-0.21 -0.49 l0 -13.54 q0 -0.3 0.21 -0.51 t0.51 -0.21 l6.26 0 z">
+            </path>
+        </g>
+    </svg> -->
     <!----------NAV-BAR------------->
     <nav class="nav-bar">
         <a class="nav-logo-link" href="{{ route('home.index') }}">
