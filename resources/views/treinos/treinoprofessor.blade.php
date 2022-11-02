@@ -80,7 +80,7 @@
                 width: 80%;
                 height: 200px;
                 margin: auto;
-                border-radius: 5px;
+                border-radius: 15px;
                 border: 3px solid black;
                 margin-top: 40px;
                 text-align: center;
@@ -131,30 +131,7 @@
 
 
     </main>
-    <!--footer aq pq n pode faltar n-->
-            <footer>
-            <div class="nav-footer">
-                <nav>
-                    <h2>Navegue no site</h2>
-                    <ul>
-                        <li><a href="#">Capa</a></li>
-                        <li><a href="#">História dos instrumentos de metal</a></li>
-                        <li><a href="#">Seja um colaborarador</a></li>
-                        <li><a href="#">Quem somos</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <h2>Fique conectado !</h2>
-                    <ul>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <small>IronWorks Copyright &copy; 2010 </small>
-        </footer>
+
 </body>
 @endsection
 </html>
