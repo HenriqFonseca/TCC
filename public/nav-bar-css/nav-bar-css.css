@@ -20,10 +20,10 @@ li {
 /* ---VARIAVEIS--- */
 
 :root {
-    --btn-color: #ffd9a1a1;
-    --black: #000000;
+    --black: #0f1d27;
     --gold: #C1A45F;
-    --scroll-effect-color: rgba(151, 151, 151, 0.158);
+    --logout: rgb(156, 0, 0);
+    --scroll-effect-color: rgba(194, 194, 194, 0.158);
     --footer-color: rgba(102, 102, 102, 0.541);
     --gold-semitransparent: #c1a45fd7;
     --gold-transparent: #fdf5d33a;
@@ -155,6 +155,17 @@ header {
     width: 100%;
 }
 
+.logout::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: var(--logout);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+}
+
 .item-box:hover {
     background-color: var(--gold-transparent);
 }
@@ -172,6 +183,7 @@ header {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .item-box:hover>.drop-down {
@@ -188,12 +200,19 @@ header {
 
 .nav-scroll-effect {
     background-color: var(--scroll-effect-color);
-    backdrop-filter: blur(10px);
 }
 
 .link-scroll-effect,
 .link-scroll-effect:hover {
     color: var(--black);
+}
+
+.nav-blur {
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 

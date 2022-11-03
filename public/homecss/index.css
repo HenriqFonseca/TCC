@@ -5,8 +5,7 @@
 }
 
  :root {
-    --btn-color: #ffd9a1a1;
-    --btn-large: #ffc297a1;
+    --btn-color: #333333a1;
     --black: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
@@ -76,7 +75,7 @@ main {
 .btn-caption {
     text-align: center;
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: rgba(173, 173, 173, 0.219);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -98,7 +97,6 @@ main {
     height: 100%;
     object-fit: contain;
 }
-
 
 
 /* AREA DE TESTES */
