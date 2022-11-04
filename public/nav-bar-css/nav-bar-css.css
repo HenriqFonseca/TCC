@@ -71,6 +71,15 @@ header {
     gap: 3rem;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* ---- LOGO STYLE ---- */
+
 .nav-logo-link {
     height: 100%;
 }
@@ -83,10 +92,8 @@ header {
     margin-left: 1rem;
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    height: 100%;
+svg {
+    padding-bottom: 1rem;
 }
 
 

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="profilecss/login.css" rel="stylesheet">
   <title>Login</title>
+  <script src="js/jquery-3.6.1.min.js" defer ></script>
+  <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
 </head>
 
 <body>
@@ -28,10 +30,7 @@
           </div>
           
         </form>
-        <ul class="nav-item-box">
-          <a class="forgot-password" href="">Esqueci minha senha
-          </a>
-        </ul>
+          <a class="forgot-password" href="">Esqueci minha senha</a>
         @if ($errors->any())
                   <div class="alert alert-danger">
                           @foreach ($errors->all() as $error)
@@ -54,6 +53,5 @@
     </div>
   </div>
 
-  <script src="js/jquery-3.6.1.min.js" ></script>
-  <script src="js/jQuery-Mask/dist/jquery.mask.js" ></script>
+
 </body>

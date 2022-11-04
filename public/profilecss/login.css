@@ -13,6 +13,11 @@
         --gold-semitransparent: #c1a45fd7;
         --gold-transparent: #fdf5d33a;
     }
+    /* ---IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE */
+    
+    img {
+        -webkit-user-drag: none;
+    }
     
     body {
         background-image: url('/img/background2.png'), url('/img/background.jpg');
@@ -157,13 +162,16 @@
     }
     
     .cadastro {
+        text-align: center;
         padding: 3rem;
         width: 100%;
     }
     
-    .form-signin-heading,
     .login {
-        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .form-signin-heading {
         margin-bottom: 30px;
     }
     
@@ -186,7 +194,7 @@
         color: white;
         border-style: none;
         border-radius: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.548);
+        background-color: rgba(0, 0, 0, 0.548)important;
     }
     
     .input:focus {

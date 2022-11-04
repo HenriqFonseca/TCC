@@ -6,21 +6,23 @@
     <nav class="nav-bar">
         <a class="nav-logo-link" href="{{ route('home.index') }}">
             <div class="nav-logo-box">
-                <svg width="200" height="25.877456789880426" viewBox="0 0 350.00000000000006 52.00029776817928" c>
-                    <defs id="SvgjsDefs3341">
-                        <linearGradient id="SvgjsLinearGradient3346">
-                            <stop id="SvgjsStop3347" stop-color="#8f5e25" offset="0"></stop>
-                            <stop id="SvgjsStop3348" stop-color="#fbf4a1" offset="0.5"></stop>
-                            <stop id="SvgjsStop3349" stop-color="#8f5e25" offset="1"></stop>
-                        </linearGradient>
-                        <linearGradient id="SvgjsLinearGradient3350">
-                            <stop id="SvgjsStop3351" stop-color="#8f5e25" offset="0"></stop>
-                            <stop id="SvgjsStop3352" stop-color="#fbf4a1" offset="0.5"></stop>
-                            <stop id="SvgjsStop3353" stop-color="#8f5e25" offset="1"></stop>
+                <svg width="120" height="82.06634034046937" viewBox="0 0 350 212.06634034046937" class="css-1j8o68f">
+                    <defs id="SvgjsDefs6458">
+                        <linearGradient id="SvgjsLinearGradient6463">
+                            <stop id="SvgjsStop6464" stop-color="#8f5e25" offset="0"></stop>
+                            <stop id="SvgjsStop6465" stop-color="#fbf4a1" offset="0.5"></stop>
+                            <stop id="SvgjsStop6466" stop-color="#8f5e25" offset="1"></stop>
                         </linearGradient>
                     </defs>
-                    <g id="SvgjsG3342" featurekey="33DNMO-0" transform="matrix(2.9055290123486506,0,0,2.9055290123486506,-3.9515194983580906,-18.885937194802032)" fill="url(#SvgjsLinearGradient3346)">
-                        <path d="M1.36 20 l0 -13.22 l3.36 0 l0 13.22 l-3.36 0 z M7.44 20 l0 -13.22 l5.08 0 c3.66 0 4.96 1.58 4.96 3.7 c0 1.98 -1.12 3.1 -2.34 3.68 c0.52 0.28 0.9 0.8 1.24 1.74 c0.28 0.8 0.42 1.56 1.86 1.5 l-0.58 2.72 c-3.16 0.4 -3.9 -1.64 -4.44 -3.1 c-0.56 -1.52 -0.78 -1.68 -1.9 -1.68 l-0.52 0 l0 4.66 l-3.36 0 z M12.440000000000001 9.6 l-1.64 0 l0 2.92 l1.64 0 c1.22 0 1.68 -0.76 1.68 -1.54 c0 -0.98 -0.56 -1.38 -1.68 -1.38 z M25.799999999999997 20.28 c-4.3 0 -6.52 -2.92 -6.52 -6.92 c0 -4.1 2.32 -6.86 6.64 -6.86 c4.08 0 6.54 2.46 6.54 6.7 c0 4.1 -2.32 7.08 -6.66 7.08 z M25.86 17.5 c1.88 0 3.06 -1.24 3.06 -4.16 c0 -2.88 -1.14 -4.06 -3.02 -4.06 c-1.94 0 -3.08 1.26 -3.08 4.1 c0 2.88 1.16 4.12 3.04 4.12 z M34.519999999999996 20 l0 -13.22 l3.26 0 l3.66 5.38 c0.54 0.8 1.24 1.9 1.88 2.96 c-0.06 -1.18 -0.1 -2.46 -0.1 -3.42 l0 -4.92 l3.2 0 l0 13.22 l-3.28 0 l-4.08 -5.96 c-0.4 -0.58 -0.94 -1.48 -1.44 -2.38 c0.06 1.08 0.1 2.18 0.1 2.94 l0 5.4 l-3.2 0 z M56.38 20 l-4.78 -13.22 l3.54 0 l2.28 6.4 c0.18 0.46 0.36 1.26 0.5 2.1 c0.18 -0.82 0.36 -1.64 0.54 -2.1 l1.36 -3.74 l-1.02 -2.66 l3.4 0 l2.32 6.4 c0.16 0.4 0.34 1.1 0.5 1.84 c0.14 -0.74 0.3 -1.42 0.46 -1.84 l2.16 -6.4 l3.26 0 l-4.52 13.22 l-2.68 0 l-2.38 -6.54 c-0.14 0.48 -0.28 0.94 -0.42 1.34 l-1.84 5.2 l-2.68 0 z M78.12 20.28 c-4.3 0 -6.52 -2.92 -6.52 -6.92 c0 -4.1 2.32 -6.86 6.64 -6.86 c4.08 0 6.54 2.46 6.54 6.7 c0 4.1 -2.32 7.08 -6.66 7.08 z M78.18 17.5 c1.88 0 3.06 -1.24 3.06 -4.16 c0 -2.88 -1.14 -4.06 -3.02 -4.06 c-1.94 0 -3.08 1.26 -3.08 4.1 c0 2.88 1.16 4.12 3.04 4.12 z M86.84 20 l0 -13.22 l5.08 0 c3.66 0 4.96 1.58 4.96 3.7 c0 1.98 -1.12 3.1 -2.34 3.68 c0.52 0.28 0.9 0.8 1.24 1.74 c0.28 0.8 0.42 1.56 1.86 1.5 l-0.58 2.72 c-3.16 0.4 -3.9 -1.64 -4.44 -3.1 c-0.56 -1.52 -0.78 -1.68 -1.9 -1.68 l-0.52 0 l0 4.66 l-3.36 0 z M91.84 9.6 l-1.64 0 l0 2.92 l1.64 0 c1.22 0 1.68 -0.76 1.68 -1.54 c0 -0.98 -0.56 -1.38 -1.68 -1.38 z M99.34 20 l0 -13.22 l3.36 0 l0 4.94 l0.6 0 l3.42 -4.94 l3.92 0 l-4.5 6.34 l4.68 6.88 l-4.04 0 l-3.5 -5.26 l-0.58 0 l0 5.26 l-3.36 0 z M111.28000000000002 16.34 l3.3 -0.68 c0.02 1.4 1.1 1.84 2.2 1.84 c1.04 0 1.64 -0.38 1.64 -1 c0 -2.1 -6.78 -1.14 -6.78 -5.94 c0 -2.64 2.04 -4.06 5.1 -4.06 c3.08 0 5.02 1.46 4.92 3.58 l-3.3 0.68 c-0.02 -0.54 -0.14 -1.48 -1.7 -1.48 c-1.08 0 -1.62 0.44 -1.62 1.04 c0 2.18 6.78 1.04 6.78 5.82 c0 2.4 -1.7 4.14 -5.08 4.14 c-3.6 0 -5.58 -1.96 -5.46 -3.94 z">
+                    <g id="SvgjsG6459" featurekey="symbolFeature-0" transform="matrix(1.728659855448171,0,0,1.728659855448171,89.07520287017482,42.71329923365092)" fill="url(#SvgjsLinearGradient6463)">
+                        <rect xmlns="http://www.w3.org/2000/svg" x="25.249" y="20.252" transform="matrix(0.7071 0.7071 -0.7071 0.7071 46.463 -22.1737)" fill="none" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49.499" height="49.497"></rect>
+                        <path xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M49.999,69.395  l24.394-24.392L50,20.608L25.608,45.002L49.999,69.395z M63.785,45.002L49.999,58.787L36.214,45.002L50,31.215L63.785,45.002z">
+                        </path>
+                        <rect xmlns="http://www.w3.org/2000/svg" x="47.754" y="42.754" transform="matrix(-0.707 0.7072 -0.7072 -0.707 117.1804 41.4576)" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="4.496" height="4.497"></rect>
+                        <polygon xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="  49.999,80 20,50.004 15.002,55 49.999,90 85,55 80,50 "></polygon>
+                    </g>
+                    <g id="SvgjsG6460" featurekey="nameFeature-0" transform="matrix(1.8070299717903664,0,0,1.8070299717903664,-5.8547792799815594,139.92970028209635)" fill="#ffffff">
+                        <path d="M21.12 11.04 q2.44 0.92 4.4 2.96 q4.2 4.24 4.2 10.82 t-4.2 10.86 q-1.96 2.04 -4.4 2.96 q-2.52 1.04 -5.16 1.04 l-11.32 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.88 q0 -0.6 0.42 -1.02 t0.98 -0.42 l11.2 0 q3.56 0 5.78 -2.6 t2.22 -6.52 t-2.22 -6.52 t-5.78 -2.6 l-11.2 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.88 q0 -0.56 0.42 -0.98 t0.98 -0.42 l11.32 0 q2.64 0 5.16 1.04 z M61.908 33.92 q0.6 0 1 0.42 t0.4 1.02 l0 2.92 q0 0.56 -0.4 0.98 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l19.76 0 z M42.148 27.72 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -3 q0 -0.56 0.42 -0.98 t0.98 -0.42 l17.96 0 q0.6 0 1.02 0.42 t0.42 0.98 l0 3 q0 0.56 -0.42 0.98 t-1.02 0.42 l-17.96 0 z M61.908 10 q0.6 0 1 0.42 t0.4 0.98 l0 2.92 q0 0.6 -0.4 1.02 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.76 0 z M99.296 10.64 q0.44 0.6 0.16 1.32 l-10.96 27.08 q-0.16 0.4 -0.52 0.64 t-0.8 0.24 l-3.52 0 q-0.44 0 -0.8 -0.24 t-0.52 -0.64 l-10.96 -27.08 q-0.32 -0.68 0.12 -1.32 t1.16 -0.64 l13.36 0 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-6.72 0 l6.12 15.4 l8.04 -20.32 q0.16 -0.4 0.52 -0.64 t0.8 -0.24 l3.36 0 q0.36 0 0.68 0.18 t0.48 0.46 z M142.71200000000002 22.24 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.96 q0 0.56 -0.42 0.98 t-1.02 0.42 l-13.16 0 l0 10.24 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.6 q0 -0.6 0.42 -1.02 t0.98 -0.42 l17.6 0 z M144.512 10 q0.56 0 0.98 0.42 t0.42 0.98 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-19.4 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.4 0 z M160.74 21.88 q0.6 0 1 0.42 t0.4 1.02 l0 14.96 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.96 q0 -0.6 0.42 -1.02 t0.98 -0.42 l3.04 0 z M160.74 10 q0.6 0 1 0.42 t0.4 0.98 l0 7.4 q0 0.6 -0.4 1.02 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -7.4 q0 -0.56 0.42 -0.98 t0.98 -0.42 l3.04 0 z M177.64800000000002 10 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-1.02 0.42 l-4.12 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l4.12 0 z M195.52800000000002 10 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-8.04 0 l0 22.72 q0 0.56 -0.42 0.98 t-0.98 0.42 l-3.08 0 q-0.6 0 -1.02 -0.42 t-0.42 -0.98 l0 -27.08 q0 -0.6 0.42 -1.02 t1.02 -0.42 l12.52 0 z">
                         </path>
                     </g>
                 </svg>
@@ -39,14 +41,14 @@
                     </a>
                     @endauth
                     @auth
-                        
+
                     <ul class="drop-down">
-                        <li class="drop-li" > <a class="nav-link" href="{{ route('treinos.treinos') }}">Treinos</a></li>
-                        <li class="drop-li" > <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
-                        <li class="drop-li" > <a class="nav-link" href="#">Academias</a></li>
-                        <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
-                        <li class="drop-li" > <a class="nav-link" href="#">*teste</a></li>
-                        <li class="drop-li" > <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.treinos') }}">Treinos</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
+                        <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                     </ul>
                     @endauth
                 </li>
@@ -65,12 +67,12 @@
             @endguest
             @auth
             <a href="{{ route('profile.login') }} "><button class="login-button">
-                Olá, {{ auth()->user()->name }}
-            </button></a>
+                    Olá, {{ auth()->user()->name }}
+                </button></a>
             @endauth
         </div>
         @auth
-            
+
         <div class="menu-grid-container">
             <a href="{{ route('treinos.treinos') }}" class="grid-link">
                 Treinos
@@ -99,7 +101,7 @@
 <footer>
     <div class="nav-footer">
         <nav>
-<h3>Entre em contato conosco!</h3>
+            <h3>Entre em contato conosco!</h3>
             <ul class="footer-list">
 
                 <li><a class="footer-link" href="#">
