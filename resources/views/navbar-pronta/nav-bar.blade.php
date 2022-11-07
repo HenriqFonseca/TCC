@@ -6,7 +6,7 @@
     <nav class="nav-bar">
         <a class="nav-logo-link" href="{{ route('home.index') }}">
             <div class="nav-logo-box">
-                <svg width="120" height="82.06634034046937" viewBox="0 0 350 212.06634034046937" class="css-1j8o68f">
+                <svg width="120" height="80" viewBox="0 0 350 280" class="css-1j8o68f">
                     <defs id="SvgjsDefs6458">
                         <linearGradient id="SvgjsLinearGradient6463">
                             <stop id="SvgjsStop6464" stop-color="#8f5e25" offset="0"></stop>
@@ -116,5 +116,5 @@
             </ul>
         </nav>
     </div>
-    <small>IronWorks Copyright © 2077 </small>
+    <small>Devfit Copyright © 2022 </small>
 </footer>
