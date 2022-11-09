@@ -8,7 +8,7 @@
     <title>Document</title>
 
 
-    <link href="treinocss/treinos.css" rel="stylesheet">
+    <link href="{{ asset('treinocss/index.css') }}" rel="stylesheet">
 
 
     <!-- CSS DO BOOTSTRAP -->
@@ -38,11 +38,18 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-    <div class="container-sm" style="transform: translateY(5rem);">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt harum iusto consequatur dolore, et, error fuga asperiores cupiditate labore tenetur, autem sapiente dicta? Fugiat excepturi consequuntur atque perferendis libero non perspiciatis maiores deleniti aperiam cum aliquid sunt animi et, optio rem quasi similique laborum magni delectus dolorum quos officia harum. Nemo illo sit iste dignissimos, nam commodi ex, cumque, voluptas consectetur vel necessitatibus ullam nostrum quas repellat! Totam, ipsa cum.</h2>
 
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt harum iusto consequatur dolore, et, error fuga asperiores cupiditate labore tenetur, autem sapiente dicta? Fugiat excepturi consequuntur atque perferendis libero non perspiciatis maiores deleniti aperiam cum aliquid sunt animi et, optio rem quasi similique laborum magni delectus dolorum quos officia harum. Nemo illo sit iste dignissimos, nam commodi ex, cumque, voluptas consectetur vel necessitatibus ullam nostrum quas repellat! Totam, ipsa cum.</h2>
+    <div class="container-md" style="border: 1px solid black; transform: ">
+        <div class="row">
+            <div class="col-6">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta sunt ut nisi odit quo iusto excepturi harum doloribus vero laboriosam reiciendis hic, ex dolor dolores dolorem saepe maxime enim pariatur sit? Odit eum delectus illo vel eius! Corporis fuga, inventore accusantium repellendus mollitia facilis molestias, nesciunt nihil est ipsa quia ad minus, aspernatur sed ea vel libero similique rem deserunt? Eos laborum accusamus doloremque atque facilis earum quidem deleniti mollitia, molestiae odio placeat deserunt quos culpa quam animi aliquam delectus quibusdam nulla quas consequatur. Veritatis iusto asperiores accusamus minima?</h2>
+            </div>
+            <div class="col-6">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta sunt ut nisi odit quo iusto excepturi harum doloribus vero laboriosam reiciendis hic, ex dolor dolores dolorem saepe maxime enim pariatur sit? Odit eum delectus illo vel eius! Corporis fuga, inventore accusantium repellendus mollitia facilis molestias, nesciunt nihil est ipsa quia ad minus, aspernatur sed ea vel libero similique rem deserunt? Eos laborum accusamus doloremque atque facilis earum quidem deleniti mollitia, molestiae odio placeat deserunt quos culpa quam animi aliquam delectus quibusdam nulla quas consequatur. Veritatis iusto asperiores accusamus minima?</h2>
+            </div>
+        </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     @endsection
 </body>
 
