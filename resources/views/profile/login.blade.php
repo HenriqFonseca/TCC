@@ -19,8 +19,14 @@
           @csrf
           <h2 class="form-signin-heading">Insira seu cadastro</h2>
           <input type="text" class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14"  placeholder="CPF"/>
+          @error('cpf')
+            <div class="erro">{{ $message }}</div>
+          @enderror
           <br>
           <input type="password" class="input" name="password" placeholder="Senha"/>
+          @error('password')
+            <div class="erro">{{ $message }}</div>
+          @enderror
           <div class="login">
             <br>
             <button class="login-button">
