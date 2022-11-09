@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TreinosController;
+use App\Http\Controllers\TreinoController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -30,4 +30,7 @@ Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
 
 
 Route::get('/treino', [TreinoController::class, 'index'])->name('treinos.index');
+
+//para testes
+Route::get('/a', [TreinoController::class, 'a'])->name('treinos.index2');
 

@@ -13,6 +13,10 @@ class TreinoController extends Controller
      */
     public function index()
     {
+        return view('treinos.indexprof');
+    }
+    public function a()
+    {
         return view('treinos.professor');
     }
 
