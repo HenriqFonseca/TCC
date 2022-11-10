@@ -25,11 +25,11 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'=> ['required', 'unique:users,email', 'email',],
+            'email'=> ['required', 'unique:users,email', 'email', 'regex:/^[\w]+[@]+[.]$/'],
             'nome' => ['required', 'string', 'max:20', 'regex:/^[A-Za-z]+$/'],
             'sobrenome' => ['required', 'string', 'max:30', 'regex:/^[A-Za-z]+$/'],
             'cpf' => ['required', 'unique:users,cpf', 'min:14', 'max:14'],
-            'password' => ['required', 'min:6', 'max:20'],
+            'password' => ['required', 'min:6', 'max:20', 'regex:/^[A-Za-z]+$/'],
         ];
     }
      //========== MESNAGENS QUE SERÃO EXIBIDAS CASO O ERRO OCORRA ============//
@@ -40,6 +40,8 @@ class RegisterRequest extends FormRequest
             'email.required' => 'O Campo email é obrigatório',
             'email.unique' => 'Email já utilizado',
             'email.email' => 'Insira um email válido',
+            'email.regex' => 'Email inválido',
+
             
             //========== REGRAS DO NOME ===========//
             'nome.required' => 'O Campo nome é obrigatório',
