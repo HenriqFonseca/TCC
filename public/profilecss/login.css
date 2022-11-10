@@ -162,44 +162,61 @@
     }
     
     .cadastro {
+        margin-top: 50px;
         text-align: center;
         padding: 3rem;
         width: 100%;
-    }
-    
-    .login {
-        margin-bottom: 15px;
-    }
-    
-    .form-signin-heading {
         margin-bottom: 30px;
     }
     
     .login {
+        margin-bottom: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-weight: normal;
     }
     
-    .input {
+    .form-signin-heading {
+        margin-bottom: 30px;
+    }
+      
+    .input{
         position: relative;
         font-size: 16px;
+        color: black;
         height: auto;
         padding: 10px;
-        box-sizing: border-box
+        padding-left: 5px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.548)important;
+        width: 90%;
     }
     
-    .input {
-        color: white;
-        border-style: none;
-        border-radius: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.548)important;
-    }
     
     .input:focus {
+        color: white;
         background-color: var(--black);
         transition: ease-in-out 0.5s;
+    }
+
+    .alert{
+        background-color: #f8d7da;
+        border-color: #f5c2c7;
+        color: #842029;
+        text-align: left !important;
+        border-radius: 5px;
+        position: absolute;
+        min-height: 60px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .alert ul{
+        padding: 10px;
     }
     /* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
     
