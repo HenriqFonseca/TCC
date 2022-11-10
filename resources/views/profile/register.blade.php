@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="profilecss/login.css" rel="stylesheet">
+    <link href="profilecss/register.css" rel="stylesheet">
     <title>Login</title>
 </head>
 
@@ -15,7 +15,7 @@
             <div class="cadastro">
                 <form class="form-signin" method="POST" action="{{ route('user.register') }}">
                     @csrf
-                    <h2 class="form-signin-heading">Insira seu cadastro</h2>
+                    <h2 class="form-signin-heading">Insira seus dados</h2>
                     <div class="nome" style="width: 100%; display:flex; ">
                         <input type="text" class="input" name="nome" placeholder="Nome" style="padding: 10px" />
                         @error('nome')
@@ -80,7 +80,6 @@
             <div class="drop drop-2"></div>
             <div class="drop drop-3"></div>
             <div class="drop drop-4"></div>
-            <div class="drop drop-5"></div>
         </div>
     </div>
 
