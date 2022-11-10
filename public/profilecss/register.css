@@ -8,7 +8,7 @@
  :root {
     --drop-border-color: rgba(245, 245, 245, 0.671);
     --drop-color: #ffd9a167;
-    --black: #000000;
+    --nav-color: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
     --footer-color: rgba(102, 102, 102, 0.541);
@@ -55,7 +55,7 @@ body {
 
 .login-button:hover {
     background-color: var(--gold-semitransparent);
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 a {
@@ -135,7 +135,7 @@ a:visited {
 
 .input:focus {
     color: white;
-    background-color: var(--black);
+    background-color: var(--nav-color);
     transition: ease-in-out 0.5s;
 }
 

@@ -8,7 +8,7 @@
 
  :root {
     --btn-color: #333333a1;
-    --black: #000000;
+    --nav-color: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
     --footer-color: rgba(102, 102, 102, 0.541);
@@ -61,7 +61,7 @@ main {
     grid-template-columns: auto auto;
     padding: 1rem;
     gap: 1rem;
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 .btn-box {

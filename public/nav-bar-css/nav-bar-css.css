@@ -20,7 +20,7 @@ li {
 /*==========----- VARIAVEIS -----==========*/
 
 :root {
-    --black: #0f1d27;
+    --nav-color: #0f1d27;
     --gold: #C1A45F;
     --logout: rgb(156, 0, 0);
     --scroll-effect-color: rgba(194, 194, 194, 0.158);
@@ -56,7 +56,7 @@ header {
 
 .nav-bar {
     height: 100%;
-    background-color: var(--black);
+    background-color: var(--nav-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -133,11 +133,11 @@ header {
 
 .login-button:hover {
     background-color: var(--gold-semitransparent);
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 .login-button-scroll-effect {
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 
@@ -181,7 +181,7 @@ header {
     backdrop-filter: blur(10px);
     width: 10rem;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--nav-color);
     transition: 0.3s ease-in-out;
     align-items: center;
     justify-content: space-around;
@@ -207,7 +207,7 @@ header {
 
 .link-scroll-effect,
 .link-scroll-effect:hover {
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 .nav-blur {
