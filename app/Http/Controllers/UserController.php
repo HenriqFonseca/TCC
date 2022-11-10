@@ -38,7 +38,7 @@ class UserController extends Controller
             $request->session()->regenerate();
             return redirect()->route('home.index');
         }else{
-            dd('não logou');
+            return redirect()->route('user.login')->with('logado', 'Erro ao fazer login');
         }
     }
 
