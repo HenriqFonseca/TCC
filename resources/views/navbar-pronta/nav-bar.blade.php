@@ -74,7 +74,7 @@
         @auth
 
         <div class="menu-grid-container">
-            <a href="{{ route('treinos.treinos') }}" class="grid-link">
+            <a href="{{ route('treinos.index') }}" class="grid-link">
                 Treinos
             </a>
             <a href="https://www.smartfit.com.br/academias" class="grid-link">
