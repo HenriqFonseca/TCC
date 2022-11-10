@@ -124,6 +124,13 @@
     }
     
     .drop-4 {
+        height: 6rem;
+        width: 6rem;
+        top: 340px;
+        left: 70px;
+    }
+    
+    .drop-5 {
         z-index: -1;
         height: 5rem;
         width: 5rem;
@@ -227,7 +234,7 @@
             width: 17rem;
         }
         .cadastro {
-            padding: 0.5rem 0.5rem 0.5rem;
+            padding: 0.5rem;
         }
         .login-button {
             padding: 10px 20px;
@@ -258,6 +265,12 @@
             left: 220px;
         }
         .drop-4 {
+            height: 3.5rem;
+            width: 3.5rem;
+            top: 260px;
+            left: 50px;
+        }
+        .drop-5 {
             z-index: -1;
             height: 4rem;
             width: 4rem;
