@@ -88,7 +88,7 @@
             <a href="" class="grid-link">
                 Texto
             </a>
-            <a href="{{ route('user.logout') }}" class="grid-link">
+            <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
                 Sair
             </a>
 

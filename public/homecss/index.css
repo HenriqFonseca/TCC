@@ -7,7 +7,8 @@
 }
 
  :root {
-    --btn-color: #333333a1;
+    --btn-color: #0f1d27b4;
+    --btn-caption: #0f1d276e;
     --nav-color: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
@@ -61,7 +62,6 @@ main {
     grid-template-columns: auto auto;
     padding: 1rem;
     gap: 1rem;
-    color: var(--nav-color);
 }
 
 .btn-box {
@@ -82,7 +82,7 @@ main {
 .btn-caption {
     text-align: center;
     backdrop-filter: blur(4px);
-    background-color: rgba(173, 173, 173, 0.219);
+    background-color: var(--btn-caption);
     width: 100%;
     display: flex;
     justify-content: center;

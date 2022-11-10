@@ -19,7 +19,7 @@
                     @csrf
                     <h2 class="form-signin-heading">Insira seus dados</h2>
                     <div class="nome">
-                        <input type="text" class="input" name="nome" placeholder="Nome" style="padding: 10px" />
+                        <input type="text" class="input" name="nome" placeholder="Nome" />
                         @error('nome')
                             <div class="error">
                                 <small>{{ $message }}</small>

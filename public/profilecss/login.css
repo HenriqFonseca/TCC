@@ -34,25 +34,6 @@
         height: 95vh;
         font-family: 'Roboto', sans-serif;
     }
-    /* ==========----- LOGIN BUTTON STYLE -----========== */
-    
-    .login-button {
-        background-color: #ffe19a77;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        transition: 0.15s ease-in-out;
-    }
-    
-    .login-button:hover {
-        background-color: var(--gold-semitransparent);
-        color: var(--nav-color);
-    }
     
     a {
         color: #000000;
@@ -113,9 +94,29 @@
         align-items: center;
         font-weight: normal;
     }
+    /* ==========----- LOGIN BUTTON STYLE -----========== */
+    
+    .login-button {
+        background-color: #ffe19a77;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        transition: 0.15s ease-in-out;
+    }
+    
+    .login-button:hover {
+        background-color: var(--gold-semitransparent);
+        color: var(--nav-color);
+    }
     
     .form-signin-heading {
         margin-bottom: 30px;
+        font-size: 23px;
     }
     
     .input {
@@ -137,6 +138,26 @@
         color: white;
         background-color: var(--nav-color);
         transition: ease-in-out 0.5s;
+    }
+    
+    .alternative {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .alternative-item {
+        color: #000000;
+        transition: ease-in-out 0.2s;
+    }
+    
+    .alternative-item:visited {
+        color: #000000;
+    }
+    
+    .alternative-item:hover {
+        color: var(--gold);
     }
     /* ==========----- CAIXAS ANIMADAS -----========== */
     

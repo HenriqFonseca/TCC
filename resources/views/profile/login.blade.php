@@ -52,13 +52,13 @@
                         <br>
                         <button class="login-button">
                             Login
-                        </button>
-                        <br>
+</button>
                     </div>
 
                 </form>
-                <div class="alternative"><a class="forgot-password" href="">Esqueci minha senha.</a><br>
-                <a class="register" href="{{ route('profile.register') }}">Não tem cadastro? Registrar.</a>
+                <div class="alternative">
+                    <a class="alternative-item" href="">Esqueci minha senha.</a>
+                    <a class="alternative-item" href="{{ route('profile.register') }}">Não tem cadastro? Registrar.</a>
               </div>
                 
             </div>
