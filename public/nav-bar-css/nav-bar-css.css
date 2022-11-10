@@ -1,4 +1,4 @@
-/* ---RESET DE ESTILO GLOBAL--- */
+/*==========----- RESET DE ESTILO GLOBAL -----==========*/
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 
-/* ---RESET DE ESTILO DAS LISTAS--- */
+/*==========----- RESET DE ESTILO DAS LISTAS -----==========*/
 
 ul,
 li {
@@ -17,7 +17,7 @@ li {
 }
 
 
-/* ---VARIAVEIS--- */
+/*==========----- VARIAVEIS -----==========*/
 
 :root {
     --black: #0f1d27;
@@ -30,7 +30,7 @@ li {
 }
 
 
-/* ---IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE */
+/*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE -----==========*/
 
 img {
     -webkit-user-drag: none;
@@ -42,7 +42,7 @@ a {
 }
 
 
-/* ----HEADER STYLE---- */
+/*==========----- HEADER STYLE -----==========*/
 
 header {
     z-index: 100;
@@ -52,7 +52,7 @@ header {
 }
 
 
-/* ----NAV BAR STYLE---- */
+/*==========----- NAV BAR STYLE -----==========*/
 
 .nav-bar {
     height: 100%;
@@ -78,7 +78,7 @@ header {
 }
 
 
-/* ---- LOGO STYLE ---- */
+/*==========----- LOGO STYLE -----==========*/
 
 .nav-logo-link {
     height: 100%;
@@ -93,7 +93,7 @@ header {
 }
 
 
-/* ----NAV ITEMS STYLE---- */
+/*==========----- NAV ITEMS STYLE -----==========*/
 
 .item-box {
     height: 100%;
@@ -114,7 +114,7 @@ header {
 }
 
 
-/* -------- LOGIN BUTTON STYLE -------- */
+/*==========----- LOGIN BUTTON STYLE -----==========*/
 
 .login-button {
     font-family: 'Roboto', sans-serif;
@@ -141,7 +141,7 @@ header {
 }
 
 
-/* ----NAV ITEMS HOVER EFFECT---- */
+/*==========----- NAV ITEMS HOVER EFFECT -----==========*/
 
 .nav-link::after {
     content: " ";
@@ -174,10 +174,10 @@ header {
 }
 
 
-/*--------NAV-DROP--------*/
+/*==========----- NAV DROP -----==========*/
 
 .drop-down {
-    /* height: 0; */
+    height: 0;
     backdrop-filter: blur(10px);
     width: 10rem;
     overflow: hidden;
@@ -199,7 +199,7 @@ header {
 }
 
 
-/*---- NAV SCROLL EFFECT ----*/
+/*==========----- NAV SCROLL EFFECT -----==========*/
 
 .nav-scroll-effect {
     background-color: var(--scroll-effect-color);
@@ -219,7 +219,7 @@ header {
 }
 
 
-/*--------BTN-MENU--------*/
+/*==========----- BTN-MENU -----==========*/
 
 #btn-menu {
     cursor: pointer;
@@ -234,24 +234,7 @@ header {
 }
 
 
-/*--------HIDE/SHOW-NAV-ITEMS--------*/
-
-@media(max-width:1024px) {
-    .nav-list {
-        /* oculta os itens da nav-bar */
-        display: none;
-    }
-    #btn-menu {
-        display: block;
-    }
-    .nav-bar {
-        /* muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores */
-        justify-content: space-between;
-    }
-}
-
-
-/*--------MENU EXPANDED--------*/
+/*==========----- MENU EXPANDED -----==========*/
 
 #nav-menu {
     display: flex;
@@ -325,7 +308,7 @@ header {
 }
 
 
-/* CORRIGE O BUG DO MENU EXPANDIDO */
+/*==========----- CORRIGE O BUG DO MENU EXPANDIDO -----==========*/
 
 @media(min-width:1024px) {
     #nav-menu {
@@ -334,14 +317,42 @@ header {
 }
 
 
-/*--------FOOTER STYLE--------*/
+/*==========----- HIDE/SHOW-NAV-ITEMS -----==========*/
+
+@media(max-width:1024px) {
+    .nav-list {
+        /*==========----- oculta os itens da nav-bar -----==========*/
+        display: none;
+    }
+    #btn-menu {
+        display: block;
+    }
+    .nav-bar {
+        /*==========----- muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores -----==========*/
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        height: 4rem;
+    }
+    .nav-blur {
+        height: 4rem;
+    }
+    .nav-bar {
+        height: 4rem;
+    }
+}
+
+
+/*==========----- FOOTER STYLE -----==========*/
 
 footer {
     width: 100%;
     bottom: 0px;
     display: flex;
     align-items: center;
-    /* border-radius: 1rem 1rem 0 0; */
     flex-direction: column;
     background-color: var(--footer-color);
     backdrop-filter: blur(10px);
@@ -365,7 +376,6 @@ footer {
 }
 
 .icon {
-    /* background-color: #000000; */
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
