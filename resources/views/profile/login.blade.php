@@ -2,6 +2,11 @@
 <html lang="pt-br">
 
 <head>
+    {{-- ================ FONTES =============== --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +19,19 @@
 <body>
     <div class="container">
         <div class="wrapper">
-            @if ($errors->any())
-                <div class="alert">
-                    <ul>
-                        <li>
-                            @foreach ($errors->all() as $error)
-                                <p>{{ $error }}</p>
-                            @endforeach
-                        </li>
-                    </ul>
-                </div>
-            @endif
+            <div class="alert-container">
+                @if ($errors->any())
+                    <div class="alert">
+                        <ul>
+                            <li>
+                                @foreach ($errors->all() as $error)
+                                    <p>{{ $error }}</p>
+                                @endforeach
+                            </li>
+                        </ul>
+                    </div>
+                @endif
+            </div>
             <div class="cadastro">
 
                 <form class="form-signin" method="POST" action="login">
