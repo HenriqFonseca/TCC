@@ -43,13 +43,14 @@
                     <div class="login">
                         <br>
                         <button class="login-button">
-                            Fazer Login
+                            Login
                         </button>
                         <br>
                     </div>
 
                 </form>
-                <a class="forgot-password" href="">Esqueci minha senha</a>
+                <a class="forgot-password" href="">Esqueci minha senha</a><br>
+                <a class="forgot-password" href="{{ route('profile.register') }}">Registrar</a>
             </div>
             <a href="{{ route('home.index') }}" class="logo-box">
                 <img class="img" src="img/logo-vertical.png" alt="">
