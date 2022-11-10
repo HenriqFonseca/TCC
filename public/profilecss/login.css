@@ -283,3 +283,22 @@
     .container:focus-within .drop {
         margin-top: 1rem;
     }
+
+    .toast{
+        position: absolute;
+        right: 0;
+        top: 80px;
+        margin: 30px;
+        overflow: hidden;
+        color: #842029;
+
+        background: #f8d7da;
+        height: auto;
+        width: 190px;
+        padding: 15px;
+        border-radius: 8px;
+        border-color: #f5c2c7;
+
+        box-shadow: 0 0 8px rgba(56, 56, 56, 0.8);
+        align-items: center;
+    }

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet">
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,20 @@
     <title>Login</title>
     <script src="js/jquery-3.6.1.min.js" defer></script>
     <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
+    <script src="{{ asset('js/toastmessage.js') }}" defer></script>
+
 </head>
 
 <body>
+    @if (session('logado'))
+        <div class="toast" id="toast">
+            <p>{{ session('logado') }}</p>
+        </div>
+    @endif
     <div class="container">
         <div class="wrapper">
             <div class="alert-container">
+
                 @if ($errors->any())
                     <div class="alert">
                         <ul>
@@ -63,6 +71,6 @@
             <div class="drop drop-4"></div>
         </div>
     </div>
-
-
+ 
+    
 </body>

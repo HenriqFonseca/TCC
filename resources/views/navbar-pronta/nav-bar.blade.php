@@ -43,7 +43,7 @@
                     @auth
 
                     <ul class="drop-down">
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.index') }}">Treinos</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.index') }}">Area do Aluno</a></li>
                         <li class="drop-li"> <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
