@@ -1,7 +1,6 @@
 <script defer src="js/nav-bar.js"></script>
 <link href="nav-bar-css/nav-bar-css.css" rel="stylesheet">
 <header>
-    <!----------NAV-BAR------------->
     <div class="nav-blur"></div>
     <nav class="nav-bar">
         <a class="nav-logo-link" href="{{ route('home.index') }}">
@@ -89,7 +88,7 @@
             <a href="" class="grid-link">
                 Texto
             </a>
-            <a href="{{ route('user.logout') }}" class="grid-link">
+            <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
                 Sair
             </a>
 

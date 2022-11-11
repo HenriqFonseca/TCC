@@ -41,7 +41,7 @@
                 @endif
             </div>
             <div class="cadastro">
-
+            <h2 class="form-signin-heading">Insira seus dados</h2>
                 <form class="form-signin" method="POST" action="login">
                     @csrf
                     <input type="text" class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
@@ -52,13 +52,15 @@
                         <br>
                         <button class="login-button">
                             Login
-                        </button>
-                        <br>
+</button>
                     </div>
 
                 </form>
-                <a class="forgot-password" href="">Esqueci minha senha</a><br>
-                <a class="forgot-password" href="{{ route('profile.register') }}">Registrar</a>
+                <div class="alternative">
+                    <a class="alternative-item" href="">Esqueci minha senha.</a>
+                    <a class="alternative-item" href="{{ route('profile.register') }}">Não tem cadastro? Registrar.</a>
+              </div>
+                
             </div>
             <a href="{{ route('home.index') }}" class="logo-box">
                 <img class="img" src="img/logo-vertical.png" alt="">

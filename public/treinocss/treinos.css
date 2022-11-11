@@ -7,7 +7,7 @@
  :root {
     --btn-color: #ffd9a1a1;
     --btn-large: #ffc297a1;
-    --black: #000000;
+    --nav-color: #000000;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
     --footer-color: rgba(102, 102, 102, 0.541);
@@ -15,20 +15,13 @@
     --gold-transparent: #fdf5d33a;
 }
 
-body{
+body {
     /* background-image: url('/img/background.jpg'); */
-
-
 }
-main-container{
 
+main-container {}
 
-      
-}    
-
-nav-bar2{
-
-}
+nav-bar2 {}
 
 main-container {}
 

@@ -1,4 +1,4 @@
-/* ---RESET DE ESTILO GLOBAL--- */
+/*==========----- RESET DE ESTILO GLOBAL -----==========*/
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 
-/* ---RESET DE ESTILO DAS LISTAS--- */
+/*==========----- RESET DE ESTILO DAS LISTAS -----==========*/
 
 ul,
 li {
@@ -17,20 +17,21 @@ li {
 }
 
 
-/* ---VARIAVEIS--- */
+/*==========----- VARIAVEIS -----==========*/
 
 :root {
-    --black: #0f1d27;
+    --nav-color: #0f1d27e8;
     --gold: #C1A45F;
     --logout: rgb(156, 0, 0);
-    --scroll-effect-color: rgba(194, 194, 194, 0.158);
+    --logout-menu: rgba(185, 99, 99, 0.726);
+    --scroll-effect-color: #0f1d276c;
     --footer-color: rgba(102, 102, 102, 0.541);
     --gold-semitransparent: #c1a45fd7;
-    --gold-transparent: #fdf5d33a;
+    --gold-transparent: #fdf5d321;
 }
 
 
-/* ---IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE */
+/*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE -----==========*/
 
 img {
     -webkit-user-drag: none;
@@ -42,7 +43,7 @@ a {
 }
 
 
-/* ----HEADER STYLE---- */
+/*==========----- HEADER STYLE -----==========*/
 
 header {
     z-index: 100;
@@ -52,11 +53,11 @@ header {
 }
 
 
-/* ----NAV BAR STYLE---- */
+/*==========----- NAV BAR STYLE -----==========*/
 
 .nav-bar {
     height: 100%;
-    background-color: var(--black);
+    background-color: var(--nav-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,7 +79,7 @@ header {
 }
 
 
-/* ---- LOGO STYLE ---- */
+/*==========----- LOGO STYLE -----==========*/
 
 .nav-logo-link {
     height: 100%;
@@ -93,7 +94,7 @@ header {
 }
 
 
-/* ----NAV ITEMS STYLE---- */
+/*==========----- NAV ITEMS STYLE -----==========*/
 
 .item-box {
     height: 100%;
@@ -114,7 +115,7 @@ header {
 }
 
 
-/* -------- LOGIN BUTTON STYLE -------- */
+/*==========----- LOGIN BUTTON STYLE -----==========*/
 
 .login-button {
     font-family: 'Roboto', sans-serif;
@@ -133,15 +134,15 @@ header {
 
 .login-button:hover {
     background-color: var(--gold-semitransparent);
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 .login-button-scroll-effect {
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 
-/* ----NAV ITEMS HOVER EFFECT---- */
+/*==========----- NAV ITEMS HOVER EFFECT -----==========*/
 
 .nav-link::after {
     content: " ";
@@ -174,14 +175,14 @@ header {
 }
 
 
-/*--------NAV-DROP--------*/
+/*==========----- NAV DROP -----==========*/
 
 .drop-down {
-    /* height: 0; */
+    height: 0;
     backdrop-filter: blur(10px);
     width: 10rem;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--nav-color);
     transition: 0.3s ease-in-out;
     align-items: center;
     justify-content: space-around;
@@ -199,7 +200,7 @@ header {
 }
 
 
-/*---- NAV SCROLL EFFECT ----*/
+/*==========----- NAV SCROLL EFFECT -----==========*/
 
 .nav-scroll-effect {
     background-color: var(--scroll-effect-color);
@@ -207,7 +208,7 @@ header {
 
 .link-scroll-effect,
 .link-scroll-effect:hover {
-    color: var(--black);
+    color: var(--nav-color);
 }
 
 .nav-blur {
@@ -219,7 +220,7 @@ header {
 }
 
 
-/*--------BTN-MENU--------*/
+/*==========----- BTN-MENU -----==========*/
 
 #btn-menu {
     cursor: pointer;
@@ -234,24 +235,7 @@ header {
 }
 
 
-/*--------HIDE/SHOW-NAV-ITEMS--------*/
-
-@media(max-width:1024px) {
-    .nav-list {
-        /* oculta os itens da nav-bar */
-        display: none;
-    }
-    #btn-menu {
-        display: block;
-    }
-    .nav-bar {
-        /* muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores */
-        justify-content: space-between;
-    }
-}
-
-
-/*--------MENU EXPANDED--------*/
+/*==========----- MENU EXPANDED -----==========*/
 
 #nav-menu {
     display: flex;
@@ -259,13 +243,14 @@ header {
     flex-direction: column;
     position: absolute;
     right: 0;
-    background-color: #000000;
+    background-color: var(--nav-color);
     width: 80vw;
     height: 0vh;
     max-width: 1000px;
     overflow: hidden;
     border-radius: 0 0 0 1.5rem;
     transition: ease-in-out 0.3s;
+    backdrop-filter: blur(10px);
 }
 
 #nav-menu.menu-expanded {
@@ -273,9 +258,8 @@ header {
 }
 
 #nav-menu.nav-scroll-effect {
-    background-color: var(--footer-color);
+    background-color: var(--scroll-effect-color);
     transition: 0.3s ease-in;
-    backdrop-filter: blur(10px);
 }
 
 .menu-grid-container {
@@ -300,10 +284,13 @@ header {
 
 .grid-link:hover {
     color: white;
-    border-radius: 0rem 2rem 0rem 2rem;
 }
 
-.grid-item>img {
+.logout-menu:hover {
+    background-color: var(--logout-menu);
+}
+
+.logout .grid-item>img {
     width: 70px;
 }
 
@@ -315,7 +302,7 @@ header {
     width: 100%;
     gap: 1rem;
     max-width: 140px;
-    background-color: #00000085;
+    background-color: #0000003f;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -325,7 +312,7 @@ header {
 }
 
 
-/* CORRIGE O BUG DO MENU EXPANDIDO */
+/*==========----- CORRIGE O BUG DO MENU EXPANDIDO -----==========*/
 
 @media(min-width:1024px) {
     #nav-menu {
@@ -334,14 +321,42 @@ header {
 }
 
 
-/*--------FOOTER STYLE--------*/
+/*==========----- HIDE/SHOW-NAV-ITEMS -----==========*/
+
+@media(max-width:1024px) {
+    .nav-list {
+        /*==========----- oculta os itens da nav-bar -----==========*/
+        display: none;
+    }
+    #btn-menu {
+        display: block;
+    }
+    .nav-bar {
+        /*==========----- muda o espaçamento do botão de menu e do logotipo para melhor vizualização em dispositivos menores -----==========*/
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        height: 4rem;
+    }
+    .nav-blur {
+        height: 4rem;
+    }
+    .nav-bar {
+        height: 4rem;
+    }
+}
+
+
+/*==========----- FOOTER STYLE -----==========*/
 
 footer {
     width: 100%;
     bottom: 0px;
     display: flex;
     align-items: center;
-    /* border-radius: 1rem 1rem 0 0; */
     flex-direction: column;
     background-color: var(--footer-color);
     backdrop-filter: blur(10px);
@@ -365,7 +380,6 @@ footer {
 }
 
 .icon {
-    /* background-color: #000000; */
     border-radius: 50%;
     width: 3rem;
     height: 3rem;

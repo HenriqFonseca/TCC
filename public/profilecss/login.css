@@ -8,14 +8,14 @@
      :root {
         --drop-border-color: rgba(245, 245, 245, 0.671);
         --drop-color: #ffd9a167;
-        --black: #000000;
+        --nav-color: #000000;
         --gold: #C1A45F;
         --scroll-effect-color: rgba(151, 151, 151, 0.158);
         --footer-color: rgba(102, 102, 102, 0.541);
         --gold-semitransparent: #c1a45fd7;
         --gold-transparent: #fdf5d33a;
     }
-    /* ---IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE */
+    /* ==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE -----========== */
     
     img {
         -webkit-user-drag: none;
@@ -33,25 +33,6 @@
         align-items: center;
         height: 95vh;
         font-family: 'Roboto', sans-serif;
-    }
-    /* -------- LOGIN BUTTON STYLE -------- */
-    
-    .login-button {
-        background-color: #ffe19a77;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        transition: 0.15s ease-in-out;
-    }
-    
-    .login-button:hover {
-        background-color: var(--gold-semitransparent);
-        color: var(--black);
     }
     
     a {
@@ -73,19 +54,6 @@
         backdrop-filter: blur(8px);
         width: 3rem;
     }
-    /* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
-    
-    @media(max-width:1024px) {
-        body {
-            background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
-        }
-    }
-    
-    @media(max-width:860px) {
-        body {
-            background-image: url('/img/background2phone.png'), url('/img/background.jpg');
-        }
-    }
     
     .img {
         width: 80%;
@@ -96,6 +64,7 @@
     }
     
     .wrapper {
+        overflow: hidden;
         display: flex;
         justify-content: space-between;
         border-radius: 1rem;
@@ -111,7 +80,7 @@
     }
     
     .cadastro {
-        margin-top: 50px;
+        margin-top: 25px;
         text-align: center;
         padding: 3rem;
         width: 100%;
@@ -125,9 +94,29 @@
         align-items: center;
         font-weight: normal;
     }
+    /* ==========----- LOGIN BUTTON STYLE -----========== */
+    
+    .login-button {
+        background-color: #ffe19a77;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        transition: 0.15s ease-in-out;
+    }
+    
+    .login-button:hover {
+        background-color: var(--gold-semitransparent);
+        color: var(--nav-color);
+    }
     
     .form-signin-heading {
         margin-bottom: 30px;
+        font-size: 23px;
     }
     
     .input {
@@ -142,36 +131,35 @@
         border-radius: 0.5rem;
         outline: none;
         background-color: rgba(0, 0, 0, 0.548)important;
-        width: 90%;
+        width: 100%;
     }
     
     .input:focus {
         color: white;
-        background-color: var(--black);
+        background-color: var(--nav-color);
         transition: ease-in-out 0.5s;
     }
     
-    .alert {
-        background-color: #f8d7da;
-        border-color: #f5c2c7;
-        color: #842029;
-        text-align: left !important;
-        border-radius: 5px;
-        position: absolute;
-        min-height: 60px;
-        margin: auto;
-        width: 100%;
+    .alternative {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
     
-    .alert ul {
-        padding: 10px;
-        width: 100%;
+    .alternative-item {
+        color: #000000;
+        transition: ease-in-out 0.2s;
     }
     
-    .alert ul li {
-        padding-left: 50px;
+    .alternative-item:visited {
+        color: #000000;
     }
-    /* CAIXAS ANIMADAS */
+    
+    .alternative-item:hover {
+        color: var(--gold);
+    }
+    /* ==========----- CAIXAS ANIMADAS -----========== */
     
     .drops {
         position: absolute;
@@ -194,7 +182,7 @@
         height: 6rem;
         width: 6rem;
         top: 30px;
-        left: -50px;
+        left: -45px;
     }
     
     .drop-2 {
@@ -208,7 +196,7 @@
         z-index: -1;
         height: 7rem;
         width: 7rem;
-        top: 340px;
+        top: 370px;
         left: 390px;
     }
     
@@ -219,15 +207,16 @@
         top: 220px;
         left: -30px;
     }
-    /* MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA */
+    /* ==========----- MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA -----========== */
     
     @media(max-width:1024px) {
         body {
             background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
         }
     }
+    /* ==========----- MUDA O POSICIONAMENTO DOS DROPS -----========== */
     
-    @media(max-width:670px) {
+    @media(max-width:620px) {
         body {
             background-image: url('/img/background2phone.png'), url('/img/background.jpg');
         }
@@ -250,19 +239,19 @@
             height: 3.5rem;
             width: 3.5rem;
             top: 10px;
-            left: -35px;
+            left: -40px;
         }
         .drop-2 {
             height: 4rem;
             width: 4rem;
             top: -30px;
-            left: 250px;
+            left: 260px;
         }
         .drop-3 {
             z-index: -1;
             height: 4rem;
             width: 4rem;
-            top: 265px;
+            top: 290px;
             left: 240px;
         }
         .drop-4 {
@@ -273,32 +262,61 @@
             left: -20px;
         }
     }
+    /* ==========----- MUDA O TAMANHO DO BACKGROUND COM RELAÇÃO A TELA -----========== */
     
-    @media(max-width:520px) {
+    @media(max-width:1024px) {
         body {
-            background-image: url('/img/background.jpg');
+            background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
+        }
+    }
+    
+    @media(max-width:860px) {
+        body {
+            background-image: url('/img/background2phone.png'), url('/img/background.jpg');
         }
     }
     
     .container:focus-within .drop {
         margin-top: 1rem;
     }
-
-    .toast{
+    /* ==========----- POPUP ERRO DE LOGIN -----========== */
+    
+    .toast {
         position: absolute;
         right: 0;
         top: 80px;
         margin: 30px;
         overflow: hidden;
         color: #842029;
-
         background: #f8d7da;
         height: auto;
         width: 190px;
         padding: 15px;
         border-radius: 8px;
         border-color: #f5c2c7;
-
         box-shadow: 0 0 8px rgba(56, 56, 56, 0.8);
         align-items: center;
+    }
+    
+    .alert {
+        border-radius: 1rem;
+        background-color: #f8d7da;
+        border-color: #f5c2c7;
+        color: #842029;
+        text-align: left !important;
+        border-radius: 5px;
+        position: absolute;
+        min-height: 60px;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .alert ul {
+        list-style-type: none;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .alert ul li {
+        padding-left: 50px;
     }
