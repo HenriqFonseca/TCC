@@ -25,9 +25,9 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'=> ['required', 'unique:users,email', 'email', 'regex:/^[\w]+[@]+[.]$/'],
+            'email'=> ['required', 'unique:users,email', 'email',],
             'nome' => ['required', 'string', 'max:20', 'regex:/^[A-Za-z]+$/'],
-            'sobrenome' => ['required', 'string', 'max:30', 'regex:/^[A-Za-z]+$/'],
+            'sobrenome' => ['required', 'string', 'max:30',],
             'cpf' => ['required', 'unique:users,cpf', 'min:14', 'max:14'],
             'password' => ['required', 'min:6', 'max:20', 'regex:/^[A-Za-z]+$/'],
         ];
@@ -40,7 +40,6 @@ class RegisterRequest extends FormRequest
             'email.required' => 'O Campo email é obrigatório',
             'email.unique' => 'Email já utilizado',
             'email.email' => 'Insira um email válido',
-            'email.regex' => 'Email inválido',
 
             
             //========== REGRAS DO NOME ===========//
@@ -53,7 +52,6 @@ class RegisterRequest extends FormRequest
             'sobrenome.required' => 'O Campo sobrenome é obrigatório',
             'sobrenome.string' => 'Insira um sobrenome válido',
             'sobrenome.max' => 'Insira um sobrenome válido',
-            'sobrenome.regex'=> 'O sobrenome só pode conter letras',
 
              //========== REGRAS DO CPF ===========//
             'cpf.required' => 'Preencha o campo CPF',
