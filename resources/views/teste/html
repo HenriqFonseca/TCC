@@ -9,10 +9,10 @@
     <style>
         .wrapper{
             width: 40rem;
-            height: 30rem;
+            height: 33rem;
             align-items: center;
-            background-color: #c0c0c0;
-            /* display: flex; */
+            background-color: #d1d1d196;
+            backdrop-filter: blur( 6px);
             justify-content: space-between;
             border-radius: 1rem;
             backdrop-filter: blur( 6px);
@@ -31,7 +31,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 25px;
+            height: 29px;
             width: 400px;
             border-radius: 5px;
 
@@ -48,7 +48,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 20px;
+            height: 35px;
             width: 400px;
             border-radius: 6px;
         }
@@ -73,10 +73,30 @@
 }
 
 .confirm-button{
-    padding: 5px;
-    font-size: 1rem;
-    
+    background-color: #ffe19a77;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        transition: 0.15s ease-in-out;
 
+}
+
+.cancel-button{
+    background-color: #ffe19a77;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        transition: 0.15s ease-in-out;
 }
     </style>
 </head>
