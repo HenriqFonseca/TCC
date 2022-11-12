@@ -42,10 +42,10 @@
                     @auth
 
                     <ul class="drop-down">
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.index') }}">Area do Aluno</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">não clique</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.index') }}">Área do Aluno</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">Meus treinos</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#">Fale conosco</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                     </ul>
@@ -79,13 +79,13 @@
             <a href="https://www.smartfit.com.br/academias" class="grid-link">
                 Planos
             </a>
-            <a href="" class="grid-link">
+            <a href="" class="grid-link hover">
                 Texto
             </a>
-            <a href="" class="grid-link">
+            <a href="" class="grid-link hover">
                 Texto
             </a>
-            <a href="" class="grid-link">
+            <a href="" class="grid-link hover">
                 Texto
             </a>
             <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
@@ -115,5 +115,5 @@
             </ul>
         </nav>
     </div>
-    <small>Devfit Copyright © 2022 </small>
+    <small>Dev fit  Copyright ©  2022 </small>
 </footer>

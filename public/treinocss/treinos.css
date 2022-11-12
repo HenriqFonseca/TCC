@@ -5,9 +5,10 @@
 }
 
  :root {
+    --font-color: #f0f0f0;
     --btn-color: #ffd9a1a1;
     --btn-large: #ffc297a1;
-    --nav-color: #000000;
+    --nav-color: #0f1d27e8;
     --gold: #C1A45F;
     --scroll-effect-color: rgba(151, 151, 151, 0.158);
     --footer-color: rgba(102, 102, 102, 0.541);
