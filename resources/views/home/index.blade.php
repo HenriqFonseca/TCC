@@ -83,7 +83,7 @@
                     <img src="img/dumbbell.png" alt="">
                 </button>
                 <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+                    <h3>Meus treinos</h3>
                 </div>
             </div>
             <div class="btn-box">
@@ -91,7 +91,7 @@
                     <img src="img/location.png" alt="">
                 </button>
                 <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+                    <h3>Academias</h3>
                 </div>
             </div>
             <div class="btn-box">
@@ -99,7 +99,7 @@
                     <img src="img/chat.png" alt="">
                 </button>
                 <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+                    <h3>Fale conosco</h3>
                 </div>
             </div>
             <div class="btn-box">
@@ -107,7 +107,7 @@
                     <img src="img/invoice.png" alt="">
                 </button>
                 <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+                    <h3>Planos</h3>
                 </div>
             </div>
             <div class="btn-box">

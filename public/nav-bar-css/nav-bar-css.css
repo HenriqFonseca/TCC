@@ -20,6 +20,7 @@ li {
 /*==========----- VARIAVEIS -----==========*/
 
 :root {
+    --font-color: #f0f0f0;
     --nav-color: #0f1d27e8;
     --gold: #C1A45F;
     --logout: rgb(156, 0, 0);
@@ -39,7 +40,7 @@ img {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
 }
 
 
@@ -98,7 +99,6 @@ header {
 
 .item-box {
     height: 100%;
-    width: 5rem;
     transition: 0.15s ease-in-out;
 }
 
@@ -108,7 +108,7 @@ header {
     padding: 5px;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     position: relative;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -123,7 +123,7 @@ header {
     font-weight: bold;
     background-color: #ffe19a77;
     border: none;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -191,7 +191,7 @@ header {
 }
 
 .item-box:hover>.drop-down {
-    height: 14rem;
+    height: 13rem;
     display: flex;
 }
 
@@ -277,12 +277,13 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--gold-transparent);
+    background: linear-gradient(130deg, rgba(15, 29, 39, 0.582)0%, 80%, rgba(213, 255, 235, 0.562) 100%);
     border-radius: 1rem;
-    transition: 0.5s ease-in-out
+    transition: 0.5s ease-in-out;
 }
 
 .grid-link:hover {
+    background: linear-gradient(130deg, rgba(15, 29, 39, 0.582)0%, 70%, rgba(213, 255, 235, 0.562) 100%);
     color: white;
 }
 
@@ -358,7 +359,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--footer-color);
+    background-color: var(--scroll-effect-color);
     backdrop-filter: blur(10px);
 }
 
