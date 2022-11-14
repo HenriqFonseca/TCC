@@ -80,10 +80,10 @@
                 Planos
             </a>
             <a href="" class="grid-link hover">
-                Texto
+                Academias
             </a>
             <a href="" class="grid-link hover">
-                Texto
+                Fale conosco
             </a>
             <a href="" class="grid-link hover">
                 Texto
@@ -98,7 +98,7 @@
 </header>
 @yield('conteudo')
 <footer>
-    <div class="nav-footer">
+    <div class="nav-footer" id="footer">
         <nav>
             <h3>Entre em contato conosco!</h3>
             <ul class="footer-list">
