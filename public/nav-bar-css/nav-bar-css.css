@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 
@@ -118,8 +120,6 @@ header {
 /*==========----- LOGIN BUTTON STYLE -----==========*/
 
 .login-button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
     font-weight: bold;
     background-color: #ffe19a77;
     border: none;
