@@ -34,3 +34,6 @@ Route::get('/treino', [TreinoController::class, 'index'])->name('treinos.index')
 //para testes
 Route::get('/a', [TreinoController::class, 'a'])->name('treinos.index2');
 
+
+
+

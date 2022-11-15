@@ -6,9 +6,11 @@
     }
     
      :root {
+        --font-color: #f0f0f0;
+        --nav-color: #0f1d27e8;
+        --scroll-effect-color: #0f1d276c;
         --drop-border-color: rgba(245, 245, 245, 0.671);
         --drop-color: #ffd9a167;
-        --nav-color: #000000;
         --gold: #C1A45F;
         --scroll-effect-color: rgba(151, 151, 151, 0.158);
         --footer-color: rgba(102, 102, 102, 0.541);
@@ -22,6 +24,7 @@
     }
     
     body {
+        color: var(--font-color);
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         background-image: url('/img/background2.png'), url('/img/background.jpg');
@@ -50,7 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.637);
+        background-color: var(--nav-color);
         backdrop-filter: blur(8px);
         width: 3rem;
     }
@@ -68,7 +71,7 @@
         display: flex;
         justify-content: space-between;
         border-radius: 1rem;
-        background-color: #d1d1d196;
+        background-color: var(--scroll-effect-color);
         backdrop-filter: blur( 6px);
         width: 27rem;
     }
@@ -117,6 +120,7 @@
     .form-signin-heading {
         margin-bottom: 30px;
         font-size: 23px;
+        color: #ffffff;
     }
     
     .input {
@@ -148,12 +152,12 @@
     }
     
     .alternative-item {
-        color: #000000;
+        color: var(--font-color);
         transition: ease-in-out 0.2s;
     }
     
     .alternative-item:visited {
-        color: #000000;
+        color: var(--font-color);
     }
     
     .alternative-item:hover {

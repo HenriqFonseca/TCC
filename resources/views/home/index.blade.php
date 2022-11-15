@@ -78,55 +78,68 @@
 
 
         <div class="btn-grid-container">
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/dumbbell.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            <a class="grid-link" href="{{ route('treinos.index') }}">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/dumbbell.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Meus treinos</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/location.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            </a>
+            <a class="grid-link" href="">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/location.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Academias</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/chat.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            </a>
+            <a class="grid-link" href="#footer">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/chat.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Fale conosco</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/invoice.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            </a>
+            <a class="grid-link" href="">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/invoice.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Planos</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/calendar.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            </a>
+            <a class="grid-link" href="">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/calendar.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Algum Texto</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-box">
-                <button class="btn-small">
-                    <img src="img/note.png" alt="">
-                </button>
-                <div class="btn-caption">
-                    <h3>Algum Texto</h3>
+            </a>
+            <a class="grid-link" href="">
+                <div class="btn-box">
+                    <button class="btn-small">
+                        <img src="img/note.png" alt="">
+                    </button>
+                    <div class="btn-caption">
+                        <h3>Algum Texto</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
+
         <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 
     </main>
