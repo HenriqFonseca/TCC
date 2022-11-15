@@ -29,10 +29,8 @@ Route::post('/register', [UserController::class, 'auth'])->name('user.register')
 Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
 
 
-Route::get('/treino', [TreinoController::class, 'index'])->name('treinos.index');
+Route::get('/treinos', [TreinoController::class, 'rota_treinos_aluno'])->name('treinos.treinos_aluno');
 
-//para testes
-Route::get('/a', [TreinoController::class, 'a'])->name('treinos.index2');
 
 
 
