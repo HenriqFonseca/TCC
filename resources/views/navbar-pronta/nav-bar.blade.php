@@ -45,7 +45,7 @@
                         <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.index') }}">Área do Aluno</a></li>
                         <li class="drop-li"> <a class="nav-link" href="https://pbs.twimg.com/media/FHA5IJbXoAMxCm9?format=jpg&name=large">Meus treinos</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#">Fale conosco</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                     </ul>
@@ -82,7 +82,7 @@
             <a href="" class="grid-link hover">
                 Academias
             </a>
-            <a href="" class="grid-link hover">
+            <a href="#footer" class="grid-link hover">
                 Fale conosco
             </a>
             <a href="" class="grid-link hover">
