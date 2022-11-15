@@ -9,13 +9,11 @@ class TreinoController extends Controller
 {
     public function rota_treinos_aluno()
     {
-        $aluno = User::where('aluno', 1)->get();
-        return view('treinos.indexprof', ['aluno' => $aluno] );
+        return view('treinos.treinos_aluno');
     }
-    public function a()
+    public function rota_treinos_professor()
     {
-        return view('treinos.professor');
+        $aluno = User::where('aluno', 1)->get();
+        return view('treinos.indexprof', ['aluno' => $aluno]);
     }
-
-    
 }
