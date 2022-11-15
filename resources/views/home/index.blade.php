@@ -78,7 +78,7 @@
 
 
         <div class="btn-grid-container">
-            <a class="grid-link" href="{{ route('treinos.treinos_aluno') }}">
+            <a class="grid-link" href="{{ route('treinos.index') }}">
                 <div class="btn-box">
                     <button class="btn-small">
                         <img src="img/dumbbell.png" alt="">

@@ -14,6 +14,10 @@
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- styles -->
+    <script defer src="js/nav-bar.js"></script>
+
 </head>
 </head>
 
