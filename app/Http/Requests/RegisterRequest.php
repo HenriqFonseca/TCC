@@ -26,10 +26,10 @@ class RegisterRequest extends FormRequest
     {
         return [
             'email'=> ['required', 'unique:users,email', 'email',],
-            'nome' => ['required', 'string', 'max:20', 'regex:/^[A-Za-z]+$/'],
+            'nome' => ['required', 'string', 'max:20'],
             'sobrenome' => ['required', 'string', 'max:30',],
             'cpf' => ['required', 'unique:users,cpf', 'min:14', 'max:14'],
-            'password' => ['required', 'min:6', 'max:20', 'regex:/^[A-Za-z]+$/'],
+            'password' => ['required', 'min:6', 'max:20'],
         ];
     }
      //========== MESNAGENS QUE SERÃO EXIBIDAS CASO O ERRO OCORRA ============//
@@ -46,7 +46,6 @@ class RegisterRequest extends FormRequest
             'nome.required' => 'O Campo nome é obrigatório',
             'nome.string' => 'Insira um nome válido',
             'nome.max' => 'Insira um nome válido',
-            'nome.regex'=> 'O nome só pode conter letras',
 
             //========== REGRAS DO SOBRENOME ===========//
             'sobrenome.required' => 'O Campo sobrenome é obrigatório',
