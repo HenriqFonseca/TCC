@@ -42,8 +42,11 @@
                     @auth
 
                     <ul class="drop-down">
-                        <li class="drop-li"> <a class="nav-link" href="">Área do Aluno</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.treinos_aluno') }}">Meus treinos</a></li>
+                        {{-- @if (auth()->user()->professor == 1) --}}
+                            
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Área do Aluno</a></li>
+                        {{-- @endif --}}
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.rota.alunos') }}">Meus treinos</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
@@ -73,7 +76,7 @@
         @auth
 
         <div class="menu-grid-container">
-            <a href="{{ route('treinos.treinos_aluno') }}" class="grid-link">
+            <a href="{{ route('treino.index') }}" class="grid-link">
                 Treinos
             </a>
             <a href="https://www.smartfit.com.br/academias" class="grid-link">

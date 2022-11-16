@@ -15,7 +15,11 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet"> --}}
 
     <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -41,124 +45,126 @@
     @extends('navbar-pronta.nav-bar')
 
     @section('conteudo')
-    <main>
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <main>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/8225.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/897.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
+                    </div>
+                </div>
+
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--Carousrel end-->
+
+
+            <div class="btn-grid-container">
+                <a class="grid-link" href="{{ route('treino.index') }}">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/dumbbell.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Meus treinos</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-link" href="">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/location.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Academias</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-link" href="#footer">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/chat.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Fale conosco</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-link" href="">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/invoice.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Planos</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-link" href="">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/calendar.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Algum Texto</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-link" href="">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/note.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Algum Texto</h3>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/8225.jpg" alt="" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/897.jpg" alt="" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
-                </div>
+            <div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
+        </main>
+        </footer>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-        <!--Carousrel end-->
-
-
-        <div class="btn-grid-container">
-            <a class="grid-link" href="{{ route('treinos.treinos_aluno') }}">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/dumbbell.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Meus treinos</h3>
-                    </div>
-                </div>
-            </a>
-            <a class="grid-link" href="">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/location.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Academias</h3>
-                    </div>
-                </div>
-            </a>
-            <a class="grid-link" href="#footer">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/chat.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Fale conosco</h3>
-                    </div>
-                </div>
-            </a>
-            <a class="grid-link" href="">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/invoice.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Planos</h3>
-                    </div>
-                </div>
-            </a>
-            <a class="grid-link" href="">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/calendar.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
-                </div>
-            </a>
-            <a class="grid-link" href="">
-                <div class="btn-box">
-                    <button class="btn-small">
-                        <img src="img/note.png" alt="">
-                    </button>
-                    <div class="btn-caption">
-                        <h3>Algum Texto</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-
-    </main>
-    </footer>
-
-    {{-- Script Service Worker --}}
-    <script src="{{ secure_asset('sw.js') }}"></script>
-    <script>
-        if (!navigator.serviceWorker.controller) {
-            navigator.serviceWorker.register("sw.js").then(function(reg) {
-                console.log("Service worker has been registered for scope: " + reg.scope);
-            });
-        }
-    </script>
-</body>
+        {{-- Script Service Worker --}}
+        <script src="{{ secure_asset('sw.js') }}"></script>
+        <script>
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register("sw.js").then(function(reg) {
+                    console.log("Service worker has been registered for scope: " + reg.scope);
+                });
+            }
+        </script>
+    </body>
 @endsection
 <!-- ATRIBUIÇÕES DE IMAGEM -->
 <!--                       -->
-<!-- <a href="https://br.freepik.com/vetores-gratis/pagina-de-destino-isometrica-de-ginasio-equipamento-de-fitness_7062176.htm#query=gym&position=42&from_view=search">Imagem de upklyak</a> no Freepik  
+<!-- <a href="https://br.freepik.com/vetores-gratis/pagina-de-destino-isometrica-de-ginasio-equipamento-de-fitness_7062176.htm#query=gym&position=42&from_view=search">Imagem de upklyak</a> no Freepik
 
 
 <a href="https://br.freepik.com/vetores-gratis/atletas-fazendo-exercicios-de-fitness-no-ginasio-com-janelas-panoramicas-isolaram-ilustracao-vetorial-plana-desenhos-animados-cardio-treinamento-e-levantamento-de-peso_10172354.htm#query=gym&position=16&from_view=search">Imagem de pch.vector</a> no Freepik

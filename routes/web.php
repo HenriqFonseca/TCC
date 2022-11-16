@@ -25,11 +25,13 @@ Route::post('/login', [UserController::class, 'login'])->name('user.login');
 
 // =========================== ROTA PARA PAGINA DE REGISTRO =======================
 Route::get('/register', [ProfileController::class, 'register'])->name('profile.register');
-Route::post('/register', [UserController::class, 'auth'])->name('user.register');
 Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
+// =========================== PARA ONDE OS DADOS DO REGISTRO VÃO =======================
+Route::post('/register', [UserController::class, 'auth'])->name('user.register');
 
-
-Route::get('/treinos', [TreinoController::class, 'rota_treinos_aluno'])->name('treinos.treinos_aluno');
+//==================== INDEX TREINO PROFESSOR =======================
+Route::get('/treinos', [TreinoController::class, 'index'])->name('treino.index');
+Route::get('/treino', [TreinoController::class, 'rota_treinos_aluno'])->name('treino.rota.alunos');
 
 
 
