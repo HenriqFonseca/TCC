@@ -1,5 +1,9 @@
 <script defer src="js/nav-bar.js"></script>
 <link href="nav-bar-css/nav-bar-css.css" rel="stylesheet">
+
+    <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <header>
     <div class="nav-blur"></div>
     <nav class="nav-bar">

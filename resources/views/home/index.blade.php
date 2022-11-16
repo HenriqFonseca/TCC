@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
+<<<<<<< HEAD
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"defer></script>
+=======
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- FONTS -->
@@ -23,6 +26,7 @@
 
     <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+>>>>>>> c6963d7296d506a015ac6f3bea9125f1637618c1
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
@@ -33,7 +37,7 @@
     <link href="homecss/index.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <script defer src="js/script_index.js"></script>
+    <script src="js/script_index.js" defer></script>
 
 
 
