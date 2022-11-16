@@ -20,10 +20,7 @@
     {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet"> --}}
-
-    <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
     <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
@@ -33,7 +30,7 @@
     <link href="homecss/index.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <script defer src="js/script_index.js"></script>
+    <script src="js/script_index.js" defer></script>
 
 
 
@@ -82,7 +79,7 @@
 
 
             <div class="btn-grid-container">
-                <a class="grid-link" href="{{ route('treino.index') }}">
+                <a class="grid-link" href="{{ route('treino.rota.alunos') }}">
                     <div class="btn-box">
                         <button class="btn-small">
                             <img src="img/dumbbell.png" alt="">

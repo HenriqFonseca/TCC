@@ -6,15 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinos</title>
-    <!-- CSS -->
-    <link href="treinocss/treinos.css" rel="stylesheet">
 
-    <!-- CSS DO BOOTSTRAP -->
+    <!-- CSS DO BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+
+    <!-- STYLES -->
+    <link href="treinocss/treinos_aluno.css" rel="stylesheet">
+
+    <!-- SCRIPTS -->
 </head>
 
 <body>
@@ -23,63 +30,62 @@
 
     @section('conteudo')
     <main>
-        <div class="main-container">
-            
             <!--nav bar dia da semana-->
-            <div class="week-bar2">
-                <ul>
-                    <div class="segunda">
-                        <li></li>
-                    </div>
-                    <div class="terca">
-                        <li></li>
-                    </div>
-                    <div class="quarta">
-                        <li></li>
-                    </div>
-                    <div class="quinta">
-                        <li></li>
-                    </div>
-                    <div class="sexta">
-                        <li></li>
-                    </div>
-                </ul>
-            </div>
-
-            <!--"blocos de treinos" os conteiners onde os treinos vão ficar-->
-            <div class="container">
-                <div class="img">
-                    <!-- qualquer imagem do exercicio-->
+            <div class="content">
+                <div class="sequency-bar">
+                    <ul>
+                        <div class="sequency">
+                            <li>Sequência 1</li>
+                        </div>
+                        <div class="sequency">
+                            <li>Sequência 2</li>
+                        </div>
+                        <div class="sequency">
+                            <li>Sequência 3</li>
+                        </div>
+                        <div class="sequency">
+                            <li>Sequência 4</li>
+                        </div>
+                        <div class="sequency">
+                            <li>Sequência 5</li>
+                        </div>
+                    </ul>
                 </div>
-                <div class="info-treino">*</div>
-                <div class="repeticoes">*</div>
-                <div class="mais-infos">*</div>
-            </div>
-
-            <div class="container">
-                <div class="img">
-                    <!-- qualquer imagem do exercicio-->
+                <!--"blocos de treinos" os conteiners onde os treinos vão ficar-->
+                <div class="container">
+                    <div class="treino">
+                        <div class="img">
+                            <!-- qualquer imagem do exercicio-->
+                        </div>
+                        <div class="info-treino">*</div>
+                        <div class="repeticoes">*</div>
+                        <div class="mais-infos">*</div>
+                    </div>
+                    <div class="treino">
+                        <div class="img">
+                            <!-- qualquer imagem do exercicio-->
+                        </div>
+                        <div class="info-treino">*</div>
+                        <div class="repeticoes">*</div>
+                        <div class="mais-infos">*</div>
+                    </div>
+                    <div class="treino">
+                        <div class="img">
+                            <!-- qualquer imagem do exercicio-->
+                        </div>
+                        <div class="info-treino">*</div>
+                        <div class="repeticoes">*</div>
+                        <div class="mais-infos">*</div>
+                    </div>
                 </div>
-                <div class="info-treino">*</div>
-                <div class="repeticoes">*</div>
-                <div class="mais-infos">*</div>
-            </div>
-
-            <div class="container">
-                <div class="img">
-                    <!-- qualquer imagem do exercicio-->
-                </div>
-                <div class="info-treino">*</div>
-                <div class="repeticoes">*</div>
-                <div class="mais-infos">*</div>
             </div>
 
             <!--ficha do usuario aq-->
             <div class="usuario">
                 <!--img do usuario e nome-->
                 <div class="img-usuario">
-                    <img src="#" alt="#">
-                    <h2>sla</h2>
+                    
+                    <h2>Robervaldo</h2>
                 </div>
                 <div class="info-usuario"></div>
             </div>
@@ -89,9 +95,6 @@
             <br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br>
-
-
-        </div>
     </main>
 
 </body>
