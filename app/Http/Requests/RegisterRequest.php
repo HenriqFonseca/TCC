@@ -25,11 +25,11 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'=> ['required', 'unique:users,email', 'email',],
-            'nome' => ['required', 'string', 'max:20'],
-            'sobrenome' => ['required', 'string', 'max:30',],
-            'cpf' => ['required', 'unique:users,cpf', 'min:14', 'max:14'],
-            'password' => ['required', 'min:6', 'max:20'],
+            'email'=> ['bail', 'required', 'unique:users,email', 'email',],
+            'nome' => ['bail', 'required', 'string', 'max:20'],
+            'sobrenome' => ['bail', 'required', 'string', 'max:30',],
+            'cpf' => ['bail', 'required', 'unique:users,cpf', 'min:14', 'max:14'],
+            'password' => ['bail', 'required', 'min:6', 'max:20'],
         ];
     }
      //========== MESNAGENS QUE SERÃO EXIBIDAS CASO O ERRO OCORRA ============//

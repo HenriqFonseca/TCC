@@ -128,7 +128,7 @@ a:visited {
     padding-left: 5px;
     box-sizing: border-box;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     outline: none;
     background-color: rgba(0, 0, 0, 0.548)important;
     width: 100%;
@@ -218,6 +218,7 @@ a:visited {
     body {
         background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
     }
+    
 }
 
 
@@ -226,6 +227,9 @@ a:visited {
 @media(max-width:620px) {
     body {
         background-image: url('/img/background2phone.png'), url('/img/background.jpg');
+    }
+    .alert{
+        width: 19rem;
     }
     .wrapper {
         width: 19rem;

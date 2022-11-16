@@ -12,56 +12,92 @@
 </head>
 
 <body>
+    
+    <div class="alert-container" style="max-width:500px ;">
+        @if ($errors->any())
+            <div class="alert" style="max-width: 500px; position: absolute; top:5vh; width:27rem;">
+                <ul>
+                    <li style="list-style: none">
+                        @foreach ($errors->all() as $error)
+                            <p>{{ $error }}</p>
+                        @endforeach
+                    </li>
+                </ul>
+            </div>
+        @endif
+    </div>
+
+    {{-- CSS DA BORDA VERMELHA DOS INPUTS --}}
+    <style>
+        .input-error {
+            position: relative;
+            font-size: 16px;
+            color: black;
+            height: auto;
+            padding: 10px;
+            padding-left: 5px;
+            box-sizing: border-box;
+            border: solid 1.90px #dc3545;
+            border-radius: 0.25rem;
+            outline: none;
+            width: 100%;
+        }
+    </style>
     <div class="container">
         <div class="wrapper">
+            
             <div class="cadastro">
                 <form class="form-signin" method="POST" action="{{ route('user.register') }}">
                     @csrf
+                    <input type="hidden" name="aluno" value="1">
                     <h2 class="form-signin-heading">Insira seus dados</h2>
                     <div class="nome">
-                        <input type="text" class="input" name="nome" placeholder="Nome" />
-                        @error('nome')
-                            <div class="error">
-                                <small>{{ $message }}</small>
-                            </div>
-                        @enderror
-                        
-                        <input type="text" class="input" name="sobrenome" placeholder="Sobrenome" />
-                        @error('sobrenome')
-                            <div class="error">
-                                <small>{{ $message }}</small>
-                            </div>
-                        @enderror
+                        {{-- CASO HAJA UM ERRO NO INPUT NOMEA CLASSE VAI MUDAR --}}
+                        <input type="text" 
+                        @if ($errors->has('nome'))
+                        class="input-error"
+                        @else
+                        class="input"
+                        @endif
+                        name="nome" placeholder="Nome" />
+
+                        {{-- CASO HAJA UM ERRO NO INPUT SOBRENOME A CLASSE VAI MUDAR --}}
+                        <input type="text" 
+                        @if ($errors->has('sobrenome'))
+                        class="input-error"
+                        @else class="input"
+                        @endif
+                        name="sobrenome" placeholder="Sobrenome" />
                     </div>
                     <br>
-                    <input type="text" class="input" name="email" id="email" autocomplete="off" placeholder="Email" />
-                    @error('email')
-                        <div class="error">
-                            <small>{{ $message }}</small>
-                        </div>
-                    @enderror
+                    {{-- CASO HAJA UM ERRO NO INPUT EMAIL A CLASSE VAI MUDAR --}}
+                    <input type="text"
+                    @if ($errors->has('email'))
+                    class="input-error"
+                    @else class="input"
+                    @endif name="email" id="email" autocomplete="off"
+                        placeholder="Email" />
                     <br>
-                    <input type="text" class="input" name="cpf" id="cpf"
-                        onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14"
-                        placeholder="CPF" />
-                    @error('cpf')
-                        <div class="error">
-                            <small>{{ $message }}</small>
-                        </div>
-                    @enderror
+                    {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
+                    <input type="text"
+                    @if ($errors->has('cpf'))
+                    class="input-error"
+                    @else class="input"
+                    @endif
+                     name="cpf" id="cpf"onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14" placeholder="CPF" />
                     <br>
-                    <input type="password" class="input" name="password" placeholder="Senha" />
-                    @error('password')
-                        <div class="error">
-                            <small>{{ $message }}</small>
-                        </div>
-                    @enderror
+                    {{-- CASO HAJA UM ERRO NO INPUT PASSWORD A CLASSE VAI MUDAR --}}
+                    <input type="password"
+                    @if ($errors->has('password'))
+                    class="input-error"
+                    @else class="input"
+                    @endif name="password" placeholder="Senha" />
 
-                        <br>
-                        <button type="submit" class="login-button">
-                            Registrar
-                        </button>
-                        
+                    <br>
+                    <button type="submit" class="login-button">
+                        Registrar
+                    </button>
+
 
 
                 </form>
@@ -80,6 +116,6 @@
         </div>
     </div>
 
-      
+
 
 </body>

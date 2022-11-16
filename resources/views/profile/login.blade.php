@@ -27,7 +27,6 @@
     <div class="container">
         <div class="wrapper">
             <div class="alert-container">
-
                 @if ($errors->any())
                     <div class="alert">
                         <ul>
