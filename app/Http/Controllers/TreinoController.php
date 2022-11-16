@@ -16,4 +16,9 @@ class TreinoController extends Controller
         $aluno = User::where('aluno', 1)->get();
         return view('treinos.indexprof', ['aluno' => $aluno]);
     }
+
+    public function create($id){
+        $user = User::where('aluno' , 1)->find($id);
+        return view('treinos.create')->with('user', $user);
+    }
 }

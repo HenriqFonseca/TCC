@@ -33,6 +33,8 @@ Route::post('/register', [UserController::class, 'auth'])->name('user.register')
 Route::get('/treinos', [TreinoController::class, 'index'])->name('treino.index');
 Route::get('/treino', [TreinoController::class, 'rota_treinos_aluno'])->name('treino.rota.alunos');
 
+//==================== CRIAR TREINO =======================
+Route::get('/treinos/create/{id}', [TreinoController::class, 'create'])->name('treino.create');
 
 
 

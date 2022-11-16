@@ -35,35 +35,46 @@
 </head>
 
 <body>
+    <style>
+        .row a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="border: 1px solid black; transform: ">
             <div class="row" style="color: blue;">
-                <div class="text col-6">
-                    <h2>CRIAR FICHA DE ALUNO</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="search">
-                    <h2>Selecionar o aluno:</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="aluno col-12">
-                    @foreach ($aluno as $aluno)
-                        <div class="alunos col-12">
-                            <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}@if($aluno->status_treino == 0)
-                                SEM TREINO</h2>
-                                @endif
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>CRIAR FICHA DE ALUNO</h2>
                         </div>
-                    @endforeach
+                        <div class="card-body">
+                            <div class="row col-12">
+
+                                @foreach ($aluno as $aluno)
+                                    <div class="alunos col-12">
+                                        <div class="div" style="border:solid 2px black; padding:15px;">
+                                            <a href="{{ url('/treinos/create/' . $aluno->id) }}" >
+                                                <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}@if ($aluno->status_treino == 0)
+                                                        SEM TREINO</h2>
+                                @endif
+                                </a>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
-
         </div>
+        </div>
+        </div>
+        </div>
+
         <style>
-            .alunos{
+            .alunos {
                 padding: 10px;
             }
         </style>
