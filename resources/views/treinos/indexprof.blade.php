@@ -36,7 +36,7 @@
 
 <body>
     <style>
-        .row a{
+        .row a {
             color: black;
             text-decoration: none;
         }
@@ -57,19 +57,21 @@
                                 @foreach ($aluno as $aluno)
                                     <div class="alunos col-12">
                                         <div class="div" style="border:solid 2px black; padding:15px;">
-                                            <a href="{{ url('/treinos/create/' . $aluno->id) }}" >
-                                                <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}@if ($aluno->status_treino == 0)
-                                                        SEM TREINO</h2>
-                                @endif
-                                </a>
+                                            <a href="{{ url('/treinos/create/' . $aluno->id) }}">
+                                                @if ($aluno->status_treino == 0)
+                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} SEM TREINO</h2>
+                                                @else
+                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} COM TREINO</h2>
+                                                @endif
+                                            </a>
+                                        </div>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
-                        @endforeach
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
         </div>
 

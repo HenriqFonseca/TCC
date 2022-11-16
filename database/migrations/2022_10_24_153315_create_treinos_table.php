@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\User;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,8 +16,15 @@ return new class extends Migration
         Schema::create('treinos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+            $table->string('img_path');
+            $table->string('descricao');
             $table->integer('serie');
             $table->integer('repeticao');
+            $table->boolean('treino_A');
+            $table->boolean('treino_B');
+            $table->boolean('treino_C');
+            $table->boolean('treino_D');
+            $table->boolean('treino_E');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('exercicio_id');
             $table->timestamps();
@@ -38,4 +43,5 @@ return new class extends Migration
         Schema::dropIfExists('treinos');
     }
 
+    
 };
