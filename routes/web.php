@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 |
 */
     //Rota para Home
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/a', [HomeController::class, 'index'])->name('home.index');
 
                 // rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
@@ -38,10 +38,10 @@ Route::get('/treinos/create/{id}', [TreinoController::class, 'create'])->name('t
 
 
 
-
-// Route::get('/a, function () {
-//     return view ('teste.html');
-// });
+//  teste de rota da tela de criação
+Route::get('/', function () {
+    return view ('criacao.criacao');
+});
 
 
 
