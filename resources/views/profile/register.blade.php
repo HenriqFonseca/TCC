@@ -78,6 +78,13 @@
                     @endif name="email" id="email" autocomplete="off"
                         placeholder="Email" />
                     <br>
+                    <input type="date"
+                    @if ($errors->has('dataNascimento'))
+                    class="input-error"
+                    @else class="input"
+                    @endif name="dataNascimento" id="dataNascimento"   autocomplete="off"
+                        placeholder="" />
+                    <br>
                     {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
                     <input type="text"
                     @if ($errors->has('cpf'))

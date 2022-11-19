@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -26,6 +28,7 @@ class User extends Authenticatable
         'professor',
         'cpf',
         'status_treino',
+        'dataNascimento',
     ];
 
     /**
@@ -44,6 +47,7 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
+        'dataNascimento' => 'datetime:d-m-Y',
         'email_verified_at' => 'datetime',
     ];
 

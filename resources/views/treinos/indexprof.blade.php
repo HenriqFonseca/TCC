@@ -59,9 +59,9 @@
                                         <div class="div" style="border:solid 2px black; padding:15px;">
                                             <a href="{{ url('/treinos/create/' . $aluno->id) }}">
                                                 @if ($aluno->status_treino == 0)
-                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} SEM TREINO</h2>
+                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} {{ $aluno->dataNascimento->format(config }} SEM TREINO</h2>
                                                 @else
-                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} COM TREINO</h2>
+                                                    <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} {{ $aluno->dataNascimento->age }} COM TREINO</h2>
                                                 @endif
                                             </a>
                                         </div>

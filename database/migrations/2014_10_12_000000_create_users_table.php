@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome')->nullable();
             $table->string('sobrenome')->nullable();
+            $table->date('dataNascimento')->nullable();
             $table->boolean('status_treino')->nullable();
             $table->string('cpf')->unique();
             $table->boolean('aluno')->nullable();
