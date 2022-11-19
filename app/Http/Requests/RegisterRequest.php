@@ -26,8 +26,8 @@ class RegisterRequest extends FormRequest
     {
         return [
             'email'=> ['bail', 'required', 'unique:users,email', 'email',],
-            'nome' => ['bail', 'required', 'string', 'max:20'],
-            'sobrenome' => ['bail', 'required', 'string', 'max:30',],
+            'nome' => ['bail','string', 'required', 'max:20', 'regex:/^[A-Z][a-z]+/'],
+            'sobrenome' => ['bail','string', 'required',  'max:30', 'regex:/^[A-Z][a-z]+/'],
             'cpf' => ['bail', 'required', 'unique:users,cpf', 'min:14', 'max:14'],
             'password' => ['bail', 'required', 'min:6', 'max:20'],
         ];
@@ -46,11 +46,13 @@ class RegisterRequest extends FormRequest
             'nome.required' => 'O Campo nome é obrigatório',
             'nome.string' => 'Insira um nome válido',
             'nome.max' => 'Insira um nome válido',
+            'nome.regex' => 'Nome deve começar com letra maiúscula',
 
             //========== REGRAS DO SOBRENOME ===========//
             'sobrenome.required' => 'O Campo sobrenome é obrigatório',
             'sobrenome.string' => 'Insira um sobrenome válido',
             'sobrenome.max' => 'Insira um sobrenome válido',
+            'sobrenome.regex' => 'Sobrenome deve começar com letra maiúscula',
 
              //========== REGRAS DO CPF ===========//
             'cpf.required' => 'Preencha o campo CPF',
