@@ -47,8 +47,13 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'dataNascimento' => 'datetime:d-m-Y',
         'email_verified_at' => 'datetime',
+        'dataNascimento' => 'datetime',
+    ];
+
+    protected $dates = [
+        'dataNascimento' => 'date:d-m-Y'
+
     ];
 
     public function treinos(){
