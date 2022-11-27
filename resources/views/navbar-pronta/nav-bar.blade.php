@@ -106,21 +106,21 @@
 @yield('conteudo')
 <footer>
     <div class="nav-footer" id="footer">
-        <nav>
+        
             <h3>Entre em contato conosco!</h3>
             <ul class="footer-list">
 
                 <li><a class="footer-link" href="#">
-                        <div class="icon"><img src="img/insta.png" alt=""></div> Instagram
+                        <div class="social-media-img"><img src="img/insta.png" alt=""></div> Instagram
                     </a></li>
                 <li><a class="footer-link" href="#">
-                        <div class="icon"><img src="img/face.png" alt=""></div> Facebook
+                        <div class="social-media-img"><img src="img/face.png" alt=""></div> Facebook
                     </a></li>
                 <li><a class="footer-link" href="#">
-                        <div class="icon"><img src="img/whats.png" alt=""></div> Whatsapp
+                        <div class="social-media-img"><img src="img/whats.png" alt=""></div> Whatsapp
                     </a></li>
             </ul>
-        </nav>
+        
     </div>
     <small>Dev fit  Copyright ©  2022 </small>
 </footer>
