@@ -95,7 +95,7 @@
                             <img src="img/location.png" alt="">
                         </button>
                         <div class="btn-caption">
-                            <h3>Academias</h3>
+                            <h3>Unidades</h3>
                         </div>
                     </div>
                 </a>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="grid-link" href="">
+                <!-- <a class="grid-link" href="">
                     <div class="btn-box">
                         <button class="btn-small">
                             <img src="img/calendar.png" alt="">
@@ -128,14 +128,14 @@
                             <h3>Algum Texto</h3>
                         </div>
                     </div>
-                </a>
+                </a> -->
                 <a class="grid-link" href="">
                     <div class="btn-box">
                         <button class="btn-small">
                             <img src="img/note.png" alt="">
                         </button>
                         <div class="btn-caption">
-                            <h3>Algum Texto</h3>
+                            <h3>Exercícios</h3>
                         </div>
                     </div>
                 </a>
