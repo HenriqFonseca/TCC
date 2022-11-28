@@ -107,7 +107,7 @@
 <footer>
     <div class="nav-footer" id="footer">
         
-            <h3>Entre em contato conosco!</h3>
+            <h3>Siga-nos nas redes sociais!</h3>
             <ul class="footer-list">
 
                 <li><a class="footer-link" href="#">
