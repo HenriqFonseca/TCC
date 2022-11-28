@@ -55,8 +55,8 @@
                             <div class="alunos col-12" style="border-radius: 5px;">
                                 <div class="div"
                                     style="border:solid 2px black; padding:15px; border-radius:5px; display:flex;">
-                                    <div class="img col-2" style="background-color: blue; max-height:150px;">
-                                        <img src="/img/toduro.jpg" class="img-fluid" alt="" style="max-height:150px; max-width:150px; width:100%; height:100%; margin:auto; border-radius:100px;">
+                                    <div class="img col-2 mx-auto" style="background-color: blue; max-height:150px;">
+                                        <img src="/img/toduro.jpg" class="img-fluid" alt="" style="max-height:150px; max-width:150px; width:100%; height:100%; border-radius:100px;">
                                     </div>
                                     <div class="col-10" style="background-color:red;">
                                         <a href="{{ url('/treinos/create/' . $aluno->id) }}">
