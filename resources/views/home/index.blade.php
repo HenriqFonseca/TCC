@@ -79,7 +79,9 @@
 
 
             <div class="btn-grid-container">
-                <a class="grid-link" href="{{ route('treino.rota.alunos') }}">
+                
+            @guest<a class="grid-link" href="{{ route('profile.login') }}">@endguest
+                 @auth<a class="grid-link" href="{{ route('treino.rota.alunos') }}">@endauth
                     <div class="btn-box">
                         <button class="btn-small">
                             <img src="img/dumbbell.png" alt="">
@@ -89,6 +91,7 @@
                         </div>
                     </div>
                 </a>
+                
                 <a class="grid-link" href="">
                     <div class="btn-box">
                         <button class="btn-small">
@@ -129,7 +132,7 @@
                         </div>
                     </div>
                 </a> -->
-                <a class="grid-link" href="">
+                <a class="grid-link item-5" href="">
                     <div class="btn-box">
                         <button class="btn-small">
                             <img src="img/note.png" alt="">
