@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('exercicios', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('img_path');
+            $table->string('img_path')->nullable();
             $table->boolean('perna')->default(false)->nullable();
             $table->boolean('triceps')->default(false)->nullable();
             $table->boolean('biceps')->default(false)->nullable();

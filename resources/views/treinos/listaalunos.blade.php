@@ -52,27 +52,28 @@
                     </div>
                     <div class="row col-12">
                         @foreach ($aluno as $aluno)
-                            <div class="alunos col-12" style="border-radius: 5px;">
-                                <div class="div"
-                                    style="border:solid 2px black; padding:15px; border-radius:5px; display:flex;">
-                                    <div class="img col-2 mx-auto" style="background-color: blue; max-height:150px;">
-                                        <img src="/img/toduro.jpg" class="img-fluid" alt="" style="max-height:150px; max-width:150px; width:100%; height:100%; border-radius:100px;">
+                        <a class="col-12" href="{{ url('/treinos/create/' . $aluno->id) }}">
+                            <div class="alunos col-md-12" style="border-radius: 5px;">
+                                <div class="div col-md-12" 
+                                    style="border:solid 2px black; padding:15px; border-radius:5px; display:flex; max-height:150px; ">
+                                    <div class="img-fluid col-md-2 mx-auto"  style="max-height:150px; max-width:150px;">
+                                        <img src="/img/toduro.jpg" class="img-fluid col-md-12" alt="" style=" max-height:100px; border-radius:10%; height:100%; ">
                                     </div>
-                                    <div class="col-10" style="background-color:red;">
-                                        <a href="{{ url('/treinos/create/' . $aluno->id) }}">
+                                        <div class="col-10" style="padding-left:5px;">
                                             @if ($aluno->status_treino == 0)
-                                                <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} Data de
+                                                <h2 class="text-md-start">{{ $aluno->nome }} {{ $aluno->sobrenome }} Data de
                                                     Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
                                                     idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
                                             @else
                                                 <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} {{ $aluno->dataNascimento }}
                                                     COM TREINO</h2>
                                             @endif
-                                        </a>
+                                        </div>
+                                        
                                     </div>
-
                                 </div>
                             </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>

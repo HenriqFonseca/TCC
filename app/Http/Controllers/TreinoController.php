@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Exercicio;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -18,7 +19,62 @@ class TreinoController extends Controller
     }
 
     public function create($id){
+        
+    }
+
+    public function store(Request $request)
+    {
+
+        $exercicio = new Exercicio();
+        $exercicio ->nome = $request-> nome;
+        $exercicio ->perna = $request-> perna;
+        $exercicio -> triceps = $request -> triceps;
+        $exercicio ->biceps = $request-> biceps;
+        $exercicio ->ombro = $request->ombro ;
+        $exercicio ->abdomen = $request-> abdomen;
+
+        $exercicio -> save();
+    }
+
+   
+    public function show($id)
+    {
         $user = User::where('aluno' , 1)->find($id);
-        return view('treinos.create')->with('user', $user);
+        $exercicios = Exercicio::all();
+        return view('treinos.create', ['exercicios' => $exercicios, 'user =>'] )->with('user', $user);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

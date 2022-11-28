@@ -9,7 +9,7 @@
 
     {{-- CSS --}}
     <link href="{{ asset('treinocss/index.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,8 +38,39 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        
-    {{ dd($user->nome, $user->sobrenome) }}
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12">
+
+                    <form action="{{ route('treino.store') }}" method="POST" class="form-control">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <label for="search">procurar exercicio</label>
+                                <input type="search" class="form-control col-10 mx-auto">
+                                {{-- <select name="exercicio" class="form-select" id="">Exercicios
+                                    <option selected">Exercicios</option>
+                                    @foreach ( $exercicios as $exercicio)
+                                        
+                                    <option value="nome" name="nome">{{ $exercicio->nome }}</option>
+                                    @endforeach
+                                </select> --}}
+                            </div>
+                            <div class="col-5">
+                                
+                                <label for="">nome</label>
+                                <input type="text" class="form-control" name="nome">
+                                <label for="perna">Perna</label>
+                                <input type="checkbox" name="perna" id="perna" value="1" class="form-check-input">
+                                <label for="ombro">ombro</label>
+                                <input type="checkbox" name="ombro" id="ombro" value="1" class="form-check-input">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     @endsection
 </body>
