@@ -52,7 +52,7 @@
 
                 </form>
                 <div class="alternative">
-                    <a class="alternative-item" href="">Esqueci minha senha.</a>
+                    <a class="alternative-item" href="http://d3ugyf2ht6aenh.cloudfront.net/stores/914/032/products/6-caneca-personalizada-da-teus-pulos-laranja-frente1-33047fcd763035766b16286118539596-640-0.jpg">Esqueci minha senha.</a>
                     <a class="alternative-item" href="{{ route('profile.register') }}">Não tem cadastro? Registrar.</a>
               </div>
                 
