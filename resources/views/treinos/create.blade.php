@@ -50,18 +50,22 @@
                             <div class="col-md-10 mx-auto">
                                 <label for="search">procurar exercicio</label>
                                 <input type="search" class="form-control col-10 mx-auto">
-                                <select name="exercicio" class="form-select" id="">Exercicios
+                                <select  name="exercicio_id"  class="form-select" id="">Exercicios
                                     <option selected">Exercicios</option>
                                     @foreach ( $exercicios as $exercicio)
-                                        
-                                    <option value="nome" name="nome">{{ $exercicio->nome }}</option>
+                                    
+                                    <option value="{{ $exercicio->id }}">{{ $exercicio->nome }} </option>
+                                    
                                     @endforeach
                                 </select>
                             </div>
                             <div class="col-5">
-                                
+                                <input type="hidden" name="user_id" value="{{ $user->id }}">
                                 <label for="">descrição</label>
                                 <input type="text" class="form-control" name="descricao">
+
+                                <label for="">nome</label>
+                                <input type="text" class="form-control" name="nome">
 
                                 <label for="">serie</label>
                                 <input type="text" class="form-control" name="serie">
@@ -73,7 +77,6 @@
                                 <input type="text" class="form-control" name="carga">
 
                                 @foreach ($treinos as $treino)
-                                <h2>{{$treino->user->nome}}</h2>
                                 @endforeach
                                     
                                     @foreach ($treinos as $treino )
@@ -86,6 +89,11 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
+
+                     @foreach ($exercicios as $exercicio )
+                     if
+                         {{ $exercicio->nome }}<br>
+                     @endforeach
                 </div>
             </div>
         </div>
