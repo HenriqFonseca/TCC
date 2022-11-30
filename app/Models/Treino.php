@@ -31,6 +31,7 @@ class Treino extends Model
     public function exercicios(){
         return $this->hasMany(Exercicio::class);
     }
+
 }
 
 

@@ -46,24 +46,21 @@
                         @csrf
                         <div class="row">
                             <div class="col-md-10 mx-auto">
+                                <form action=""></form>
                                 <label for="search">procurar exercicio</label>
                                 <input type="search" class="form-control col-10 mx-auto">
-                                {{-- <select name="exercicio" class="form-select" id="">Exercicios
+                                <select name="exercicio" class="form-select" id="">Exercicios
                                     <option selected">Exercicios</option>
                                     @foreach ( $exercicios as $exercicio)
                                         
                                     <option value="nome" name="nome">{{ $exercicio->nome }}</option>
                                     @endforeach
-                                </select> --}}
+                                </select>
                             </div>
                             <div class="col-5">
                                 
                                 <label for="">nome</label>
                                 <input type="text" class="form-control" name="nome">
-                                <label for="perna">Perna</label>
-                                <input type="checkbox" name="perna" id="perna" value="1" class="form-check-input">
-                                <label for="ombro">ombro</label>
-                                <input type="checkbox" name="ombro" id="ombro" value="1" class="form-check-input">
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>

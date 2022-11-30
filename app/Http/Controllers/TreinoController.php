@@ -25,15 +25,7 @@ class TreinoController extends Controller
     public function store(Request $request)
     {
 
-        $exercicio = new Exercicio();
-        $exercicio ->nome = $request-> nome;
-        $exercicio ->perna = $request-> perna;
-        $exercicio -> triceps = $request -> triceps;
-        $exercicio ->biceps = $request-> biceps;
-        $exercicio ->ombro = $request->ombro ;
-        $exercicio ->abdomen = $request-> abdomen;
-
-        $exercicio -> save();
+        
     }
 
    

@@ -36,7 +36,7 @@ Route::get('/treino', [TreinoController::class, 'rota_treinos_aluno'])->name('tr
 
 //==================== CRIAR TREINO =======================
 Route::get('/treinos/create/{id}', [TreinoController::class, 'show'])->name('treino.show');
-Route::post('/treinos', [TreinoController::class, 'store'])->name('treino.store');
+Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.store');
 
 
 Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');
