@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ExercicioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TreinoController;
 use App\Http\Controllers\UserController;
@@ -38,6 +39,9 @@ Route::get('/treinos/create/{id}', [TreinoController::class, 'show'])->name('tre
 Route::post('/treinos', [TreinoController::class, 'store'])->name('treino.store');
 
 
+Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');
+Route::get('/exercicio/create', [ExercicioController::class, 'create'])->name('exercicio.create');
+Route::post('/exercicio/store', [ExercicioController::class, 'store'])->name('exercicio.store');
 
 // //  teste de rota da tela de criação
 // Route::get('/', function () {
