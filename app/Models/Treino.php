@@ -29,6 +29,11 @@ class Treino extends Model
         return $this->belongsTo(Treino::class);
     }
 
+    public function seusUser(){
+        return $this->hasMany(Treino::class);
+    }
+
+
     public function exercicios(){
         return $this->hasMany(Exercicio::class);
     }

@@ -16,18 +16,18 @@ return new class extends Migration
         Schema::create('treinos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('img_path');
+            $table->string('img_path')->nullable();
             $table->string('descricao');
             $table->integer('serie');
             $table->integer('repeticao');
             $table->integer('carga');
-            $table->boolean('treino_A');
-            $table->boolean('treino_B');
-            $table->boolean('treino_C');
-            $table->boolean('treino_D');
-            $table->boolean('treino_E');
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('exercicio_id');
+            $table->boolean('treino_A')->default(false)->nullable();
+            $table->boolean('treino_B')->default(false)->nullable();
+            $table->boolean('treino_C')->default(false)->nullable();
+            $table->boolean('treino_D')->default(false)->nullable();
+            $table->boolean('treino_E')->default(false)->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('exercicio_id')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('exercicio_id')->references('id')->on('exercicios');

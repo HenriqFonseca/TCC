@@ -26,22 +26,30 @@ class TreinoController extends Controller
     public function store(Request $request)
     {
         $treino = new Treino();
+
+        $treino->descricao = $request->descricao;
         $treino->nome = $request->nome;
         $treino->user_id = $request->user_id;
         $treino->serie = $request->serie;
         $treino->repeticao = $request->repeticao;
-        $treino->nome = $request->nome;
-        $treino->save();
+        $treino->carga = $request->carga;
+        $treino->treino_A = $request->treino_A;
+        $treino->treino_B = $request->treino_B;
+        $treino->treino_C = $request->treino_C;
+        $treino->treino_D = $request->treino_D;
+        $treino->treino_E = $request->treino_E;
 
-        
-        
+        $treino->save();
+        redirect()->route('treino.index');
     }
    
+
     public function show($id)
     {
         $user = User::where('aluno' , 1)->find($id);
+        $treinos = Treino::all();
         $exercicios = Exercicio::all();
-        return view('treinos.create', ['exercicios' => $exercicios] )->with('user', $user);
+        return view('treinos.create', ['exercicios' => $exercicios, 'treinos' => $treinos] )->with('user', $user);
 
 
     }

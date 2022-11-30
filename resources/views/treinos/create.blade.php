@@ -48,7 +48,6 @@
                         @csrf
                         <div class="row">
                             <div class="col-md-10 mx-auto">
-                                <form action=""></form>
                                 <label for="search">procurar exercicio</label>
                                 <input type="search" class="form-control col-10 mx-auto">
                                 <select name="exercicio" class="form-select" id="">Exercicios
@@ -62,30 +61,25 @@
                             <div class="col-5">
                                 
                                 <label for="">descrição</label>
-                                <input type="text" class="form-control" name="nome">
-
-                                <label for="">nome</label>
-                                <input type="text" class="form-control" name="nome">
+                                <input type="text" class="form-control" name="descricao">
 
                                 <label for="">serie</label>
-                                <input type="text" class="form-control" name="nome">
+                                <input type="text" class="form-control" name="serie">
 
                                 <label for="">repeticao</label>
-                                <input type="text" class="form-control" name="nome">
+                                <input type="text" class="form-control" name="repeticao">
 
-                                <label for="">nome</label>
-                                <input type="text" class="form-control" name="nome">
+                                <label for="">carga</label>
+                                <input type="text" class="form-control" name="carga">
 
-                                <select name="exercicio" class="form-select" id="">Treino
-                                    <option selected>Treino</option>
-                                    <option value="1">Treino A</option>
-                                    <option value="1">Treino B</option>
-                                    <option value="1">Treino C</option>
-                                    <option value="1">Treino D</option>
-                                    <option value="1">Treino E</option>
-                                    @foreach ( $exercicios as $exercicio)
-                                        
-                                    <option value="nome" name="nome">{{ $exercicio->nome }}</option>
+                                @foreach ($treinos as $treino)
+                                <h2>{{$treino->user->nome}}</h2>
+                                @endforeach
+                                    
+                                    @foreach ($treinos as $treino )
+                                        @if ($treino->user_id == $user->id)
+                                            {{ $treino->id }} 
+                                        @endif
                                     @endforeach
                                 </select>
                             </div>

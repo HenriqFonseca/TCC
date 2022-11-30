@@ -11,7 +11,11 @@ class Exercicio extends Model
 
     protected $fillable = [
         'nome',
-        'perna',
+        'img_path',
+        'serie',
+        'repeticao',
+        'descricao',
+        'img_path',
         'triceps',
         'biceps',
         'ombro',
@@ -19,6 +23,6 @@ class Exercicio extends Model
     ];
 
     public function treino(){
-        return $this->belongsToMany(Treino::class);
+        return $this->belongsTo(Treino::class);
     }
 }
