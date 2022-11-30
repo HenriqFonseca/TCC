@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('descricao');
             $table->integer('serie');
             $table->integer('repeticao');
+            $table->integer('carga');
             $table->boolean('treino_A');
             $table->boolean('treino_B');
             $table->boolean('treino_C');

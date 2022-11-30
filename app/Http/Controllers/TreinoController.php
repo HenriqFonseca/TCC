@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Exercicio;
+use App\Models\Treino;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -24,16 +25,25 @@ class TreinoController extends Controller
 
     public function store(Request $request)
     {
+        $treino = new Treino();
+        $treino->nome = $request->nome;
+        $treino->user_id = $request->user_id;
+        $treino->serie = $request->serie;
+        $treino->repeticao = $request->repeticao;
+        $treino->nome = $request->nome;
+        $treino->save();
 
         
+        
     }
-
    
     public function show($id)
     {
         $user = User::where('aluno' , 1)->find($id);
         $exercicios = Exercicio::all();
-        return view('treinos.create', ['exercicios' => $exercicios, 'user =>'] )->with('user', $user);
+        return view('treinos.create', ['exercicios' => $exercicios] )->with('user', $user);
+
+
     }
 
     /**

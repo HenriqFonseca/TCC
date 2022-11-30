@@ -35,6 +35,8 @@
 </head>
 
 <body>
+
+    
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
@@ -59,8 +61,33 @@
                             </div>
                             <div class="col-5">
                                 
+                                <label for="">descrição</label>
+                                <input type="text" class="form-control" name="nome">
+
                                 <label for="">nome</label>
                                 <input type="text" class="form-control" name="nome">
+
+                                <label for="">serie</label>
+                                <input type="text" class="form-control" name="nome">
+
+                                <label for="">repeticao</label>
+                                <input type="text" class="form-control" name="nome">
+
+                                <label for="">nome</label>
+                                <input type="text" class="form-control" name="nome">
+
+                                <select name="exercicio" class="form-select" id="">Treino
+                                    <option selected>Treino</option>
+                                    <option value="1">Treino A</option>
+                                    <option value="1">Treino B</option>
+                                    <option value="1">Treino C</option>
+                                    <option value="1">Treino D</option>
+                                    <option value="1">Treino E</option>
+                                    @foreach ( $exercicios as $exercicio)
+                                        
+                                    <option value="nome" name="nome">{{ $exercicio->nome }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>

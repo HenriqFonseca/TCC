@@ -12,11 +12,12 @@ class Treino extends Model
     protected $fillable = [
         'user_id',
         'exercicio_id',
+        'descricao',
         'nome',
         'img_path',
         'serie',
         'repeticao',
-        'descricao',
+        'carga',
         'treino_A',
         'treino_B',
         'treino_C',
