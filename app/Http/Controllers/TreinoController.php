@@ -40,16 +40,17 @@ class TreinoController extends Controller
         $treino->treino_E = $request->treino_E;
 
         $treino->save();
-        redirect()->route('treino.index');
+
+        return redirect()->route('treino.index');
     }
    
 
     public function show($id)
     {
-        $user = User::where('aluno' , 1)->find($id);
-        $treinos = Treino::all();
+        $user = User::where('aluno' , 1)->with('treinos')->find($id);
+        $treinos = Treino::with('exercicios','users')->get();
         $exercicios = Exercicio::all();
-        return view('treinos.create', ['exercicios' => $exercicios, 'treinos' => $treinos] )->with('user', $user);
+        return view('treinos.create', [ 'exercicios'=> $exercicios, 'treinos' => $treinos] )->with('user', $user);
 
 
     }
