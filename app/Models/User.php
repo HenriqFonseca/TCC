@@ -57,9 +57,10 @@ class User extends Authenticatable
     ];
 
     public function treinos(){
-        return $this->hasMany(Treino::class);
+        return $this->belongsToMany(Treino::class);
     }
 
+    
   
 
     

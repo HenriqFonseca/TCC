@@ -23,6 +23,7 @@ class Exercicio extends Model
     ];
 
     public function treino(){
-        return $this->belongsTo(Treino::class);
+        return $this->belongsToMany(Treino::class);
     }
+    
 }
