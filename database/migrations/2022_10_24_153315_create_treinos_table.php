@@ -27,10 +27,8 @@ return new class extends Migration
             $table->boolean('treino_D')->default(false)->nullable();
             $table->boolean('treino_E')->default(false)->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->unsignedBigInteger('exercicio_id')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('exercicio_id')->references('id')->on('exercicios');
         });
     }
 
