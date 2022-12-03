@@ -22,7 +22,7 @@ class Exercicio extends Model
         'abdomen',
     ];
 
-    public function treino(){
+    public function treinos(){
         return $this->belongsToMany(Treino::class);
     }
     

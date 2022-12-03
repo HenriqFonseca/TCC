@@ -39,12 +39,13 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md">
-            @foreach ($treinos as $treino)
+
+            {{-- @foreach ($treinos as $treino)
             @foreach ($treino->exercicios as $exercicio)
             <h2>{{ $exercicio->nome }}</h2>
             @endforeach
                 <h2>{{ $treino->nome }}</h2>
-            @endforeach
+            @endforeach --}}
             <div class="row">
                 <div class="col-12">
 
@@ -54,15 +55,12 @@
                             <div class="col-md-10 mx-auto">
                                 <label for="search">procurar exercicio</label>
                                 <input type="search" class="form-control col-10 mx-auto">
-                                <select name="exercicio_id" class="form-select" id="">Exercicios
-                                    <option selected">Exercicios</option>
-                                    @foreach ($exercicios as $exercicio)
+                                    @foreach ($exer as $exercicio)
                                         
-                                    
-                                    <option value="{{ $exercicio->id }}">{{ $exercicio->nome }} </option>
+                                    <input type="checkbox" class="form-check-input" value="{{ $exercicio->id }}" name="exercicio_id" id="exercicio">
+                                    <label for="exercicio" class="form-check-label">{{ $exercicio->nome }}</label>
                                     
                                     @endforeach
-                                </select>
                             </div>
                             <div class="col-5">
                                 <input type="hidden" name="user_id" value="{{ $user->id }}">
@@ -81,14 +79,14 @@
                                 <label for="">carga</label>
                                 <input type="text" class="form-control" name="carga">
 
-                                @foreach ($treinos as $treino)
+                                {{-- @foreach ($treinos as $treino)
                                 @endforeach
 
                                 @foreach ($treinos as $treino)
                                     @if ($treino->user_id == $user->id)
                                         {{ $treino->id }}
                                     @endif
-                                @endforeach
+                                @endforeach --}}
                                 <select name="treino" id="">
 
                                     <option value="treino_a">Treino A</option>
@@ -102,14 +100,16 @@
                     <div class="container-md">
                         <div class="row">
                             <div class="col-12">
-                                @foreach ($treinos as $treino)
-                                    @foreach ($treino->exercicios as $exercicio)
-                                        @if ($treino->user_id == $user->id)
-                                            
-                                        <h2>Exercício: {{ $exercicio->nome }}</h2>
-                                        @endif
-                                    @endforeach
-                                @endforeach
+                                <h2>@foreach ($user->treinos as $item )
+                                    @foreach ($item->exercicios as $exercicio)
+                                        
+
+                                    nome do exercicio: {{ $exercicio->nome }}
+                                    nome do exercicio: {{ $exercicio->img_path }}
+                                    descricao:         {{ $item->descricao }}
+                                    carga:             {{ $item->carga }} <br><Br>
+                                        @endforeach
+                                @endforeach</h2>
                             </div>
                         </div>
                     </div>

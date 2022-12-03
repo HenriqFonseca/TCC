@@ -30,6 +30,7 @@ class TreinoController extends Controller
         $treino->descricao = $request->descricao;
         $treino->nome = $request->nome;
         $treino->user_id = $request->user_id;
+        $treino->exercicio_id = $request->exercicio_id;
         $treino->serie = $request->serie;
         $treino->repeticao = $request->repeticao;
         $treino->carga = $request->carga;
@@ -40,6 +41,8 @@ class TreinoController extends Controller
         $treino->treino_E = $request->treino_E;
 
         $treino->save();
+        $treino->exercicios()->attach($treino->exercicio_id);
+        $treino->users()->attach([$treino->user_id]);
 
         return redirect()->route('treino.index');
     }
@@ -47,10 +50,12 @@ class TreinoController extends Controller
 
     public function show($id)
     {
-        $user = User::where('aluno' , 1)->with('treinos')->find($id);
-        $treinos = Treino::with('exercicios','users')->get();
-        $exercicios = Exercicio::all();
-        return view('treinos.create', [ 'exercicios'=> $exercicios, 'treinos' => $treinos] )->with('user', $user);
+        $user = User::where('aluno' , 1)
+                ->with('treinos')
+                ->find($id);
+        $treinos = Treino::with('users', 'exercicios')->get();
+        $exer = Exercicio::orderby('nome')->get();
+        return view('treinos.create', [ 'exer'=> $exer, 'treinos' => $treinos] )->with('user', $user);
 
 
     }

@@ -6,6 +6,9 @@ use App\Http\Controllers\ExercicioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TreinoController;
 use App\Http\Controllers\UserController;
+use App\Models\Exercicio;
+use App\Models\Treino;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +20,27 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-    //Rota para Home
+//Rota para Home
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/teste', function () {
 
-                // rota para a view login
+    $treino = Treino::with('users', 'exercicios')->find(18);
+    $usuario = User::with('treinos')->find(1);
+    foreach($usuario->treinos as $trein){
+        echo 'Treino numero:' . $trein->id . '<br>';
+        echo 'nome:' . $trein->nome . '<br>';
+        echo 'carga:'. $trein->nome.  '<br>';
+        echo 'descrição:'. $trein->nome . '<br><br>';
+    }
+    foreach ($treino->users as $user) {
+        if ($treino->user_id == $user->id) {
+            echo $treino->exercicio_id;
+            echo $user->nome;
+        }
+    }
+});
+
+// rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 Route::post('/login', [UserController::class, 'login'])->name('user.login');
 
@@ -48,7 +68,3 @@ Route::post('/exercicio/store', [ExercicioController::class, 'store'])->name('ex
 // Route::get('/', function () {
 //     return view ('criacao.criacao');
 // });
-
-
-
-
