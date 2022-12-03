@@ -95,7 +95,7 @@
                 <a class="grid-link" href="">
                     <div class="btn-box">
                         <button class="btn-small">
-                            <img src="img/location.png" alt="">
+                            <img src="img/gym.png" alt="">
                         </button>
                         <div class="btn-caption">
                             <h3>Unidades</h3>
@@ -164,22 +164,15 @@
 @endsection
 <!-- ATRIBUIÇÕES DE IMAGEM -->
 <!--                       -->
-<!-- <a href="https://br.freepik.com/vetores-gratis/pagina-de-destino-isometrica-de-ginasio-equipamento-de-fitness_7062176.htm#query=gym&position=42&from_view=search">Imagem de upklyak</a> no Freepik
+<!-- <a href="https://www.flaticon.com/free-icons/dumbbell" title="dumbbell icons">Dumbbell icons created by Icongeek26 - Flaticon</a>  -->
+<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/invoice" title="invoice icons">Invoice icons created by Icongeek26 - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/architecture-and-city" title="architecture and city icons">Architecture and city icons created by Icongeek26 - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
 
 
-<a href="https://br.freepik.com/vetores-gratis/atletas-fazendo-exercicios-de-fitness-no-ginasio-com-janelas-panoramicas-isolaram-ilustracao-vetorial-plana-desenhos-animados-cardio-treinamento-e-levantamento-de-peso_10172354.htm#query=gym&position=16&from_view=search">Imagem de pch.vector</a> no Freepik
 
-<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Icongeek26 - Flaticon</a>
-
-<a href="https://www.flaticon.com/br/icones-gratis/conversacao" title="conversação ícones">Conversação ícones criados por Icongeek26 - Flaticon</a>
-
-<a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Icongeek26 - Flaticon</a>
-
-<a href="https://www.flaticon.com/br/icones-gratis/esportes-e-competicao" title="esportes e competição ícones">Esportes e competição ícones criados por Icongeek26 - Flaticon</a>
-
-<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Freepik - Flaticon</a>
-
-<a href="https://www.flaticon.com/br/icones-gratis/calendario" title="calendario ícones">Calendario ícones criados por Icongeek26 - Flaticon</a>-->
 
 
 </html>
