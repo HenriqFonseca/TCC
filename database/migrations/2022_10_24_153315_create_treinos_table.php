@@ -23,11 +23,7 @@ return new class extends Migration
             $table->integer('serie');
             $table->integer('repeticao');
             $table->integer('carga');
-            $table->boolean('treino_A')->default(false)->nullable();
-            $table->boolean('treino_B')->default(false)->nullable();
-            $table->boolean('treino_C')->default(false)->nullable();
-            $table->boolean('treino_D')->default(false)->nullable();
-            $table->boolean('treino_E')->default(false)->nullable();
+            $table->string('tipoTreino')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
         });
@@ -36,8 +32,8 @@ return new class extends Migration
         Schema::create('treino_user', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('treino_id')->constrained('treinos');
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('treino_id')->constrained('treinos')->nullable();
+            $table->foreignId('user_id')->constrained('users')->nullable();
         });
 
 
@@ -45,8 +41,8 @@ return new class extends Migration
         Schema::create('exercicio_treino', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('exercicio_id')->constrained('exercicios');
-            $table->foreignId('treino_id')->constrained('treinos');
+            $table->foreignId('exercicio_id')->constrained('exercicios')->nullable();
+            $table->foreignId('treino_id')->constrained('treinos')->nullable();
         });
     }
 

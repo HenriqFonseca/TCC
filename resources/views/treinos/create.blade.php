@@ -87,9 +87,12 @@
                                         {{ $treino->id }}
                                     @endif
                                 @endforeach --}}
-                                <select name="treino" id="">
-
+                                <select name="tipoTreino" id="">
                                     <option value="treino_a">Treino A</option>
+                                    <option value="treino_b">Treino B</option>
+                                    <option value="treino_c">Treino C</option>
+                                    <option value="treino_d">Treino D</option>
+                                    <option value="treino_e">Treino E</option>
                                 </select>
                             </div>
                         </div>
@@ -105,7 +108,6 @@
                                         
 
                                     nome do exercicio: {{ $exercicio->nome }}
-                                    nome do exercicio: {{ $exercicio->img_path }}
                                     descricao:         {{ $item->descricao }}
                                     carga:             {{ $item->carga }} <br><Br>
                                         @endforeach

@@ -18,11 +18,7 @@ class Treino extends Model
         'serie',
         'repeticao',
         'carga',
-        'treino_A',
-        'treino_B',
-        'treino_C',
-        'treino_D',
-        'treino_E',
+        'tipoTreino',
     ];
 
     public function users(){

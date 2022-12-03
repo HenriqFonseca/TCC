@@ -34,11 +34,7 @@ class TreinoController extends Controller
         $treino->serie = $request->serie;
         $treino->repeticao = $request->repeticao;
         $treino->carga = $request->carga;
-        $treino->treino_A = $request->treino_A;
-        $treino->treino_B = $request->treino_B;
-        $treino->treino_C = $request->treino_C;
-        $treino->treino_D = $request->treino_D;
-        $treino->treino_E = $request->treino_E;
+        $treino->tipoTreino = $request->tipoTreino;
 
         $treino->save();
         $treino->exercicios()->attach($treino->exercicio_id);
