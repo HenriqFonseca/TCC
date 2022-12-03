@@ -15,7 +15,7 @@ class TreinoController extends Controller
     }
     public function index()
     {
-        $aluno = User::where('aluno', 1)->get();
+        $aluno = User::with('treinos')->where('aluno', 1)->get();
         return view('treinos.listaalunos', ['aluno' => $aluno]);
     }
 
@@ -36,22 +36,34 @@ class TreinoController extends Controller
         $treino->carga = $request->carga;
         $treino->tipoTreino = $request->tipoTreino;
 
-        $treino->save();
+        $status = $treino->save();
         $treino->exercicios()->attach($treino->exercicio_id);
         $treino->users()->attach([$treino->user_id]);
+        
+        //  DEIXAR O STATUS TREINO ATIVADO
+        if($status){
+            $user1 = $treino->user_id;
+            $user2 = User::all();
 
+                foreach($user2 as $user){
+                    if($user->id == $user1 && $user->status_treino == 0){
+                        $user->status_treino =+ 1;
+                        $user->save();
+                    }
+                }
+        }
         return redirect()->route('treino.index');
     }
    
 
     public function show($id)
     {
-        $user = User::where('aluno' , 1)
-                ->with('treinos')
-                ->find($id);
+        $user = User::where('aluno' , 1)->with('treinos')->find($id);
         $treinos = Treino::with('users', 'exercicios')->get();
         $exer = Exercicio::orderby('nome')->get();
-        return view('treinos.create', [ 'exer'=> $exer, 'treinos' => $treinos] )->with('user', $user);
+
+         $teste = $user->treinos;
+        return view('treinos.create', ['teste'=> $teste, 'exer'=> $exer, 'treinos' => $treinos] )->with('user', $user);
 
 
     }

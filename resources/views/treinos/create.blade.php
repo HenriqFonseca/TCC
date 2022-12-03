@@ -49,18 +49,18 @@
             <div class="row">
                 <div class="col-12">
 
+                    
                     <form action="{{ route('treino.store') }}" method="POST" class="form-control">
                         @csrf
                         <div class="row">
                             <div class="col-md-10 mx-auto">
                                 <label for="search">procurar exercicio</label>
                                 <input type="search" class="form-control col-10 mx-auto">
-                                    @foreach ($exer as $exercicio)
-                                        
-                                    <input type="checkbox" class="form-check-input" value="{{ $exercicio->id }}" name="exercicio_id" id="exercicio">
+                                @foreach ($exer as $exercicio)
+                                    <input type="checkbox" class="form-check-input" value="{{ $exercicio->id }}"
+                                        name="exercicio_id" id="exercicio">
                                     <label for="exercicio" class="form-check-label">{{ $exercicio->nome }}</label>
-                                    
-                                    @endforeach
+                                @endforeach
                             </div>
                             <div class="col-5">
                                 <input type="hidden" name="user_id" value="{{ $user->id }}">
@@ -79,14 +79,7 @@
                                 <label for="">carga</label>
                                 <input type="text" class="form-control" name="carga">
 
-                                {{-- @foreach ($treinos as $treino)
-                                @endforeach
-
-                                @foreach ($treinos as $treino)
-                                    @if ($treino->user_id == $user->id)
-                                        {{ $treino->id }}
-                                    @endif
-                                @endforeach --}}
+                                    
                                 <select name="tipoTreino" id="">
                                     <option value="treino_a">Treino A</option>
                                     <option value="treino_b">Treino B</option>
@@ -96,22 +89,63 @@
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
                     </form>
 
 
                     <div class="container-md">
                         <div class="row">
                             <div class="col-12">
-                                <h2>@foreach ($user->treinos as $item )
-                                    @foreach ($item->exercicios as $exercicio)
-                                        
+                                <h2>
+                                    Treino A<br>
+                                    @foreach ($user->treinos as $item)
+                                        @if ($item->tipoTreino == 'treino_a')
+                                            @foreach ($item->exercicios as $exercicio)
+                                                nome do exercicio: {{ $exercicio->nome }}
+                                                descricao: {{ $item->descricao }}
+                                                carga: {{ $item->carga }} <br><Br>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                    <br><br>
 
-                                    nome do exercicio: {{ $exercicio->nome }}
-                                    descricao:         {{ $item->descricao }}
-                                    carga:             {{ $item->carga }} <br><Br>
-                                        @endforeach
-                                @endforeach</h2>
+                                    TREINO B<br>
+                                    @foreach ($user->treinos as $item)
+                                        @if ($item->tipoTreino == 'treino_b')
+                                            @foreach ($item->exercicios as $exercicio)
+                                                nome do exercicio: {{ $exercicio->nome }}
+                                                descricao: {{ $item->descricao }}
+                                                carga: {{ $item->carga }} <br><Br>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                    <BR><BR>
+
+                                    TREINO C <br>
+                                    @foreach ($user->treinos as $item)
+                                        @if ($item->tipoTreino == 'treino_c')
+                                            @foreach ($item->exercicios as $exercicio)
+                                                nome do exercicio: {{ $exercicio->nome }}
+                                                descricao: {{ $item->descricao }}
+                                                carga: {{ $item->carga }} <br><Br>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                    <BR><BR>
+
+                                     TREINO D 
+                                    <br>
+                                    @foreach ($user->treinos as $item)
+                                        @if ($item->tipoTreino == 'treino_d')
+                                            @foreach ($item->exercicios as $exercicio)
+                                                nome do exercicio: {{ $exercicio->nome }}
+                                                descricao: {{ $item->descricao }}
+                                                carga: {{ $item->carga }} <br><Br>
+                                            @endforeach
+                                        @endif
+                                    @endforeach<br>
+
+                                </h2>
                             </div>
                         </div>
                     </div>

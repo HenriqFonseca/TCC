@@ -27,6 +27,7 @@ class User extends Authenticatable
         'aluno',
         'professor',
         'cpf',
+        'rg',
         'status_treino',
         'dataNascimento',
     ];

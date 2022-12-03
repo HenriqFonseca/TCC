@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('treinos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->foreignId('exercicio_id')->constrained('exercicios');
+            $table->unsignedBigInteger('user_id')->nullable()->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('exercicio_id')->constrained('exercicios')->onDelete('cascade')->onUpdate('cascade');
             $table->string('nome');
             $table->string('img_path')->nullable();
             $table->string('descricao');
@@ -25,15 +25,15 @@ return new class extends Migration
             $table->integer('carga');
             $table->string('tipoTreino')->nullable();
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
 
         //TABELA PIVOT TREINO/USUARIO
         Schema::create('treino_user', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('treino_id')->constrained('treinos')->nullable();
-            $table->foreignId('user_id')->constrained('users')->nullable();
+            $table->foreignId('treino_id')->constrained('treinos')->onDelete('cascade')->onUpdate('cascade')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade')->nullable();
         });
 
 
@@ -41,8 +41,8 @@ return new class extends Migration
         Schema::create('exercicio_treino', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('exercicio_id')->constrained('exercicios')->nullable();
-            $table->foreignId('treino_id')->constrained('treinos')->nullable();
+            $table->foreignId('exercicio_id')->constrained('exercicios')->onUpdate('cascade')->nullable();
+            $table->foreignId('treino_id')->constrained('treinos')->onUpdate('cascade')->nullable();
         });
     }
 

@@ -19,6 +19,7 @@ class Treino extends Model
         'repeticao',
         'carga',
         'tipoTreino',
+        'status_treino',
     ];
 
     public function users(){

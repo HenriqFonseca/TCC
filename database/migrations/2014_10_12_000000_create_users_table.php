@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('dataNascimento')->nullable();
             $table->boolean('status_treino')->nullable();
             $table->string('cpf')->unique();
+            $table->string('rg')->unique();
             $table->boolean('aluno')->nullable();
             $table->boolean('professor')->nullable();
             $table->string('email')->unique();
