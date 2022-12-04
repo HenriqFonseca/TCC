@@ -65,9 +65,7 @@
                                         <div class="col-10" style="padding-left:5px;">
                                             @if ($aluno->status_treino == 0)
                                                 <h2 class="text-md-start">{{ $aluno->nome }} {{ $aluno->sobrenome }} Data
-                                                    de
-                                                    Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
-                                                    idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
+                                                    de Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }} idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
                                                 @foreach ($aluno->treinos as $item)
                                                     {{ $item->nome }}
                                                 @endforeach

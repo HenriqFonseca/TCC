@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('img_superior')->nullable();
             $table->string('img_inferior')->nullable();
+            $table->boolean('superior')->nullable();
             $table->boolean('perna')->default(false)->nullable();
             $table->boolean('triceps')->default(false)->nullable();
             $table->boolean('biceps')->default(false)->nullable();

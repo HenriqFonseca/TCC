@@ -8,7 +8,7 @@
     <title>Document</title>
 
     {{-- CSS --}}
-    <link href="{{ asset('treinocss/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('/treinocss/create.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
@@ -38,7 +38,7 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <div class="container-md">
+        <div class="container-md" style="transform: translateY(5rem) !important;">
 
             {{-- @foreach ($treinos as $treino)
             @foreach ($treino->exercicios as $exercicio)

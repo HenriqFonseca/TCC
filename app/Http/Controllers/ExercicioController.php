@@ -40,12 +40,20 @@ class ExercicioController extends Controller
 
         $exercicio->nome = $request->nome;
         $exercicio->perna = $request->perna;
+        $exercicio->superior = $request->superior;
         $exercicio->triceps = $request->triceps;
         $exercicio->biceps = $request->biceps;
         $exercicio->ombro = $request->ombro;
         $exercicio->abdomen = $request->abdomen;
         $exercicio->costas = $request->costas;
-        $exercicio->save();
+        $teste = $exercicio->save();
+
+        if($exercicio->triceps == 1 || $exercicio->biceps == 1 || $exercicio->ombro == 1 || $exercicio->costas == 1 ){
+            $exercicio->superior =+ 1;
+            $exercicio->save();
+        }else{
+            $exercicio->save();
+        }
         return redirect()->route('exercicio.index');
     }
 
@@ -68,7 +76,8 @@ class ExercicioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $exercicio = Exercicio::findOrFail($id);
+        return view('exercicio.edit', ['exercicio'=>$exercicio]);
     }
 
     /**
@@ -80,7 +89,10 @@ class ExercicioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Exercicio::findOrFail($request->id)->update($request->all());
+        
+
+        return redirect()->route('exercicio.index');
     }
 
     /**
@@ -91,6 +103,7 @@ class ExercicioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Exercicio::findOrFail($id)->delete();
+        return redirect()->route('exercicio.index');
     }
 }

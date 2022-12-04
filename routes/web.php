@@ -65,6 +65,9 @@ Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.s
 Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');
 Route::get('/exercicio/create', [ExercicioController::class, 'create'])->name('exercicio.create');
 Route::post('/exercicio/store', [ExercicioController::class, 'store'])->name('exercicio.store');
+Route::delete('/exercicio/{id}', [ExercicioController::class, 'destroy'])->name('exercicio.destroy');
+Route::get('/exercicio/edit/{id}', [ExercicioController::class, 'edit'])->name('exercicio.edit');
+Route::put('/exercicio/update/{id}', [ExercicioController::class, 'update'])->name('exercicio.update');
 
 // //  teste de rota da tela de criação
 // Route::get('/', function () {
