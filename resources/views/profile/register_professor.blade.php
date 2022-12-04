@@ -8,7 +8,7 @@
     <link href="profilecss/register.css" rel="stylesheet">
     <script src="js/jquery-3.6.1.min.js" defer></script>
     <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
-    <title>Login</title>
+    <title>Registrar</title>
 </head>
 
 <body>

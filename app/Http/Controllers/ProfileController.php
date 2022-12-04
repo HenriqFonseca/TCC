@@ -18,4 +18,7 @@ class ProfileController extends Controller
     public function register_aluno(){
         return view('profile.register_aluno');
     }
+    public function lista_alunos(){
+        return view('treinos.listaalunos');
+    }
 }

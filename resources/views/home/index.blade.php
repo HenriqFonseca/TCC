@@ -56,10 +56,10 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/8225.jpg" alt="" class="d-block w-100">
+                        <img src="img/homem.jpg" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/897.jpg" alt="" class="d-block w-100">
+                        <img src="img/mulher.png" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
                         <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
