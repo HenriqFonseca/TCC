@@ -79,7 +79,8 @@
 
 
             <div class="btn-grid-container">
-                
+                <a href="{{ route('profile.register_professor') }}" style="background-color:black;">TESTE REGISTER PROF</a>
+                <a href="{{ route('profile.register_aluno') }}" style="background-color:black;">TESTE REGISTER ALUNO</a>
             @guest<a class="grid-link" href="{{ route('profile.login') }}">@endguest
                  @auth<a class="grid-link" href="{{ route('treino.rota.alunos') }}">@endauth
                     <div class="btn-box">

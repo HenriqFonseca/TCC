@@ -12,49 +12,34 @@
 </head>
 
 <body>
-    
+
     <div class="alert-container" style="max-width:500px ;">
         @if ($errors->any())
-            <div class="alert" style="max-width: 500px; position: absolute; top:5vh; width:27rem;">
-                <ul>
-                    <li style="list-style: none">
-                        @foreach ($errors->all() as $error)
-                            <p>{{ $error }}</p>
-                        @endforeach
-                    </li>
-                </ul>
-            </div>
+        <div class="alert" style="max-width: 500px; position: absolute; top:5vh; width:27rem;">
+            <ul>
+                <li style="list-style: none">
+                    @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>
+                    @endforeach
+                </li>
+            </ul>
+        </div>
         @endif
     </div>
-
-    {{-- CSS DA BORDA VERMELHA DOS INPUTS --}}
-    <style>
-        .input-error {
-            position: relative;
-            font-size: 16px;
-            color: black;
-            height: auto;
-            padding: 10px;
-            padding-left: 5px;
-            box-sizing: border-box;
-            border: solid 1.90px #dc3545;
-            border-radius: 0.25rem;
-            outline: none;
-            width: 100%;
-        }
-    </style>
     <div class="container">
         <div class="wrapper">
-            
+
             <div class="cadastro">
                 <form class="form-signin" method="POST" action="{{ route('user.register') }}">
                     @csrf
-                    <input type="hidden" name="aluno" value="1">
-                    <h2 class="form-signin-heading">Insira seus dados</h2>
+                    <input type="hidden" name="professor" value="1">
+                    <h2 class="form-signin-heading">Insira os dados</h2>
+                    <br>
+                    <div class="select_user"><a href="{{ route('profile.register_aluno') }}">Aluno</a><a href="{{ route('profile.register_professor') }}" id="active-user">Professor</a></div>
+                    <br>
                     <div class="nome">
-                        {{-- CASO HAJA UM ERRO NO INPUT NOMEA CLASSE VAI MUDAR --}}
-                        <input type="text" 
-                        @if ($errors->has('nome'))
+                        {{-- CASO HAJA UM ERRO NO INPUT NOME A CLASSE VAI MUDAR --}}
+                        <input type="text" @if ($errors->has('nome'))
                         class="input-error"
                         @else
                         class="input"
@@ -62,8 +47,7 @@
                         name="nome" placeholder="Nome" />
 
                         {{-- CASO HAJA UM ERRO NO INPUT SOBRENOME A CLASSE VAI MUDAR --}}
-                        <input type="text" 
-                        @if ($errors->has('sobrenome'))
+                        <input type="text" @if ($errors->has('sobrenome'))
                         class="input-error"
                         @else class="input"
                         @endif
@@ -71,31 +55,33 @@
                     </div>
                     <br>
                     {{-- CASO HAJA UM ERRO NO INPUT EMAIL A CLASSE VAI MUDAR --}}
-                    <input type="text"
-                    @if ($errors->has('email'))
+                    <input type="text" @if ($errors->has('email'))
                     class="input-error"
                     @else class="input"
                     @endif name="email" id="email" autocomplete="off"
-                        placeholder="Email" />
+                    placeholder="Email" />
                     <br>
-                    <input type="date"
-                    @if ($errors->has('dataNascimento'))
+                    <input type="date" @if ($errors->has('dataNascimento'))
                     class="input-error"
                     @else class="input"
-                    @endif name="dataNascimento" id="dataNascimento"   autocomplete="off"
-                        placeholder="" />
+                    @endif name="dataNascimento" id="dataNascimento" autocomplete="off"
+                    placeholder="" />
                     <br>
-                    {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
-                    <input type="text"
-                    @if ($errors->has('cpf'))
+                    <input type="text" placeholder="RG" @if ($errors->has('cpf'))
                     class="input-error"
                     @else class="input"
                     @endif
-                     name="cpf" id="cpf"onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14" placeholder="CPF" />
+                    name="cpf" id="cpf"onkeypress="$(this).mask('00.000.000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
+                    <br>
+                    {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
+                    <input type="text" @if ($errors->has('cpf'))
+                    class="input-error"
+                    @else class="input"
+                    @endif
+                    name="cpf" id="cpf"onkeypress="$(this).mask('000.000.000-00')" autocomplete="off" maxlength="14" placeholder="CPF" />
                     <br>
                     {{-- CASO HAJA UM ERRO NO INPUT PASSWORD A CLASSE VAI MUDAR --}}
-                    <input type="password"
-                    @if ($errors->has('password'))
+                    <input type="password" @if ($errors->has('password'))
                     class="input-error"
                     @else class="input"
                     @endif name="password" placeholder="Senha" />

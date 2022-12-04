@@ -11,7 +11,11 @@ class ProfileController extends Controller
                 
     }
 
-    public function register(){
-        return view('profile.register');
+    public function register_prof(){
+        return view('profile.register_professor');
+    }
+
+    public function register_aluno(){
+        return view('profile.register_aluno');
     }
 }

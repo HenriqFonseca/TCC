@@ -111,6 +111,24 @@ a:visited {
     color: #ffffff;
 }
 
+.select_user {
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+}
+
+.select_user>a {
+    color: #000000;
+    padding: 0.2rem;
+    background-color: var(--drop-border-color);
+    border-radius: 0.25rem;
+}
+
+#active-user {
+    /* background: linear-gradient(130deg, rgba(255, 255, 255, 0.966)0%, 70%, rgba(193, 164, 95, 0.548) 100%); */
+    background-color: var(--drop-color);
+}
+
 .nome {
     width: 100%;
     display: flex;
@@ -129,6 +147,20 @@ a:visited {
     border-radius: 0.25rem;
     outline: none;
     background-color: rgba(0, 0, 0, 0.548)important;
+    width: 100%;
+}
+
+.input-error {
+    position: relative;
+    font-size: 16px;
+    color: black;
+    height: auto;
+    padding: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: solid 1.90px #dc3545;
+    border-radius: 0.25rem;
+    outline: none;
     width: 100%;
 }
 
@@ -216,7 +248,6 @@ a:visited {
     body {
         background-image: url('/img/background2tablet.png'), url('/img/background.jpg');
     }
-    
 }
 
 
@@ -226,7 +257,7 @@ a:visited {
     body {
         background-image: url('/img/background2phone.png'), url('/img/background.jpg');
     }
-    .alert{
+    .alert {
         width: 19rem;
     }
     .wrapper {
