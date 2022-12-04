@@ -89,6 +89,7 @@ class ExercicioController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         Exercicio::findOrFail($id)->update($request->all());
         
 

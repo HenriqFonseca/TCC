@@ -54,44 +54,50 @@
 
                             <label class="col-sm-3 col-form-label">Nome do exercício</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" value="{{ $exercicio->nome }}" name="nome"
+                                <input class="form-control" type="text" value="{{ $exercicio->nome }}"  name="nome"
                                     id="">
                             </div>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="perna" value="0">
                             <input class="form-check-input" type="checkbox" name="perna" id="inlineCheckbox1"
-                                value="1">
+                                value="1" @if ($exercicio->perna || old('perna', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox1">Perna</label>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="triceps" value="0">
                             <input class="form-check-input" type="checkbox" name="triceps" id="inlineCheckbox2"
-                            value="1">
+                            value="1" @if ($exercicio->triceps || old('triceps', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox2">Triceps</label>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="biceps" value="0">
                             <input class="form-check-input" type="checkbox" name="biceps" id="inlineCheckbox3"
-                            value="1">
+                            value="1" @if ($exercicio->biceps || old('biceps', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox3">Biceps</label>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="ombro" value="0">
                             <input class="form-check-input" type="checkbox" name="ombro" id="inlineCheckbox4"
-                            value="1">
+                            value="1" @if ($exercicio->ombro || old('ombro', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox4">Ombro</label>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="abdomen" value="0">
                             <input class="form-check-input" type="checkbox" name="abdomen" id="inlineCheckbox5"
-                            value="1">
+                            value="1" @if ($exercicio->abdomen || old('abdomen', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox5">Abdomen</label>
                         </div>
 
                         <div class="form-check form-check-inline">
+                            <input type="hidden" name="costas" value="0">
                             <input class="form-check-input" type="checkbox" name="costas" id="inlineCheckbox6"
-                            value="1">
+                            value="1" @if ($exercicio->costas || old('costas', 0)=== 1) checked @endif >
                             <label class="form-check-label" for="inlineCheckbox6">Costas </label>
                         </div>
                        

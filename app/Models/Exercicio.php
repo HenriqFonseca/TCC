@@ -19,9 +19,13 @@ class Exercicio extends Model
         'img_superior',
         'img_inferior',
         'triceps',
+        'coxa',
+        'panturrilha',
         'biceps',
+        'peito',
         'ombro',
         'abdomen',
+        'costas',
     ];
 
     public function treinos(){

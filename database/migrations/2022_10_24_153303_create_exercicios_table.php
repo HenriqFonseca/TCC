@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string('img_superior')->nullable();
             $table->string('img_inferior')->nullable();
             $table->boolean('superior')->nullable();
-            $table->boolean('perna')->default(false)->nullable();
+            $table->boolean('coxa')->default(false)->nullable();
+            $table->boolean('panturrilha')->default(false)->nullable();
+            $table->boolean('peito')->default(false)->nullable();
             $table->boolean('triceps')->default(false)->nullable();
             $table->boolean('biceps')->default(false)->nullable();
             $table->boolean('ombro')->default(false)->nullable();
