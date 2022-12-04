@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="profilecss/register.css" rel="stylesheet">
+    <link href="/profilecss/register.css" rel="stylesheet">
     <script src="js/jquery-3.6.1.min.js" defer></script>
     <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
     <title>Registrar</title>
@@ -15,7 +15,7 @@
 
     <div class="alert-container" style="max-width:500px ;">
         @if ($errors->any())
-        <div class="alert" style="max-width: 500px; position: absolute; top:5vh; width:27rem;">
+        <div  class="alert" style="max-width: 500px; position: absolute; top:5vh; width:27rem; ">
             <ul>
                 <li style="list-style: none">
                     @foreach ($errors->all() as $error)

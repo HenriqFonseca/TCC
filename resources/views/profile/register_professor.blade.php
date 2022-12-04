@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="profilecss/register.css" rel="stylesheet">
+    <link href="/profilecss/register.css" rel="stylesheet">
     <script src="js/jquery-3.6.1.min.js" defer></script>
     <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
     <title>Registrar</title>
@@ -35,7 +35,7 @@
                     <input type="hidden" name="professor" value="1">
                     <h2 class="form-signin-heading">Insira os dados</h2>
                     <br>
-                    <div class="select_user"><a href="{{ route('profile.register_aluno') }}">Aluno</a><a href="{{ route('profile.register_professor') }}" id="active-user">Professor</a></div>
+                    <div style=" " class="select_user"><a style="background-color: white;" href="{{ route('profile.register_aluno') }}">Aluno</a><a style="background-color: white;" href="{{ route('profile.register_professor') }}" id="active-user">Professor</a></div>
                     <br>
                     <div class="nome">
                         {{-- CASO HAJA UM ERRO NO INPUT NOME A CLASSE VAI MUDAR --}}
