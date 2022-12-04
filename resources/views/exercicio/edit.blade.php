@@ -61,37 +61,37 @@
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="perna" id="inlineCheckbox1"
-                                value="{{ $exercicio->perna }}"@if ($exercicio->perna == 1) checked @endif>
+                                value="1">
                             <label class="form-check-label" for="inlineCheckbox1">Perna</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="triceps" id="inlineCheckbox2"
-                            value="{{ $exercicio->triceps }}"@if ($exercicio->triceps == 1) checked @endif>
+                            value="1">
                             <label class="form-check-label" for="inlineCheckbox2">Triceps</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="biceps" id="inlineCheckbox3"
-                            value="{{ $exercicio->biceps }}"@if ($exercicio->biceps == 1) checked @endif>
+                            value="1">
                             <label class="form-check-label" for="inlineCheckbox3">Biceps</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="ombro" id="inlineCheckbox4"
-                            value="{{ $exercicio->ombro }}"@if ($exercicio->ombro == 1) checked @endif>
+                            value="1">
                             <label class="form-check-label" for="inlineCheckbox4">Ombro</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="abdomen" id="inlineCheckbox5"
-                            value="{{ $exercicio->abdomen }}"@if ($exercicio->abdomen == 1) checked @endif>
+                            value="1">
                             <label class="form-check-label" for="inlineCheckbox5">Abdomen</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="costas" id="inlineCheckbox6"
-                            value="{{ $exercicio->costas }}"@if ($exercicio->costas == 1) checked @endif>
+                            value="1">
                             <label class="form-check-label" for="inlineCheckbox6">Costas </label>
                         </div>
                        

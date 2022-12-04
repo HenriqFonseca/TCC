@@ -89,7 +89,7 @@ class ExercicioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Exercicio::findOrFail($request->id)->update($request->all());
+        Exercicio::findOrFail($id)->update($request->all());
         
 
         return redirect()->route('exercicio.index');
