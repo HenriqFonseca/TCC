@@ -15,8 +15,17 @@ class TreinoController extends Controller
     }
     public function index()
     {
-        $aluno = User::with('treinos')->where('aluno', 1)->get();
-        return view('treinos.listaalunos', ['aluno' => $aluno]);
+
+        $search = request('search');
+        if($search){
+            $aluno = User::with('treinos')->where('aluno',1)->where([['nome','like','%'.$search.'%']])->orderby('status_treino','ASC' )->get();
+        }else{
+            
+            $aluno = User::with('treinos')->where('aluno', 1)->orderby('status_treino','ASC' )->get();
+        }
+        return view('treinos.listaalunos', ['aluno' => $aluno , 'search' => $search]);
+
+        
     }
 
     public function create($id){

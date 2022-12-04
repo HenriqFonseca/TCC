@@ -45,12 +45,16 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="border: 1px solid black; transform: ">
-            <div class="row" style="color: blue;">
+            <div class="row">
                 <div class="col-12">
                     <div class="card-header">
                         <h2 style="font-size: 50px;">CRIAR FICHA DE ALUNO</h2>
                     </div>
                     <div class="row col-12">
+                        <form action="/treinos" method="GET">
+                            <input type="text" placeholder="Pesquisar..." name="search" class="form-control col-12"  id="search">
+                        </form>
+                        <h2>Buscando por: {{ $search }}</h2>
                         @foreach ($aluno as $aluno)
                             <a class="col-12" href="{{ url('/treinos/create/' . $aluno->id) }}">
                                 <div class="alunos col-md-12" style="border-radius: 5px;">
@@ -65,7 +69,7 @@
                                                 <h2 class="text-md-start">{{ $aluno->nome }} {{ $aluno->sobrenome }} Data
                                                     de
                                                     Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
-                                                    idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>aaaaaaaaaa
+                                                    idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
                                                 @foreach ($aluno->treinos as $item)
                                                     {{ $item->nome }}
                                                 @endforeach
