@@ -56,10 +56,12 @@ Route::get('/treinos', [TreinoController::class, 'index'])->name('treino.index')
 Route::get('/treino', [TreinoController::class, 'rota_treinos_aluno'])->name('treino.rota.alunos');
 
 //==================== CRIAR TREINO =======================
-Route::get('/treinos/create/{id}', [TreinoController::class, 'show'])->name('treino.show');
+Route::get('/treinos/create/{id}', [TreinoController::class, 'create'])->name('treino.create');
 Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.store');
+Route::get('/treinos/show/{id}', [TreinoController::class, 'show'])->name('treino.show');
 
 
+//==================== EXERCICIO =======================
 Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');
 Route::get('/exercicio/create', [ExercicioController::class, 'create'])->name('exercicio.create');
 Route::post('/exercicio/store', [ExercicioController::class, 'store'])->name('exercicio.store');
