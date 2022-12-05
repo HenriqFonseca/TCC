@@ -91,7 +91,37 @@
                                 <h3>Meus treinos</h3>
                             </div>
                         </div>
-          
+                    </a>
+                    <a class="grid-link" href="">
+                        <div class="btn-box">
+                            <button class="btn-small">
+                                <img src="img/gym.png" alt="">
+                            </button>
+                            <div class="btn-caption">
+                                <h3>Unidades</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="grid-link" href="#footer">
+                        <div class="btn-box">
+                            <button class="btn-small">
+                                <img src="img/chat.png" alt="">
+                            </button>
+                            <div class="btn-caption">
+                                <h3>Fale conosco</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="grid-link" href="">
+                        <div class="btn-box">
+                            <button class="btn-small">
+                                <img src="img/invoice.png" alt="">
+                            </button>
+                            <div class="btn-caption">
+                                <h3>Planos</h3>
+                            </div>
+                        </div>
+                    </a>
                 @endguest
                 @auth
                     @if (auth()->user()->aluno == 1)
