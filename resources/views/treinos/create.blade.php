@@ -9,7 +9,6 @@
 
     {{-- CSS --}}
     <link href="{{ asset('/treinocss/create.css') }}" rel="stylesheet">
-    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,59 +38,56 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
-
-            {{-- @foreach ($treinos as $treino)
-            @foreach ($treino->exercicios as $exercicio)
-            <h2>{{ $exercicio->nome }}</h2>
-            @endforeach
-                <h2>{{ $treino->nome }}</h2>
-            @endforeach --}}
             <div class="row">
                 <div class="col-12">
 
 
-                    <form action="{{ route('treino.store') }}" method="POST" class="form-control">
+                    <form action="{{ route('treino.store') }}" class="need-validation" method="POST" class="form-control">
                         @csrf
-                        <div class="row">
-                            <div class="col-md-10 mx-auto">
-                                <label for="search">procurar exercicio</label>
-                                <input type="search" class="form-control col-10 mx-auto">
-                                <select name="exercicio_id" id="selectexercicio">
-                                    <option selected>Selecione o Exercicio</option>
-                                    @foreach ($exer as $exercicio)
-                                        <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
-                                    @endforeach
-                                </select>
+                        @if (count($exer) == 0)
+                            <h2>NÃO HÁ EXERCÍCIOS</h2>
+                        @else
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <label for="search">procurar exercicio</label>
+                                    <input type="search" class="form-control col-10 mx-auto">
+                                    <select name="exercicio_id" id="selectexercicio">
+                                        <option selected>Selecione o Exercicio</option>
+                                        @foreach ($exer as $exercicio)
+                                            <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-5">
+                                    <input type="hidden" name="user_id" value="{{ $user->id }}">
 
+                                    <label for="">descrição</label>
+                                    <input type="text" class="form-control" name="descricao">
+
+
+                                    <label for="">nome</label>
+                                    <input type="text" class="form-control" name="nome">
+
+                                    <label for="">serie</label>
+                                    <input type="text" class="form-control" name="serie">
+
+                                    <label for="">repeticao</label>
+                                    <input type="text" class="form-control" name="repeticao">
+
+                                    <label for="">carga</label>
+                                    <input type="text" class="form-control" name="carga">
+
+
+                                    <select name="tipoTreino" id="">
+                                        <option value="treino_a">Treino A</option>
+                                        <option value="treino_b">Treino B</option>
+                                        <option value="treino_c">Treino C</option>
+                                        <option value="treino_d">Treino D</option>
+                                        <option value="treino_e">Treino E</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-5">
-                                <input type="hidden" name="user_id" value="{{ $user->id }}">
-                                <label for="">descrição</label>
-                                <input type="text" class="form-control" name="descricao">
-
-                                <label for="">nome</label>
-                                <input type="text" class="form-control" name="nome">
-
-                                <label for="">serie</label>
-                                <input type="text" class="form-control" name="serie">
-
-                                <label for="">repeticao</label>
-                                <input type="text" class="form-control" name="repeticao">
-
-                                <label for="">carga</label>
-                                <input type="text" class="form-control" name="carga">
-
-
-                                <select name="tipoTreino" id="">
-                                    <option value="treino_a">Treino A</option>
-                                    <option value="treino_b">Treino B</option>
-                                    <option value="treino_c">Treino C</option>
-                                    <option value="treino_d">Treino D</option>
-                                    <option value="treino_e">Treino E</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
                     </form>
 
 
@@ -155,6 +151,8 @@
                 </div>
             </div>
         </div>
+        @endif
+
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     @endsection
 </body>
