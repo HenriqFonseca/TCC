@@ -53,12 +53,13 @@ Route::post('/register', [UserController::class, 'auth'])->name('user.register')
 
 //==================== INDEX TREINO PROFESSOR =======================
 Route::get('/treinos', [TreinoController::class, 'index'])->name('treino.index');
+Route::get('/exercicio/edit/{id}', [ExercicioController::class, 'edit'])->name('exercicio.edit');
 
 //==================== CRIAR TREINO =======================
 Route::get('/treinos/create/{id}', [TreinoController::class, 'create'])->name('treino.create');
 Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.store');
 Route::get('/treinos/show/{id}', [TreinoController::class, 'show'])->name('treino.show');
-
+Route::put('/treino/update/{id}', [treinoController::class, 'update'])->name('treino.update');
 
 //==================== EXERCICIO =======================
 Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');

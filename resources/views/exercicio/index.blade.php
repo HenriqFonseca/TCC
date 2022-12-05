@@ -57,7 +57,12 @@
 
                             <label class="col-sm-3 col-form-label">Nome do exercício</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" name="nome" id="">
+                                <input class="form-control" type="text"  name="nome" id="">
+                                @if ($errors->has('nome'))
+                                    <div class="invalid-feedback">
+                                        ERRO AI
+                                    </div>
+                                @endif
                             </div>
                         </div>
                         <div class="teste" style="display: flex; flex-direction:column;">

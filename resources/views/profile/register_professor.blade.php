@@ -72,7 +72,7 @@
                     class="input-error"
                     @else class="input"
                     @endif
-                    name="rg" id="rg" onkeypress="$(this).mask('00.000.000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
+                    name="rg" id="rg" onkeypress="$(this).mask('00.000.000-0')" autocomplete="off" maxlength="12" placeholder="RG" />
                     <br>
                     {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
                     <input type="text" @if ($errors->has('cpf'))

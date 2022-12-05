@@ -1,5 +1,12 @@
 <script defer src="js/nav-bar.js"></script>
-<link href="nav-bar-css/nav-bar-css.css" rel="stylesheet">
+<link href="/nav-bar-css/nav-bar-css.css" rel="stylesheet">
+
+
+<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+
+    {{-- ICON GOOGLE --}}
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -40,7 +47,7 @@
                     </a>
                     @endguest
                     @auth
-                    <a class="nav-link" href="#">Olá, {{ auth()->user()->nome  }}⇩
+                    <a class="nav-link" href="#">Olá, {{ auth()->user()->nome  }} <i style="margin-left:3px;" class="fa-solid fa-angle-down"></i>
                     </a>
                     @endauth
                     @auth
@@ -48,15 +55,14 @@
                     <ul class="drop-down">
                          @if (auth()->user()->professor == 1)
                             
-                        {{-- <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.listaalunos') }}">Lista de alunos</a></li> --}}
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Exercícios</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Lista de alunos</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="{{ route('exercicio.index') }}">Exercícios</a></li>
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                        @endif
                        @if (auth()->user()->aluno == 1)
                         <li class="drop-li"> <a class="nav-link" href="/treinos/show/{{ auth()->user()->id }}">Meus treinos</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="#">Unidades</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                         @endif
                     </ul>
@@ -68,6 +74,8 @@
             </button>
         </div>
     </nav>
+
+    <!-- ========================= DROPDOWN MOBILE ==================== --> 
     <div id="nav-menu">
         <div class="profile-box"><img src="img/sportsman.png" alt="">
             @guest
