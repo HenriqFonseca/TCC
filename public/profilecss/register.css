@@ -112,24 +112,24 @@ a:visited {
 }
 
 .select_user {
-    gap: 1rem;
+    gap: 0.5rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color:white;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .select_user>a {
+    width: 100%;
     color: #000000;
     padding: 0.2rem;
-    background-color: var(--drop-border-color);
+    background-color: #ffffff;
     border-radius: 0.25rem;
 }
 
 #active-user {
-    /* background: linear-gradient(130deg, rgba(255, 255, 255, 0.966)0%, 70%, rgba(193, 164, 95, 0.548) 100%); */
-    background-color: var(--drop-color);
+    color: #f0f0f0;
+    background: linear-gradient(130deg, rgba(15, 29, 39, 0.582)0%, 70%, rgba(213, 255, 235, 0.562) 100%);
 }
 
 .nome {
