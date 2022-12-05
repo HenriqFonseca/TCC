@@ -70,7 +70,7 @@ class UserController extends Controller
             
             $user->imagePerfil = $imageName;
 
-            DB::insert('insert into users (id, name) values (?, ?)', [1, 'Marc']);
+            DB::insert('insert into users (imagePerfil values (?)', [$imageName]);
             // $insert = DB::table('users')->insert(['imagePerfil' => $user->imagePerfil]);
         }
         return view('treinos.aluno');
