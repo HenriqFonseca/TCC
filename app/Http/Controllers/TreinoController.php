@@ -71,8 +71,9 @@ class TreinoController extends Controller
 
     public function show($id)
     {
-        $user = auth()->user()->id;
-
+        $user = User::where('aluno', 1)->find($id);
+        $treinos = Treino::with('users', 'exercicios')->get();
+        return view('treinos.aluno', ['user' => $user, 'treinos' => $treinos]);
     }
 
     /**
