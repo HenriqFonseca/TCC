@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    {{-- ICONES FONT AWESOME --}}
+    <link href="/fontawesome/css/all.min.css" rel="stylesheet">
+
     {{-- CSS --}}
     <link href="{{ asset('/treinocss/create.css') }}" rel="stylesheet">
 
@@ -49,8 +53,6 @@
                         @else
                             <div class="row">
                                 <div class="col-md-10 mx-auto">
-                                    <label for="search">procurar exercicio</label>
-                                    <input type="search" class="form-control col-10 mx-auto">
                                     <select name="exercicio_id" id="selectexercicio">
                                         <option selected>Selecione o Exercicio</option>
                                         @foreach ($exer as $exercicio)
@@ -94,14 +96,13 @@
                     <div class="container-md">
                         <div class="row">
                             <div class="col-12">
-                                <h2>
                                     Treino A<br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_a')
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>: {{ $item->carga }} <br><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -113,7 +114,7 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -125,7 +126,7 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -138,13 +139,23 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                    <br>
+                                    TREINO E
+                                    @foreach ($user->treinos as $item)
+                                        @if ($item->tipoTreino == 'treino_e')
+                                            @foreach ($item->exercicios as $exercicio)
+                                                nome do exercicio: {{ $exercicio->nome }}
+                                                descricao: {{ $item->descricao }}
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
                                     <br>
 
-                                </h2>
                             </div>
                         </div>
                     </div>

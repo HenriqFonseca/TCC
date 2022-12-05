@@ -15,7 +15,7 @@ class ExercicioController extends Controller
      */
     public function index()
     {
-        $exercicio = Exercicio::all();
+        $exercicio = Exercicio::orderby('superior', 'DESC')->orderby('nome', 'ASC')->get();
         return view('exercicio.index', ['exercicio' => $exercicio]);
     }
 
@@ -37,6 +37,8 @@ class ExercicioController extends Controller
      */
     public function store(ExercicioRequest $request)
     {
+
+        
         $exercicio = new Exercicio();
 
         $exercicio->nome = $request->nome;
@@ -46,22 +48,22 @@ class ExercicioController extends Controller
         $exercicio->triceps = $request->triceps;
         $exercicio->biceps = $request->biceps;
         $exercicio->ombro = $request->ombro;
+        $exercicio->peito = $request->peito;
         $exercicio->abdomen = $request->abdomen;
         $exercicio->costas = $request->costas;
-        if($exercicio->coxa == 0 && $exercicio->panturrilha == 0 && $exercicio->triceps == 0 && $exercicio->biceps == 0 && $exercicio->ombro == 0 && $exercicio->abdomen == 0 && $exercicio->costas == 0){
+
+        if ($exercicio->coxa == 0 && $exercicio->panturrilha == 0 && $exercicio->triceps == 0 && $exercicio->biceps == 0 && $exercicio->ombro == 0 && $exercicio->abdomen == 0 && $exercicio->costas == 0  && $exercicio->peito == 0) {
             return redirect()->route('exercicio.index');
-        }else{
-
-            $exercicio->save();
+        } else {
+            
+            if ($exercicio->triceps == 1 || $exercicio->biceps == 1 || $exercicio->ombro == 1 || $exercicio->costas == 1 || $exercicio->peito == 1 || $exercicio->abdomen == 1) {
+                $exercicio->superior = +1;
+                $exercicio->save();
+            } else {
+                $exercicio->save();
+            }
+            return redirect()->route('exercicio.index');
         }
-
-        if($exercicio->triceps == 1 || $exercicio->biceps == 1 || $exercicio->ombro == 1 || $exercicio->costas == 1 ){
-            $exercicio->superior =+ 1;
-            $exercicio->save();
-        }else{
-            $exercicio->save();
-        }
-        return redirect()->route('exercicio.index');
     }
 
     /**
@@ -84,7 +86,7 @@ class ExercicioController extends Controller
     public function edit($id)
     {
         $exercicio = Exercicio::findOrFail($id);
-        return view('exercicio.edit', ['exercicio'=>$exercicio]);
+        return view('exercicio.edit', ['exercicio' => $exercicio]);
     }
 
     /**
@@ -98,7 +100,7 @@ class ExercicioController extends Controller
     {
         // dd($request->all());
         Exercicio::findOrFail($id)->update($request->all());
-        
+
 
         return redirect()->route('exercicio.index');
     }

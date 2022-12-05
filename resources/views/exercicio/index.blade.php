@@ -80,56 +80,40 @@
                                     <input type="checkbox" name="biceps" id="dessert-2" value="1">
                                     <label for="dessert-2"><img src="/img/biceps100x100.png" alt="biceps"></label>
                                 </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="triceps" id="dessert-3" value="1">
+                                    <label for="dessert-3"><img src="/img/triceps100x100.png" alt="triceps"></label>
+                                </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
+                                    <label for="dessert-4"><img src="/img/panturrilha100x100.png" alt="panturrilha"></label>
+                                </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="coxa" id="dessert-5" value="1">
+                                    <label for="dessert-5"><img src="/img/coxa100x100.png" alt="coxa"></label>
+                                </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="ombro" id="dessert-6" value="1">
+                                    <label for="dessert-6"><img src="/img/ombro100x100.png" alt="ombro"></label>
+                                </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="costas" id="dessert-7" value="1">
+                                    <label for="dessert-7"><img src="/img/costas100x100.png" alt="costas"></label>
+                                </div>
+
+                                <div class="containercheck">
+                                    <input type="checkbox" name="peito" id="dessert-8" value="1">
+                                    <label for="dessert-8"><img src="/img/peito100x100.png" alt="peito"></label>
+                                </div>
                             </div>
                         </div>
 
-                        {{-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="coxa" id="inlineCheckbox1"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox1">Coxa</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="panturrilha" id="inlineCheckbox7"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox7">Panturrilha</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="triceps" id="inlineCheckbox2"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox2">Triceps</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="biceps" id="inlineCheckbox3"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox3">Biceps</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="ombro" id="inlineCheckbox4"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox4">Ombro</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="peito" id="inlineCheckbox8"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox8">Peito</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="abdomen" id="inlineCheckbox5"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox5">Abdomen</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="costas" id="inlineCheckbox6"
-                                value="1">
-                            <label class="form-check-label" for="inlineCheckbox6">Costas </label>
-                        </div> --}}
+                        
                         <button type="submit" class="btn btn-primary col-12">Enviar</button>
                     </form>
                 </div>
@@ -173,8 +157,16 @@
                                         <td>
                                             @if ($item->triceps == 1 && $item->biceps == 1)
                                                 <h5>Triceps e Biceps</h5>
+                                            @elseif ($item->coxa == 1 && $item->panturrilha == 1)
+                                                <h5>Coxa e Panturrilha</h5>
+                                            @elseif ($item->ombro == 1 && $item->peito == 1)
+                                                <h5>Ombro e Peito</h5>
                                             @elseif ($item->triceps == 1)
                                                 <h5>Triceps</h5>
+                                            @elseif ($item->coxa == 1)
+                                                <h5>Coxa</h5>
+                                            @elseif ($item->panturrilha == 1)
+                                                <h5>Panturrilha</h5>
                                             @elseif ($item->biceps == 1)
                                                 <h5>Biceps</h5>
                                             @elseif ($item->perna == 1)
