@@ -23,6 +23,7 @@ class UserController extends Controller
         $user ->cpf = $request->cpf;
         $user ->rg = $request->rg;
         $user ->aluno = $request->aluno;
+        $user ->professor = $request->professor;
         $user ->dataNascimento = $request->dataNascimento;
         $user ->password = bcrypt($request->password);
         // salvar no banco de dados

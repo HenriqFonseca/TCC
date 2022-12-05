@@ -39,7 +39,8 @@ class ExercicioController extends Controller
         $exercicio = new Exercicio();
 
         $exercicio->nome = $request->nome;
-        $exercicio->perna = $request->perna;
+        $exercicio->coxa = $request->coxa;
+        $exercicio->panturrilha = $request->panturrilha;
         $exercicio->superior = $request->superior;
         $exercicio->triceps = $request->triceps;
         $exercicio->biceps = $request->biceps;

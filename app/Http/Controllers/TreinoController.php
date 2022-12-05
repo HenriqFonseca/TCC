@@ -30,6 +30,13 @@ class TreinoController extends Controller
 
     public function create($id){
         
+        $user = User::where('aluno' , 1)->with('treinos')->find($id);
+        $treinos = Treino::with('users', 'exercicios')->get();
+        $exer = Exercicio::orderby('nome')->get();
+
+         $teste = $user->treinos;
+        return view('treinos.create', ['teste'=> $teste, 'exer'=> $exer, 'treinos' => $treinos] )->with('user', $user);
+
     }
 
     public function store(Request $request)
@@ -67,13 +74,7 @@ class TreinoController extends Controller
 
     public function show($id)
     {
-        $user = User::where('aluno' , 1)->with('treinos')->find($id);
-        $treinos = Treino::with('users', 'exercicios')->get();
-        $exer = Exercicio::orderby('nome')->get();
-
-         $teste = $user->treinos;
-        return view('treinos.create', ['teste'=> $teste, 'exer'=> $exer, 'treinos' => $treinos] )->with('user', $user);
-
+        $user = auth()->user()->id;
 
     }
 
