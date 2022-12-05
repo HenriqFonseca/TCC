@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="profilecss/login.css" rel="stylesheet">
     <title>Login</title>
-    <script src="js/jquery-3.6.1.min.js" defer></script>
-    <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
+    <script src="/js/jquery-3.6.1.min.js" defer></script>
+    <script src="/js/jQuery-Mask/dist/jquery.mask.js" defer></script>
     <script src="{{ asset('js/toastmessage.js') }}" defer></script>
 
 </head>
@@ -36,7 +36,7 @@
                 @endif
             </div>
             <div class="cadastro">
-            <h2 class="form-signin-heading">Insira seus dados</h2>
+                <h2 class="form-signin-heading">Insira seus dados</h2>
                 <form class="form-signin" method="POST" action="login">
                     @csrf
                     <input type="text" class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
@@ -47,14 +47,16 @@
                         <br>
                         <button class="login-button">
                             Login
-</button>
+                        </button>
                     </div>
 
                 </form>
                 <div class="alternative">
-                    <a class="alternative-item" href="http://d3ugyf2ht6aenh.cloudfront.net/stores/914/032/products/6-caneca-personalizada-da-teus-pulos-laranja-frente1-33047fcd763035766b16286118539596-640-0.jpg">Esqueci minha senha.</a>
-              </div>
-                
+                    <a class="alternative-item"
+                        href="http://d3ugyf2ht6aenh.cloudfront.net/stores/914/032/products/6-caneca-personalizada-da-teus-pulos-laranja-frente1-33047fcd763035766b16286118539596-640-0.jpg">Esqueci
+                        minha senha.</a>
+                </div>
+
             </div>
             <a href="{{ route('home.index') }}" class="logo-box">
                 <img class="img" src="img/logo-vertical.png" alt="">
@@ -67,6 +69,6 @@
             <div class="drop drop-4"></div>
         </div>
     </div>
- 
-    
+
+
 </body>

@@ -56,7 +56,13 @@
                                 <input class="form-control" type="text" name="nome" id="">
                             </div>
                         </div>
-
+                        <div class="wrapper">
+                            <div class="containercheck">
+                                <input type="checkbox" name="perna" id="dessert-1"
+                                value="1"  >
+                                <label for="dessert-1">Perna</label>
+                            </div>
+                        </div>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="coxa" id="inlineCheckbox1"

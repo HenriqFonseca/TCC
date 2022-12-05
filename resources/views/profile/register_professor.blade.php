@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/profilecss/register.css" rel="stylesheet">
-    <script src="js/jquery-3.6.1.min.js" defer></script>
-    <script src="js/jQuery-Mask/dist/jquery.mask.js" defer></script>
+    <script src="/js/jquery-3.6.1.min.js" defer></script>
+    <script src="/js/jQuery-Mask/dist/jquery.mask.js" defer></script>
     <title>Registrar</title>
 </head>
 
@@ -67,11 +67,12 @@
                     @endif name="dataNascimento" id="dataNascimento" autocomplete="off"
                     placeholder="" />
                     <br>
-                    <input type="text" placeholder="RG" @if ($errors->has('cpf'))
+
+                    <input type="text" placeholder="RG" @if ($errors->has('rg'))
                     class="input-error"
                     @else class="input"
                     @endif
-                    name="cpf" id="cpf"onkeypress="$(this).mask('00.000.000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
+                    name="rg" id="rg" onkeypress="$(this).mask('00.000.000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
                     <br>
                     {{-- CASO HAJA UM ERRO NO INPUT CPF A CLASSE VAI MUDAR --}}
                     <input type="text" @if ($errors->has('cpf'))

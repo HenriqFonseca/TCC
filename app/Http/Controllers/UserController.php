@@ -21,6 +21,7 @@ class UserController extends Controller
         $user ->sobrenome = $request->sobrenome;
         $user ->email = $request->email;
         $user ->cpf = $request->cpf;
+        $user ->rg = $request->rg;
         $user ->aluno = $request->aluno;
         $user ->dataNascimento = $request->dataNascimento;
         $user ->password = bcrypt($request->password);

@@ -54,11 +54,9 @@ Route::post('/register', [UserController::class, 'auth'])->name('user.register')
 //==================== INDEX TREINO PROFESSOR =======================
 Route::get('/treinos', [TreinoController::class, 'index'])->name('treino.index');
 Route::get('/treino', [TreinoController::class, 'rota_treinos_aluno'])->name('treino.rota.alunos');
-//==================== LISTA DE ALUNOS =======================
-Route::get('/lista_de_alunos', [ProfileController::class, 'lista_alunos'])->name('treinos.listaalunos');
+
 //==================== CRIAR TREINO =======================
 Route::get('/treinos/create/{id}', [TreinoController::class, 'show'])->name('treino.show');
-Route::get('/treinos/exerrcicio/{id}', [TreinoController::class, 'exercicioTreino'])->name('treino.exercicio');
 Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.store');
 
 
