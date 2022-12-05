@@ -48,7 +48,7 @@
                     <ul class="drop-down">
                          @if (auth()->user()->professor == 1)
                             
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.listaalunos') }}">Lista de alunos</a></li>
+                        {{-- <li class="drop-li"> <a class="nav-link" href="{{ route('treinos.listaalunos') }}">Lista de alunos</a></li> --}}
                         <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Exercícios</a></li>
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                        @endif
