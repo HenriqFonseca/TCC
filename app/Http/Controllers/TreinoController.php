@@ -6,6 +6,7 @@ use App\Models\Exercicio;
 use App\Models\Treino;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Requests\TreinoRequest;
 
 class TreinoController extends Controller
 {
@@ -36,7 +37,7 @@ class TreinoController extends Controller
 
     }
 
-    public function store(Request $request)
+    public function store(TreinoRequest $request)
     {
         $treino = new Treino();
 

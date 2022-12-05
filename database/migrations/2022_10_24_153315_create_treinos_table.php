@@ -41,8 +41,8 @@ return new class extends Migration
         Schema::create('exercicio_treino', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('exercicio_id')->constrained('exercicios')->onUpdate('cascade')->nullable();
-            $table->foreignId('treino_id')->constrained('treinos')->onUpdate('cascade')->nullable();
+            $table->foreignId('exercicio_id')->constrained('exercicios')->onDelete('cascade')->onUpdate('cascade')->nullable();
+            $table->foreignId('treino_id')->constrained('treinos')->onDelete('cascade')->onUpdate('cascade')->nullable();
         });
     }
 

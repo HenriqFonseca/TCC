@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('exercicios', function (Blueprint $table) {
-            $table->id();
+            $table->id()->ondelete();
             $table->string('nome');
             $table->string('img_superior')->nullable();
             $table->string('img_inferior')->nullable();

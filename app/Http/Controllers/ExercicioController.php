@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioRequest;
 use App\Models\Exercicio;
 use Illuminate\Http\Request;
 
@@ -34,20 +35,25 @@ class ExercicioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ExercicioRequest $request)
     {
         $exercicio = new Exercicio();
 
         $exercicio->nome = $request->nome;
+        $exercicio->superior = $request->superior;
         $exercicio->coxa = $request->coxa;
         $exercicio->panturrilha = $request->panturrilha;
-        $exercicio->superior = $request->superior;
         $exercicio->triceps = $request->triceps;
         $exercicio->biceps = $request->biceps;
         $exercicio->ombro = $request->ombro;
         $exercicio->abdomen = $request->abdomen;
         $exercicio->costas = $request->costas;
-        $teste = $exercicio->save();
+        if($exercicio->coxa == 0 && $exercicio->panturrilha == 0 && $exercicio->triceps == 0 && $exercicio->biceps == 0 && $exercicio->ombro == 0 && $exercicio->abdomen == 0 && $exercicio->costas == 0){
+            return redirect()->route('exercicio.index');
+        }else{
+
+            $exercicio->save();
+        }
 
         if($exercicio->triceps == 1 || $exercicio->biceps == 1 || $exercicio->ombro == 1 || $exercicio->costas == 1 ){
             $exercicio->superior =+ 1;

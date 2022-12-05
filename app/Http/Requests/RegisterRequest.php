@@ -29,6 +29,7 @@ class RegisterRequest extends FormRequest
             'nome' => ['bail','string', 'required', 'max:20', 'regex:/^[A-Z][a-z]+/'],
             'sobrenome' => ['bail','string', 'required',  'max:30', 'regex:/^[A-Z][a-z]+/'],
             'cpf' => ['bail', 'required', 'unique:users,cpf', 'min:14', 'max:14'],
+            'rg' => ['bail', 'required', 'unique:users,rg', 'min:12', 'max:12'],
             'password' => ['bail', 'required', 'min:6', 'max:20'],
         ];
     }
@@ -56,10 +57,15 @@ class RegisterRequest extends FormRequest
 
              //========== REGRAS DO CPF ===========//
             'cpf.required' => 'Preencha o campo CPF',
-            'cpf.integer' => 'CPF só numeros',
             'cpf.min' => 'CPF Inválido',
             'cpf.max' => 'CPF Inválido',
             'cpf.unique' => 'CPF já está em uso',
+
+            //========== REGRAS DO CPF ===========//
+            'RG.required' => 'Preencha o campo RG',
+            'RG.min' => 'RG Inválido',
+            'RG.max' => 'RG Inválido',
+            'RG.unique' => 'RG já está em uso',
 
 
             //========== REGRAS DA SENHA ===========//
