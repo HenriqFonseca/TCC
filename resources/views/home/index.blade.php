@@ -125,7 +125,7 @@
                 @endguest
                 @auth
                     @if (auth()->user()->aluno == 1)
-                        <a class="grid-link" href="{{ route('treino.rota.alunos') }}">
+                        <a class="grid-link" href="/treinos/show/{{ auth()->user()->id }} ">
                             <div class="btn-box">
                                 <button class="btn-small">
                                     <img src="img/dumbbell.png" alt="">
@@ -209,7 +209,6 @@
                             <h3>Fale conosco</h3>
                         </div>
                     </div> --}}
-                </a>
                 
                 <!-- <a class="grid-link" href="">
                                     <div class="btn-box">

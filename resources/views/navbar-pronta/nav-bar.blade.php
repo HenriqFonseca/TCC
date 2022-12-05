@@ -53,7 +53,7 @@
                         <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
                        @endif
                        @if (auth()->user()->aluno == 1)
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.rota.alunos') }}">Meus treinos</a></li>
+                        <li class="drop-li"> <a class="nav-link" href="/treinos/show/{{ auth()->user()->id }}">Meus treinos</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">Academias</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
                         <li class="drop-li"> <a class="nav-link" href="#">*teste</a></li>
@@ -84,7 +84,7 @@
         @auth
 
         <div class="menu-grid-container">
-            <a href="{{ route('treino.rota.alunos') }}" class="grid-link">
+            <a href="{{ route('treino.index') }}" class="grid-link">
                 Treinos
             </a>
             <a href="https://www.smartfit.com.br/academias" class="grid-link">
