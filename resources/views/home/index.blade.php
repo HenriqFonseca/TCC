@@ -170,10 +170,10 @@
                         <a class="grid-link" href="{{ route('treino.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/dumbbell.png" alt="">
+                                    <img src="img/alunos.png" alt="">
                                 </button>
                                 <div class="btn-caption">
-                                    <h3>Alunos</h3>
+                                    <h3>Lista de alunos</h3>
                                 </div>
                             </div>
                         </a>
@@ -249,7 +249,7 @@
 <!-- <a href="https://www.flaticon.com/free-icons/invoice" title="invoice icons">Invoice icons created by Icongeek26 - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/architecture-and-city" title="architecture and city icons">Architecture and city icons created by Icongeek26 - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
-
+<!-- <a href="https://www.flaticon.com/free-icons/customers" title="customers icons">Customers icons created by Eucalyp - Flaticon</a> -->
 
 
 
