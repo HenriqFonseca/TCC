@@ -9,10 +9,7 @@ use Illuminate\Http\Request;
 
 class TreinoController extends Controller
 {
-    public function rota_treinos_aluno()
-    {
-        return view('treinos.treinos_aluno');
-    }
+   
     public function index()
     {
 
