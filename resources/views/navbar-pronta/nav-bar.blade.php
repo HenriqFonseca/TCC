@@ -4,12 +4,12 @@
 
 <link href="/fontawesome/css/all.min.css" rel="stylesheet">
 
-    {{-- ICON GOOGLE --}}
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+{{-- ICON GOOGLE --}}
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <header>
     <div class="nav-blur"></div>
@@ -24,15 +24,30 @@
                             <stop id="SvgjsStop6466" stop-color="#8f5e25" offset="1"></stop>
                         </linearGradient>
                     </defs>
-                    <g id="SvgjsG6459" featurekey="symbolFeature-0" transform="matrix(1.728659855448171,0,0,1.728659855448171,89.07520287017482,42.71329923365092)" fill="url(#SvgjsLinearGradient6463)">
-                        <rect xmlns="http://www.w3.org/2000/svg" x="25.249" y="20.252" transform="matrix(0.7071 0.7071 -0.7071 0.7071 46.463 -22.1737)" fill="none" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49.499" height="49.497"></rect>
-                        <path xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M49.999,69.395  l24.394-24.392L50,20.608L25.608,45.002L49.999,69.395z M63.785,45.002L49.999,58.787L36.214,45.002L50,31.215L63.785,45.002z">
+                    <g id="SvgjsG6459" featurekey="symbolFeature-0"
+                        transform="matrix(1.728659855448171,0,0,1.728659855448171,89.07520287017482,42.71329923365092)"
+                        fill="url(#SvgjsLinearGradient6463)">
+                        <rect xmlns="http://www.w3.org/2000/svg" x="25.249" y="20.252"
+                            transform="matrix(0.7071 0.7071 -0.7071 0.7071 46.463 -22.1737)" fill="none"
+                            stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" width="49.499" height="49.497"></rect>
+                        <path xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            d="M49.999,69.395  l24.394-24.392L50,20.608L25.608,45.002L49.999,69.395z M63.785,45.002L49.999,58.787L36.214,45.002L50,31.215L63.785,45.002z">
                         </path>
-                        <rect xmlns="http://www.w3.org/2000/svg" x="47.754" y="42.754" transform="matrix(-0.707 0.7072 -0.7072 -0.707 117.1804 41.4576)" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="4.496" height="4.497"></rect>
-                        <polygon xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="  49.999,80 20,50.004 15.002,55 49.999,90 85,55 80,50 "></polygon>
+                        <rect xmlns="http://www.w3.org/2000/svg" x="47.754" y="42.754"
+                            transform="matrix(-0.707 0.7072 -0.7072 -0.707 117.1804 41.4576)"
+                            stroke="url(#SvgjsLinearGradient6463)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" width="4.496" height="4.497"></rect>
+                        <polygon xmlns="http://www.w3.org/2000/svg" stroke="url(#SvgjsLinearGradient6463)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            points="  49.999,80 20,50.004 15.002,55 49.999,90 85,55 80,50 "></polygon>
                     </g>
-                    <g id="SvgjsG6460" featurekey="nameFeature-0" transform="matrix(1.8070299717903664,0,0,1.8070299717903664,-5.8547792799815594,139.92970028209635)" fill="#ffffff">
-                        <path d="M21.12 11.04 q2.44 0.92 4.4 2.96 q4.2 4.24 4.2 10.82 t-4.2 10.86 q-1.96 2.04 -4.4 2.96 q-2.52 1.04 -5.16 1.04 l-11.32 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.88 q0 -0.6 0.42 -1.02 t0.98 -0.42 l11.2 0 q3.56 0 5.78 -2.6 t2.22 -6.52 t-2.22 -6.52 t-5.78 -2.6 l-11.2 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.88 q0 -0.56 0.42 -0.98 t0.98 -0.42 l11.32 0 q2.64 0 5.16 1.04 z M61.908 33.92 q0.6 0 1 0.42 t0.4 1.02 l0 2.92 q0 0.56 -0.4 0.98 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l19.76 0 z M42.148 27.72 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -3 q0 -0.56 0.42 -0.98 t0.98 -0.42 l17.96 0 q0.6 0 1.02 0.42 t0.42 0.98 l0 3 q0 0.56 -0.42 0.98 t-1.02 0.42 l-17.96 0 z M61.908 10 q0.6 0 1 0.42 t0.4 0.98 l0 2.92 q0 0.6 -0.4 1.02 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.76 0 z M99.296 10.64 q0.44 0.6 0.16 1.32 l-10.96 27.08 q-0.16 0.4 -0.52 0.64 t-0.8 0.24 l-3.52 0 q-0.44 0 -0.8 -0.24 t-0.52 -0.64 l-10.96 -27.08 q-0.32 -0.68 0.12 -1.32 t1.16 -0.64 l13.36 0 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-6.72 0 l6.12 15.4 l8.04 -20.32 q0.16 -0.4 0.52 -0.64 t0.8 -0.24 l3.36 0 q0.36 0 0.68 0.18 t0.48 0.46 z M142.71200000000002 22.24 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.96 q0 0.56 -0.42 0.98 t-1.02 0.42 l-13.16 0 l0 10.24 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.6 q0 -0.6 0.42 -1.02 t0.98 -0.42 l17.6 0 z M144.512 10 q0.56 0 0.98 0.42 t0.42 0.98 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-19.4 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.4 0 z M160.74 21.88 q0.6 0 1 0.42 t0.4 1.02 l0 14.96 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.96 q0 -0.6 0.42 -1.02 t0.98 -0.42 l3.04 0 z M160.74 10 q0.6 0 1 0.42 t0.4 0.98 l0 7.4 q0 0.6 -0.4 1.02 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -7.4 q0 -0.56 0.42 -0.98 t0.98 -0.42 l3.04 0 z M177.64800000000002 10 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-1.02 0.42 l-4.12 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l4.12 0 z M195.52800000000002 10 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-8.04 0 l0 22.72 q0 0.56 -0.42 0.98 t-0.98 0.42 l-3.08 0 q-0.6 0 -1.02 -0.42 t-0.42 -0.98 l0 -27.08 q0 -0.6 0.42 -1.02 t1.02 -0.42 l12.52 0 z">
+                    <g id="SvgjsG6460" featurekey="nameFeature-0"
+                        transform="matrix(1.8070299717903664,0,0,1.8070299717903664,-5.8547792799815594,139.92970028209635)"
+                        fill="#ffffff">
+                        <path
+                            d="M21.12 11.04 q2.44 0.92 4.4 2.96 q4.2 4.24 4.2 10.82 t-4.2 10.86 q-1.96 2.04 -4.4 2.96 q-2.52 1.04 -5.16 1.04 l-11.32 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.88 q0 -0.6 0.42 -1.02 t0.98 -0.42 l11.2 0 q3.56 0 5.78 -2.6 t2.22 -6.52 t-2.22 -6.52 t-5.78 -2.6 l-11.2 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.88 q0 -0.56 0.42 -0.98 t0.98 -0.42 l11.32 0 q2.64 0 5.16 1.04 z M61.908 33.92 q0.6 0 1 0.42 t0.4 1.02 l0 2.92 q0 0.56 -0.4 0.98 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l19.76 0 z M42.148 27.72 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -3 q0 -0.56 0.42 -0.98 t0.98 -0.42 l17.96 0 q0.6 0 1.02 0.42 t0.42 0.98 l0 3 q0 0.56 -0.42 0.98 t-1.02 0.42 l-17.96 0 z M61.908 10 q0.6 0 1 0.42 t0.4 0.98 l0 2.92 q0 0.6 -0.4 1.02 t-1 0.42 l-19.76 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.76 0 z M99.296 10.64 q0.44 0.6 0.16 1.32 l-10.96 27.08 q-0.16 0.4 -0.52 0.64 t-0.8 0.24 l-3.52 0 q-0.44 0 -0.8 -0.24 t-0.52 -0.64 l-10.96 -27.08 q-0.32 -0.68 0.12 -1.32 t1.16 -0.64 l13.36 0 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-6.72 0 l6.12 15.4 l8.04 -20.32 q0.16 -0.4 0.52 -0.64 t0.8 -0.24 l3.36 0 q0.36 0 0.68 0.18 t0.48 0.46 z M142.71200000000002 22.24 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.96 q0 0.56 -0.42 0.98 t-1.02 0.42 l-13.16 0 l0 10.24 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.6 q0 -0.6 0.42 -1.02 t0.98 -0.42 l17.6 0 z M144.512 10 q0.56 0 0.98 0.42 t0.42 0.98 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-19.4 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.56 0.42 -0.98 t0.98 -0.42 l19.4 0 z M160.74 21.88 q0.6 0 1 0.42 t0.4 1.02 l0 14.96 q0 0.56 -0.4 0.98 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -0.98 l0 -14.96 q0 -0.6 0.42 -1.02 t0.98 -0.42 l3.04 0 z M160.74 10 q0.6 0 1 0.42 t0.4 0.98 l0 7.4 q0 0.6 -0.4 1.02 t-1 0.42 l-3.04 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -7.4 q0 -0.56 0.42 -0.98 t0.98 -0.42 l3.04 0 z M177.64800000000002 10 q0.6 0 1.02 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-1.02 0.42 l-4.12 0 q-0.56 0 -0.98 -0.42 t-0.42 -1.02 l0 -2.92 q0 -0.6 0.42 -1.02 t0.98 -0.42 l4.12 0 z M195.52800000000002 10 q0.56 0 0.98 0.42 t0.42 1.02 l0 2.92 q0 0.6 -0.42 1.02 t-0.98 0.42 l-8.04 0 l0 22.72 q0 0.56 -0.42 0.98 t-0.98 0.42 l-3.08 0 q-0.6 0 -1.02 -0.42 t-0.42 -0.98 l0 -27.08 q0 -0.6 0.42 -1.02 t1.02 -0.42 l12.52 0 z">
                         </path>
                     </g>
                 </svg>
@@ -43,29 +58,34 @@
             <ul class="nav-list">
                 <li class="item-box">
                     @guest
-                    <a class="nav-link" href="{{ route('profile.login') }}">Login
-                    </a>
+                        <a class="nav-link" href="{{ route('profile.login') }}">Login
+                        </a>
                     @endguest
                     @auth
-                    <a class="nav-link" href="#">Olá, {{ auth()->user()->nome  }} <i style="margin-left:3px;" class="fa-solid fa-angle-down"></i>
-                    </a>
+                        <a class="nav-link" href="#">Olá, {{ auth()->user()->nome }} <i style="margin-left:3px;"
+                                class="fa-solid fa-angle-down"></i>
+                        </a>
                     @endauth
                     @auth
 
-                    <ul class="drop-down">
-                         @if (auth()->user()->professor == 1)
-                            
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Lista de alunos</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="{{ route('exercicio.index') }}">Exercícios</a></li>
-                        <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
-                       @endif
-                       @if (auth()->user()->aluno == 1)
-                        <li class="drop-li"> <a class="nav-link" href="/treinos/show/{{ auth()->user()->id }}">Meus treinos</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#">Unidades</a></li>
-                        <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
-                        <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a></li>
-                        @endif
-                    </ul>
+                        <ul class="drop-down">
+                            @if (auth()->user()->professor == 1)
+                                <li class="drop-li"> <a class="nav-link" href="{{ route('treino.index') }}">Lista de
+                                        alunos</a></li>
+                                <li class="drop-li"> <a class="nav-link"
+                                        href="{{ route('exercicio.index') }}">Exercícios</a></li>
+                                <li class="drop-li"> <a class="nav-link logout" href="{{ route('user.logout') }}">Sair</a>
+                                </li>
+                            @endif
+                            @if (auth()->user()->aluno == 1)
+                                <li class="drop-li"> <a class="nav-link" href="/treinos/show/{{ auth()->user()->id }}">Meus
+                                        treinos</a></li>
+                                <li class="drop-li"> <a class="nav-link" href="#">Unidades</a></li>
+                                <li class="drop-li"> <a class="nav-link" href="#footer">Fale conosco</a></li>
+                                <li class="drop-li"> <a class="nav-link logout"
+                                        href="{{ route('user.logout') }}">Sair</a></li>
+                            @endif
+                        </ul>
                     @endauth
                 </li>
             </ul>
@@ -75,64 +95,80 @@
         </div>
     </nav>
 
-    <!-- ========================= DROPDOWN MOBILE ==================== --> 
+    <!-- ========================= DROPDOWN MOBILE ==================== -->
     <div id="nav-menu">
         <div class="profile-box"><img src="img/sportsman.png" alt="">
             @guest
-            <a href="{{ route('profile.login') }} "><button class="login-button">
-                    Login
-                </button></a>
+                <a href="{{ route('profile.login') }} "><button class="login-button">
+                        Login
+                    </button></a>
             @endguest
             @auth
-            <a href="{{ route('profile.login') }} "><button class="login-button">
-                    Olá, {{ auth()->user()->name }}
-                </button></a>
+                <a href="{{ route('profile.login') }} "><button class="login-button">
+                       {{ auth()->user()->nome }}
+                    </button></a>
             @endauth
         </div>
         @auth
+            @if (auth()->user()->professor == 1)
+                <div class="menu-grid-container">
+                    <a href="{{ route('treino.index') }}" class="grid-link">
+                        Alunos
+                    </a>
+                    <a href="{{ route('exercicio.index') }}" class="grid-link">
+                        Exercícios
+                    </a>
+                    <a href="" class="grid-link hover">
+                        Academias
+                    </a>
+                    <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
+                        Sair
+                    </a>
 
-        <div class="menu-grid-container">
-            <a href="{{ route('treino.index') }}" class="grid-link">
-                Treinos
-            </a>
-            <a href="https://www.smartfit.com.br/academias" class="grid-link">
-                Planos
-            </a>
-            <a href="" class="grid-link hover">
-                Academias
-            </a>
-            <a href="#footer" class="grid-link hover">
-                Fale conosco
-            </a>
-            <a href="" class="grid-link hover">
-                Texto
-            </a>
-            <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
-                Sair
-            </a>
+                </div>
+            @else
+                <div class="menu-grid-container">
+                    <a href="/treinos/show/{{ auth()->user()->id }}" class="grid-link">
+                        Meus Treinos
+                    </a>
+                    <a href="#" class="grid-link">
+                        Planos
+                    </a>
+                    <a href="#" class="grid-link hover">
+                        Academias
+                    </a>
+                    <a href="#footer" class="grid-link hover">
+                        Fale conosco
+                    </a>
+                   
+                    <a href="{{ route('user.logout') }}" class="grid-link logout-menu">
+                        Sair
+                    </a>
 
-        </div>
+                </div>
+            @endif
+
         @endauth
     </div>
 </header>
 @yield('conteudo')
 <footer>
     <div class="nav-footer" id="footer">
-        
-            <h3>Siga-nos nas redes sociais!</h3>
-            <ul class="footer-list">
 
-                <li><a class="footer-link" href="#">
-                        <div class="social-media-img"><img src="img/insta.png" alt=""></div> Instagram
-                    </a></li>
-                <li><a class="footer-link" href="#">
-                        <div class="social-media-img"><img src="img/face.png" alt=""></div> Facebook
-                    </a></li>
-                <li><a class="footer-link" href="#">
-                        <div class="social-media-img"><img src="img/whats.png" alt=""></div> Whatsapp
-                    </a></li>
-            </ul>
-        
+        <h3>Siga-nos nas redes sociais!</h3>
+        <ul class="footer-list">
+
+            <li><a class="footer-link" href="#">
+                    <div class="social-media-img"><img src="img/insta.png" alt=""></div> Instagram
+                </a></li>
+            <li><a class="footer-link" href="#">
+                    <div class="social-media-img"><img src="img/face.png" alt=""></div> Facebook
+                </a></li>
+            <li><a class="footer-link" href="#">
+                    <div class="social-media-img"><img src="img/whats.png" alt=""></div> Whatsapp
+                </a></li>
+        </ul>
+
     </div>
-    <small>Dev fit  Copyright ©  2022 </small>
+    <small>Dev fit Copyright © 2022 </small>
 </footer>

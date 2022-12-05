@@ -7,6 +7,7 @@ use App\Http\Requests\RegisterRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -69,7 +70,8 @@ class UserController extends Controller
             
             $user->imagePerfil = $imageName;
 
-            $insert = user::insert(['imagePerfil' => $imageName]);
+            DB::insert('insert into users (id, name) values (?, ?)', [1, 'Marc']);
+            // $insert = DB::table('users')->insert(['imagePerfil' => $user->imagePerfil]);
         }
         return view('treinos.aluno');
     }
