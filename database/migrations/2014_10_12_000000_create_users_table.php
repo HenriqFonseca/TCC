@@ -19,14 +19,14 @@ return new class extends Migration
             $table->string('sobrenome')->nullable();
             $table->date('dataNascimento')->nullable();
             $table->boolean('status_treino')->nullable();
-            $table->string('cpf')->unique();
-            $table->string('rg')->unique();
+            $table->string('cpf')->nullable()->unique();
+            $table->string('rg')->nullable()->unique();
             $table->boolean('aluno')->nullable();
             $table->boolean('professor')->nullable();
             $table->string('email')->unique();
             $table->string('imagePerfil')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
