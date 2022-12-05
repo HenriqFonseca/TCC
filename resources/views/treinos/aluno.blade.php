@@ -42,10 +42,12 @@
             <div class="container-user">
                 {{ $user->nome }}<br>
                 <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
+                    @method('PUT')
                     @csrf
                     <label for="imagePerfil">Imagem de Perfil</label>
                     <input type="file" name="imagePerfil" id="imagePerfil">
                     <button type="submit">Definir Foto</button>
+                    <img src="/img/perfil/{{ $user->imagePerfil }}" alt="">
                 </form>
             </div>
             <div class="row">
