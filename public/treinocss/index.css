@@ -24,25 +24,3 @@ body{
     transform: translateY(5rem) !important;
 }
 
-.wrapper{
-    width: 100%;
-    position: absolute;
-    display: grid;
-    place-items: center;
-}
-
-.containercheck{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
-    box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
-    border-radius: 8px;
-    cursor: pointer;
-}
-input[type="checkbox"]{
-    -webkit-appearance: none;
-    border: 1px solid black;
-    position: relative;
-    width: 100%;
-    
-}

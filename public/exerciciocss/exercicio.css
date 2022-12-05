@@ -28,3 +28,54 @@ body{
 .container-md{
     transform: translateY(5rem) !important;
 }
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.containercheck{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    width: 100%;
+    
+}
+
+input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 18px;
+    color: black;
+    right: 0px;
+    top: -23px;
+
+}
+
+input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058";
+}
+
+.containercheck img{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+   
+}

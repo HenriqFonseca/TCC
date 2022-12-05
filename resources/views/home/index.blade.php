@@ -81,33 +81,31 @@
             <div class="btn-grid-container">
                 <a href="{{ route('profile.register_professor') }}" style="background-color:black;">TESTE REGISTER PROF</a>
                 <a href="{{ route('profile.register_aluno') }}" style="background-color:black;">TESTE REGISTER ALUNO</a>
-                @guest<a class="grid-link" href="{{ route('profile.login') }}">@endguest
-                    @auth
-                        @if (auth()->user()->aluno == 1)
-                            <a class="grid-link" href="{{ route('treino.rota.alunos') }}">
-                                <div class="btn-box">
-                                    <button class="btn-small">
-                                        <img src="img/dumbbell.png" alt="">
-                                    </button>
-                                    <div class="btn-caption">
-                                        <h3>Meus treinos</h3>
-                                    </div>
+                @guest
+                    <a class="grid-link" href="{{ route('profile.login') }}">
+                        <div class="btn-box">
+                            <button class="btn-small">
+                                <img src="img/dumbbell.png" alt="">
+                            </button>
+                            <div class="btn-caption">
+                                <h3>Meus treinos</h3>
+                            </div>
+                        </div>
+          
+                @endguest
+                @auth
+                    @if (auth()->user()->aluno == 1)
+                        <a class="grid-link" href="{{ route('treino.rota.alunos') }}">
+                            <div class="btn-box">
+                                <button class="btn-small">
+                                    <img src="img/dumbbell.png" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Meus treinos</h3>
                                 </div>
-                            </a>
-                        @else
-                            <a class="grid-link" href="{{ route('treino.index') }}">
-                                <div class="btn-box">
-                                    <button class="btn-small">
-                                        <img src="img/dumbbell.png" alt="">
-                                    </button>
-                                    <div class="btn-caption">
-                                        <h3>Alunos</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        @endif
-                    @endauth
-
+                            </div>
+                        </a>
+                    </a>
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
@@ -138,26 +136,62 @@
                             </div>
                         </div>
                     </a>
-                    <!-- <a class="grid-link" href="">
+                    @else
+                        <a class="grid-link" href="{{ route('treino.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/calendar.png" alt="">
+                                    <img src="img/dumbbell.png" alt="">
                                 </button>
                                 <div class="btn-caption">
-                                    <h3>Algum Texto</h3>
+                                    <h3>Alunos</h3>
                                 </div>
                             </div>
-                        </a> -->
-                    <a class="grid-link item-5" href="">
-                        <div class="btn-box">
-                            <button class="btn-small">
-                                <img src="img/note.png" alt="">
-                            </button>
-                            <div class="btn-caption">
-                                <h3>Exercícios</h3>
+                        </a>
+                        <a class="grid-link item-5" href="">
+                            <div class="btn-box">
+                                <button class="btn-small">
+                                    <img src="img/note.png" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Exercícios</h3>
+                                </div>
                             </div>
+                        </a>
+                    @endif
+                @endauth
+
+                {{-- <a class="grid-link" href="">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/gym.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Unidades</h3>
                         </div>
-                    </a>
+                    </div>
+                </a>
+                <a class="grid-link" href="#footer">
+                    <div class="btn-box">
+                        <button class="btn-small">
+                            <img src="img/chat.png" alt="">
+                        </button>
+                        <div class="btn-caption">
+                            <h3>Fale conosco</h3>
+                        </div>
+                    </div> --}}
+                </a>
+                
+                <!-- <a class="grid-link" href="">
+                                    <div class="btn-box">
+                                        <button class="btn-small">
+                                            <img src="img/calendar.png" alt="">
+                                        </button>
+                                        <div class="btn-caption">
+                                            <h3>Algum Texto</h3>
+                                        </div>
+                                    </div>
+                                </a> -->
+                
             </div>
 
             <div>

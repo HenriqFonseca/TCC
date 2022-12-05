@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio</title>
 
+
+    {{-- FONTS AWESOME --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     {{-- CSS --}}
-    <link href="{{ asset('treinocss/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('exerciciocss/exercicio.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
@@ -56,15 +60,25 @@
                                 <input class="form-control" type="text" name="nome" id="">
                             </div>
                         </div>
-                        <div class="wrapper">
-                            <div class="containercheck">
-                                <input type="checkbox" name="perna" id="dessert-1"
-                                value="1"  >
-                                <label for="dessert-1">Perna</label>
+                        <div class="teste" style="display: flex; flex-direction:column;">
+                            <div class="texto">
+
+                                <div class="wrapper" style="display: flex">
+                                    <div class="containercheck">
+                                        <input type="checkbox" name="abdomen" id="dessert-1" value="1">
+                                        <label for="dessert-1"><img src="/img/abdomen100x100.png" alt="abdomen"></label>
+                                    </div>
+                                    <h2>ola pessoal</h2>
+                                </div>
+                                    
+                                <div class="containercheck">
+                                    <input type="checkbox" name="biceps" id="dessert-2" value="1">
+                                    <label for="dessert-2"><img src="/img/biceps100x100.png" alt="biceps"></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-check form-check-inline">
+                        {{-- <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="coxa" id="inlineCheckbox1"
                                 value="1">
                             <label class="form-check-label" for="inlineCheckbox1">Coxa</label>
@@ -110,7 +124,7 @@
                             <input class="form-check-input" type="checkbox" name="costas" id="inlineCheckbox6"
                                 value="1">
                             <label class="form-check-label" for="inlineCheckbox6">Costas </label>
-                        </div>
+                        </div> --}}
                         <button type="submit" class="btn btn-primary col-12">Enviar</button>
                     </form>
                 </div>
