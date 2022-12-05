@@ -42,43 +42,42 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        
-            <main>
-                       
-                        <form class="form-search" action="/treinos" method="GET">
-                                <input type="text" placeholder="Pesquisar..." name="search"  id="search">
-                            </form>
-                        
-                            <div class="content">
-                                
-                                <!-- <h2>Buscando por: {{ $search }}</h2> -->
-                                @foreach ($aluno as $aluno)
-                                    <a class="list-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
-                                        <div >
-                                            <div >
-                                                <div >
-                                                    <img src="/img/toduro.jpg" >
-                                                </div>
-                                                <div style="background-color: black;" >
-                                                    @if ($aluno->status_treino == 0)
-                                                        <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} Data
-                                                            de Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }} idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
-                                                        @foreach ($aluno->treinos as $item)
-                                                            {{ $item->nome }}
-                                                        @endforeach
-                                                    @else
-                                                        <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} Data de
-                                                            Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
-                                                            idade:{{ $aluno->dataNascimento->age }} COM TREINO</h2>
-                                                    @endif
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                            
-                            @endforeach
-</div>
-            </main>
+        <main>
+
+            <form class="form-search" action="/treinos" method="GET">
+                <input type="text" placeholder="Pesquisar..." name="search" id="search">
+            </form>
+
+            <div class="content">
+
+                <!-- <h2>Buscando por: {{ $search }}</h2> -->
+                @foreach ($aluno as $aluno)
+                    <a class="list-content" href="{{ url('/treinos/create/'.$aluno->id) }}">
+                        <div>
+                            <div>
+                                <div>
+                                    <img src="/img/toduro.jpg">
+                                </div>
+                                <div style="background-color: black;">
+                                    @if ($aluno->status_treino == 0)
+                                        <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} Data
+                                            de Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
+                                            idade:{{ $aluno->dataNascimento->age }} SEM TREINO</h2>
+                                        @foreach ($aluno->treinos as $item)
+                                            {{ $item->nome }}
+                                        @endforeach
+                                    @else
+                                        <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }} Data de
+                                            Nascimento:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}
+                                            idade:{{ $aluno->dataNascimento->age }} COM TREINO</h2>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </main>
 
         <style>
             .alunos {

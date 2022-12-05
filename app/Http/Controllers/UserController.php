@@ -55,4 +55,22 @@ class UserController extends Controller
         $request->session()->regenerateToken();
         return redirect()->route('home.index');
     }
+
+    public function image(Request $request, $id){
+        $user = User::where('id', $id)->get();
+        if($request->hasFile('imagePerfil') && $request->file('imagePerfil')->isValid()){
+            
+            $requestImage = $request->imagePerfil;
+            $extension = $requestImage->extension();
+            
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+            
+            $request->imagePerfil->move(public_path('/img/perfil') , $imageName);
+            
+            $user->imagePerfil = $imageName;
+
+            $insert = user::insert(['imagePerfil' => $imageName]);
+        }
+        return view('treinos.aluno');
+    }
 }

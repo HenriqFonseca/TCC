@@ -30,6 +30,7 @@ class User extends Authenticatable
         'rg',
         'status_treino',
         'dataNascimento',
+        'imagePerfil',
     ];
 
     /**

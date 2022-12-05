@@ -48,6 +48,7 @@ Route::post('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register/professor', [ProfileController::class, 'register_prof'])->name('profile.register_professor');
 Route::get('/register/aluno', [ProfileController::class, 'register_aluno'])->name('profile.register_aluno');
 Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
+Route::post('/perfil/{id}', [UserController::class, 'image'])->name('user.image');
 // =========================== PARA ONDE OS DADOS DO REGISTRO VÃO =======================
 Route::post('/register', [UserController::class, 'auth'])->name('user.register');
 

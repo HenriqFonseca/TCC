@@ -39,6 +39,15 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
+            <div class="container-user">
+                {{ $user->nome }}<br>
+                <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <label for="imagePerfil">Imagem de Perfil</label>
+                    <input type="file" name="imagePerfil" id="imagePerfil">
+                    <button type="submit">Definir Foto</button>
+                </form>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="container-md">
