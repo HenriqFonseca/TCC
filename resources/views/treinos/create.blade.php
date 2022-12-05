@@ -42,6 +42,9 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
+            <div class="container-user">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptates obcaecati perferendis magni aperiam deleniti eum eligendi placeat nulla incidunt assumenda, veritatis dignissimos inventore, mollitia sed ullam voluptas soluta cupiditate.
+            </div>
             <div class="row">
                 <div class="col-12">
 
