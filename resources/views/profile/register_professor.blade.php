@@ -101,7 +101,10 @@
                             @endif 
                         </div>
                     </div>
-
+                    <br>
+                    <button type="submit" class="login-button">
+                        Registrar
+                    </button>
 
 
                 </form>

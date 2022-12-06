@@ -41,7 +41,22 @@
                         <div class="container-erro">
                             <input type="password" @if($errors->has('password')) class="input-error" name="password" placeholder="Senha" />
                             <small style="color: red; background-color: white; text-align:left;">@error('password') {{ $message }} @enderror</small>
-                            @else class="input" name="password" placeholder="Senha" />
+                            @else class="input" name="password" maxlength="8" placeholder="Senha" />
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             @endif
                         </div>
                     </div>

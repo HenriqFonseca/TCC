@@ -189,7 +189,7 @@ header {
     background-color: var(--nav-color);
     transition: 0.3s ease-in-out;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     border-radius: 0 0 0.5rem 0.5rem;
 }
