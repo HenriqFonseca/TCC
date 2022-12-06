@@ -15,20 +15,20 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     {{-- CSS --}}
-    <link href="{{ asset('exerciciocss/exercicio.css') }}" rel="stylesheet">
-    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ secure_url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ secure_url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }} "></script>
 
     <!-- styles -->
-    <script defer src="js/nav-bar.js"></script>
+    <script defer src="{{ secure_url('js/nav-bar.js') }}"></script>
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ secure_url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
     <!-- pwa -->
     <link rel="manifest" href="./manifest.json" />
