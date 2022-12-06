@@ -158,10 +158,10 @@
         <h3>Siga-nos nas redes sociais!</h3>
         <ul class="footer-list">
 
-            <li><a class="footer-link" href="#">
+            <li><a class="footer-link" href="https://www.instagram.com/invites/contact/?i=dojsng74toy6&utm_content=q5obo0c">
                     <div class="social-media-img"><img src="img/insta.png" alt=""></div> Instagram
                 </a></li>
-            <li><a class="footer-link" href="#">
+            <li><a class="footer-link" href="https://www.facebook.com/profile.php?id=100088265539529&mibextid=ZbWKwL">
                     <div class="social-media-img"><img src="img/face.png" alt=""></div> Facebook
                 </a></li>
             <li><a class="footer-link" href="#">

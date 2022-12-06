@@ -22,10 +22,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 95vh;
+    min-height: 100vh;
     min-width: 320px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     color: var(--font-color);
 }

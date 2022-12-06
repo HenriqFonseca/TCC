@@ -376,6 +376,7 @@ header {
 /*==========----- FOOTER STYLE -----==========*/
 
 footer {
+    position: relative;
     width: 100%;
     bottom: 0px;
     display: flex;
