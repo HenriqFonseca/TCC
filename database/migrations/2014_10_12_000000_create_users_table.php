@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('rg')->nullable()->unique();
             $table->boolean('aluno')->nullable();
             $table->boolean('professor')->nullable();
-            $table->string('email')->unique();
+            $table->string('email')->nullable()->unique();
             $table->string('imagePerfil')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
