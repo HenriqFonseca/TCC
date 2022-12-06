@@ -31,6 +31,7 @@ class RegisterRequest extends FormRequest
             'cpf' => ['bail', 'required', 'unique:users,cpf', 'min:14', 'max:14'],
             'rg' => ['bail', 'required', 'unique:users,rg', 'min:12', 'max:12'],
             'password' => ['bail', 'required', 'min:6', 'max:20'],
+            'dataNascimento' => ['bail', 'required', 'date',],
         ];
     }
      //========== MESNAGENS QUE SERÃO EXIBIDAS CASO O ERRO OCORRA ============//
@@ -62,16 +63,19 @@ class RegisterRequest extends FormRequest
             'cpf.unique' => 'CPF já está em uso',
 
             //========== REGRAS DO CPF ===========//
-            'RG.required' => 'Preencha o campo RG',
-            'RG.min' => 'RG Inválido',
-            'RG.max' => 'RG Inválido',
-            'RG.unique' => 'RG já está em uso',
+            'rg.required' => 'Preencha o campo RG',
+            'rg.min' => 'RG Inválido',
+            'rg.max' => 'RG Inválido',
+            'rg.unique' => 'RG já está em uso',
 
 
             //========== REGRAS DA SENHA ===========//
             'password.required' => 'Preencha o campo Senha',
             'password.min' => 'A Senha deve ter no mínimo :min caracteres',
             'password.max' => 'A Senha deve ter no máximo :max caracteres',
+
+            'dataNascimento.required' => 'Insira uma data válida',
+            'dataNascimento.date' => 'Insira uma data válida',
         ];
     }
 }

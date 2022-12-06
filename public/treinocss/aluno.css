@@ -28,6 +28,45 @@ body{
     max-width: 1320px;
     max-height: 200px;
     height: 200px;
-    margin:auto; 
     border: 1px solid rgba(17, 17, 17, 0.08);
+    display: flex;
+}
+
+.container-user img{
+    max-width: 125px;
+    max-height: 125px; 
+    height: 125px;
+    width: 125px;
+    border-radius: 10%;
+}
+
+
+
+.text{
+    height: 100%;
+    width: 18%;
+    position: relative;
+}
+
+.img-container{
+    text-align: center;
+    position:absolute;
+    margin: auto;
+    max-width: 125px;
+    max-height: 125px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.info-user{
+    height: 45%;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.wrapper{
+    height: 45%;
+    background-color: blueviolet;
 }
