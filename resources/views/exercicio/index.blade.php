@@ -76,7 +76,7 @@
 
 
                             <div class="containercheck">
-                                <h6 style="bottom: 0; position: absolute; margin:auto; left:15px;">abdomen</h6>
+                                <h6>abdomen</h6>
                                 <input type="checkbox" name="abdomen" id="dessert-1" value="1">
                                 <label for="dessert-1"><img src="/img/abdomen100x100.png" alt="abdomen"></label>
                             </div>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="col-12">
 
-                        <table class="table border-secondary" style="border: solid 1px black; border-radius: 5px; background-color:;">
+                        <table class="table-responsive-sm border-secondary " style="border: solid 1px black; border-radius: 5px;">
                             <thead>
                                 <tr>
                                     <th scope="col">Nome do Exercício</th>
