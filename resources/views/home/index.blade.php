@@ -62,7 +62,7 @@
                         <img src="img/mulher.jpg" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/homem.jpg" alt="" class="d-block w-100">
+                        <img src="img/supino.jpg" alt="" class="d-block w-100">
                     </div>
                 </div>
 
