@@ -22,27 +22,30 @@
     @endif
     <div class="container">
         <div class="wrapper">
-            <div class="alert-container">
-                @if ($errors->any())
-                    <div class="alert">
-                        <ul>
-                            <li>
-                                @foreach ($errors->all() as $error)
-                                    <p>{{ $error }}</p>
-                                @endforeach
-                            </li>
-                        </ul>
-                    </div>
-                @endif
-            </div>
             <div class="cadastro">
                 <h2 class="form-signin-heading">Insira seus dados</h2>
                 <form class="form-signin" method="POST" action="login">
                     @csrf
-                    <input type="text" class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
-                        autocomplete="off" maxlength="14" placeholder="CPF" />
+                    <div class="container-erro" style="width: 100%">
+                        <div class="container-erro">
+                            <input type="text" @if($errors->has('cpf')) class="input-error" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
+                                autocomplete="off" maxlength="14" placeholder="CPF" />
+                                <small style="color: red; background-color: white; text-align:left;">@error('cpf') {{ $message }} @enderror</small>
+                                @else class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
+                                autocomplete="off" maxlength="14" placeholder="CPF" />
+                                @endif
+                        </div>
+                    </div>
                     <br>
-                    <input type="password" class="input" name="password" placeholder="Senha" />
+                    <div class="container-erro" style="width: 100%">
+                        <div class="container-erro">
+                            <input type="password" @if($errors->has('password')) class="input-error" name="password" placeholder="Senha" />
+                            <small style="color: red; background-color: white; text-align:left;">@error('password') {{ $message }} @enderror</small>
+                            @else class="input" name="password" placeholder="Senha" />
+                            @endif
+                        </div>
+                    </div>
+
                     <div class="login">
                         <br>
                         <button class="login-button">

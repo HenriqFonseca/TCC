@@ -129,7 +129,7 @@
         padding-left: 5px;
         box-sizing: border-box;
         border: none;
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
         outline: none;
         background-color: rgba(0, 0, 0, 0.548)important;
         width: 100%;
@@ -141,6 +141,32 @@
         transition: ease-in-out 0.5s;
     }
     
+    /* ERROS */
+
+    .input-error {
+        position: relative;
+        font-size: 16px;
+        color: black;
+        height: auto;
+        padding: 10px;
+        padding-left: 5px;
+        box-sizing: border-box;
+        border: solid 1.90px #dc3545;
+        border-radius: 0.25rem;
+        outline: none;
+        width: 100%;
+    }
+
+
+    .container-erro small{
+        color: #dc3545;
+        width: 100%;
+    }
+    
+    .container-erro {
+        text-align: left;
+    }
+
     .alternative {
         display: flex;
         flex-direction: column;

@@ -194,6 +194,24 @@ a:visited {
     padding-left: 50px;
 }
 
+.container-erro-nome{
+    text-align: left;
+}
+
+.container-erro-nome small{
+    color: #dc3545;
+    width: 100%;
+}
+
+.container-erro small{
+    color: #dc3545;
+    width: 100%;
+}
+
+.container-erro {
+    text-align: left;
+}
+
 
 /*==========----- CAIXAS ANIMADAS -----==========*/
 

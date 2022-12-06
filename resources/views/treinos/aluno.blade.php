@@ -39,17 +39,32 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
-            <div class="container-user">
-                {{ auth()->user()->nome }}<br>
-                <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
-                    @method('PUT')
-                    @csrf
-                    <label for="imagePerfil">Imagem de Perfil</label>
-                    <input type="file" name="imagePerfil" id="imagePerfil">
-                    <button type="submit">Definir Foto</button>
-                    <img src="/img/perfil/{{ auth()->user()->imagePerfil }}" alt="">
-                </form>
+            <div class="container-user" style="background-color:blue;">
+                <div class="text" style="background-color: red;">
+                    <div class="img-container" style="">
+                        <img src="/img/perfil/{{ auth()->user()->imagePerfil }}" class="img-perfil" alt="">
+                        <p>{{ auth()->user()->nome }} {{ auth()->user()->sobrenome }}</p>
+                    </div>
+
+                </div>
+                <div class="wrapper">
+
+                    <div class="info-user">
+
+                    </div>
+                    <div class="text-user">
+
+                    </div>
+                </div>
+
             </div>
+            <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
+                @method('PUT')
+                @csrf
+                <label for="imagePerfil">Imagem de Perfil</label>
+                <input type="file" name="imagePerfil" id="imagePerfil">
+                <button type="submit">Definir Foto</button>
+            </form>
             <div class="row">
                 <div class="col-12">
                     <div class="container-md">
