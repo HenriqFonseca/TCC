@@ -4,7 +4,8 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +13,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 95vh;
+    min-height: 100vh;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -20,7 +21,6 @@ body{
     color: var(--font-color);
 }
 
-.container-md{
+.container-md {
     transform: translateY(5rem) !important;
 }
-

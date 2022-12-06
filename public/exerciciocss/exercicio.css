@@ -5,7 +5,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +14,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 95vh;
+    min-height: 100vh;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -23,22 +24,21 @@ body{
     font-size: 1rem;
 }
 
-.container-md{
+.container-md {
     transform: translateY(5rem) !important;
 }
 
-
-.container-md{
+.container-md {
     transform: translateY(5rem) !important;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     display: grid;
     place-items: center;
 }
 
-.containercheck{
+.containercheck {
     height: 100px;
     width: 100px;
     background-color: white;
@@ -47,14 +47,14 @@ body{
     position: relative;
     cursor: pointer;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     -webkit-appearance: none;
     position: relative;
     width: 100%;
-    
 }
 
-input[type="checkbox"]:after{
+input[type="checkbox"]:after {
     position: absolute;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
@@ -63,15 +63,14 @@ input[type="checkbox"]:after{
     color: black;
     right: 0px;
     top: -23px;
-
 }
 
-input[type="checkbox"]:checked:after{
+input[type="checkbox"]:checked:after {
     font-weight: 900;
     content: "\f058";
 }
 
-.containercheck img{
+.containercheck img {
     width: 70%;
     position: absolute;
     left: 0;
@@ -80,5 +79,4 @@ input[type="checkbox"]:checked:after{
     bottom: 0;
     margin: auto;
     cursor: pointer;
-   
 }
