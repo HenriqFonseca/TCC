@@ -8,7 +8,7 @@
     <title>Document</title>
 
     {{-- CSS --}}
-    <link href="{{ asset('/treinocss/create.css') }}" rel="stylesheet">
+    <link href="{{ asset('/treinocss/aluno.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
@@ -40,14 +40,14 @@
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
             <div class="container-user">
-                {{ $user->nome }}<br>
+                {{ auth()->user()->nome }}<br>
                 <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
                     <label for="imagePerfil">Imagem de Perfil</label>
                     <input type="file" name="imagePerfil" id="imagePerfil">
                     <button type="submit">Definir Foto</button>
-                    <img src="/img/perfil/{{ $user->imagePerfil }}" alt="">
+                    <img src="/img/perfil/{{ auth()->user()->imagePerfil }}" alt="">
                 </form>
             </div>
             <div class="row">
