@@ -32,10 +32,23 @@ body {
     transform: translateY(5rem) !important;
 }
 
+.form-control{
+    background-color: var(--footer-color) !important; 
+}
+
+.table{
+    background-color: var(--footer-color) !important; 
+}
+
 .wrapper {
     width: 100%;
     display: grid;
     place-items: center;
+    gap: 15px;
+}
+
+.teste{
+    display: flex;
 }
 
 .containercheck {
@@ -79,4 +92,59 @@ input[type="checkbox"]:checked:after {
     bottom: 0;
     margin: auto;
     cursor: pointer;
+}
+
+@media screen and (min-width: 540px) {
+    .wrapper{
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    
+    .containercheck{
+        height: 150px;
+        width: 150px;
+    }
+    input[type="checkbox"]::after{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .wrapper{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    
+    .containercheck{
+        height: 50;
+        width: 50;
+    }
+    input[type="checkbox"]::after{
+        font-size: 14px;
+    }
+
+    
+}
+
+@media screen and (min-width: 540px) {
+    .wrapper{
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    
+    .containercheck{
+        height: 150px;
+        width: 150px;
+    }
+    input[type="checkbox"]::after{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  table{
+    width: 80%;
+  }
+
+    
 }

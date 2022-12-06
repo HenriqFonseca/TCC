@@ -72,3 +72,11 @@ body {
     height: 45%;
     background-color: blueviolet;
 }
+
+.content {
+    width: 100%;
+    background-color: var(--footer-color);
+    padding: 2rem;
+    border-radius: 0.7rem;
+    height: 180px;
+}

@@ -45,19 +45,16 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <div class="container-md" style="">
+        <div class="container-md">
             <div class="row">
-                <div class="col-12">
-                    <a href="{{ route('exercicio.create') }}">Criar exercício</a>
-                </div>
                 <div class="col-8 mx-auto">
                     <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
                         @csrf
                         <div class="mb-3 row">
 
-                            <label class="col-sm-3 col-form-label">Nome do exercício</label>
+                            <label class="col-sm-3 col-form-label" style="font-weight: bold;">Nome do exercício</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text"  name="nome" id="">
+                                <input class="form-control" type="text" name="nome" id="">
                                 @if ($errors->has('nome'))
                                     <div class="invalid-feedback">
                                         ERRO AI
@@ -65,56 +62,60 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="teste" style="display: flex; flex-direction:column;">
-                            <div class="texto">
 
-                                <div class="wrapper" style="display: flex">
-                                    <div class="containercheck">
-                                        <input type="checkbox" name="abdomen" id="dessert-1" value="1">
-                                        <label for="dessert-1"><img src="/img/abdomen100x100.png" alt="abdomen"></label>
-                                    </div>
-                                    <h2>ola pessoal</h2>
-                                </div>
-                                    
-                                <div class="containercheck">
-                                    <input type="checkbox" name="biceps" id="dessert-2" value="1">
-                                    <label for="dessert-2"><img src="/img/biceps100x100.png" alt="biceps"></label>
-                                </div>
+                        <div class="wrapper" >
+                            <div class="containercheck">
+                                <input type="checkbox" name="biceps" id="dessert-2" value="1">
+                                <label for="dessert-2"><img src="/img/biceps100x100.png" alt="biceps"></label>
+                            </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="triceps" id="dessert-3" value="1">
-                                    <label for="dessert-3"><img src="/img/triceps100x100.png" alt="triceps"></label>
-                                </div>
+                            <div class="containercheck">
+                                <input type="checkbox" name="triceps" id="dessert-3" value="1">
+                                <label for="dessert-3"><img src="/img/triceps100x100.png" alt="triceps"></label>
+                            </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
-                                    <label for="dessert-4"><img src="/img/panturrilha100x100.png" alt="panturrilha"></label>
-                                </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="coxa" id="dessert-5" value="1">
-                                    <label for="dessert-5"><img src="/img/coxa100x100.png" alt="coxa"></label>
-                                </div>
+                            <div class="containercheck">
+                                <h6 style="bottom: 0; position: absolute; margin:auto; left:15px;">abdomen</h6>
+                                <input type="checkbox" name="abdomen" id="dessert-1" value="1">
+                                <label for="dessert-1"><img src="/img/abdomen100x100.png" alt="abdomen"></label>
+                            </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="ombro" id="dessert-6" value="1">
-                                    <label for="dessert-6"><img src="/img/ombro100x100.png" alt="ombro"></label>
-                                </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="costas" id="dessert-7" value="1">
-                                    <label for="dessert-7"><img src="/img/costas100x100.png" alt="costas"></label>
-                                </div>
+                            <div class="containercheck">
+                                <input type="checkbox" name="peito" id="dessert-8" value="1">
+                                <label for="dessert-8"><img src="/img/peito100x100.png" alt="peito"></label>
+                            </div>
 
-                                <div class="containercheck">
-                                    <input type="checkbox" name="peito" id="dessert-8" value="1">
-                                    <label for="dessert-8"><img src="/img/peito100x100.png" alt="peito"></label>
-                                </div>
+
+
+                            <div class="containercheck">
+                                <input type="checkbox" name="ombro" id="dessert-6" value="1">
+                                <label for="dessert-6"><img src="/img/ombro100x100.png" alt="ombro"></label>
+                            </div>
+
+                            <div class="containercheck">
+                                <input type="checkbox" name="costas" id="dessert-7" value="1">
+                                <label for="dessert-7"><img src="/img/costas100x100.png" alt="costas"></label>
+                            </div>
+
+
+
+                            <div class="containercheck">
+                                <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
+                                <label for="dessert-4"><img src="/img/panturrilha100x100.png" alt="panturrilha"></label>
+                            </div>
+
+
+
+                            <div class="containercheck">
+                                <input type="checkbox" name="coxa" id="dessert-5" value="1">
+                                <label for="dessert-5"><img src="/img/coxa100x100.png" alt="coxa"></label>
                             </div>
                         </div>
 
-                        
-                        <button type="submit" class="btn btn-primary col-12">Enviar</button>
+
+                        <button type="submit" style="font-weight: bold; margin-top:10px;" class="btn btn-secondary col-12">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -125,11 +126,10 @@
                     </div>
                     <div class="col-12">
 
-                        <table class="table border-secondary" style="border: solid 1px black; border-radius: 5px;">
+                        <table class="table border-secondary" style="border: solid 1px black; border-radius: 5px; background-color:;">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nome</th>
+                                    <th scope="col">Nome do Exercício</th>
                                     <th scope="col">Grupo Muscular</th>
                                     <th scope="col">Classificação</th>
                                     <th scope="col"></th>
@@ -138,9 +138,6 @@
                             <tbody>
                                 @foreach ($exercicio as $item)
                                     <tr>
-                                        <th>
-                                            <h5>{{ $item->id }}</h5>
-                                        </th>
                                         <td>
                                             <h5>{{ $item->nome }}</h5>
                                         </td>
@@ -207,10 +204,11 @@
                         </table>
                     </div>
                 </div>
-
+                
             </div>
+        </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        @endsection
-</body>
+            @endsection
+        </body>
 
 </html>
