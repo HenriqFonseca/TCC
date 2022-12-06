@@ -33,13 +33,6 @@
 </head>
 
 <body>
-    <style>
-        .row a {
-            color: black;
-            text-decoration: none;
-        }
-    </style>
-    <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         

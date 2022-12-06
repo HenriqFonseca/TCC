@@ -56,13 +56,13 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="img\homem.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mulher.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
                         <img src="img/homem.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/mulher.png" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/lulaxbolso.jpg" alt="" class="d-block w-100">
                     </div>
                 </div>
 
@@ -280,8 +280,9 @@
 <!-- <a href="https://www.flaticon.com/free-icons/architecture-and-city" title="architecture and city icons">Architecture and city icons created by Icongeek26 - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/customers" title="customers icons">Customers icons created by Eucalyp - Flaticon</a> -->
-
-
+<!-- https://www.pexels.com/pt-br/foto/homem-segurando-haltere-preto-1229356/ -->
+<!-- https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
+  
 
 
 </html>
