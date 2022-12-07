@@ -9,16 +9,6 @@
 }
 
 
-/*==========----- RESET DE ESTILO DAS LISTAS -----==========*/
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-
 /*==========----- VARIAVEIS -----==========*/
 
 :root {
@@ -34,7 +24,17 @@ li {
 }
 
 
-/*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE -----==========*/
+/*==========----- RESET DE ESTILO DAS LISTAS -----==========*/
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE + REMOÇÃO DE ESTILO DE LINKS -----==========*/
 
 img {
     -webkit-user-drag: none;
@@ -141,10 +141,6 @@ header {
     color: var(--nav-color);
 }
 
-.login-button-scroll-effect {
-    color: var(--nav-color);
-}
-
 
 /*==========----- NAV ITEMS HOVER EFFECT -----==========*/
 
@@ -208,11 +204,6 @@ header {
 
 .nav-scroll-effect {
     background-color: var(--scroll-effect-color);
-}
-
-.link-scroll-effect,
-.link-scroll-effect:hover {
-    color: var(--nav-color);
 }
 
 .nav-blur {

@@ -17,6 +17,22 @@
     --gold-transparent: #fdf5d33a;
 }
 
+
+/*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE + REMOÇÃO DE ESTILO DE LINKS -----==========*/
+
+img {
+    -webkit-user-drag: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:hover {
+    color: var(--font-color);
+}
+
 body {
     background-image: url('/img/background.jpg');
     background-repeat: no-repeat;

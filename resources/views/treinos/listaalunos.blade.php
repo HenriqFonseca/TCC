@@ -9,12 +9,6 @@
 
     <link href="{{ asset('lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
 
-    <!-- CSS DO BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
     <!-- styles -->
     <script defer src="js/nav-bar.js"></script>
 
