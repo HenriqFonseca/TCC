@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    user-select: none;
 }
 
 
@@ -111,7 +112,7 @@ header {
 .nav-link {
     height: 100%;
     display: flex;
-    padding: 5px;
+    padding: 14px;
     justify-content: center;
     align-items: center;
     color: var(--font-color);
@@ -375,6 +376,18 @@ footer {
     flex-direction: column;
     background-color: var(--scroll-effect-color);
     backdrop-filter: blur(10px);
+}
+
+.atribuicoes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s ease-in-out;
+}
+
+.atribuicoes:hover {
+    background-color: var(--nav-color);
 }
 
 .nav-footer {

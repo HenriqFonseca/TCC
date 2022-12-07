@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    user-select: none;
 }
 
  :root {
@@ -194,16 +195,16 @@ a:visited {
     padding-left: 50px;
 }
 
-.container-erro-nome{
+.container-erro-nome {
     text-align: left;
 }
 
-.container-erro-nome small{
+.container-erro-nome small {
     color: #dc3545;
     width: 100%;
 }
 
-.container-erro small{
+.container-erro small {
     color: #dc3545;
     width: 100%;
 }

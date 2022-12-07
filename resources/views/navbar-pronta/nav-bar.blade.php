@@ -170,6 +170,6 @@
         </ul>
 
     </div>
-    <small><img src="img/images.png" alt=""><a href="{{ route('navbar-pronta.atribuicoes') }}">Atribuições de imagem</a></small>
+    <small class="atribuicoes"><img src="img/images.png" alt=""><a href="{{ route('navbar-pronta.atribuicoes') }}">Atribuições de imagem</a></small>
     <small>Dev fit Copyright © 2022 </small> 
 </footer>

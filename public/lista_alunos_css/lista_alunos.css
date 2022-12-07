@@ -7,6 +7,7 @@
 }
 
  :root {
+    --container-aluno: rgba(255, 255, 255, 0.63);
     --font-color: #f0f0f0;
     --nav-color: #0f1d27e8;
     --btn-color: #0f1d2785;
@@ -61,7 +62,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--footer-color);
+    backdrop-filter: blur(10px);
+    background-color: var(--btn-color);
     padding: 2rem;
     border-radius: 0.7rem;
 }
@@ -73,23 +75,28 @@ main {
 
 #search {
     padding: 1rem;
-    height: 3rem;
+    height: 3.5rem;
     border-style: none;
     border-radius: 0.7rem 0 0 0.7rem;
     width: 100%;
 }
 
 .search-button {
-    background-color: #ffffff;
+    cursor: pointer;
+    background-color: var(--btn-color);
     border-radius: 0 0.7rem 0.7rem 0;
     border-style: none;
-    padding-right: 1rem;
+    height: 3.5rem;
+}
+
+.search-button>img {
+    height: 80%;
 }
 
 .aluno-container {
     display: flex;
     overflow: hidden;
-    background-color: #ffffffb2;
+    background-color: var(--container-aluno);
     border-radius: 0.7rem;
 }
 
@@ -104,11 +111,22 @@ main {
 }
 
 .com-treino {
+    display: flex;
+    justify-content: center;
     background-color: green;
+    border-radius: 1rem;
 }
 
 .sem-treino {
+    display: flex;
+    justify-content: center;
     background-color: red;
+    border-radius: 1rem;
+}
+
+.sem-treino>img,
+.com-treino>img {
+    width: 80%;
 }
 
 .link-content {}

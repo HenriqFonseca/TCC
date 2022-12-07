@@ -3,6 +3,7 @@
         padding: 0;
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
+        user-select: none;
     }
     
      :root {
@@ -140,9 +141,8 @@
         background-color: var(--nav-color);
         transition: ease-in-out 0.5s;
     }
-    
     /* ERROS */
-
+    
     .input-error {
         position: relative;
         font-size: 16px;
@@ -156,9 +156,8 @@
         outline: none;
         width: 100%;
     }
-
-
-    .container-erro small{
+    
+    .container-erro small {
         color: #dc3545;
         width: 100%;
     }
@@ -166,7 +165,7 @@
     .container-erro {
         text-align: left;
     }
-
+    
     .alternative {
         display: flex;
         flex-direction: column;
