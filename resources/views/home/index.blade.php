@@ -273,16 +273,7 @@
 @endsection
 <!-- ATRIBUIÇÕES DE IMAGEM -->
 <!--                       -->
-<!-- <a href="https://www.flaticon.com/free-icons/dumbbell" title="dumbbell icons">Dumbbell icons created by Icongeek26 - Flaticon</a>  -->
-<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/invoice" title="invoice icons">Invoice icons created by Icongeek26 - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/architecture-and-city" title="architecture and city icons">Architecture and city icons created by Icongeek26 - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Icongeek26 - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/customers" title="customers icons">Customers icons created by Eucalyp - Flaticon</a> -->
-<!-- https://www.pexels.com/pt-br/foto/homem-segurando-haltere-preto-1229356/ -->
-<!-- https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
-  
+
 
 
 </html>

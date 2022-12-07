@@ -43,7 +43,8 @@ Route::get('/teste', function () {
 // rota para a view login
 Route::get('/login', [ProfileController::class, 'login'])->name('profile.login');
 Route::post('/login', [UserController::class, 'login'])->name('user.login');
-
+// =========================== ROTA PARA PAGINA DE ATRIBUIÇÕES DE IMAGEM =======================
+Route::get('/atribuicoes', [HomeController::class, 'atrib'])->name('navbar-pronta.atribuicoes');
 // =========================== ROTA PARA PAGINA DE REGISTRO =======================
 Route::get('/register/professor', [ProfileController::class, 'register_prof'])->name('profile.register_professor');
 Route::get('/register/aluno', [ProfileController::class, 'register_aluno'])->name('profile.register_aluno');

@@ -16,4 +16,7 @@ class HomeController extends Controller
         return view('profile.login');
         
     }
+    public function atrib(){
+        return view('navbar-pronta.atribuicoes');
+    }
 }
