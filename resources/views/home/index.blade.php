@@ -276,15 +276,17 @@
 
 INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,professor,email,password,created_at,updated_at) VALUES('Professor','Sobrenome','2003-01-03','000.000.000-00','00-000-000-0',1,'1professor@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-07 00:38:36','2022-12-07 00:38:36');    
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Aluno1','Sobrenome','2002-12-12','111.111.111-11','11-111-111-1',1,'email1@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-06 23:33:09','2022-12-06 23:33:09');
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Henrique','Sobrenome','2001-12-12','111.111.111-11','11-111-111-1',1,'email1@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-06 23:33:09','2022-12-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Aluno2','Sobrenome','2002-07-22','222.222.222-22','22-222-222-2',1,'email2@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-22-06 23:33:09','2022-22-06 23:33:09');
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Alexandre','Sobrenome','2003-07-22','222.222.222-22','22-222-222-2',1,'email2@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-22-06 23:33:09','2022-22-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Aluno3','Sobrenome','2002-02-25','333.333.333-33','33-333-333-3',1,'email3@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-32-06 23:33:09','2022-32-06 23:33:09');
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('kaua','Sobrenome','2002-02-25','333.333.333-33','33-333-333-3',1,'email3@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-32-06 23:33:09','2022-32-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Aluno4','Sobrenome','2002-12-02','444.444.444-44','44-444-444-4',1,'email4@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-42-06 23:33:09','2022-42-06 23:33:09');
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Luciano','Sobrenome','1999-12-02','444.444.444-44','44-444-444-4',1,'email4@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-42-06 23:33:09','2022-42-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Aluno5','Sobrenome','2002-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');           
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');           
+
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');           
 
 -->
 
