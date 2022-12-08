@@ -7,9 +7,12 @@
 }
 
  :root {
-    --container-aluno: rgba(255, 255, 255, 0.63);
+    --container-color: rgba(255, 255, 255, 0.63);
     --font-color: #f0f0f0;
     --nav-color: #0f1d27e8;
+    --main-color: #0f1d273a;
+    --btn-treino-color1: #58816eb7;
+    --btn-treino-color2: #b36e6eb7;
     --btn-color: #0f1d2785;
     --btn-caption: #0f1d276e;
     --gold: #C1A45F;
@@ -54,7 +57,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .content {
@@ -63,7 +66,7 @@ main {
     flex-direction: column;
     gap: 1rem;
     backdrop-filter: blur(10px);
-    background-color: var(--btn-color);
+    background-color: var(--main-color);
     padding: 2rem;
     border-radius: 0.7rem;
 }
@@ -85,19 +88,43 @@ main {
     cursor: pointer;
     background-color: var(--btn-color);
     border-radius: 0 0.7rem 0.7rem 0;
+    backdrop-filter: blur(10px);
     border-style: none;
     height: 3.5rem;
 }
 
 .search-button>img {
     height: 80%;
+    margin: 0 0.25rem 0 0.25rem;
 }
 
 .aluno-container {
     display: flex;
     overflow: hidden;
-    background-color: var(--container-aluno);
+    background-color: var(--container-color);
     border-radius: 0.7rem;
+}
+
+.mini-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mini-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mini {
+    background-color: var(--btn-treino-color2);
+    border-radius: 0.25rem;
+    width: 1.25rem;
+    height: 1rem;
+}
+
+.mini1 {
+    background-color: var(--btn-treino-color1);
 }
 
 .dados-container {
@@ -110,23 +137,38 @@ main {
     gap: 2rem;
 }
 
+.dados>h2:first-child {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 .com-treino {
+    width: 5rem;
+    height: 5rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: green;
+    background-color: var(--btn-treino-color1);
     border-radius: 1rem;
 }
 
 .sem-treino {
+    width: 5rem;
+    height: 5rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: var(--btn-treino-color2);
     border-radius: 1rem;
 }
 
 .sem-treino>img,
 .com-treino>img {
     width: 80%;
+    height: 80%;
 }
 
-.link-content {}
+.toduro {
+    width: 80%;
+    display: block;
+}

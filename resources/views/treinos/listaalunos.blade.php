@@ -32,6 +32,14 @@
 
         <div class="content">
 
+            <div class="mini-container">
+                <div class="mini-box">
+                    <div class="mini mini1"></div><span>Com treino</span>
+                </div>
+                <div class="mini-box" >
+                    <div class="mini mini2"></div><span>Sem treino</span>
+                </div>
+            </div>
             <!-- <h2>Buscando por: {{ $search }}</h2> -->
             @foreach ($aluno as $aluno)
             <a class="link-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
@@ -41,9 +49,11 @@
                     </div>
                     <div class="dados-container">
                         @if ($aluno->status_treino == 0)
-                        <div>
+                        <div class="dados">
                             <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}</h2>
+                            <br>
                             <h2>Data de Nasc:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }} </h2>
+                            <br>
                             <h2> Idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
                         <div class="sem-treino">
@@ -53,9 +63,11 @@
                         {{ $item->nome }}
                         @endforeach
                         @else
-                        <div>
+                        <div class="dados">
                             <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}</h2>
+                            <br>
                             <h2>Data de Nasc:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}</h2>
+                            <br>
                             <h2>idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
                         <div class="com-treino">
