@@ -45,7 +45,7 @@
             <a class="link-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
                 <div class="aluno-container">
                     <div>
-                        <img src="/img/perfil/{{  $aluno->imagePerfil }}">
+                        <img class="profile-image" src="/img/perfil/{{  $aluno->imagePerfil }}">
                     </div>
                     <div class="dados-container">
                         @if ($aluno->status_treino == 0)
@@ -82,11 +82,7 @@
         </div>
     </main>
 
-    <style>
-        .alunos {
-            padding: 10px;
-        }
-    </style>
+
     <br><br><br>
     @endsection
 </body>
