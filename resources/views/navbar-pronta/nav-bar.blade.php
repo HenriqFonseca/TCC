@@ -1,15 +1,15 @@
-<script defer src="js/nav-bar.js"></script>
-<link href="/nav-bar-css/nav-bar-css.css" rel="stylesheet">
+<script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+<link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
 
-<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+<link href="{{ url('/fontawesome/css/all.min.css') }}" rel="stylesheet">
 
 {{-- ICON GOOGLE --}}
 <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="{{ url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
 
 <!-- ME PERMITE FAZER A TRANSIÇÃO DA NAV-BAR -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
 <header>
     <div class="nav-blur"></div>
@@ -158,18 +158,18 @@
         <h3>Siga-nos nas redes sociais!</h3>
         <ul class="footer-list">
 
-            <li><a class="footer-link" href="https://instagram.com/dev_fit_official?igshid=ZmRlMzRkMDU=">
-                    <div class="social-media-img"><img src="img/insta.png" alt=""></div> Instagram
+            <li><a class="footer-link" href="{{ url('https://instagram.com/dev_fit_official?igshid=ZmRlMzRkMDU=') }}">
+                    <div class="social-media-img"><img src="{{ asset('/img/insta.png') }}" alt=""></div> Instagram
                 </a></li>
-            <li><a class="footer-link" href="https://www.facebook.com/profile.php?id=100088265539529&mibextid=ZbWKwL">
-                    <div class="social-media-img"><img src="img/face.png" alt=""></div> Facebook
+            <li><a class="footer-link" href="{{ url('https://www.facebook.com/profile.php?id=100088265539529&mibextid=ZbWKwL') }}">
+                    <div class="social-media-img"><img src="{{ asset('/img/face.png') }}" alt=""></div> Facebook
                 </a></li>
             <li><a class="footer-link" href="#">
-                    <div class="social-media-img"><img src="img/whats.png" alt=""></div> Whatsapp
+                    <div class="social-media-img"><img src="/{{ asset('img/whats.png') }}" alt=""></div> Whatsapp
                 </a></li>
         </ul>
 
     </div>
-    <small class="atribuicoes"><img src="img/images.png" alt=""><a href="{{ route('navbar-pronta.atribuicoes') }}">Atribuições de imagem</a></small>
+    <small class="atribuicoes"><img src="{{ asset('/img/images.png') }}" alt=""><a href="{{ route('navbar-pronta.atribuicoes') }}">Atribuições de imagem</a></small>
     <small>Dev fit Copyright © 2022 </small> 
 </footer>

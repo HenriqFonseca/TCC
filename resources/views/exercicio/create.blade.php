@@ -9,31 +9,26 @@
 
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="{{ url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+    
     {{-- CSS --}}
-    <link href="{{ asset('treinocss/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('/treinocss/index.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }}"></script>
 
-    <!-- styles -->
-    <script defer src="js/nav-bar.js"></script>
-
+    
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+    <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
-    <!-- pwa -->
-    <link rel="manifest" href="./manifest.json" />
-
-    <script src="./pwa.dev.min.js"></script>
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-    </script>
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 </head>
 
 <body>

@@ -9,11 +9,11 @@
 
 
     {{-- FONTS AWESOME --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css') }}">
 
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="{{ url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
     <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
@@ -30,15 +30,10 @@
     <!-- scripts -->
     <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
-    <!-- pwa -->
-    <link rel="manifest" href="./manifest.json" />
-
-    <script src="./pwa.dev.min.js"></script>
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-    </script>
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -47,7 +42,7 @@
     @section('conteudo')
         <div class="container-md">
             <div class="row">
-                <div class="col-8 mx-auto">
+                <div class="col-8 mx-auto" style="width: 100%;">
                     <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
                         @csrf
                         <div class="mb-3 row">
@@ -66,51 +61,51 @@
                         <div class="wrapper" >
                             <div class="containercheck">
                                 <input type="checkbox" name="biceps" id="dessert-2" value="1">
-                                <label for="dessert-2"><img src="/img/biceps100x100.png" alt="biceps"></label>
+                                <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                             </div>
 
                             <div class="containercheck">
                                 <input type="checkbox" name="triceps" id="dessert-3" value="1">
-                                <label for="dessert-3"><img src="/img/triceps100x100.png" alt="triceps"></label>
+                                <label for="dessert-3"><img src="{{ asset('/img/triceps100x100.png') }}" alt="triceps"></label>
                             </div>
 
 
                             <div class="containercheck">
                                 <h6>abdomen</h6>
                                 <input type="checkbox" name="abdomen" id="dessert-1" value="1">
-                                <label for="dessert-1"><img src="/img/abdomen100x100.png" alt="abdomen"></label>
+                                <label for="dessert-1"><img src="{{ asset('/img/abdomen100x100.png') }}" alt="abdomen"></label>
                             </div>
 
 
                             <div class="containercheck">
                                 <input type="checkbox" name="peito" id="dessert-8" value="1">
-                                <label for="dessert-8"><img src="/img/peito100x100.png" alt="peito"></label>
+                                <label for="dessert-8"><img src="{{ asset('/img/peito100x100.png') }}" alt="peito"></label>
                             </div>
 
 
 
                             <div class="containercheck">
                                 <input type="checkbox" name="ombro" id="dessert-6" value="1">
-                                <label for="dessert-6"><img src="/img/ombro100x100.png" alt="ombro"></label>
+                                <label for="dessert-6"><img src="{{ asset('/img/ombro100x100.png') }}" alt="ombro"></label>
                             </div>
 
                             <div class="containercheck">
                                 <input type="checkbox" name="costas" id="dessert-7" value="1">
-                                <label for="dessert-7"><img src="/img/costas100x100.png" alt="costas"></label>
+                                <label for="dessert-7"><img src="{{ asset('/img/costas100x100.png') }}" alt="costas"></label>
                             </div>
 
 
 
                             <div class="containercheck">
                                 <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
-                                <label for="dessert-4"><img src="/img/panturrilha100x100.png" alt="panturrilha"></label>
+                                <label for="dessert-4"><img src="{{ asset('/img/panturrilha100x100.png') }}" alt="panturrilha"></label>
                             </div>
 
 
 
                             <div class="containercheck">
                                 <input type="checkbox" name="coxa" id="dessert-5" value="1">
-                                <label for="dessert-5"><img src="/img/coxa100x100.png" alt="coxa"></label>
+                                <label for="dessert-5"><img src="{{ asset('/img/coxa100x100.png') }}" alt="coxa"></label>
                             </div>
                         </div>
 
@@ -126,7 +121,7 @@
                     </div>
                     <div class="col-12">
 
-                        <table class="table-responsive-sm border-secondary " style="border: solid 1px black; border-radius: 5px;">
+                        <table class="table responsive-sm border-secondary " style="border: solid 1px black; border-radius: 5px;">
                             <thead>
                                 <tr>
                                     <th scope="col">Nome do Exercício</th>

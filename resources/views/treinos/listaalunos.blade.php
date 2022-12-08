@@ -7,23 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de alunos</title>
 
-    <link href="{{ asset('lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
-
-    <!-- styles -->
-    <script defer src="js/nav-bar.js"></script>
+    <link href="{{ asset('/lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+    <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
-    <!-- pwa -->
-    <link rel="manifest" href="./manifest.json" />
-
-    <script src="./pwa.dev.min.js"></script>
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-    </script>
+     {{-- PWA --}}
+     <meta name="theme-color" content="#6777ef" />
+     <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+     <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -44,7 +37,7 @@
             <a class="link-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
                 <div class="aluno-container">
                     <div>
-                        <img src="/img/toduro.jpg">
+                        <img src="/img/perfil/{{  $aluno->imagePerfil }}">
                     </div>
                     <div class="dados-container">
                         @if ($aluno->status_treino == 0)
@@ -66,7 +59,7 @@
                             <h2>idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
                         <div class="com-treino">
-                            <img src="img/mini_haltere.png" alt=""> 
+                            <img src="{{ asset('/img/mini_haltere.png') }}" alt=""> 
                         </div>
                         @endif
                     </div>

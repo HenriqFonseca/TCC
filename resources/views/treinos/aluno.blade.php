@@ -5,33 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meus Treinos</title>
 
     {{-- CSS --}}
     <link href="{{ asset('/treinocss/aluno.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- styles -->
-    <script defer src="js/nav-bar.js"></script>
+    <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+    <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
-    <!-- pwa -->
-    <link rel="manifest" href="./manifest.json" />
-
-    <script src="./pwa.dev.min.js"></script>
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-    </script>
+    {{-- PWA --}}
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 </head>
 
 <body>

@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS DO BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
+    <link rel="preconnect" href="{{ url('https://fonts.gstatic.com') }}" crossorigin>
+    <link href="{{ url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap') }}" rel="stylesheet">
     {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet"> --}}
@@ -27,10 +26,10 @@
     <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 
     <!-- STYLES -->
-    <link href="homecss/index.css" rel="stylesheet">
+    <link href="{{ asset('/homecss/index.css') }}" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <script src="js/script_index.js" defer></script>
+    <script src="{{ asset('/js/script_index.js') }}" defer></script>
 
 
 
@@ -56,13 +55,13 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img\homem.jpg" alt="" class="d-block w-100">
+                        <img src="{{ asset('img\homem.jp') }}g" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/mulher.jpg" alt="" class="d-block w-100">
+                        <img src="{{ asset('img/mulher.jpg') }}" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/supino.jpg" alt="" class="d-block w-100">
+                        <img src="{{ asset('img/supino.jpg') }}" alt="" class="d-block w-100">
                     </div>
                 </div>
 
@@ -85,7 +84,7 @@
                     <a class="grid-link" href="{{ route('profile.login') }}">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/dumbbell.png" alt="">
+                                <img src="{{ asset('img/dumbbell.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Meus treinos</h3>
@@ -95,7 +94,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/gym.png" alt="">
+                                <img src="{{ asset('img/gym.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Unidades</h3>
@@ -105,7 +104,7 @@
                     <a class="grid-link" href="#footer">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/chat.png" alt="">
+                                <img src="{{ asset('img/chat.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Fale conosco</h3>
@@ -115,7 +114,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/invoice.png" alt="">
+                                <img src="{{ asset('img/invoice.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Planos</h3>
@@ -128,7 +127,7 @@
                         <a class="grid-link" href="/treinos/show/{{ auth()->user()->id }} ">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/dumbbell.png" alt="">
+                                    <img src="{{ asset('/img/dumbbell.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Meus treinos</h3>
@@ -139,7 +138,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/gym.png" alt="">
+                                <img src="{{ asset('/img/gym.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Unidades</h3>
@@ -149,7 +148,7 @@
                     <a class="grid-link" href="#footer">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/chat.png" alt="">
+                                <img src="{{ asset('/img/chat.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Fale conosco</h3>
@@ -159,7 +158,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="img/invoice.png" alt="">
+                                <img src="{{ asset('img/invoice.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Planos</h3>
@@ -170,7 +169,7 @@
                         <a class="grid-link" href="{{ route('treino.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/alunos.png" alt="">
+                                    <img src="{{ asset('img/alunos.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Lista de alunos</h3>
@@ -180,7 +179,7 @@
                         <a class="grid-link" href="{{ route('exercicio.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/dumbbell.png" alt="">
+                                    <img src="{{ asset('img/dumbbell.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Exercícios</h3>
@@ -190,7 +189,7 @@
                         <a class="grid-link" href="">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/gym.png" alt="">
+                                    <img src="{{ asset('/img/gym.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Unidades</h3>
@@ -200,7 +199,7 @@
                         <a class="grid-link" href="#footer">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/chat.png" alt="">
+                                    <img src="{{ asset('/img/chat.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Fale conosco</h3>
@@ -210,7 +209,7 @@
                         <a class="grid-link" href="">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="img/invoice.png" alt="">
+                                    <img src="{{ asset('img/invoice.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Planos</h3>
