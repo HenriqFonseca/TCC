@@ -36,7 +36,7 @@
                         <div class="container-erro-nome">
                             <input type="text" @if ($errors->has('nome'))
                             class="input-error" name="nome" placeholder="Nome" />
-                            <small style="color: red; background-color: white; text-stroke:;">@error('nome') {{ $message }} @enderror</small>
+                            <small style="color: red; background-color: white;">@error('nome') {{ $message }} @enderror</small>
                             @else
                             class="input" name="nome" placeholder="Nome" />
                             @endif
@@ -120,7 +120,7 @@
 
             </div>
             <a href="{{ route('home.index') }}" class="logo-box">
-                <img class="img" src="img/logo-vertical.png" alt="">
+                <img class="img" src="/img/logo-vertical.png" alt="">
             </a>
         </div>
         <div class="drops">

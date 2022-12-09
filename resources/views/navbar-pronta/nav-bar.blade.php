@@ -165,11 +165,12 @@
                     <div class="social-media-img"><img src="{{ asset('/img/face.png') }}" alt=""></div> Facebook
                 </a></li>
             <li><a class="footer-link" href="#">
-                    <div class="social-media-img"><img src="/{{ asset('img/whats.png') }}" alt=""></div> Whatsapp
+                    <div class="social-media-img"><img src="{{ asset('/img/whats.png') }}" alt=""></div> Whatsapp
                 </a></li>
         </ul>
 
     </div>
     <small class="atribuicoes"><img src="{{ asset('/img/images.png') }}" alt=""><a href="{{ route('navbar-pronta.atribuicoes') }}">Atribuições de imagem</a></small>
     <small>Dev fit Copyright © 2022 </small> 
+    <br>
 </footer>
