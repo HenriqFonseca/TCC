@@ -408,7 +408,10 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 490px) {
+
+/*==========----- @MEDIAS -----==========*/
+
+@media (max-width: 550px) {
     .footer-list {
         flex-direction: column;
         gap: 1rem;
