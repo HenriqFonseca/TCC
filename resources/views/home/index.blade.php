@@ -289,6 +289,36 @@ INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,cr
 
 -->
 
+{{-- 
+    INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Martelo 45°',1,1);
+INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Alternada',1,1);
+INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Punho',1,1);
 
+INSERT INTO exercicios(nome,superior,triceps) VALUES('Pulley',1,1);
+INSERT INTO exercicios(nome,superior,triceps) VALUES('Francês',1,1);
+INSERT INTO exercicios(nome,superior,triceps) VALUES('Coice Unilateral',1,1);
+
+INSERT INTO exercicios(nome,superior,costas) VALUES('Remada Fechada',1,1);
+INSERT INTO exercicios(nome,superior,costas) VALUES('Remada Aberta',1,1);
+INSERT INTO exercicios(nome,superior,costas) VALUES('Crucifixo Invertido',1,1);
+INSERT INTO exercicios(nome,superior,costas) VALUES('Puxada Costas',1,1);
+
+
+INSERT INTO exercicios(nome,superior,peito) VALUES('Supino Inclinado',1,1);
+INSERT INTO exercicios(nome,superior,peito) VALUES('Supino Reto',1,1);
+INSERT INTO exercicios(nome,superior,peito) VALUES('Crucifixo Inclinado',1,1);
+
+INSERT INTO exercicios(nome,superior,abdomen) VALUES('Reto Cross',1,1);
+INSERT INTO exercicios(nome,superior,abdomen) VALUES('Reto Prancha',1,1);
+INSERT INTO exercicios(nome,superior,abdomen) VALUES('Oblíquo Extensor',1,1);
+
+INSERT INTO exercicios(nome,coxa) VALUES('Agachamento Sumô',1);
+INSERT INTO exercicios(nome,coxa) VALUES('Mesa Flexora',1);
+INSERT INTO exercicios(nome,coxa) VALUES('Stiff',1);
+
+INSERT INTO exercicios(nome,panturrilha) VALUES('Elevação de panturrilha sentado',1);
+INSERT INTO exercicios(nome,panturrilha) VALUES('Agachamento com saltos',1);
+INSERT INTO exercicios(nome,panturrilha) VALUES('Elevação de panturrilha donkey',1);
+    --}}
 
 </html>
