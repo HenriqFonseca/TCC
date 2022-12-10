@@ -98,6 +98,10 @@ main {
     margin: 0 0.25rem 0 0.25rem;
 }
 
+.link-content {
+    width: 100%;
+}
+
 .aluno-container {
     display: flex;
     overflow: hidden;
@@ -168,7 +172,56 @@ main {
     height: 80%;
 }
 
+.image-container {
+    max-width: 18rem;
+}
+
 .profile-image {
-    width: 80%;
+    max-width: 100%;
     display: block;
+}
+
+
+/*==========----- @MEDIAS -----==========*/
+
+@media(max-width:1250px) {
+    main {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1050px) {
+    main {
+        width: 770px;
+    }
+}
+
+@media(max-width:1050px) {
+    main {
+        width: 770px;
+    }
+    .content {
+        padding: 1rem;
+    }
+    .dados-container {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:780px) {
+    main {
+        width: 520px;
+    }
+}
+
+@media(max-width:530px) {
+    main {
+        width: 350px;
+    }
+}
+
+@media(max-width:350px) {
+    main {
+        width: 310px;
+    }
 }

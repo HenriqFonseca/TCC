@@ -86,7 +86,9 @@
         <a href="https://www.flaticon.com/br/icones-gratis/academia" class="link-attrib">
             <span>https://www.flaticon.com/br/icones-gratis/academia</span>
         </a>
-
+        <a href="https://www.flaticon.com/br/icones-gratis/haltere" class="link-attrib">
+            <span>https://www.flaticon.com/br/icones-gratis/haltere</span>
+        </a>
 
     </div>
 

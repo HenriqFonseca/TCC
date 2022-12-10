@@ -44,7 +44,7 @@
             @foreach ($aluno as $aluno)
             <a class="link-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
                 <div class="aluno-container">
-                    <div>
+                    <div class="image-container">
                         <img class="profile-image" src="/img/perfil/{{  $aluno->imagePerfil }}">
                     </div>
                     <div class="dados-container">
@@ -71,7 +71,7 @@
                             <h2>idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
                         <div class="com-treino">
-                            <img src="{{ asset('/img/mini_haltere.png') }}" alt=""> 
+                            <img src="{{ asset('/img/mini_haltere_fill.png') }}" alt=""> 
                         </div>
                         @endif
                     </div>
