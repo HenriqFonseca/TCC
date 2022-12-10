@@ -79,7 +79,7 @@
                     <div class="container-erro" style="width: 100%">
                         <div class="container-erro">
                             <input type="text" placeholder="RG" @if ($errors->has('rg'))
-                            class="input-error"  name="rg" id="rg" onkeypress="$(this).mask('00-000-000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
+                            class="input-error"  name="rg" id="rg" onkeypress="$(this).mask('00-000-000-0')" autocomplete="off" maxlength="12" placeholder="RG" />
                             <small style="color: red; background-color: white; text-align:left;"> @error('rg') {{ $message }} @enderror </small>
                             @else class="input"  name="rg" id="rg" onkeypress="$(this).mask('00-000-000-0')" autocomplete="off" maxlength="9" placeholder="RG" />
                             @endif
