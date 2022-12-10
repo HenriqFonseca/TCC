@@ -48,7 +48,7 @@
                         <img class="profile-image" src="/img/perfil/{{  $aluno->imagePerfil }}">
                     </div>
                     <div class="dados-container">
-                        @if ($aluno->status_treino == 0)
+                        
                         <div class="dados">
                             <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}</h2>
                             <br>
@@ -56,25 +56,16 @@
                             <br>
                             <h2> Idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
+                        
+                    </div>@if ($aluno->status_treino == 0)
                         <div class="sem-treino">
                             <img src="img/mini_haltere.png" alt="">
                         </div>
-                        @foreach ($aluno->treinos as $item)
-                        {{ $item->nome }}
-                        @endforeach
                         @else
-                        <div class="dados">
-                            <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}</h2>
-                            <br>
-                            <h2>Data de Nasc:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }}</h2>
-                            <br>
-                            <h2>idade:{{ $aluno->dataNascimento->age }}</h2>
-                        </div>
                         <div class="com-treino">
                             <img src="{{ asset('/img/mini_haltere_fill.png') }}" alt=""> 
                         </div>
                         @endif
-                    </div>
                 </div>
             </a>
 

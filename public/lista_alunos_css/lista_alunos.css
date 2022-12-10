@@ -64,7 +64,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     backdrop-filter: blur(10px);
     background-color: var(--main-color);
     padding: 2rem;
@@ -103,7 +103,9 @@ main {
 }
 
 .aluno-container {
+    padding-right: 2rem;
     display: flex;
+    align-items: center;
     overflow: hidden;
     background-color: var(--container-color);
     border-radius: 0.7rem;
@@ -137,7 +139,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 0rem 1rem 2rem;
     gap: 2rem;
 }
 
@@ -148,22 +150,22 @@ main {
 
 .com-treino {
     width: 5rem;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--btn-treino-color1);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .sem-treino {
     width: 5rem;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--btn-treino-color2);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .sem-treino>img,
@@ -173,11 +175,13 @@ main {
 }
 
 .image-container {
-    max-width: 18rem;
+    height: 9rem;
+    width: 13rem;
 }
 
 .profile-image {
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -217,6 +221,15 @@ main {
 @media(max-width:530px) {
     main {
         width: 350px;
+    }
+    .aluno-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 1rem 0;
+    }
+    .image-container {
+        border-radius: 0.5rem;
+        overflow: hidden;
     }
 }
 
