@@ -40,6 +40,9 @@
                     <label for="imagePerfil">Imagem de Perfil</label>
                     <input type="file" name="imagePerfil" id="imagePerfil">
                     <button type="submit">Definir Foto</button>
+                    @error('imagePerfil')
+                        <h2>{{ $message }}</h2>
+                    @enderror
                 </form>
             </div>
             <div class="row">

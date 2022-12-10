@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS DO BOOTSTRAP-->
-    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- FONTS -->
-    <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
-    <link rel="preconnect" href="{{ url('https://fonts.gstatic.com') }}" crossorigin>
-    <link href="{{ url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet"> --}}
@@ -290,35 +290,7 @@ INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,cr
 -->
 
 {{-- 
-    INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Martelo 45°',1,1);
-INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Alternada',1,1);
-INSERT INTO exercicios(nome,superior,biceps) VALUES('Rosca Punho',1,1);
-
-INSERT INTO exercicios(nome,superior,triceps) VALUES('Pulley',1,1);
-INSERT INTO exercicios(nome,superior,triceps) VALUES('Francês',1,1);
-INSERT INTO exercicios(nome,superior,triceps) VALUES('Coice Unilateral',1,1);
-
-INSERT INTO exercicios(nome,superior,costas) VALUES('Remada Fechada',1,1);
-INSERT INTO exercicios(nome,superior,costas) VALUES('Remada Aberta',1,1);
-INSERT INTO exercicios(nome,superior,costas) VALUES('Crucifixo Invertido',1,1);
-INSERT INTO exercicios(nome,superior,costas) VALUES('Puxada Costas',1,1);
-
-
-INSERT INTO exercicios(nome,superior,peito) VALUES('Supino Inclinado',1,1);
-INSERT INTO exercicios(nome,superior,peito) VALUES('Supino Reto',1,1);
-INSERT INTO exercicios(nome,superior,peito) VALUES('Crucifixo Inclinado',1,1);
-
-INSERT INTO exercicios(nome,superior,abdomen) VALUES('Reto Cross',1,1);
-INSERT INTO exercicios(nome,superior,abdomen) VALUES('Reto Prancha',1,1);
-INSERT INTO exercicios(nome,superior,abdomen) VALUES('Oblíquo Extensor',1,1);
-
-INSERT INTO exercicios(nome,coxa) VALUES('Agachamento Sumô',1);
-INSERT INTO exercicios(nome,coxa) VALUES('Mesa Flexora',1);
-INSERT INTO exercicios(nome,coxa) VALUES('Stiff',1);
-
-INSERT INTO exercicios(nome,panturrilha) VALUES('Elevação de panturrilha sentado',1);
-INSERT INTO exercicios(nome,panturrilha) VALUES('Agachamento com saltos',1);
-INSERT INTO exercicios(nome,panturrilha) VALUES('Elevação de panturrilha donkey',1);
+    
     --}}
 
 </html>

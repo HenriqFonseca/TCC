@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\FotoRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -57,7 +58,7 @@ class UserController extends Controller
         return redirect()->route('home.index');
     }
 
-    public function image(Request $request, $id){
+    public function image(FotoRequest $request, $id){
         $user = User::where('id', $id)->get();
         if($request->hasFile('imagePerfil') && $request->file('imagePerfil')->isValid()){
             
