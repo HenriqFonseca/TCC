@@ -35,69 +35,89 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <div class="container-md" style="transform: translateY(5rem) !important;">
-            
-            <div class="row">
-                <div class="col-12">
+        <div style="background-color: var(--footer-color); width:67%;">
+            <div class="container-md">
+
+                <div class="row">
+                    <div class="col-12">
 
 
-                    <form action="{{ route('treino.store') }}" class="need-validation" method="POST" class="form-control">
-                        @csrf
-                        @if (count($exer) == 0)
-                            <h2>NÃO HÁ EXERCÍCIOS</h2>
-                        @else
+                        <form action="{{ route('treino.store') }}" class="need-validation" method="POST"
+                            class="form-control">
+                            @csrf
+                            @if (count($exer) == 0)
+                                <h2>NÃO HÁ EXERCÍCIOS</h2>
+                            @else
+                                <div class="row">
+                                    <div class="col-md-12 mx-auto">
+                                        <select name="exercicio_id" class="form-select" id="selectexercicio">
+                                            <option selected>Selecione o Exercicio</option>
+                                            @foreach ($exer as $exercicio)
+                                                <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+
+                                        <input type="hidden" name="user_id" value="{{ $user->id }}">
+
+
+                                        <label for="">descrição</label>
+                                        <input type="text" class="form-control" name="descricao">
+                                        @error('descricao')
+                                            <span class="error-message">{{ $message }}</span> <br>
+                                        @enderror
+
+
+                                        <label for="">nome</label>
+                                        <input type="text" class="form-control" name="nome">
+                                        @error('nome')
+                                            <span class="error-message">{{ $message }}</span> <br>
+                                        @enderror
+
+                                        <label for="">serie</label>
+                                        <input type="text" class="form-control" name="serie">
+                                        @error('serie')
+                                            <span class="error-message">{{ $message }}</span> <br>
+                                        @enderror
+
+                                        <label for="">repeticao</label>
+                                        <input type="text" class="form-control" name="repeticao">
+                                        @error('repeticao')
+                                            <span class="error-message">{{ $message }}</span> <br>
+                                        @enderror
+                                        <br>
+
+                                        <select name="tipoTreino" id="" class="form-select">
+                                            <option value="treino_a">Treino A</option>
+                                            <option value="treino_b">Treino B</option>
+                                            <option value="treino_c">Treino C</option>
+                                            <option value="treino_d">Treino D</option>
+                                            <option value="treino_e">Treino E</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+
+                        <div class="container-md">
                             <div class="row">
-                                <div class="col-md-10 mx-auto">
-                                    <select name="exercicio_id" id="selectexercicio">
-                                        <option selected>Selecione o Exercicio</option>
-                                        @foreach ($exer as $exercicio)
-                                            <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="col-5">
-                                    <input type="hidden" name="user_id" value="{{ $user->id }}">
-
-                                    <label for="">descrição</label>
-                                    <input type="text" class="form-control" name="descricao">
-
-
-                                    <label for="">nome</label>
-                                    <input type="text" class="form-control" name="nome">
-
-                                    <label for="">serie</label>
-                                    <input type="text" class="form-control" name="serie">
-
-                                    <label for="">repeticao</label>
-                                    <input type="text" class="form-control" name="repeticao">
-
-                                    <label for="">carga</label>
-                                    <input type="text" class="form-control" name="carga">
-
-
-                                    <select name="tipoTreino" id="">
-                                        <option value="treino_a">Treino A</option>
-                                        <option value="treino_b">Treino B</option>
-                                        <option value="treino_c">Treino C</option>
-                                        <option value="treino_d">Treino D</option>
-                                        <option value="treino_e">Treino E</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-
-
-                    <div class="container-md">
-                        <div class="row">
-                            <div class="col-12">
+                                <div class="col-12">
                                     Treino A<br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_a')
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                Carga <i class="fa-solid fa-dumbbell"></i>: {{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>: {{ $item->carga }} <br>
+                                                <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="delete-treino"><i
+                                                            class="fa-solid fa-xmark"></i></button><Br>
+                                                </form>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -109,7 +129,13 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
+                                                <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="delete-treino"><i
+                                                            class="fa-solid fa-xmark"></i></button><Br>
+                                                </form><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -121,7 +147,13 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
+                                                <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="delete-treino"><i
+                                                            class="fa-solid fa-xmark"></i></button><Br>
+                                                </form><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -134,7 +166,13 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
+                                                <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="delete-treino"><i
+                                                            class="fa-solid fa-xmark" style="margin: auto"></i></button><Br>
+                                                </form><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
@@ -145,22 +183,29 @@
                                             @foreach ($item->exercicios as $exercicio)
                                                 nome do exercicio: {{ $exercicio->nome }}
                                                 descricao: {{ $item->descricao }}
-                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br><Br>
+                                                Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
+                                                <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="delete-treino"><i
+                                                            class="fa-solid fa-xmark"></i></button><Br>
+                                                </form><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
                                     <br>
+                                    @endif
 
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        @endif
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    @endsection
+            <br><br><br><br><br><br><br><br><br>
+        @endsection
 </body>
 
 </html>

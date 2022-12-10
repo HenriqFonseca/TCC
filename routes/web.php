@@ -62,6 +62,7 @@ Route::get('/treinos/create/{id}', [TreinoController::class, 'create'])->name('t
 Route::post('/treino/store', [TreinoController::class, 'store'])->name('treino.store');
 Route::get('/treinos/show/{id}', [TreinoController::class, 'show'])->name('treino.show');
 Route::put('/treino/update/{id}', [treinoController::class, 'update'])->name('treino.update');
+Route::delete('/treino/delete/{id}', [treinoController::class, 'destroy'])->name('treino.destroy');
 
 //==================== EXERCICIO =======================
 Route::get('/exercicio', [ExercicioController::class, 'index'])->name('exercicio.index');

@@ -80,3 +80,27 @@ body {
     border-radius: 0.7rem;
     height: 180px;
 }
+
+.delete-treino{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background: none;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.delete-treino:hover{
+    background-color: rgb(241, 131, 131);
+    transition: 0.6s;
+}
+
+.error-message{
+    font-size: 12px;
+    color: #ff3333;
+
+    -webkit-text-stroke: 0.2px black;
+
+}

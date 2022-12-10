@@ -108,6 +108,10 @@ class TreinoController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        Treino::findOrFail($id)->delete($id);
+
+        return redirect()->back();
+
     }
 }
