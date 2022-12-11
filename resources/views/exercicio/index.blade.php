@@ -19,7 +19,7 @@
     <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css'" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js' "></script>
@@ -43,7 +43,7 @@
         <div class="container-md ">
             <div class="row">
                 <div class=" col-8 mx-auto " style="width: 100%;">
-                    <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
+                    <form action="{{ to_route('exercicio.store') }}" class="form-control" method="POST">
                         @csrf
                         <div class="mb-3 row">
 
