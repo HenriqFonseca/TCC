@@ -43,7 +43,7 @@
         <div class="container-md ">
             <div class="row">
                 <div class=" col-8 mx-auto " style="width: 100%;">
-                    <form action="{{ to_route('exercicio.store') }}" class="form-control" method="POST">
+                    <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
                         @csrf
                         <div class="mb-3 row">
 
