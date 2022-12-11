@@ -115,10 +115,9 @@ table{
         width: 150px;
     }
 
-    /* .containercheck h6{
-        text-align: center;
-   
-    } */
+    .containercheck h6{
+        font-weight: bold;
+    } 
 
     input[type="checkbox"]::after{
         font-size: 14px;
@@ -154,10 +153,11 @@ table{
     .containercheck{
         height: 50;
         width: 50;
+        text-align: center;
     }
     input[type="checkbox"]::after{
         font-size: 14px;
-        top: -21px;
+        top: -48px;
     }
 
     
@@ -172,6 +172,7 @@ table{
     .containercheck{
         height: 150px;
         width: 150px;
+        text-align: center;
     }
 
     /* .containercheck h6{
@@ -197,11 +198,26 @@ table{
     font-size: 4px !important;
 }
 
-  .containercheck h6{
+
+.containercheck{
+    text-align: center;
+}
+
+.containercheck h6{
+    font-size: 14px;
+}
+
+  /* .containercheck h6{
     bottom: 0;
     position: absolute;
     margin:auto;
     left:15px;
+} */
+
+
+input[type="checkbox"]::after{
+    font-size: 14px;
+    top: -46px;
 }
 
 .col-8{

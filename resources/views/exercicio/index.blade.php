@@ -15,8 +15,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
-    <link href="{{ secure_asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
+    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,15 +25,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js' "></script>
 
     <!-- styles -->
-    <script defer src="{{ secure_asset('/js/nav-bar.js') }}'"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}'"></script>
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'"></script>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
-    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                                 <div class="h6">
                                     <h6>Biceps</h6>
                                 </div>
-                                <input type="checkbox" name="biceps" id="dessert-2" value="1">
+                                <input type="checkbox" name="biceps" id="dessert-2" value="1" style="input[type="checkbox"]::after:">
                                 <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                             </div>
 
