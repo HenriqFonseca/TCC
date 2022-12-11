@@ -12,10 +12,10 @@
     <script src="{{ asset('/js/jQuery-Mask/dist/jquery.mask.js') }}" defer></script>
     <script src="{{ asset('/js/toastmessage.js') }}" defer></script>
 
-     <!-- PWA  -->
-     <meta name="theme-color" content="#6777ef" />
-     <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-     <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -32,19 +32,24 @@
                     @csrf
                     <div class="container-erro" style="width: 100%">
                         <div class="container-erro">
-                            <input type="text" @if($errors->has('cpf')) class="input-error" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
+                            <input type="text"
+                                @if ($errors->has('cpf')) class="input-error" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
                                 autocomplete="off" maxlength="14" placeholder="CPF" />
-                                <small style="color: red; background-color: white; text-align:left;">@error('cpf') {{ $message }} @enderror</small>
+                                @error('cpf')
+                                <span class="error-message">{{ $message }}</span>
+                                @enderror
                                 @else class="input" name="cpf" onkeypress="$(this).mask('000.000.000-00')"
-                                autocomplete="off" maxlength="14" placeholder="CPF" />
-                                @endif
+                                autocomplete="off" maxlength="14" placeholder="CPF" /> @endif
+                                </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="container-erro" style="width: 100%">
-                        <div class="container-erro">
-                            <input type="password" @if($errors->has('password')) class="input-error" name="password" placeholder="Senha" />
-                            <small style="color: red; background-color: white; text-align:left;">@error('password') {{ $message }} @enderror</small>
+                        <br>
+                        <div class="container-erro" style="width: 100%">
+                            <div class="container-erro">
+                                <input type="password"
+                                    @if ($errors->has('password')) class="input-error" name="password" placeholder="Senha" />
+                            @error('cpf')
+                                <span class="error-message">{{ $message }}</span>
+                            @enderror
                             @else class="input" name="password" maxlength="8" placeholder="Senha" />
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
@@ -60,17 +65,16 @@
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
-                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
-                            @endif
-                        </div>
-                    </div>
+                            {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}} @endif
+                                    </div>
+                            </div>
 
-                    <div class="login">
-                        <br>
-                        <button class="login-button">
-                            Login
-                        </button>
-                    </div>
+                            <div class="login">
+                                <br>
+                                <button class="login-button">
+                                    Login
+                                </button>
+                            </div>
 
                 </form>
                 <div class="alternative">
