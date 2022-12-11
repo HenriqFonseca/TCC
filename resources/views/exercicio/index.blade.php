@@ -40,9 +40,9 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <div class="container-md">
+        <div class="container-md ">
             <div class="row">
-                <div class="col-8 mx-auto" style="width: 100%;">
+                <div class=" col-8 mx-auto " style="width: 100%;">
                     <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
                         @csrf
                         <div class="mb-3 row">
@@ -125,12 +125,12 @@
             </div>
             <div class="container-md " style="">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <a href="{{ route('exercicio.create') }}">Criar exercício</a>
                     </div>
-                    <div class=" col-12">
+                    <div class="table-responsive">
 
-                        <table class="table border-secondary " style="border: solid 1px black; border-radius: 5px;">
+                        <table class="table table-hover border-secondary">
                             <thead>
                                 <tr>
                                     <th scope="col">Nome do Exercício</th>
