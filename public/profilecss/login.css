@@ -157,6 +157,14 @@
         width: 100%;
     }
     
+    .error-message{
+        font-size: 18px;
+        color: #ff3333;
+    
+        -webkit-text-stroke: 0.2px black;
+    
+    }
+
     .container-erro small {
         color: #dc3545;
         width: 100%;
