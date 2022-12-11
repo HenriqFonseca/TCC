@@ -9,26 +9,26 @@
 
 
     {{-- FONTS AWESOME --}}
-    <link rel="stylesheet" href="{{ url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet"
-        href="{{ url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
-    <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
-    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
-    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css'" rel="stylesheet">
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }} "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js' "></script>
 
     <!-- styles -->
-    <script defer src="{{ url('js/nav-bar.js') }}"></script>
+    <script defer src="{{ secure_asset('/js/nav-bar.js') }}'"></script>
 
     <!-- scripts -->
-    <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'"></script>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
