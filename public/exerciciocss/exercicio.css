@@ -157,6 +157,7 @@ table{
     }
     input[type="checkbox"]::after{
         font-size: 14px;
+        top: -40px;
     }
 
     
