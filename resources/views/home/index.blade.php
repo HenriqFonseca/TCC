@@ -342,7 +342,9 @@
                         /* CARDS DE ATIVIDADES*/
                         .container-cards {
                             align-items: center;
-                            height: auto !importantz;
+                            height: auto !important;
+                            grid-template-columns: repeat(1, 1fr) !important;
+                            gap: 19px !important;
                             display: flex;
                             flex-direction: column !important;
                             margin-bottom: 1100px;
