@@ -45,7 +45,11 @@
             <a class="link-content" href="{{ url('/treinos/create/' . $aluno->id) }}">
                 <div class="aluno-container">
                     <div class="image-container">
+                        @if ($aluno->imagePerfil == null)
+                        <img class="profile-image" src="/img/perfil/perfilpadrao.png">
+                        @else
                         <img class="profile-image" src="/img/perfil/{{  $aluno->imagePerfil }}">
+                        @endif
                     </div>
                     <div class="dados-container">
                         
