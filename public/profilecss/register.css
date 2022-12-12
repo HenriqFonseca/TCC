@@ -165,7 +165,41 @@ a:visited {
     margin-bottom: 11px;
 }
 
+/* input radio */
 
+.input label{
+    cursor: pointer;
+}
+
+.radio{
+    cursor: pointer;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: none;
+    border: 1.5px solid black;
+    position: relative;
+}
+
+.radio::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.radio:checked:before{
+    opacity: 1;
+}
 
 .input-error {
     position: relative;

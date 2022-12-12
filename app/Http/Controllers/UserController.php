@@ -16,10 +16,12 @@ class UserController extends Controller
     //===================== REGISTRAR NOVO USUARIO =====================//
     public function auth(RegisterRequest $request){
 
+
         $user = new User();
 
         // capturar os dados enviados pelo usuário do formulário de registro
         $user ->nome = $request->nome;
+        $user ->sexo = $request->sexo;
         $user ->sobrenome = $request->sobrenome;
         $user ->email = $request->email;
         $user ->cpf = $request->cpf;

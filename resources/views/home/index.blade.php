@@ -83,8 +83,6 @@
 
 
             <div class="btn-grid-container">
-                <a href="{{ route('profile.register_professor') }}" style="background-color:black;">TESTE REGISTER PROF</a>
-                <a href="{{ route('profile.register_aluno') }}" style="background-color:black;">TESTE REGISTER ALUNO</a>
                 @guest
                     <a class="grid-link" href="{{ route('profile.login') }}">
                         <div class="btn-box">
@@ -351,7 +349,7 @@
                         }
 
                         .card {
-                            color: black;
+                            color: white;
                             width: 76vw !important;
                             height: 500px;
                             margin-bottom: 50px;
@@ -363,6 +361,10 @@
 
                         }
 
+                        .card-title {
+                            font-size: 30px !important;
+                            font-weight: 500 !important;
+                        }
 
                         .card-body {
                             /* position: absolute; */
@@ -394,7 +396,8 @@
                             @if (auth()->user()->professor == 1)
                                 <a class="btn btn-dark" href="{{ route('treino.index') }}" class="btn btn-dark">Vamos!</a>
                             @elseif(auth()->user()->aluno == 1)
-                                <a class="btn btn-dark" href="{{ route('treino.show', auth()->user()->id) }}" class="btn btn-dark">Vamos!</a>
+                                <a class="btn btn-dark" href="{{ route('treino.show', auth()->user()->id) }}"
+                                    class="btn btn-dark">Vamos!</a>
                             @endif
                         @endauth
 

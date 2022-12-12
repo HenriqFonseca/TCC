@@ -26,6 +26,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'email'=> ['bail', 'required', 'unique:users,email', 'email',],
+            'sexo'=> ['required'],
             'nome' => ['bail','string', 'required', 'max:20', 'regex:/^[A-Z][a-z]+/'],
             'sobrenome' => ['bail','string', 'required',  'max:30', 'regex:/^[A-Z][a-z]+/'],
             'cpf' => ['bail', 'required', 'unique:users,cpf', 'min:14', 'max:14'],

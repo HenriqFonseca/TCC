@@ -50,7 +50,16 @@
                             @endif
                         </div>
                     </div>
-                   
+                    <div class="input" style="background-color:white; display:flex; justify-content:space-evenly;">
+                        <div class="div" style=" ">
+                            <input class="radio" type="radio" name="sexo" value="m"id="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="div">
+                            <input class="radio" type="radio" name="sexo" value="f"id="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
                     {{-- CASO HAJA UM ERRO NO INPUT EMAIL A CLASSE VAI MUDAR --}}
                     <div class="container-erro" style="width: 100%">
                         <div class="container-erro">
