@@ -39,10 +39,10 @@ class TreinoController extends Controller
 
     public function store(TreinoRequest $request)
     {
+
         $treino = new Treino();
 
         $treino->descricao = $request->descricao;
-        $treino->nome = $request->nome;
         $treino->user_id = $request->user_id;
         $treino->exercicio_id = $request->exercicio_id;
         $treino->serie = $request->serie;

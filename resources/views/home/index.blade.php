@@ -459,7 +459,8 @@ INSERT INTO users(sexo,nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,passwo
 INSERT INTO users(sexo,nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('m','Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
 
 INSERT INTO users(sexo,nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('m','Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
-    -->
+  
+-->
 
 {{-- 
     

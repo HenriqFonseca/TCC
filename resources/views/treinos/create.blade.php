@@ -35,77 +35,156 @@
     <!--nav bar numero 1-->
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <div style="background-color: var(--footer-color); width:67%;">
+
+        <style>
+            .container-all {
+                background-color: var(--footer-color);
+                width: 1320px;
+                height: 900px;
+                transform: translateY(10rem);
+                margin-bottom: 400px;
+            }
+
+            .user{
+                height: 250px; background-color:; margin-bottom:40px;
+                position: relative;
+                border: 1px solid black;
+                display: flex;
+            }
+
+
+            .img-perfil{
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .img-perfil img{
+                max-width:150px;
+                margin: auto;
+            }
+
+            .infos{
+                width: 80%;
+                /* position: absolute; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .infos h2{
+                font-size: 35px;
+            }
+
+            .nome{
+            border-right: 1px solid black;
+            padding-right: 10px;
+            }
+            .idade{
+                margin-left: 10px;
+                padding-right: 10px;
+                border-right: 1px solid black;
+            }
+            .sexo{
+                margin-left: 10px;
+            }
+
+
+        </style>
+        <div class="container-all">
+            <div class="user col-10 mx-auto">
+                <div class="img-perfil">
+                    <img src="/img/perfil/perfilpadrao.png" alt="">
+                </div>
+                <div class="infos">
+                        <div class="nome">
+                            <h2>{{ $user->nome }} {{ $user->sobrenome }}</h2>
+                        </div>
+                        <div class="idade">
+                            <h2>{{ $user->dataNascimento->age }} Anos</h2>
+                        </div>
+                        <div class="sexo">
+                            <h2> Sexo: @if ($user->sexo == 'f') Feminino @else Masculino @endif</h2>
+                        </div>
+                </div>
+            </div>
             <div class="container-md">
 
-                <div class="row">
-                    <div class="col-12">
+                <div class="col-12">
 
-
-                        <form action="{{ route('treino.store') }}" class="need-validation" method="POST"
-                            class="form-control">
-                            @csrf
-                            @if (count($exer) == 0)
-                                <h2>NÃO HÁ EXERCÍCIOS</h2>
-                            @else
-                                <div class="row">
-                                    <div class="col-md-12 mx-auto">
-                                        <select name="exercicio_id" class="form-select" id="selectexercicio">
-                                            <option selected>Selecione o Exercicio</option>
-                                            @foreach ($exer as $exercicio)
-                                                <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
-                                            @endforeach
-                                        </select>
+                    <form action="{{ route('treino.store') }}" class="need-validation" method="POST" class="form-control">
+                        @csrf
+                        @if (count($exer) == 0)
+                            <h2>NÃO HÁ EXERCÍCIOS</h2>
+                        @else
+                            <div class="row">
+                                <div class="col-md-11 mx-auto">
+                                    <select name="exercicio_id"
+                                        class="form-select @error('tipoTreino') is-invalid @enderror" id="selectexercicio">
+                                        <option selected>Selecione o Exercicio</option>
+                                        @foreach ($exer as $exercicio)
+                                            <option value="{{ $exercicio->id }}">{{ $exercicio->nome }}</option>
+                                        @endforeach
+                                    </select>
+                                    @error('exercicio_id')
+                                        <span class="error-message">{{ $message }}</span> <br>
+                                    @enderror
+                                </div>
+                                <div class="col-12 ">
+                                    <input type="hidden" name="user_id" value="{{ $user->id }}">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-11">
+                                            <label class="fw-bold" for="descricao">Descrição</label>
+                                            <input type="text" placeholder="Treino de..."
+                                                class="form-control @error('descricao') is-invalid @enderror"
+                                                name="descricao" id="descricao">
+                                            @error('descricao')
+                                                <span class="error-message">{{ $message }}</span> <br>
+                                            @enderror
+                                        </div>
                                     </div>
-                                    <div class="col-5">
-
-                                        <input type="hidden" name="user_id" value="{{ $user->id }}">
-
-
-                                        <label for="">descrição</label>
-                                        <input type="text" class="form-control" name="descricao">
-                                        @error('descricao')
-                                            <span class="error-message">{{ $message }}</span> <br>
-                                        @enderror
-
-
-                                        <label for="">nome</label>
-                                        <input type="text" class="form-control" name="nome">
-                                        @error('nome')
-                                            <span class="error-message">{{ $message }}</span> <br>
-                                        @enderror
-
-                                        <label for="">serie</label>
-                                        <input type="text" class="form-control" name="serie">
-                                        @error('serie')
-                                            <span class="error-message">{{ $message }}</span> <br>
-                                        @enderror
-
-                                        <label for="">repeticao</label>
-                                        <input type="text" class="form-control" name="repeticao">
-                                        @error('repeticao')
-                                            <span class="error-message">{{ $message }}</span> <br>
-                                        @enderror
-                                        <br>
-
-                                        <select name="tipoTreino" id="" class="form-select">
+                                    <div class="d-flex" style="justify-content: space-around;">
+                                        <div class="col-5">
+                                            <label class="fw-bold" for="serie">Séries</label>
+                                            <input type="text" class="form-control @error('serie') is-invalid @enderror"
+                                                name="serie" id="serie">
+                                            @error('serie')
+                                                <span class="error-message">{{ $message }}</span> <br>
+                                            @enderror
+                                        </div>
+                                        <div class="col-5">
+                                            <label class="fw-bold" for="repeticao">Repetições</label>
+                                            <input type="number"
+                                                class="form-control @error('repeticao') is-invalid @enderror"
+                                                name="repeticao" id="repeticao">
+                                            @error('repeticao')
+                                                <span class="error-message">{{ $message }}</span> <br>
+                                            @enderror
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-11 mx-auto">
+                                        <select class="form-select" name="tipoTreino" id="" class="form-select">
+                                            <option selected>Selecione o Treino</option>
                                             <option value="treino_a">Treino A</option>
                                             <option value="treino_b">Treino B</option>
                                             <option value="treino_c">Treino C</option>
                                             <option value="treino_d">Treino D</option>
                                             <option value="treino_e">Treino E</option>
                                         </select>
-                                        <br>
                                     </div>
+                                    <br>
                                 </div>
-                                <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-secondary col-12 fw-bold">Enviar</button>
+                    </form>
 
 
-                        <div class="container-md">
-                            <div class="row">
-                                <div class="col-12">
-                                    Treino A<br>
+                    <div class="container-md">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="treino" style="border: 1px solid black;">
+                                    <h4 class="fw-bold">TREINO A</h4><br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_a')
                                             @foreach ($item->exercicios as $exercicio)
@@ -121,9 +200,11 @@
                                             @endforeach
                                         @endif
                                     @endforeach
-                                    <br><br>
+                                </div>
+                                <br><br>
 
-                                    TREINO B<br>
+                                <div class="treino" style="border: 1px solid black;">
+                                    <h4 class="fw-bold">TREINO B</h4><br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_b')
                                             @foreach ($item->exercicios as $exercicio)
@@ -139,9 +220,12 @@
                                             @endforeach
                                         @endif
                                     @endforeach
-                                    <BR><BR>
+                                </div>
+                                <BR><BR>
 
-                                    TREINO C <br>
+
+                                <div class="treino" style="border: 1px solid black;">
+                                    <h4 class="fw-bold">TREINO C</h4><br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_c')
                                             @foreach ($item->exercicios as $exercicio)
@@ -157,9 +241,11 @@
                                             @endforeach
                                         @endif
                                     @endforeach
-                                    <BR><BR>
+                                </div>
+                                <BR><BR>
 
-                                    TREINO D
+                                <div class="treino" style="border: 1px solid black;">
+                                    <h4 class="fw-bold">TREINO D</h4><br>
                                     <br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_d')
@@ -171,13 +257,17 @@
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="delete-treino"><i
-                                                            class="fa-solid fa-xmark" style="margin: auto"></i></button><Br>
+                                                            class="fa-solid fa-xmark"
+                                                            style="margin: auto"></i></button><Br>
                                                 </form><Br>
                                             @endforeach
                                         @endif
                                     @endforeach
-                                    <br>
-                                    TREINO E
+                                </div>
+                                <br>
+
+                                <div class="treino" style="border: 1px solid black;">
+                                    <h4 class="fw-bold">TREINO E</h4><br>
                                     @foreach ($user->treinos as $item)
                                         @if ($item->tipoTreino == 'treino_e')
                                             @foreach ($item->exercicios as $exercicio)
@@ -195,17 +285,15 @@
                                     @endforeach
                                     <br>
                                     @endif
-
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-            <br><br><br><br><br><br><br><br><br>
-        @endsection
+        <br><br><br><br><br><br><br><br><br>
+    @endsection
 </body>
 
 </html>

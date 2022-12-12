@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable()->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('exercicio_id')->constrained('exercicios')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('nome');
+            $table->string('nome')->nullable();
             $table->string('img_path')->nullable();
             $table->string('descricao');
             $table->integer('serie');

@@ -25,16 +25,19 @@ class TreinoRequest extends FormRequest
     {
         return [
             'exercicio_id' => ['required'],
-            'nome'=> ['bail', 'required', 'string'],
             'descricao' =>['bail', 'required', 'string'],
             'serie' =>['bail', 'required', 'integer'],
             'repeticao' =>['bail', 'required', 'integer'],
             'carga' =>['bail', 'integer'],
+            'tipoTreino' =>['bail', 'required']
         ];
     }
     public function messages()
     {
         return[
+
+            'exercicio_id.required' => 'Campo obrigatório!',
+
             'nome.required' => 'Campo obrigatório!',
             
             'descricao.required' => 'Campo obrigatório!',

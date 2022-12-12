@@ -98,8 +98,7 @@ body {
 }
 
 .error-message{
-    font-size: 14px;
-    color: #ff0000;
-    background-color: white;
-    border-radius: 4px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
 }
