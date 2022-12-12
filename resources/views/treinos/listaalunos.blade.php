@@ -55,8 +55,9 @@
                         
                         <div class="dados">
                             <h2>{{ $aluno->nome }} {{ $aluno->sobrenome }}</h2>
-                            <br>
-                            <h2>Data de Nasc:{{ date('d/m/Y', strtotime($aluno->dataNascimento)) }} </h2>
+                            <br>@if($aluno->sexo == 'f')
+                            <h2>Sexo: Feminino</h2>
+                            @else<h2>Sexo: Masculino</h2>@endif
                             <br>
                             <h2> Idade:{{ $aluno->dataNascimento->age }}</h2>
                         </div>
