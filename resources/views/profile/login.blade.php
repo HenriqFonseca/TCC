@@ -47,7 +47,7 @@
                             <div class="container-erro">
                                 <input type="password"
                                     @if ($errors->has('password')) class="input-error" name="password" placeholder="Senha" />
-                            @error('cpf')
+                            @error('password')
                                 <span class="error-message">{{ $message }}</span>
                             @enderror
                             @else class="input" name="password" maxlength="8" placeholder="Senha" />

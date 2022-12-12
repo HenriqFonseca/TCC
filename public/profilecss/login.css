@@ -158,11 +158,9 @@
     }
     
     .error-message{
-        font-size: 18px;
-        color: #ff3333;
-    
-        -webkit-text-stroke: 0.2px black;
-    
+        font-size: 15px;
+        color: red;
+        font-weight: bold;
     }
 
     .container-erro small {

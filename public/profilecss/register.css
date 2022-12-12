@@ -152,15 +152,20 @@ a:visited {
     outline: none;
     background-color: rgba(0, 0, 0, 0.548)important;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .error-message{
-    font-size: 18px;
-    color: #ff3333;
-
-    -webkit-text-stroke: 0.2px black;
-
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
 }
+
+.container-error-message{
+    margin-bottom: 11px;
+}
+
+
 
 .input-error {
     position: relative;
