@@ -194,6 +194,16 @@
                         <a class="grid-link" href="">
                             <div class="btn-box">
                                 <button class="btn-small">
+                                    <img src="{{ asset('img/invoice.png') }}" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Registrar Usuário</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="grid-link" href="">
+                            <div class="btn-box">
+                                <button class="btn-small">
                                     <img src="{{ asset('/img/gym.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
@@ -263,6 +273,7 @@
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
+                        margin-bottom: 5px;
                     }
 
                     .card img {
@@ -270,7 +281,7 @@
                         height: 230px;
                         margin-bottom: 20px !important;
                         margin: auto;
-                        
+
                     }
 
                     .card {
@@ -279,6 +290,7 @@
                         width: 350px !important;
                         background-color: #0f1d2785 !important;
                     }
+
                     .card-title {
                         font-size: 30px !important;
                         font-weight: 500;
@@ -335,6 +347,9 @@
                             height: auto !important;
                             grid-template-columns: repeat(1, 1fr) !important;
                             gap: 19px !important;
+                            display: flex;
+                            flex-direction: column !important;
+                            margin-bottom: 1100px;
                         }
 
                         .card {
@@ -374,8 +389,17 @@
                     <img src="/img/musculacao.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Musculação</h5>
-                        <p class="card-text">Diversas opções de máquinas para exercícios juntamente à uma plataforma para acompanhar seus treinos pelo celular</p>
-                        <a href="#" " class="btn btn-dark">Vamos!</a>
+                        <p class="card-text">Diversas opções de máquinas para exercícios juntamente à uma plataforma para
+                            acompanhar seus treinos pelo celular</p>
+                        @guest <a href="{{ route('profile.login') }}" class="btn btn-dark">Vamos!</a> @endguest
+                        @auth
+                            @if (auth()->user()->professor == 1)
+                                <a class="btn btn-dark" href="{{ route('treino.index') }}" class="btn btn-dark">Vamos!</a>
+                            @elseif(auth()->user()->aluno == 1)
+                                <a class="btn btn-dark" href="{{ route('treino.show', auth()->user()->id) }}" class="btn btn-dark">Vamos!</a>
+                            @endif
+                        @endauth
+
                     </div>
                 </div>
 
@@ -398,8 +422,9 @@
                 </div>
 
             </div>
+
             <div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>r><br><br><br><br>><br><br><br><br><br><br><br><br><br><br>r><br><br><br><br>
+                <br><br><br><br>
             </div>
 
         </main>
@@ -418,21 +443,21 @@
 <!-- SCRIPT PARA ADD VARIOS USERS -->
 <!--
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,professor,email,password,created_at,updated_at) VALUES('Professor','Sobrenome','2003-01-03','000.000.000-00','00-000-000-0',1,'1professor@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-07 00:38:36','2022-12-07 00:38:36');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,professor,email,password,created_at,updated_at) VALUES('Professor','Sobrenome','2003-01-03','000.000.000-00','00-000-000-0',1,'1professor@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-07 00:38:36','2022-12-07 00:38:36');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Henrique','Sobrenome','2001-12-12','111.111.111-11','11-111-111-1',1,'email1@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-06 23:33:09','2022-12-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Henrique','Sobrenome','2001-12-12','111.111.111-11','11-111-111-1',1,'email1@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-06 23:33:09','2022-12-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Alexandre','Sobrenome','2003-07-22','222.222.222-22','22-222-222-2',1,'email2@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-22-06 23:33:09','2022-22-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Alexandre','Sobrenome','2003-07-22','222.222.222-22','22-222-222-2',1,'email2@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-22-06 23:33:09','2022-22-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('kaua','Sobrenome','2002-02-25','333.333.333-33','33-333-333-3',1,'email3@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-32-06 23:33:09','2022-32-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('kaua','Sobrenome','2002-02-25','333.333.333-33','33-333-333-3',1,'email3@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-32-06 23:33:09','2022-32-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Luciano','Sobrenome','1999-12-02','444.444.444-44','44-444-444-4',1,'email4@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-42-06 23:33:09','2022-42-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Luciano','Sobrenome','1999-12-02','444.444.444-44','44-444-444-4',1,'email4@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-42-06 23:33:09','2022-42-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
+    INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
 
--->
+    -->
 
 {{-- 
     
