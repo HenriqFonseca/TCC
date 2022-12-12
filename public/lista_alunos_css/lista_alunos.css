@@ -24,10 +24,6 @@
 
 /*==========----- IMPEDE QUE O USER ARRASTE AS IMAGENS DO SITE + REMOÇÃO DE ESTILO DE LINKS -----==========*/
 
-img {
-    -webkit-user-drag: none;
-}
-
 a {
     text-decoration: none;
     color: var(--font-color);
@@ -52,7 +48,7 @@ body {
 }
 
 main {
-    width: 1200px;
+    width: 1300px;
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -188,19 +184,13 @@ main {
 
 /*==========----- @MEDIAS -----==========*/
 
-@media(max-width:1250px) {
+@media(max-width:1330px) {
     main {
         width: 1000px;
     }
 }
 
-@media(max-width:1050px) {
-    main {
-        width: 770px;
-    }
-}
-
-@media(max-width:1050px) {
+@media(max-width:1030px) {
     main {
         width: 770px;
     }
@@ -212,13 +202,13 @@ main {
     }
 }
 
-@media(max-width:780px) {
+@media(max-width:800px) {
     main {
         width: 520px;
     }
 }
 
-@media(max-width:530px) {
+@media(max-width:550px) {
     main {
         width: 350px;
     }
@@ -233,7 +223,7 @@ main {
     }
 }
 
-@media(max-width:350px) {
+@media(max-width:370px) {
     main {
         width: 310px;
     }
