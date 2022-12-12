@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('descricao');
             $table->integer('serie');
             $table->integer('repeticao');
-            $table->integer('carga');
+            $table->integer('carga')->nullable();
             $table->string('tipoTreino')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');

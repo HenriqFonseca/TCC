@@ -15,7 +15,12 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?" rel="stylesheet"> --}}
@@ -134,37 +139,37 @@
                                 </div>
                             </div>
                         </a>
-                    </a>
-                    <a class="grid-link" href="">
-                        <div class="btn-box">
-                            <button class="btn-small">
-                                <img src="{{ asset('/img/gym.png') }}" alt="">
-                            </button>
-                            <div class="btn-caption">
-                                <h3>Unidades</h3>
+                        </a>
+                        <a class="grid-link" href="">
+                            <div class="btn-box">
+                                <button class="btn-small">
+                                    <img src="{{ asset('/img/gym.png') }}" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Unidades</h3>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a class="grid-link" href="#footer">
-                        <div class="btn-box">
-                            <button class="btn-small">
-                                <img src="{{ asset('/img/chat.png') }}" alt="">
-                            </button>
-                            <div class="btn-caption">
-                                <h3>Fale conosco</h3>
+                        </a>
+                        <a class="grid-link" href="#footer">
+                            <div class="btn-box">
+                                <button class="btn-small">
+                                    <img src="{{ asset('/img/chat.png') }}" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Fale conosco</h3>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a class="grid-link" href="">
-                        <div class="btn-box">
-                            <button class="btn-small">
-                                <img src="{{ asset('img/invoice.png') }}" alt="">
-                            </button>
-                            <div class="btn-caption">
-                                <h3>Planos</h3>
+                        </a>
+                        <a class="grid-link" href="">
+                            <div class="btn-box">
+                                <button class="btn-small">
+                                    <img src="{{ asset('img/invoice.png') }}" alt="">
+                                </button>
+                                <div class="btn-caption">
+                                    <h3>Planos</h3>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                     @else
                         <a class="grid-link" href="{{ route('treino.index') }}">
                             <div class="btn-box">
@@ -219,39 +224,171 @@
                     @endif
                 @endauth
 
-                {{-- <a class="grid-link" href="">
-                    <div class="btn-box">
-                        <button class="btn-small">
-                            <img src="img/gym.png" alt="">
-                        </button>
-                        <div class="btn-caption">
-                            <h3>Unidades</h3>
-                        </div>
-                    </div>
-                </a>
-                <a class="grid-link" href="#footer">
-                    <div class="btn-box">
-                        <button class="btn-small">
-                            <img src="img/chat.png" alt="">
-                        </button>
-                        <div class="btn-caption">
-                            <h3>Fale conosco</h3>
-                        </div>
-                    </div> --}}
-                
-                <!-- <a class="grid-link" href="">
-                                    <div class="btn-box">
-                                        <button class="btn-small">
-                                            <img src="img/calendar.png" alt="">
-                                        </button>
-                                        <div class="btn-caption">
-                                            <h3>Algum Texto</h3>
-                                        </div>
-                                    </div>
-                                </a> -->
-                
+
+                <style>
+                    .text-cards {
+                        height: 250px;
+                        width: 100%;
+                        background-color: #0f1d2785;
+                        text-align: center;
+                        position: relative;
+                    }
+
+                    .text-cards h1 {
+                        font-size: 240px;
+                        position: absolute;
+                        margin: auto;
+                        right: 0;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: hsla(42, 44%, 56%, 0.2);
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    .img-card {
+                        position: absolute;
+                        margin: auto;
+                        right: 0;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%)
+                    }
+
+                    /* MEDIA SCREEN DA FAIXA */
+                    @media screen and (max-width: 568px) {
+
+                        /* FAIXA COM ATIVIDADES */
+                        .text-cards {
+                            height: 150px;
+                            width: 100%;
+                            background-color: #0f1d2785;
+                            text-align: center;
+                            position: relative;
+                        }
+
+                        .text-cards h1 {
+                            font-size: 78px;
+                            position: absolute;
+                            margin: auto;
+                            right: 0;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: hsla(42, 44%, 56%, 0.2);
+                            font-weight: bold;
+                            font-family: 'Roboto', sans-serif;
+                        }
+
+                        .img-card {
+                            position: absolute;
+                            width: 94vw;
+                            margin: auto;
+                            right: 0;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%)
+                        }
+
+                        /* CARDS DE ATIVIDADES*/
+                        .container-cards {
+                            align-items: center;
+                            height: auto !important;
+                            grid-template-columns: repeat(1,1fr) !important;
+                            gap: 19px !important;
+                        }
+
+                        .card {
+                            color: black;
+                            width: 76vw !important;
+                            height: 400px;
+                        }
+
+                        .card img {
+                            width: 100% !important;
+                            margin: auto;
+                            
+                        }
+
+
+                        .card-body {
+                            /* position: absolute; */
+                            bottom: 0;
+                        }
+
+
+                    }
+
+                    .container-cards {
+                        height: 400px;
+                        background-color: black;
+                        max-width: 1320px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .card img {
+                        width: 100% !important;
+                        height: 190px;
+                        margin: auto;
+                        /* position: absolute; */
+                    }
+
+                    .card {
+                        color: black;
+                        width: 350px !important;
+                    }
+
+                    .card-body {
+                        /* position: absolute; */
+                        bottom: 0;
+                    }
+                </style>
+
+
+
+
+
             </div>
 
+            <div class="text-cards">
+                <img class="img-card" src="/img/text-card3.png" alt="">
+                <h1 class="text-atividades">ATIVIDADES</h1>
+            </div>
+
+            <div class="container-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/lulaxbolso.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/lulaxbolso.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/lulaxbolso.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
             <div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
@@ -273,7 +410,7 @@
 <!-- SCRIPT PARA ADD VARIOS USERS -->
 <!--
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,professor,email,password,created_at,updated_at) VALUES('Professor','Sobrenome','2003-01-03','000.000.000-00','00-000-000-0',1,'1professor@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-07 00:38:36','2022-12-07 00:38:36');    
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,professor,email,password,created_at,updated_at) VALUES('Professor','Sobrenome','2003-01-03','000.000.000-00','00-000-000-0',1,'1professor@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-07 00:38:36','2022-12-07 00:38:36');
 
 INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Henrique','Sobrenome','2001-12-12','111.111.111-11','11-111-111-1',1,'email1@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-12-06 23:33:09','2022-12-06 23:33:09');
 
@@ -283,9 +420,9 @@ INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,cr
 
 INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Luciano','Sobrenome','1999-12-02','444.444.444-44','44-444-444-4',1,'email4@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-42-06 23:33:09','2022-42-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');           
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Rafael','Sobrenome','2004-06-30','555.555.555-55','55-555-555-5',1,'email5@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
 
-INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');           
+INSERT INTO users(nome,sobrenome,`dataNascimento`,cpf,rg,aluno,email,password,created_at,updated_at) VALUES('Bruna','Sobrenome','2003-06-30','666.666.666-66','66-666-666-6',1,'email6@gmail.com','$2y$10$vwf54R5D28DIoyCN5eKjEuuclB4FiGzqZ57uxIuHl.FhuUbbABhaK','2022-52-06 23:33:09','2022-52-06 23:33:09');
 
 -->
 

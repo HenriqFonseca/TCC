@@ -29,7 +29,7 @@ class TreinoRequest extends FormRequest
             'descricao' =>['bail', 'required', 'string'],
             'serie' =>['bail', 'required', 'integer'],
             'repeticao' =>['bail', 'required', 'integer'],
-            'carga' =>['bail', 'required', 'integer'],
+            'carga' =>['bail', 'integer'],
         ];
     }
     public function messages()
