@@ -368,9 +368,7 @@ header {
 /*==========----- FOOTER STYLE -----==========*/
 
 footer {
-    position: relative;
     width: 100%;
-    bottom: 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -431,7 +429,6 @@ footer {
 }
 
 .footer-link {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -441,12 +438,7 @@ footer {
 }
 
 .footer-link::before {
-    position: absolute;
     content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     z-index: -1;
     transition: opacity 0.2s linear;
     opacity: 0;

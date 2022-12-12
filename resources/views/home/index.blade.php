@@ -270,16 +270,22 @@
                         height: 230px;
                         margin-bottom: 20px !important;
                         margin: auto;
-                        /* position: absolute; */
+                        
                     }
 
                     .card {
-                        color: black;
+                        color: white;
                         height: 500px;
                         width: 350px !important;
+                        background-color: #0f1d2785 !important;
                     }
                     .card-title {
                         font-size: 30px !important;
+                        font-weight: 500;
+                    }
+
+                    .card-text {
+                        margin-bottom: 60px !important;
                     }
 
                     .card-body {
@@ -289,11 +295,11 @@
 
 
                     /* MEDIA SCREEN CARDS */
-                    @media screen and (max-width: 568px) {
+                    @media screen and (max-width: 600px) {
 
                         /* FAIXA COM ATIVIDADES */
                         .text-cards {
-                            height: 150px;
+                            height: 150x;
                             width: 100%;
                             background-color: #0f1d2785;
                             text-align: center;
@@ -327,14 +333,15 @@
                         .container-cards {
                             align-items: center;
                             height: auto !importantz;
-                            grid-template-columns: repeat(1, 1fr) !important;
-                            gap: 19px !important;
+                            display: flex;
+                            flex-direction: column !important;
                         }
 
                         .card {
                             color: black;
                             width: 76vw !important;
-                            height: 400px;
+                            height: 500px;
+                            margin-bottom: 50px;
                         }
 
                         .card img {
@@ -364,12 +371,20 @@
 
             <div class="container-cards">
                 <div class="card" style="width: 18rem;">
+                    <img src="/img/musculacao.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Musculação</h5>
+                        <p class="card-text">Diversas opções de máquinas para exercícios juntamente à uma plataforma para acompanhar seus treinos pelo celular</p>
+                        <a href="#" " class="btn btn-dark">Vamos!</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
                     <img src="/img/muaythai.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Muay Thai</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Novidades em breve...</p>
+                        <a href="#" style="margin-top: 48px;" class="btn btn-secondary">Em breve...</a>
                     </div>
                 </div>
 
@@ -377,28 +392,17 @@
                     <img src="/img/dance.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Danças</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Novidades em breve...</p>
+                        <a href="#" style="margin-top: 48px;" class="btn btn-secondary">Em breve...</a>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/musculacao.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Musculação</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
             </div>
             <div>
-                <br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>r><br><br><br><br>><br><br><br><br><br><br><br><br><br><br>r><br><br><br><br>
             </div>
 
         </main>
-        </footer>
 
         {{-- Script Service Worker --}}
         <script src="{{ secure_asset('sw.js') }}"></script>
