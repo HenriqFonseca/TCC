@@ -306,7 +306,7 @@ table {
         width: 280px;
     }
     .table-responsive {
-        width: 280px;
+        /* width: 280px; */
     }
     .containercheck {
         width: 125px;
