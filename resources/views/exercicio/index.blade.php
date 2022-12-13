@@ -56,9 +56,7 @@
                             
                             <div class="wrapper">
                                 <div class="containercheck">
-                                    <div class="h6">
                                         <h6>Biceps</h6>
-                                    </div>
                                         <input type="checkbox" name="biceps" id="dessert-2" value="1" >
                                         <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                                     </div>
