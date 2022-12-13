@@ -45,9 +45,8 @@
                         <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
                             @csrf
                             <div>
-                                <label>Nome do exercício</label>
                                 <div>
-                                    <input class="form-control" type="text" name="nome" id="">
+                                    <input class="form-control" type="text" name="nome" placeholder="Nome do exercício" id="">
                                     @if ($errors->has('nome'))
                                         <div class="invalid-feedback">
                                             ERRO AI
@@ -60,7 +59,7 @@
                                     <div class="h6">
                                         <h6>Biceps</h6>
                                     </div>
-                                    <input type="checkbox" name="biceps" id="dessert-2" value="1" style="input[type="checkbox"]::after:">
+                                    <input type="checkbox" name="biceps" id="dessert-2" value="1" >
                                     <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                                 </div>
                                 <div class="containercheck">
