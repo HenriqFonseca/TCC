@@ -309,7 +309,7 @@
 
                         /* FAIXA COM ATIVIDADES */
                         .text-cards {
-                            height: 150x;
+                            height: 150px;
                             width: 100%;
                             background-color: #0f1d2785;
                             text-align: center;
