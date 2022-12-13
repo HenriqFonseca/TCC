@@ -42,63 +42,67 @@
                             Criar exercício
                         </div>
                     </div>
-                        <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
-                            @csrf
-                            <div>
+
+                        <div class="form-container">
+                            <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
+                                @csrf
                                 <div>
-                                    <input class="form-control" type="text" name="nome" placeholder="Nome do exercício" id="">
-                                    @if ($errors->has('nome'))
-                                        <div class="invalid-feedback">
-                                            ERRO AI
-                                        </div>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="wrapper" >
-                                <div class="containercheck">
-                                    <div class="h6">
-                                        <h6>Biceps</h6>
+                                    <div>
+                                        <input class="form-control" type="text" name="nome" placeholder="Nome do exercício" id="">
+                                        @if ($errors->has('nome'))
+                                            <div class="invalid-feedback">
+                                                ERRO AI
+                                            </div>
+                                        @endif
                                     </div>
-                                    <input type="checkbox" name="biceps" id="dessert-2" value="1" >
-                                    <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                                 </div>
-                                <div class="containercheck">
-                                    <h6>Triceps</h6>
-                                    <input type="checkbox" name="triceps" id="dessert-3" value="1">
-                                    <label for="dessert-3"><img src="{{ asset('/img/triceps100x100.png') }}" alt="triceps"></label>
+                                <div class="wrapper" >
+                                    <div class="containercheck">
+                                        <div class="h6">
+                                            <h6>Biceps</h6>
+                                        </div>
+                                        <input type="checkbox" name="biceps" id="dessert-2" value="1" >
+                                        <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Triceps</h6>
+                                        <input type="checkbox" name="triceps" id="dessert-3" value="1">
+                                        <label for="dessert-3"><img src="{{ asset('/img/triceps100x100.png') }}" alt="triceps"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Abdomen</h6>
+                                        <input type="checkbox" name="abdomen" id="dessert-1" value="1">
+                                        <label for="dessert-1"><img src="{{ asset('/img/abdomen100x100.png') }}" alt="abdomen"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Peito</h6>
+                                        <input type="checkbox" name="peito" id="dessert-8" value="1">
+                                        <label for="dessert-8"><img src="{{ asset('/img/peito100x100.png') }}" alt="peito"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Ombro</h6>
+                                        <input type="checkbox" name="ombro" id="dessert-6" value="1">
+                                        <label for="dessert-6"><img src="{{ asset('/img/ombro100x100.png') }}" alt="ombro"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Costas</h6>
+                                        <input type="checkbox" name="costas" id="dessert-7" value="1">
+                                        <label for="dessert-7"><img src="{{ asset('/img/costas100x100.png') }}" alt="costas"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Panturrilha</h6>
+                                        <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
+                                        <label for="dessert-4"><img src="{{ asset('/img/panturrilha100x100.png') }}" alt="panturrilha"></label>
+                                    </div>
+                                    <div class="containercheck">
+                                        <h6>Coxa</h6>
+                                        <input type="checkbox" name="coxa" id="dessert-5" value="1">
+                                        <label for="dessert-5"><img src="{{ asset('/img/coxa100x100.png') }}" alt="coxa"></label>
+                                    </div>
                                 </div>
-                                <div class="containercheck">
-                                    <h6>Abdomen</h6>
-                                    <input type="checkbox" name="abdomen" id="dessert-1" value="1">
-                                    <label for="dessert-1"><img src="{{ asset('/img/abdomen100x100.png') }}" alt="abdomen"></label>
-                                </div>
-                                <div class="containercheck">
-                                    <h6>Peito</h6>
-                                    <input type="checkbox" name="peito" id="dessert-8" value="1">
-                                    <label for="dessert-8"><img src="{{ asset('/img/peito100x100.png') }}" alt="peito"></label>
-                                </div>
-                                <div class="containercheck">
-                                    <h6>Ombro</h6>
-                                    <input type="checkbox" name="ombro" id="dessert-6" value="1">
-                                    <label for="dessert-6"><img src="{{ asset('/img/ombro100x100.png') }}" alt="ombro"></label>
-                                </div>
-                                <div class="containercheck">
-                                    <h6>Costas</h6>
-                                    <input type="checkbox" name="costas" id="dessert-7" value="1">
-                                    <label for="dessert-7"><img src="{{ asset('/img/costas100x100.png') }}" alt="costas"></label>
-                                </div>
-                                <div class="containercheck">
-                                    <h6>Panturrilha</h6>
-                                    <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
-                                    <label for="dessert-4"><img src="{{ asset('/img/panturrilha100x100.png') }}" alt="panturrilha"></label>
-                                </div>
-                                <div class="containercheck">
-                                    <h6>Coxa</h6>
-                                    <input type="checkbox" name="coxa" id="dessert-5" value="1">
-                                    <label for="dessert-5"><img src="{{ asset('/img/coxa100x100.png') }}" alt="coxa"></label>
-                                </div>
-                            </div>
-                            <button type="submit">Enviar</button>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
                 </div>
 
                 <div class="edit-container">

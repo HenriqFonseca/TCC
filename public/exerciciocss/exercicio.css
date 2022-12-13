@@ -83,6 +83,10 @@ main {
     width: fit-content;
 }
 
+.form-container {
+    width: 100%;
+}
+
 a:hover {
     color: var(--font-color)!important;
 }
