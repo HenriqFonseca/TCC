@@ -32,84 +32,174 @@
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
         <div class="container-md" style="transform: translateY(5rem) !important;">
-            <div class="content">
-               
-                <form action="/perfil/{{ $user->id }}" method="POST" enctype="multipart/form-data">
-                    @method('PUT')
-                    @csrf
-                    <label for="imagePerfil">Imagem de Perfil</label>
-                    <input type="file" name="imagePerfil" id="imagePerfil">
-                    <button type="submit">Definir Foto</button>
-                    @error('imagePerfil')
-                        <h2>{{ $message }}</h2>
-                    @enderror
-                </form>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="container-md">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>
-                                    <div class="content">
-                                    Treino A<br>
-                                    @foreach ($user->treinos as $item)
-                                        @if ($item->tipoTreino == 'treino_a')
-                                            @foreach ($item->exercicios as $exercicio)
-                                                nome do exercicio: {{ $exercicio->nome }}
-                                                descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
-                                            @endforeach
-                                        @endif
-                                    @endforeach
-                                    </div>
-                                    <br><br>
-
-                                    <div class="content">
-                                    TREINO B<br>
-                                    @foreach ($user->treinos as $item)
-                                        @if ($item->tipoTreino == 'treino_b')
-                                            @foreach ($item->exercicios as $exercicio)
-                                                nome do exercicio: {{ $exercicio->nome }}
-                                                descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
-                                            @endforeach
-                                        @endif
-                                    @endforeach
-                                    </div>
-                                    <BR><BR>
-
-                                    <div class="content">
-                                    TREINO C <br>
-                                    @foreach ($user->treinos as $item)
-                                        @if ($item->tipoTreino == 'treino_c')
-                                            @foreach ($item->exercicios as $exercicio)
-                                                nome do exercicio: {{ $exercicio->nome }}
-                                                descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
-                                            @endforeach
-                                        @endif
-                                    @endforeach
-                                    </div>
-                                    <BR><BR>
-
-                                        <div class="content">
-                                    TREINO D
-                                    <br>
-                                    @foreach ($user->treinos as $item)
-                                        @if ($item->tipoTreino == 'treino_d')
-                                            @foreach ($item->exercicios as $exercicio)
-                                                nome do exercicio: {{ $exercicio->nome }}
-                                                descricao: {{ $item->descricao }}
-                                                carga: {{ $item->carga }} <br><Br>
-                                            @endforeach
-                                        @endif
-                                    @endforeach
-                                    <br>
-
-                                </h2>
-                            </div>
+            <div class="container-md container">
+                <div class="user col-11 mx-auto">
+                    {{-- <div class="title">
+                        <h1>Aluno</h1>
+                    </div> --}}
+                    <div class="img-perfil" style="display: flex; justify-content: center; flex-direction: column; text-align: center;">
+                        <form action="{{ route('user.image' , $user->id) }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+                            <label for="formFileSm">
+                            @if($user->imagePerfil == null)
+                                <img src="/img/perfil/perfilpadrao.png" alt="">
+                                @else<img src="/img/perfil/{{ $user->imagePerfil }}" alt="">@endif
+                            </label>
+                            <input class="form-control" id="formFileSm" type="file" name="imagePerfil" id="" s>
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="infos">
+                        <div class="nome">
+                            <h2>{{ $user->nome }} {{ $user->sobrenome }}</h2>
                         </div>
+                        <div class="idade">
+                            <h2>{{ $user->dataNascimento->age }} Anos</h2>
+                        </div>
+                        <div class="sexo">
+                            <h2> Sexo: @if ($user->sexo == 'f')
+                                    Feminino
+                                @else
+                                    Masculino
+                                @endif
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <div class="treino-container container col-11">
+                <div class="title">
+                    <h1>Meus Treinos</h1>
+                </div>
+                <div class="row col-12" style="padding-left: 0 !important;">
+                    <div class="treino col-10 mx-auto" style=" border: 1px solid black; margin-top:46px;">
+                        <div class="title-treino">
+                            <h4 class="fw-bold">TREINO A</h4><br>
+                        </div>
+                        @foreach ($user->treinos as $item)
+                            @if ($item->tipoTreino == 'treino_a')
+                                @foreach ($item->exercicios as $exercicio)
+                                    <div class="treino-body">
+                                        <div class="descricao">
+                                            <p>Descrição: {{ $item->descricao }}</p>
+                                            <p>{{ $exercicio->nome }}
+                                            <p>
+                                        </div>
+                                        <div class="info-exercicio">
+                                            <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                            <p><i class="fa-solid fa-repeat" alt="Repetições"></i> {{ $item->repeticao }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
+                    <br><br>
+
+                    <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                        <div class="title-treino">
+                            <h4 class="fw-bold">TREINO B</h4><br>
+                        </div>
+                        @foreach ($user->treinos as $item)
+                            @if ($item->tipoTreino == 'treino_b')
+                                @foreach ($item->exercicios as $exercicio)
+                                    <div class="treino-body">
+                                        <div class="descricao">
+                                            <p>Descrição: {{ $item->descricao }}</p>
+                                            <p>{{ $exercicio->nome }}
+                                            <p>
+                                        </div>
+                                        <div class="info-exercicio">
+                                            <p>Séries: {{ $item->serie }}
+                                            <p>
+                                            <p>Repetições: {{ $item->repeticao }}
+                                            <p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
+                    <BR><BR>
+
+
+                    <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                        <div class="title-treino">
+                            <h4 class="fw-bold">TREINO C</h4><br>
+                        </div>
+                        @foreach ($user->treinos as $item)
+                            @if ($item->tipoTreino == 'treino_c')
+                                @foreach ($item->exercicios as $exercicio)
+                                    <div class="treino-body">
+                                        <div class="descricao">
+                                            <p>Descrição: {{ $item->descricao }}</p>
+                                            <p>{{ $exercicio->nome }}
+                                            <p>
+                                        </div>
+                                        <div class="info-exercicio">
+                                            <p>Séries: {{ $item->serie }} <i class="fa-brands fa-google"></i>
+                                            <p>
+                                            <p>Repetições:<i class="fa-sharp fa-solid fa-repeat"></i>
+                                                {{ $item->repeticao }}
+                                            <p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
+                    <BR><BR>
+
+                    <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                        <div class="title-treino">
+                            <h4 class="fw-bold">TREINO D</h4><br>
+                        </div>
+                        @foreach ($user->treinos as $item)
+                            @if ($item->tipoTreino == 'treino_d')
+                                @foreach ($item->exercicios as $exercicio)
+                                    <div class="treino-body">
+                                        <div class="descricao">
+                                            <p>Descrição: {{ $item->descricao }}</p>
+                                            <p>{{ $exercicio->nome }}
+                                            <p>
+                                        </div>
+                                        <div class="info-exercicio">
+                                            <p>Séries: {{ $item->serie }}
+                                            <p>
+                                            <p>Repetições: {{ $item->repeticao }}
+                                            <p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
+                    <br>
+
+                    <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                        <div class="title-treino">
+                            <h4 class="fw-bold">TREINO E</h4><br>
+                        </div>
+                        @foreach ($user->treinos as $item)
+                            @if ($item->tipoTreino == 'treino_e')
+                                @foreach ($item->exercicios as $exercicio)
+                                    <div class="treino-body">
+                                        <div class="descricao">
+                                            <p>Descrição: {{ $item->descricao }}</p>
+                                            <p>{{ $exercicio->nome }}
+                                            <p>
+                                        </div>
+                                        <div class="info-exercicio">
+                                            <p>Séries: {{ $item->serie }}
+                                            <p>
+                                            <p>Repetições: {{ $item->repeticao }}
+                                            <p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        @endforeach
                     </div>
                 </div>
             </div>

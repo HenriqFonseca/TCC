@@ -390,7 +390,7 @@ main {
 
     .treino-body {
         width: 95%;
-        height: 500px;
+        height: 95px;
         margin: auto;
         background-color: white;
         margin-top: 11%;
@@ -403,7 +403,7 @@ main {
     }
 
     .treino-body p {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 4px;
         margin-bottom: 4px;
     }
@@ -416,6 +416,8 @@ main {
 
     .info-exercicio {
         width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
     .row{
         margin-left:0 !important;

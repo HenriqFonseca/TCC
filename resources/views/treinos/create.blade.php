@@ -163,14 +163,12 @@
                                         <div class="treino-body">
                                             <div class="descricao">
                                                 <p>Descrição: {{ $item->descricao }}</p>
-                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>{{ $exercicio->nome }}
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }}
-                                                <p>
-                                                <i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}
-                                                <p>
+                                                <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                                <p><i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}</p>
                                             </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
@@ -195,7 +193,7 @@
                                         <div class="treino-body">
                                             <div class="descricao">
                                                 <p>Descrição: {{ $item->descricao }}</p>
-                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>{{ $exercicio->nome }}
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
@@ -228,11 +226,11 @@
                                         <div class="treino-body">
                                             <div class="descricao">
                                                 <p>Descrição: {{ $item->descricao }}</p>
-                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>{{ $exercicio->nome }}
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }}
+                                                <p>Séries: {{ $item->serie }} <i class="fa-brands fa-google"></i>
                                                 <p>
                                                 <p>Repetições:<i class="fa-sharp fa-solid fa-repeat"></i> {{ $item->repeticao }}
                                                 <p>
@@ -260,7 +258,7 @@
                                         <div class="treino-body">
                                             <div class="descricao">
                                                 <p>Descrição: {{ $item->descricao }}</p>
-                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>{{ $exercicio->nome }}
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
@@ -292,7 +290,7 @@
                                         <div class="treino-body">
                                             <div class="descricao">
                                                 <p>Descrição: {{ $item->descricao }}</p>
-                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>{{ $exercicio->nome }}
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
