@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     {{-- ICON GOOGLE --}}
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
     <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
     <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
@@ -33,34 +32,33 @@
 <body>
     @extends('navbar-pronta.nav-bar')
     @section('conteudo')
-        <main>
-            <div class="content">
+    <main>
+        <div class="content">
 
-                <div class="create-container">
-                    <div class="title-box">
-                        <div class="title">
-                            Criar exercício
-                        </div>
+            <div class="create-container">
+                <div class="title-box">
+                    <div class="title">
+                        Criar exercício
                     </div>
+                </div>
 
+                
+                    <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
+                        @csrf
                         <div class="form-container">
-                            <form action="{{ route('exercicio.store') }}" class="form-control" method="POST">
-                                @csrf
-                                <div>
-                                    <div>
-                                        <input class="form-control" type="text" name="nome" placeholder="Nome do exercício" id="">
-                                        @if ($errors->has('nome'))
-                                            <div class="invalid-feedback">
-                                                ERRO AI
-                                            </div>
-                                        @endif
-                                    </div>
+                            
+                                <input class="form-control" type="text" name="nome" placeholder="Nome do exercício" id="">
+                                @if ($errors->has('nome'))
+                                <div class="invalid-feedback">
+                                    ERRO AI
                                 </div>
-                                <div class="wrapper" >
-                                    <div class="containercheck">
-                                        <div class="h6">
-                                            <h6>Biceps</h6>
-                                        </div>
+                                @endif
+                            
+                            <div class="wrapper">
+                                <div class="containercheck">
+                                    <div class="h6">
+                                        <h6>Biceps</h6>
+                                    </div>
                                         <input type="checkbox" name="biceps" id="dessert-2" value="1" >
                                         <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                                     </div>
@@ -101,98 +99,97 @@
                                     </div>
                                 </div>
                                 <button type="submit">Enviar</button>
-                            </form>
                         </div>
-                </div>
+                    </form>
+            </div>
 
-                <div class="edit-container">
+            <div class="edit-container">
                 <div class="title-box">
-                        <div class="title">
-                            Editar exercício
-                        </div>
-                    </div>
-                        <div class="table-responsive">
-                            <table class="table table-hover border-secondary">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Nome do Exercício</th>
-                                        <th scope="col">Grupo Muscular</th>
-                                        <th scope="col">Classificação</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($exercicio as $item)
-                                        <tr>
-                                            <td>
-                                                <h5>{{ $item->nome }}</h5>
-                                            </td>
-                                            @if ($item->superior == 1)
-                                                <td>
-                                                    <h5>Superior</h5>
-                                                </td>
-                                            @else
-                                                <td>
-                                                    <h5>Inferior</h5>
-                                                </td>
-                                            @endif
-                                            <td>
-                                                @if ($item->triceps == 1 && $item->biceps == 1)
-                                                    <h5>Triceps e Biceps</h5>
-                                                @elseif ($item->coxa == 1 && $item->panturrilha == 1)
-                                                    <h5>Coxa e Panturrilha</h5>
-                                                @elseif ($item->ombro == 1 && $item->peito == 1)
-                                                    <h5>Ombro e Peito</h5>
-                                                @elseif ($item->triceps == 1)
-                                                    <h5>Triceps</h5>
-                                                @elseif ($item->coxa == 1)
-                                                    <h5>Coxa</h5>
-                                                @elseif ($item->panturrilha == 1)
-                                                    <h5>Panturrilha</h5>
-                                                @elseif ($item->biceps == 1)
-                                                    <h5>Biceps</h5>
-                                                @elseif ($item->perna == 1)
-                                                    <h5>Perna </h5>
-                                                @elseif ($item->abdomen == 1)
-                                                    <h5>Abdomen </h5>
-                                                @elseif ($item->costas == 1)
-                                                    <h5>Costas </h5>
-                                                @elseif ($item->peito == 1)
-                                                    <h5>Peito </h5>
-                                                @endif
-                                            </td>
-                                            <td>
-                                                <div class="div">
-                                                    <a href="exercicio/edit/{{ $item->id }}"> <button type="button"
-                                                            class="btn btn-primary btn-sm"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                            <span class="material-symbols-outlined">
-                                                                edit
-                                                            </span>
-                                                        </button>
-                                                    </a>
-                                                    <form action="/exercicio/{{ $item->id }}" method="POST">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger btn-sm">
-                                                            <span class="material-symbols-outlined">
-                                                                delete_forever
-                                                            </span>
-                                                        </button>
-                                                    </form>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="title">
+                        Editar exercício
                     </div>
                 </div>
+                <div class="table-responsive">
+                    <table class="table table-hover border-secondary">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome do Exercício</th>
+                                <th scope="col">Grupo Muscular</th>
+                                <th scope="col">Classificação</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($exercicio as $item)
+                            <tr>
+                                <td>
+                                    <h5>{{ $item->nome }}</h5>
+                                </td>
+                                @if ($item->superior == 1)
+                                <td>
+                                    <h5>Superior</h5>
+                                </td>
+                                @else
+                                <td>
+                                    <h5>Inferior</h5>
+                                </td>
+                                @endif
+                                <td>
+                                    @if ($item->triceps == 1 && $item->biceps == 1)
+                                    <h5>Triceps e Biceps</h5>
+                                    @elseif ($item->coxa == 1 && $item->panturrilha == 1)
+                                    <h5>Coxa e Panturrilha</h5>
+                                    @elseif ($item->ombro == 1 && $item->peito == 1)
+                                    <h5>Ombro e Peito</h5>
+                                    @elseif ($item->triceps == 1)
+                                    <h5>Triceps</h5>
+                                    @elseif ($item->coxa == 1)
+                                    <h5>Coxa</h5>
+                                    @elseif ($item->panturrilha == 1)
+                                    <h5>Panturrilha</h5>
+                                    @elseif ($item->biceps == 1)
+                                    <h5>Biceps</h5>
+                                    @elseif ($item->perna == 1)
+                                    <h5>Perna </h5>
+                                    @elseif ($item->abdomen == 1)
+                                    <h5>Abdomen </h5>
+                                    @elseif ($item->costas == 1)
+                                    <h5>Costas </h5>
+                                    @elseif ($item->peito == 1)
+                                    <h5>Peito </h5>
+                                    @endif
+                                </td>
+                                <td>
+                                    <div class="div">
+                                        <a href="exercicio/edit/{{ $item->id }}"> <button type="button" class="btn btn-primary btn-sm" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                        </a>
+                                        <form action="/exercicio/{{ $item->id }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-sm">
+                                                <span class="material-symbols-outlined">
+                                                    delete_forever
+                                                </span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            </div>
-        </main>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            @endsection
-        </body>
+        </div>
+        </div>
+        </div>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    @endsection
+</body>
 
 </html>

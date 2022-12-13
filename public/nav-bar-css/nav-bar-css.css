@@ -429,6 +429,7 @@ footer {
 }
 
 .footer-link {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -438,9 +439,14 @@ footer {
 }
 
 .footer-link::before {
+    position: absolute;
     content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: -1;
-    transition: opacity 0.2s linear;
+    transition: 0.2s linear;
     opacity: 0;
     background: linear-gradient(130deg, rgba(15, 29, 39, 0.582)0%, 70%, rgba(213, 255, 235, 0.562) 100%);
     border-radius: 0.5rem;

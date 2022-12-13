@@ -62,7 +62,7 @@ main {
 
 .create-container,
 .edit-container {
-    gap: 3rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +85,37 @@ main {
 
 .form-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.form-container>button {
+    width: 7rem;
+    padding: 10px;
+    background-color: var(--btn-treino-color1);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.form-control {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
 a:hover {
@@ -106,8 +137,9 @@ a:hover {
 .wrapper {
     width: 100%;
     display: grid;
+    justify-content: space-between;
     place-items: center;
-    gap: 15px;
+    gap: 3rem;
 }
 
 .teste {
@@ -117,7 +149,7 @@ a:hover {
 .containercheck {
     height: 100px;
     width: 100px;
-    background-color: white;
+    background: linear-gradient(130deg, rgba(255, 218, 161, 0)0%, 80%, rgba(213, 255, 235, 0.7) 100%);
     box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
     border-radius: 8px;
     position: relative;
@@ -139,7 +171,8 @@ input[type="checkbox"]:after {
     font-size: 18px;
     color: black;
     right: 0px;
-    top: -50px;
+    top: -18px;
+    margin: 0.25rem;
 }
 
 input[type="checkbox"]:checked:after {
@@ -164,10 +197,10 @@ table {
     padding: 5px !important;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 320px) {
     .wrapper {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(4, 0fr);
+        gap: 2rem;
     }
     .containercheck {
         height: 150px;
@@ -181,58 +214,27 @@ table {
     }
 }
 
-@media screen and (max-width: 540px) {
-    .wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    td h5 {
-        font-size: 14px !important;
-        font-weight: bold !important;
-    }
-    th {
-        font-size: 15px !important;
-    }
-    button {
-        padding-left: 3px !important;
-        padding-right: 3px !important;
-        padding-top: 2px !important;
-        padding-bottom: 2px !important;
-    }
-    .containercheck h6 {
-        font-weight: bold;
-    }
-    .containercheck {
-        height: 50;
-        width: 50;
-        text-align: center;
-    }
-    input[type="checkbox"]::after {
-        font-size: 14px;
-        top: -48px;
-    }
-}
 
-@media screen and (min-width: 540px) {
+/* @media screen and (min-width: 540px) {
     .wrapper {
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        gap: 3rem;
     }
     .containercheck {
         height: 150px;
         width: 150px;
         text-align: center;
     }
-    /* .containercheck h6{
+   .containercheck h6{
         bottom: 0;
         position: absolute;
         margin:auto;
         left:2.5rem;
-    } */
+    } 
     input[type="checkbox"]::after {
         font-size: 14px;
     }
-}
+} */
 
 @media screen and (max-width: 400px) {
     table {
@@ -242,22 +244,12 @@ table {
     table {
         font-size: 4px !important;
     }
-    .containercheck {
-        text-align: center;
-    }
-    .containercheck h6 {
-        font-size: 14px;
-    }
     /* .containercheck h6{
     bottom: 0;
     position: absolute;
     margin:auto;
     left:15px;
 } */
-    input[type="checkbox"]::after {
-        font-size: 14px;
-        top: -46px;
-    }
     .col-8 {
         width: 100% !important;
     }
@@ -267,45 +259,67 @@ table {
 /*==========----- @MEDIAS -----==========*/
 
 @media(max-width:1330px) {
+    .form-control {
+        width: 900px;
+    }
     main {
         width: 1000px;
     }
 }
 
 @media(max-width:1030px) {
+    .form-control {
+        width: 700px;
+    }
     main {
         width: 770px;
     }
-    .content {
-        padding: 1rem;
+    .containercheck {
+        width: 140px;
     }
-    .dados-container {
+    .content {
         padding: 1rem;
     }
 }
 
 @media(max-width:800px) {
+    .form-control {
+        width: 450px;
+    }
+    .containercheck {
+        width: 200px;
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 0fr);
+        gap: 1rem;
+    }
     main {
         width: 520px;
     }
 }
 
 @media(max-width:550px) {
+    .form-control {
+        width: 280px;
+    }
+    .containercheck {
+        width: 125px;
+    }
     main {
         width: 350px;
-    }
-    .aluno-container {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 0 1rem 0;
-    }
-    .image-container {
-        border-radius: 0.5rem;
-        overflow: hidden;
     }
 }
 
 @media(max-width:370px) {
+    .form-control {
+        width: 240px;
+    }
+    .containercheck {
+        width: 115px;
+    }
+    .wrapper {
+        gap: 0.5rem;
+    }
     main {
         width: 310px;
     }
