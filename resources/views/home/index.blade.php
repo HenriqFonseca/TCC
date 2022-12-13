@@ -347,7 +347,7 @@
                             gap: 19px !important;
                             display: flex;
                             flex-direction: column !important;
-                            margin-bottom: 1100px;
+                            margin-bottom: 52px;
                         }
 
                         .card {
