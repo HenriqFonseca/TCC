@@ -1,10 +1,10 @@
 {
-    "name": "Laravel Package Tutorial",
-    "short_name": "LPT",
-    "start_url": "https://ironworkstcc.herokuapp.com/",
+    "name": "DEVFIT",
+    "short_name": "",
+    "start_url": "https://https://devfitetec.herokuapp.com/",
     "scope": "/",
     "background_color": "#6777ef",
-    "description": "Tutorial of Laravel Package",
+    "description": "Treinos",
     "display": "fullscreen",
     "theme_color": "#6777ef",
     "icons": [

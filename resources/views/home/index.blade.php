@@ -31,10 +31,10 @@
     <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
 
     <!-- STYLES -->
-    <link href="{{ asset('/homecss/index.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/homecss/index.css') }}" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <script src="{{ asset('/js/script_index.js') }}" defer></script>
+    <script src="{{ secure_asset('/js/script_index.js') }}" defer></script>
 
 
 
@@ -309,7 +309,7 @@
 
                         /* FAIXA COM ATIVIDADES */
                         .text-cards {
-                            height: 150x;
+                            height: 150px;
                             width: 100%;
                             background-color: #0f1d2785;
                             text-align: center;
@@ -317,7 +317,7 @@
                         }
 
                         .text-cards h1 {
-                            font-size: 78px;
+                            font-size: 60px !important;
                             position: absolute;
                             margin: auto;
                             right: 0;
