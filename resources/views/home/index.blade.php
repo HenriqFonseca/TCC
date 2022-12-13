@@ -83,8 +83,6 @@
 
 
             <div class="btn-grid-container">
-                <a href="{{ route('profile.register_professor') }}" style="background-color:black;">TESTE REGISTER PROF</a>
-                <a href="{{ route('profile.register_aluno') }}" style="background-color:black;">TESTE REGISTER ALUNO</a>
                 @guest
                     <a class="grid-link" href="{{ route('profile.login') }}">
                         <div class="btn-box">
@@ -191,7 +189,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="grid-link" href="">
+                        <a class="grid-link" href="{{ route('profile.register_aluno') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
                                     <img src="{{ asset('img/invoice.png') }}" alt="">
