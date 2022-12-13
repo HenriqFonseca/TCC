@@ -17,9 +17,32 @@
     --btn-color: #0f1d2785;
     --btn-caption: #0f1d276e;
     --gold: #C1A45F;
-    --footer-color: rgba(102, 102, 102, 0.541);
+    --footer-color: #6666668a;
     --gold-semitransparent: #c1a45fd7;
     --gold-transparent: #fdf5d33a;
+}
+
+th{
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+}
+.btn{
+    background: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 2px;
+
+}
+#delete-button:hover{
+    background-color: #f07777;
+    transition: 0.5s;
+}
+#edit-button:hover{
+    background-color:#6666668a;
+    transition: 0.5s;
 }
 
 body {
@@ -289,7 +312,15 @@ table {
         width: 125px;
     }
     main {
-        width: 350px;
+        width: 410px;
+    }
+    .edit-container table{
+        margin: auto;
+    }
+
+    .edit-container{
+        margin: auto;
+        width: 378px;
     }
 }
 
