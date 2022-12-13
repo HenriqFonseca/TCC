@@ -37,81 +37,16 @@
     @section('conteudo')
 
         <style>
-            .container-all {
-                background-color: #ffffffa1;
-                width: 1320px;
-                height: 900px;
-                transform: translateY(10rem);
-                margin-bottom: 400px;
-            }
-
-            .user {
-                height: 250px;
-                background-color: ;
-                margin-bottom: 40px;
-                position: relative;
-                border: 1px solid black;
-                display: flex;
-            }
-
-            .user h1 {
-                position: absolute;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: aquamarine;
-                padding: 6px;
-                border-bottom-right-radius: 6px;
-            }
-
-
-            .img-perfil {
-                width: 20%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .img-perfil img {
-                max-width: 150px;
-                margin: auto;
-            }
-
-            .infos {
-                width: 80%;
-                /* position: absolute; */
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .infos h2 {
-                font-size: 35px;
-            }
-
-            .nome {
-                border-right: 1px solid black;
-                padding-right: 10px;
-            }
-
-            .idade {
-                margin-left: 10px;
-                padding-right: 10px;
-                border-right: 1px solid black;
-            }
-
-            .sexo {
-                margin-left: 10px;
-            }
-
-            .form-container {
-                border: 1px solid black;
-                margin: 15px;
-            }
+            
         </style>
-        <div class="container-all">
-            <div class="container-md">
+
+        <main>
+
+            <div class="container-md container">
                 <div class="user col-11 mx-auto">
-                    <h1>Aluno</h1>
+                    <div class="title">
+                        <h1>Aluno</h1>
+                    </div>
                     <div class="img-perfil">
                         <img src="/img/perfil/perfilpadrao.png" alt="">
                     </div>
@@ -132,7 +67,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-container">
+                <div class="form-container container col-11 mx-auto">
+                    <div class="title">
+                        <h1>Criar Treino</h1>
+                    </div>
                     <form action="{{ route('treino.store') }}" class="form" method="POST" class="form-control">
                         @csrf
                         @if (count($exer) == 0)
@@ -202,116 +140,183 @@
                 </div>
 
 
-                <div class="container-md">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="treino" style="border: 1px solid black;">
+
+                <style>
+                    
+
+                    
+
+                    
+                </style>
+                <div class="treino-container container col-11">
+                    <div class="title">
+                        <h1>Treinos</h1>
+                    </div>
+                    <div class="row col-12" style="padding-left: 0 !important;">
+                        <div class="treino col-10 mx-auto" style=" border: 1px solid black; margin-top:46px;">
+                            <div class="title-treino">
                                 <h4 class="fw-bold">TREINO A</h4><br>
-                                @foreach ($user->treinos as $item)
-                                    @if ($item->tipoTreino == 'treino_a')
-                                        @foreach ($item->exercicios as $exercicio)
-                                            nome do exercicio: {{ $exercicio->nome }}
-                                            descricao: {{ $item->descricao }}
-                                            Carga <i class="fa-solid fa-dumbbell"></i>: {{ $item->carga }} <br>
+                            </div>
+                            @foreach ($user->treinos as $item)
+                                @if ($item->tipoTreino == 'treino_a')
+                                    @foreach ($item->exercicios as $exercicio)
+                                        <div class="treino-body">
+                                            <div class="descricao">
+                                                <p>Descrição: {{ $item->descricao }}</p>
+                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>
+                                            </div>
+                                            <div class="info-exercicio">
+                                                <p>Séries: {{ $item->serie }}
+                                                <p>
+                                                <i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}
+                                                <p>
+                                            </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="delete-treino"><i
                                                         class="fa-solid fa-xmark"></i></button><Br>
                                             </form>
-                                        @endforeach
-                                    @endif
-                                @endforeach
-                            </div>
-                            <br><br>
-
-                            <div class="treino" style="border: 1px solid black;">
-                                <h4 class="fw-bold">TREINO B</h4><br>
-                                @foreach ($user->treinos as $item)
-                                    @if ($item->tipoTreino == 'treino_b')
-                                        @foreach ($item->exercicios as $exercicio)
-                                            nome do exercicio: {{ $exercicio->nome }}
-                                            descricao: {{ $item->descricao }}
-                                            Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
-                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="delete-treino"><i
-                                                        class="fa-solid fa-xmark"></i></button><Br>
-                                            </form><Br>
-                                        @endforeach
-                                    @endif
-                                @endforeach
-                            </div>
-                            <BR><BR>
-
-
-                            <div class="treino" style="border: 1px solid black;">
-                                <h4 class="fw-bold">TREINO C</h4><br>
-                                @foreach ($user->treinos as $item)
-                                    @if ($item->tipoTreino == 'treino_c')
-                                        @foreach ($item->exercicios as $exercicio)
-                                            nome do exercicio: {{ $exercicio->nome }}
-                                            descricao: {{ $item->descricao }}
-                                            Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
-                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="delete-treino"><i
-                                                        class="fa-solid fa-xmark"></i></button><Br>
-                                            </form><Br>
-                                        @endforeach
-                                    @endif
-                                @endforeach
-                            </div>
-                            <BR><BR>
-
-                            <div class="treino" style="border: 1px solid black;">
-                                <h4 class="fw-bold">TREINO D</h4><br>
-                                <br>
-                                @foreach ($user->treinos as $item)
-                                    @if ($item->tipoTreino == 'treino_d')
-                                        @foreach ($item->exercicios as $exercicio)
-                                            nome do exercicio: {{ $exercicio->nome }}
-                                            descricao: {{ $item->descricao }}
-                                            Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
-                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="delete-treino"><i class="fa-solid fa-xmark"
-                                                        style="margin: auto"></i></button><Br>
-                                            </form><Br>
-                                        @endforeach
-                                    @endif
-                                @endforeach
-                            </div>
-                            <br>
-
-                            <div class="treino" style="border: 1px solid black;">
-                                <h4 class="fw-bold">TREINO E</h4><br>
-                                @foreach ($user->treinos as $item)
-                                    @if ($item->tipoTreino == 'treino_e')
-                                        @foreach ($item->exercicios as $exercicio)
-                                            nome do exercicio: {{ $exercicio->nome }}
-                                            descricao: {{ $item->descricao }}
-                                            Carga <i class="fa-solid fa-dumbbell"></i>:{{ $item->carga }} <br>
-                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="delete-treino"><i
-                                                        class="fa-solid fa-xmark"></i></button><Br>
-                                            </form><Br>
-                                        @endforeach
-                                    @endif
-                                @endforeach
-                                <br>
+                                        </div>
+                                    @endforeach
                                 @endif
+                            @endforeach
+                        </div>
+                        <br><br>
+
+                        <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                            <div class="title-treino">
+                                <h4 class="fw-bold">TREINO B</h4><br>
                             </div>
+                            @foreach ($user->treinos as $item)
+                                @if ($item->tipoTreino == 'treino_b')
+                                    @foreach ($item->exercicios as $exercicio)
+                                        <div class="treino-body">
+                                            <div class="descricao">
+                                                <p>Descrição: {{ $item->descricao }}</p>
+                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>
+                                            </div>
+                                            <div class="info-exercicio">
+                                                <p>Séries: {{ $item->serie }}
+                                                <p>
+                                                <p>Repetições: {{ $item->repeticao }}
+                                                <p>
+                                            </div>
+                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="delete-treino"><i
+                                                        class="fa-solid fa-xmark"></i></button><Br>
+                                            </form>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                        </div>
+                        <BR><BR>
+
+
+                        <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                            <div class="title-treino">
+                                <h4 class="fw-bold">TREINO C</h4><br>
+                            </div>
+                            @foreach ($user->treinos as $item)
+                                @if ($item->tipoTreino == 'treino_c')
+                                    @foreach ($item->exercicios as $exercicio)
+                                        <div class="treino-body">
+                                            <div class="descricao">
+                                                <p>Descrição: {{ $item->descricao }}</p>
+                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>
+                                            </div>
+                                            <div class="info-exercicio">
+                                                <p>Séries: {{ $item->serie }}
+                                                <p>
+                                                <p>Repetições:<i class="fa-sharp fa-solid fa-repeat"></i> {{ $item->repeticao }}
+                                                <p>
+                                            </div>
+                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="delete-treino"><i
+                                                        class="fa-solid fa-xmark"></i></button><Br>
+                                            </form>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                        </div>
+                        <BR><BR>
+
+                        <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                            <div class="title-treino">
+                                <h4 class="fw-bold">TREINO D</h4><br>
+                            </div>
+                            @foreach ($user->treinos as $item)
+                                @if ($item->tipoTreino == 'treino_d')
+                                    @foreach ($item->exercicios as $exercicio)
+                                        <div class="treino-body">
+                                            <div class="descricao">
+                                                <p>Descrição: {{ $item->descricao }}</p>
+                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>
+                                            </div>
+                                            <div class="info-exercicio">
+                                                <p>Séries: {{ $item->serie }}
+                                                <p>
+                                                <p>Repetições: {{ $item->repeticao }}
+                                                <p>
+                                            </div>
+                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="delete-treino"><i
+                                                        class="fa-solid fa-xmark"></i></button><Br>
+                                            </form>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                        </div>
+                        <br>
+
+                        <div class="treino col-10 mx-auto" style="border: 1px solid black; margin-top:46px;">
+                            <div class="title-treino">
+                                <h4 class="fw-bold">TREINO E</h4><br>
+                            </div>
+                            @foreach ($user->treinos as $item)
+                                @if ($item->tipoTreino == 'treino_e')
+                                    @foreach ($item->exercicios as $exercicio)
+                                        <div class="treino-body">
+                                            <div class="descricao">
+                                                <p>Descrição: {{ $item->descricao }}</p>
+                                                <p>Exercicio: {{ $exercicio->nome }}
+                                                <p>
+                                            </div>
+                                            <div class="info-exercicio">
+                                                <p>Séries: {{ $item->serie }}
+                                                <p>
+                                                <p>Repetições: {{ $item->repeticao }}
+                                                <p>
+                                            </div>
+                                            <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="delete-treino"><i
+                                                        class="fa-solid fa-xmark"></i></button><Br>
+                                            </form>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
         <br><br><br><br><br><br><br><br><br>
     @endsection
 </body>

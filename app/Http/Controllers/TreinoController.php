@@ -66,7 +66,7 @@ class TreinoController extends Controller
                     }
                 }
         }
-        return redirect()->route('treino.index');
+        return redirect()->back();
     }
    
 

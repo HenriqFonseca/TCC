@@ -5,6 +5,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --container-color: rgba(255, 255, 255, 0.63);
+    --semi-white: #f5f5f5;
+    --font-color: #f0f0f0;
+    --nav-color: #0f1d27e8;
+    --main-color: #0f1d273a;
+    --btn-treino-color1: #58816eb7;
+    --btn-treino-color2: #b36e6eb7;
+    --btn-color: #0f1d2785;
+    --btn-caption: #0f1d276e;
+    --gold: #C1A45F;
+    --footer-color: rgba(102, 102, 102, 0.541);
+    --gold-semitransparent: #c1a45fd7;
+    --gold-transparent: #fdf5d33a;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -21,67 +37,12 @@ body {
     color: var(--font-color);
 }
 
-.container-md {
-    transform: translateY(5rem) !important;
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
-.container-user {
-    max-width: 1320px;
-    max-height: 200px;
-    height: 200px;
-    margin: auto;
-    border: 1px solid rgba(17, 17, 17, 0.08);
-    display: flex;
-}
-
-.container-user img{
-    max-width: 125px;
-    max-height: 125px; 
-    height: 125px;
-    width: 125px;
-    border-radius: 10%;
-}
-
-
-
-.text{
-    height: 100%;
-    width: 18%;
-    position: relative;
-}
-
-.img-container{
-    text-align: center;
-    position:absolute;
-    margin: auto;
-    max-width: 125px;
-    max-height: 125px;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-.info-user{
-    height: 45%;
-    width: 100%;
-    background-color: blueviolet;
-}
-
-.wrapper{
-    height: 45%;
-    background-color: blueviolet;
-}
-
-.content {
-    width: 100%;
-    background-color: var(--footer-color);
-    padding: 2rem;
-    border-radius: 0.7rem;
-    height: 180px;
-}
-
-.delete-treino{
+.delete-treino {
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 1px;
@@ -92,13 +53,377 @@ body {
     border-radius: 5px;
 }
 
-.delete-treino:hover{
+.delete-treino:hover {
     background-color: rgb(241, 131, 131);
     transition: 0.6s;
 }
 
-.error-message{
+.error-message {
     font-size: 15px;
     color: red;
     font-weight: bold;
+}
+
+main {
+    width: 1300px;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-md {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+    backdrop-filter: blur(10px) !important;
+    background-color: var(--main-color) !important;
+    padding: 2rem;
+    border-radius: 0.7rem;
+}
+
+/*=============== CARD USUÁRIO ================= */
+.user {
+    height: 250px;
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    background-color: var(--container-color);
+    border-radius: 0.7rem;
+}
+
+.img-perfil {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-perfil img {
+    max-width: 150px;
+    margin: auto;
+}
+
+.infos {
+    width: 80%;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos h2 {
+    font-size: 35px;
+}
+
+.nome {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.idade {
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.sexo {
+    margin-left: 10px;
+}
+
+.form-container {
+    border: 1px solid black;
+    margin: 15px;
+    background-color: var(--container-color);
+    border-radius: 0.7rem;
+}
+
+.form-container form {
+    margin-top: 50px;
+}
+
+.title {
+    width: 10%;
+    position: absolute;
+    background-color: var(--btn-color);
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0.7rem;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 18px;
+    padding: 2px;
+    font-weight: 500;
+    color: white
+}
+
+/*=============== CARD TREINO ================= */
+.treino-container {
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    background-color: var(--container-color);
+    border-radius: 0.7rem;
+}
+
+.title-treino {
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0.7rem;
+    text-align: center;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.title-treino h4 {
+    font-size: 18px;
+    padding: 2px;
+    font-weight: 500;
+    color: var(--btn-color);
+}
+
+.row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.treino {
+    margin-bottom: 40px;
+    padding: 0;
+    border-radius: 0.7rem;
+    min-height: 200px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.treino-body {
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    background-color: white;
+    margin-top: 4%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.treino-body p {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.descricao {
+    width: 45%;
+    margin-top: auto;
+}
+
+.info-exercicio {
+    width: 45%;
+    margin-top: auto;
+}
+
+.row{
+    margin-left: 0px !important;
+}
+
+/* MEDIAS  */
+
+@media(max-width:1330px) {
+    main {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1030px) {
+    main {
+        width: 770px;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .dados-container {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:800px) {
+    main {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 410px;
+    }
+
+    /* MEDIA PARA USUARIOS */
+    .user {
+        width: 90%;
+        height: 170px;
+        text-align: left;
+    }
+
+    .img-perfil {
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .img-perfil img {
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .infos {
+        width: 70%;
+        display: flex;
+        text-align: left !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infos h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .nome {
+        border-right: none;
+        padding-right: 0px;
+    }
+
+    .idade {
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+        border-right: none;
+    }
+
+    .sexo {
+        margin-left: 0px;
+    }
+
+
+    .user img {
+        width: 100%;
+    }
+
+    .form-container {
+        border: 1px solid black;
+        margin: 15px;
+        background-color: var(--container-color);
+        border-radius: 0.7rem;
+    }
+
+    .form-container form {
+        margin-top: 50px;
+    }
+
+    .title {
+        width: 30%;
+        position: absolute;
+        background-color: var(--btn-color);
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0.7rem;
+        text-align: center;
+
+    }
+
+    .title h1 {
+        font-size: 18px;
+        padding: 2px;
+        font-weight: 500;
+    }
+
+    /* Media treinos */
+    .treino-container {
+        margin-bottom: 40px;
+        position: relative;
+        border: 1px solid black;
+        display: flex;
+        background-color: var(--container-color);
+        border-radius: 0.7rem;
+    }
+
+    .title-treino {
+        width: 30%;
+        height:28px;
+        position: absolute;
+        background-color: white;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0.7rem;
+        text-align: center;
+        border-bottom: solid 1px black;
+        border-right: solid 1px black;
+    }
+
+    .title-treino h4 {
+        font-size: 18px;
+        padding: 2px;
+        font-weight: 500;
+        color: var(--btn-color);
+    }
+
+    .row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .treino {
+        margin-bottom: 40px;
+        padding: 0 !important;
+        border-radius: 0.7rem;
+        min-height: 200px;
+    }
+
+    .treino-body {
+        width: 95%;
+        height: 500px;
+        margin: auto;
+        background-color: white;
+        margin-top: 11%;
+        border-radius: 0.5rem;
+        display: block;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .treino-body p {
+        font-size: 20px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+    }
+
+    .descricao {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .info-exercicio {
+        width: 100%;
+    }
+    .row{
+        margin-left:0 !important;
+    }
+
+    .delete-treino {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
