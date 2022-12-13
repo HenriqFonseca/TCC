@@ -351,10 +351,9 @@
                         }
 
                         .card {
-                            color: black;
+                            color: white;
                             width: 76vw !important;
                             height: 500px;
-                            margin-bottom: 50px;
                         }
 
                         .card img {
