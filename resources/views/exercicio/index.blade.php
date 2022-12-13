@@ -107,7 +107,7 @@
                         Editar exercício
                     </div>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive" style="overflow-x: auto;">
                     <table class="table table-hover border-secondary">
                         <thead>
                             <tr>

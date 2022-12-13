@@ -22,26 +22,29 @@
     --gold-transparent: #fdf5d33a;
 }
 
-th{
+th {
     text-align: left;
     font-weight: bold;
     font-size: 17px;
     border-bottom: 1px solid black;
     padding-bottom: 3px;
 }
-.btn{
+
+.btn {
     background: none;
     border-radius: 7px;
     cursor: pointer;
     margin-left: 2px;
 
 }
-#delete-button:hover{
+
+#delete-button:hover {
     background-color: #f07777;
     transition: 0.5s;
 }
-#edit-button:hover{
-    background-color:#6666668a;
+
+#edit-button:hover {
+    background-color: #6666668a;
     transition: 0.5s;
 }
 
@@ -58,7 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--font-color)!important;
+    color: var(--font-color) !important;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
@@ -142,7 +145,7 @@ input {
 }
 
 a:hover {
-    color: var(--font-color)!important;
+    color: var(--font-color) !important;
 }
 
 .container-md {
@@ -227,7 +230,7 @@ table {
     color: black;
     width: 100%;
     background-color: var(--container-color);
-    border-radius: 0.7rem!important;
+    border-radius: 0.7rem !important;
     padding: 5px !important;
 }
 
@@ -236,13 +239,16 @@ table {
         grid-template-columns: repeat(4, 0fr);
         gap: 2rem;
     }
+
     .containercheck {
         height: 150px;
         width: 150px;
     }
+
     .containercheck h6 {
         font-weight: bold;
     }
+
     input[type="checkbox"]::after {
         font-size: 14px;
     }
@@ -255,9 +261,11 @@ table {
     .form-control {
         width: 900px;
     }
+
     .table-responsive {
         width: 900px;
     }
+
     main {
         width: 1000px;
     }
@@ -267,15 +275,19 @@ table {
     .form-control {
         width: 700px;
     }
+
     .table-responsive {
         width: 700px;
     }
+
     main {
         width: 770px;
     }
+
     .containercheck {
         width: 140px;
     }
+
     .content {
         padding: 1rem;
     }
@@ -285,17 +297,21 @@ table {
     .form-control {
         width: 450px;
     }
+
     .table-responsive {
         width: 450px;
     }
+
     .containercheck {
         width: 200px;
         height: 170px;
     }
+
     .wrapper {
         grid-template-columns: repeat(2, 0fr);
         gap: 1rem;
     }
+
     main {
         width: 520px;
     }
@@ -305,38 +321,59 @@ table {
     .form-control {
         width: 280px;
     }
+
     .table-responsive {
-        /* width: 280px; */
+        width: 330px;
+        overflow-x: auto !important;
     }
+
     .containercheck {
         width: 125px;
     }
+
     main {
         width: 370px;
     }
-    .edit-container table{
+
+    .edit-container table {
         margin: auto;
     }
 
-    .edit-container{
-        margin: auto;
-        width: 378px;
+    th {
+        font-size: 15px;
     }
+
+    table h5 {
+        font-size: 14px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .edit-container {
+        margin: auto;
+        width: 340px;
+    }
+
 }
 
 @media(max-width:370px) {
     .form-control {
         width: 240px;
     }
+
     .table-responsive {
         width: 240px;
     }
+
     .containercheck {
         width: 115px;
     }
+
     .wrapper {
         gap: 0.5rem;
     }
+
     main {
         width: 310px;
     }
