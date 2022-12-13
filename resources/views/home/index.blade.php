@@ -317,7 +317,7 @@
                         }
 
                         .text-cards h1 {
-                            font-size: 78px;
+                            font-size: 50px;
                             position: absolute;
                             margin: auto;
                             right: 0;
