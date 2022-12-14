@@ -14,19 +14,19 @@
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
-    <link href="{{ secure_asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
+    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- styles -->
-    <script defer src="{{ secure_asset('/js/nav-bar.js') }}'"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}'"></script>
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'"></script>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
-    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 
 <body>

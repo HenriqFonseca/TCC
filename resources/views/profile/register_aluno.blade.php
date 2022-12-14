@@ -29,7 +29,7 @@
                     <input type="hidden" name="aluno" value="1">
                     <h2 class="form-signin-heading">Insira os dados</h2>
                     <br>
-                    <div class="select_user"><a href="{{ route('profile.register_aluno') }}" id="active-user">Aluno</a><a href="{{ route('profile.register_professor') }}" >Professor</a></div>
+                    <div class="select_user"><a href="{{ route('profile.register_aluno') }}" id="active-user">Aluno</a><a href="{{ route('profile.register_professor') }}" >Instrutor</a></div>
                     <br>
                     <div class="nome">
                         {{-- CASO HAJA UM ERRO NO INPUT NOME A CLASSE VAI MUDAR --}}

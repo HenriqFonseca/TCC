@@ -368,6 +368,12 @@
                             bottom: 0;
                         }
                     }
+
+                    @media screen and (max-width: 1300px) {
+                        h1{
+                            font-size: 200px !important;
+                        }
+                    }
                 </style>
 
 
@@ -393,7 +399,8 @@
                             @if (auth()->user()->professor == 1)
                                 <a class="btn btn-dark" href="{{ route('treino.index') }}" class="btn btn-dark">Vamos!</a>
                             @elseif(auth()->user()->aluno == 1)
-                                <a class="btn btn-dark" href="{{ route('treino.show', auth()->user()->id) }}" class="btn btn-dark">Vamos!</a>
+                                <a class="btn btn-dark" href="{{ route('treino.show', auth()->user()->id) }}"
+                                    class="btn btn-dark">Vamos!</a>
                             @endif
                         @endauth
 

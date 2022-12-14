@@ -30,25 +30,25 @@
                     <br>
                     <div class="select_user">
                         <a href="{{ route('profile.register_aluno') }}">Aluno</a>
-                        <a href="{{ route('profile.register_professor') }}" id="active-user">Professor</a>
+                        <a href="{{ route('profile.register_professor') }}" id="active-user">Instrutor</a>
                     </div>
                     <br>
                     <div class="nome">
                         {{-- CASO HAJA UM ERRO NO INPUT NOME A CLASSE VAI MUDAR --}}
                             <div class="container-erro-nome">
                                 <input type="text"
-                                    @if ($errors->has('nome')) class="input-error" name="nome" placeholder="Nome" />
+                                    @if ($errors->has('nome')) class="input-error" name="nome" placeholder="Nome" autocomplete="off" />
                                     <div class="container-error-message">@error('nome') <span class="error-message">{{ $message }}</span> @enderror</div>
                                     @else
-                                    class="input" name="nome" placeholder="Nome" /> @endif
+                                    class="input" name="nome" placeholder="Nome" autocomplete="off"/> @endif
                             </div>
 
                             {{-- CASO HAJA UM ERRO NO INPUT SOBRENOME A CLASSE VAI MUDAR --}}
                             <div class="container-erro">
                                 <input type="text"
-                                    @if ($errors->has('sobrenome')) class="input-error" name="sobrenome" placeholder="Sobrenome" />
+                                    @if ($errors->has('sobrenome')) class="input-error" name="sobrenome" placeholder="Sobrenome" autocomplete="off" />
                                     <div class="container-error-message">@error('sobrenome') <span class="error-message">{{ $message }}</span> @enderror</div>
-                                    @else class="input" name="sobrenome" placeholder="Sobrenome" /> @endif
+                                    @else class="input" name="sobrenome" placeholder="Sobrenome" autocomplete="off" /> @endif
                             </div>
                     </div>
                     <div class="input" style="background-color:white; display:flex; justify-content:space-evenly;">
@@ -67,7 +67,7 @@
                                 <input type="text"
                                     @if ($errors->has('email')) class="input-error" name="email" id="email" autocomplete="off" placeholder="Email" />
                                     <div class="container-error-message">@error('email') <span class="error-message">{{ $message }}</span> @enderror</div>
-                                    @else class="input" name="email" placeholder="Email" /> @endif
+                                    @else class="input" name="email" placeholder="Email" autocomplete="off" /> @endif
                             </div>
                         </div>
 
