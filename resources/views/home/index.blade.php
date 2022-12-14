@@ -287,6 +287,7 @@
                         height: 500px;
                         width: 350px !important;
                         background-color: #0f1d2785 !important;
+                        backdrop-filter: blur(10px);
                     }
 
                     .card-title {
