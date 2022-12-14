@@ -91,7 +91,7 @@ main {
     position: relative;
     border: 1px solid black;
     display: flex;
-    background-color: var(--container-color);
+    background-color: white;
     border-radius: 0.7rem;
 }
 
@@ -137,7 +137,6 @@ main {
 .form-container {
     border: 1px solid black;
     margin: 15px;
-    background-color: var(--container-color);
     border-radius: 0.7rem;
 }
 
@@ -202,6 +201,7 @@ main {
     min-height: 200px;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    background-color: var(--footer-color);
 }
 
 .treino-body {

@@ -62,7 +62,7 @@ class ExercicioController extends Controller
             } else {
                 $exercicio->save();
             }
-            return redirect()->route('exercicio.index');
+            return redirect()->back();
         }
     }
 
@@ -102,7 +102,7 @@ class ExercicioController extends Controller
         Exercicio::findOrFail($id)->update($request->all());
 
 
-        return redirect()->route('exercicio.index');
+        return redirect()->back();
     }
 
     /**
@@ -114,6 +114,6 @@ class ExercicioController extends Controller
     public function destroy($id)
     {
         Exercicio::findOrFail($id)->delete();
-        return redirect()->route('exercicio.index');
+        return redirect()->back();
     }
 }

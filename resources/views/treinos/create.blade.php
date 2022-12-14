@@ -94,7 +94,7 @@
                                     <div class="d-flex justify-content-center">
                                         <div class="col-11">
                                             <label class="fw-bold" for="descricao">Descrição</label>
-                                            <input type="text" placeholder="Treino de..."
+                                            <input type="text" autocomplete="off" placeholder="Treino de..."
                                                 class="form-control @error('descricao') is-invalid @enderror"
                                                 name="descricao" id="descricao">
                                             @error('descricao')
@@ -105,7 +105,7 @@
                                     <div class="d-flex" style="justify-content: space-around;">
                                         <div class="col-5">
                                             <label class="fw-bold" for="serie">Séries</label>
-                                            <input type="text" class="form-control @error('serie') is-invalid @enderror"
+                                            <input type="text" autocomplete="off" class="form-control @error('serie') is-invalid @enderror"
                                                 name="serie" id="serie">
                                             @error('serie')
                                                 <span class="error-message">{{ $message }}</span> <br>
@@ -115,7 +115,7 @@
                                             <label class="fw-bold" for="repeticao">Repetições</label>
                                             <input type="number"
                                                 class="form-control @error('repeticao') is-invalid @enderror"
-                                                name="repeticao" id="repeticao">
+                                                name="repeticao" id="repeticao" autocomplete="off">
                                             @error('repeticao')
                                                 <span class="error-message">{{ $message }}</span> <br>
                                             @enderror
@@ -197,10 +197,8 @@
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }}
-                                                <p>
-                                                <p>Repetições: {{ $item->repeticao }}
-                                                <p>
+                                                <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                                <p><i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}</p>
                                             </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
@@ -230,10 +228,8 @@
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }} <i class="fa-brands fa-google"></i>
-                                                <p>
-                                                <p>Repetições:<i class="fa-sharp fa-solid fa-repeat"></i> {{ $item->repeticao }}
-                                                <p>
+                                                <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                                <p><i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}</p>
                                             </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
@@ -262,10 +258,8 @@
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }}
-                                                <p>
-                                                <p>Repetições: {{ $item->repeticao }}
-                                                <p>
+                                                <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                                <p><i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}</p>
                                             </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
@@ -294,10 +288,8 @@
                                                 <p>
                                             </div>
                                             <div class="info-exercicio">
-                                                <p>Séries: {{ $item->serie }}
-                                                <p>
-                                                <p>Repetições: {{ $item->repeticao }}
-                                                <p>
+                                                <p> <i class="fa-solid fa-list-check"></i> {{ $item->serie }}</p>
+                                                <p><i class="fa-solid fa-repeat" alt="Repetições"></i>  {{ $item->repeticao }}</p>
                                             </div>
                                             <form action="{{ route('treino.destroy', $item->id) }}" method="POST">
                                                 @csrf
