@@ -60,7 +60,7 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ secure_asset('/img/homem.jpg') }}g" alt="" class="d-block w-100">
+                        <img src="{{ secure_asset('/img/homem.jpg') }}" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
                         <img src="{{ secure_asset('/img/mulher.jpg') }}" alt="" class="d-block w-100">
