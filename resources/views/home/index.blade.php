@@ -435,7 +435,7 @@
         </main>
 
         {{-- Script Service Worker --}}
-        <script src="{{ secure_secure_asset('sw.js') }}"></script>
+        <script src="{{ secure_asset('sw.js') }}"></script>
         <script>
             if (!navigator.serviceWorker.controller) {
                 navigator.serviceWorker.register("sw.js").then(function(reg) {
