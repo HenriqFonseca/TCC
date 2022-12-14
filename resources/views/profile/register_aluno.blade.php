@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('/profilecss/register.css') }}" rel="stylesheet">
-    <script src="{{ asset('/js/jquery-3.6.1.min.js') }}" defer></script>
-    <script src="{{ asset('/js/jQuery-Mask/dist/jquery.mask.js') }}" defer></script>
+    <link href="{{ secure_asset('/profilecss/register.css') }}" rel="stylesheet">
+    <script src="{{ secure_asset('/js/jquery-3.6.1.min.js') }}" defer></script>
+    <script src="{{ secure_asset('/js/jQuery-Mask/dist/jquery.mask.js') }}" defer></script>
     <title>Registrar</title>
 
     <!-- PWA  -->

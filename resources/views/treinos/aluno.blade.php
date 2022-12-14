@@ -8,8 +8,8 @@
     <title>Meus Treinos</title>
 
     {{-- CSS --}}
-    <link href="{{ asset('/treinocss/aluno.css') }}" rel="stylesheet">
-    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/treinocss/aluno.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- CSS DO BOOTSTRAP -->
     <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -18,7 +18,7 @@
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- scripts -->
-    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+    <script defer src="{{ secure_asset('/js/nav-bar.js') }}"></script>
     <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
     {{-- PWA --}}

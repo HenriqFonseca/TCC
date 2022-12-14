@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('/profilecss/login.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/profilecss/login.css') }}" rel="stylesheet">
     <title>Login</title>
-    <script src="{{ asset('/js/jquery-3.6.1.min.js') }}" defer></script>
-    <script src="{{ asset('/js/jQuery-Mask/dist/jquery.mask.js') }}" defer></script>
-    <script src="{{ asset('/js/toastmessage.js') }}" defer></script>
+    <script src="{{ secure_asset('/js/jquery-3.6.1.min.js') }}" defer></script>
+    <script src="{{ secure_asset('/js/jQuery-Mask/dist/jquery.mask.js') }}" defer></script>
+    <script src="{{ secure_asset('/js/toastmessage.js') }}" defer></script>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
@@ -50,7 +50,7 @@
                             @error('password')
                                 <span class="error-message">{{ $message }}</span>
                             @enderror
-                            @else class="input" name="password" maxlength="8" placeholder="Senha" />
+                            @else class="input" name="password" placeholder="Senha" />
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
                             {{-- LEMBRAR DE REMOVER O MAXLENGTH DA SENHA --}}
@@ -77,11 +77,7 @@
                             </div>
 
                 </form>
-                <div class="alternative">
-                    <a class="alternative-item"
-                        href="http://d3ugyf2ht6aenh.cloudfront.net/stores/914/032/products/6-caneca-personalizada-da-teus-pulos-laranja-frente1-33047fcd763035766b16286118539596-640-0.jpg">Esqueci
-                        minha senha.</a>
-                </div>
+
 
             </div>
             <a href="{{ route('home.index') }}" class="logo-box">

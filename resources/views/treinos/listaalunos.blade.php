@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de alunos</title>
 
-    <link href="{{ asset('/lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
 
     <!-- scripts -->
-    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
+    <script defer src="{{ secure_asset('/js/nav-bar.js') }}"></script>
     <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
      {{-- PWA --}}
@@ -68,7 +68,7 @@
                         </div>
                         @else
                         <div class="com-treino">
-                            <img src="{{ asset('/img/mini_haltere_fill.png') }}" alt=""> 
+                            <img src="{{ secure_asset('/img/mini_haltere_fill.png') }}" alt=""> 
                         </div>
                         @endif
                 </div>
