@@ -47,7 +47,7 @@
                                 @else<img src="/img/perfil/{{ $user->imagePerfil }}" alt="">@endif
                             </label>
                             <input class="form-control" id="formFileSm" type="file" name="imagePerfil" id="" s>
-                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                            <button type="submit" class="btn btn-secondary">Alterar imagem de perfil</button>
                         </form>
                     </div>
                     <div class="infos">
