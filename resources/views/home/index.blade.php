@@ -60,13 +60,13 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('img\homem.jp') }}g" alt="" class="d-block w-100">
+                        <img src="{{ asset('/img/homem.jpg') }}g" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('img/mulher.jpg') }}" alt="" class="d-block w-100">
+                        <img src="{{ asset('/img/mulher.jpg') }}" alt="" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('img/supino.jpg') }}" alt="" class="d-block w-100">
+                        <img src="{{ asset('/img/supino.jpg') }}" alt="" class="d-block w-100">
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                     <a class="grid-link" href="{{ route('profile.login') }}">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="{{ asset('img/dumbbell.png') }}" alt="">
+                                <img src="{{ asset('/img/dumbbell.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Meus treinos</h3>
@@ -97,7 +97,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="{{ asset('img/gym.png') }}" alt="">
+                                <img src="{{ asset('/img/gym.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Unidades</h3>
@@ -107,7 +107,7 @@
                     <a class="grid-link" href="#footer">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="{{ asset('img/chat.png') }}" alt="">
+                                <img src="{{ asset('/img/chat.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Fale conosco</h3>
@@ -117,7 +117,7 @@
                     <a class="grid-link" href="">
                         <div class="btn-box">
                             <button class="btn-small">
-                                <img src="{{ asset('img/invoice.png') }}" alt="">
+                                <img src="{{ asset('/img/invoice.png') }}" alt="">
                             </button>
                             <div class="btn-caption">
                                 <h3>Planos</h3>
@@ -158,13 +158,13 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="grid-link" href="">
+                        <a class="grid-link" href="{{ route('profile.register_aluno') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="{{ asset('img/invoice.png') }}" alt="">
+                                    <img src="{{ asset('/img/invoice.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
-                                    <h3>Planos</h3>
+                                    <h3>Registrar Usuário</h3>
                                 </div>
                             </div>
                         </a>
@@ -172,7 +172,7 @@
                         <a class="grid-link" href="{{ route('treino.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="{{ asset('img/alunos.png') }}" alt="">
+                                    <img src="{{ asset('/img/alunos.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Lista de alunos</h3>
@@ -182,7 +182,7 @@
                         <a class="grid-link" href="{{ route('exercicio.index') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="{{ asset('img/dumbbell.png') }}" alt="">
+                                    <img src="{{ asset('/img/dumbbell.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Exercícios</h3>
@@ -192,7 +192,7 @@
                         <a class="grid-link" href="{{ route('profile.register_aluno') }}">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="{{ asset('img/invoice.png') }}" alt="">
+                                    <img src="{{ asset('/img/invoice.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Registrar Usuário</h3>
@@ -222,7 +222,7 @@
                         <a class="grid-link" href="">
                             <div class="btn-box">
                                 <button class="btn-small">
-                                    <img src="{{ asset('img/invoice.png') }}" alt="">
+                                    <img src="{{ asset('/img/invoice.png') }}" alt="">
                                 </button>
                                 <div class="btn-caption">
                                     <h3>Planos</h3>

@@ -109,6 +109,13 @@
                     </button></a>
             @endauth
         </div>
+        @guest
+        <div class="menu-grid-container">
+            <a href="{{ route('profile.register_aluno') }}"  class="grid-link">
+                Registrar
+            </a>
+        </div>
+        @endguest
         @auth
             @if (auth()->user()->professor == 1)
                 <div class="menu-grid-container">
