@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'projectDevFit'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FB0397EA3328495FA0E287C6C64CB167 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6B559661DF664C948D7D2F2F7A50E967 }}
           package: .
