@@ -38,7 +38,7 @@
 
 
 
-    <title>Dev Fita</title>
+    <title>Dev Fit</title>
 </head>
 
 <body>
