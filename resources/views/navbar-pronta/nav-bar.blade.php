@@ -90,14 +90,14 @@
                 </li>
             </ul>
             <button id="btn-menu">
-                <img class="btn-menu-img" src="img/btn-menu-white.png" alt="">
+                <img class="btn-menu-img" src="/img/btn-menu-white.png" alt="">
             </button>
         </div>
     </nav>
 
     <!-- ========================= DROPDOWN MOBILE ==================== -->
     <div id="nav-menu">
-        <div class="profile-box"><img src="img/sportsman.png" alt="">
+        <div class="profile-box"><img src="/img/sportsman.png" alt="">
             @guest
                 <a href="{{ route('profile.login') }} "><button class="login-button">
                         Login

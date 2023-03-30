@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de alunos</title>
 
-    <link href="{{ secure_asset('/lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
+    <link href="{{ asset('/lista_alunos_css/lista_alunos.css') }}" rel="stylesheet">
 
     <!-- scripts -->
-    <script defer src="{{ secure_asset('/js/nav-bar.js') }}"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}"></script>
     <script src="{{ url('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
 
      {{-- PWA --}}
      <meta name="theme-color" content="#6777ef" />
-     <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-     <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+     <link rel="apple-touch-icon" href="{{ asset('/img/logo.png') }}">
+     <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -68,7 +68,7 @@
                         </div>
                         @else
                         <div class="com-treino">
-                            <img src="{{ secure_asset('/img/mini_haltere_fill.png') }}" alt=""> 
+                            <img src="{{ asset('/img/mini_haltere_fill.png') }}" alt=""> 
                         </div>
                         @endif
                 </div>

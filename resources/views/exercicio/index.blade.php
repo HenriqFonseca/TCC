@@ -14,19 +14,19 @@
     {{-- ICON GOOGLE --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
     {{-- CSS --}}
-    <link href="{{ secure_asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
+    <link href="{{ asset('/exerciciocss/exercicio.css') }}" rel="stylesheet">
+    <link href="{{ asset('/nav-bar-css/nav-bar-css.css') }}" rel="stylesheet">
 
     <!-- styles -->
-    <script defer src="{{ secure_asset('/js/nav-bar.js') }}'"></script>
+    <script defer src="{{ asset('/js/nav-bar.js') }}'"></script>
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'"></script>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
-    <link rel="apple-touch-icon" href="{{ secure_asset('/img/logo.png') }}">
-    <link rel="manifest" href="{{ secure_asset('/manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/img/logo.png') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -58,42 +58,42 @@
                                 <div class="containercheck">
                                         <h6>Biceps</h6>
                                         <input type="checkbox" name="biceps" id="dessert-2" value="1" >
-                                        <label for="dessert-2"><img src="{{ secure_asset('/img/biceps100x100.png') }}" alt="biceps"></label>
+                                        <label for="dessert-2"><img src="{{ asset('/img/biceps100x100.png') }}" alt="biceps"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Triceps</h6>
                                         <input type="checkbox" name="triceps" id="dessert-3" value="1">
-                                        <label for="dessert-3"><img src="{{ secure_asset('/img/triceps100x100.png') }}" alt="triceps"></label>
+                                        <label for="dessert-3"><img src="{{ asset('/img/triceps100x100.png') }}" alt="triceps"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Abdomen</h6>
                                         <input type="checkbox" name="abdomen" id="dessert-1" value="1">
-                                        <label for="dessert-1"><img src="{{ secure_asset('/img/abdomen100x100.png') }}" alt="abdomen"></label>
+                                        <label for="dessert-1"><img src="{{ asset('/img/abdomen100x100.png') }}" alt="abdomen"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Peito</h6>
                                         <input type="checkbox" name="peito" id="dessert-8" value="1">
-                                        <label for="dessert-8"><img src="{{ secure_asset('/img/peito100x100.png') }}" alt="peito"></label>
+                                        <label for="dessert-8"><img src="{{ asset('/img/peito100x100.png') }}" alt="peito"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Ombro</h6>
                                         <input type="checkbox" name="ombro" id="dessert-6" value="1">
-                                        <label for="dessert-6"><img src="{{ secure_asset('/img/ombro100x100.png') }}" alt="ombro"></label>
+                                        <label for="dessert-6"><img src="{{ asset('/img/ombro100x100.png') }}" alt="ombro"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Costas</h6>
                                         <input type="checkbox" name="costas" id="dessert-7" value="1">
-                                        <label for="dessert-7"><img src="{{ secure_asset('/img/costas100x100.png') }}" alt="costas"></label>
+                                        <label for="dessert-7"><img src="{{ asset('/img/costas100x100.png') }}" alt="costas"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Panturrilha</h6>
                                         <input type="checkbox" name="panturrilha" id="dessert-4" value="1">
-                                        <label for="dessert-4"><img src="{{ secure_asset('/img/panturrilha100x100.png') }}" alt="panturrilha"></label>
+                                        <label for="dessert-4"><img src="{{ asset('/img/panturrilha100x100.png') }}" alt="panturrilha"></label>
                                     </div>
                                     <div class="containercheck">
                                         <h6>Coxa</h6>
                                         <input type="checkbox" name="coxa" id="dessert-5" value="1">
-                                        <label for="dessert-5"><img src="{{ secure_asset('/img/coxa100x100.png') }}" alt="coxa"></label>
+                                        <label for="dessert-5"><img src="{{ asset('/img/coxa100x100.png') }}" alt="coxa"></label>
                                     </div>
                                 </div>
                                 <button type="submit">Enviar</button>
